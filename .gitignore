@@ -1,0 +1,17 @@
+# climasus-data .gitignore
+
+# Sistema
+.DS_Store
+Thumbs.db
+*.swp
+
+# Editor
+.idea/
+.vscode/
+
+# Arquivos temporários
+*.tmp
+*.bak
+
+# Manifesto gerado
+manifest.json

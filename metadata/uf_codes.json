@@ -1,0 +1,396 @@
+{
+  "version": "1.0.0",
+  "description": "Brazilian states (UF) codes - IBGE standard codes",
+  "last_updated": "2026-04-03",
+  "reference": "Instituto Brasileiro de Geografia e Estatística (IBGE)",
+  "states": {
+    "AC": {
+      "code": 12,
+      "name": {
+        "pt": "Acre",
+        "en": "Acre",
+        "es": "Acre"
+      },
+      "region": "norte",
+      "capital": "Rio Branco",
+      "population_2022": 906876,
+      "area_km2": 164173
+    },
+    "AL": {
+      "code": 27,
+      "name": {
+        "pt": "Alagoas",
+        "en": "Alagoas",
+        "es": "Alagoas"
+      },
+      "region": "nordeste",
+      "capital": "Maceió",
+      "population_2022": 3365351,
+      "area_km2": 27848
+    },
+    "AP": {
+      "code": 16,
+      "name": {
+        "pt": "Amapá",
+        "en": "Amapá",
+        "es": "Amapá"
+      },
+      "region": "norte",
+      "capital": "Macapá",
+      "population_2022": 877613,
+      "area_km2": 142470
+    },
+    "AM": {
+      "code": 13,
+      "name": {
+        "pt": "Amazonas",
+        "en": "Amazonas",
+        "es": "Amazonas"
+      },
+      "region": "norte",
+      "capital": "Manaus",
+      "population_2022": 4269995,
+      "area_km2": 1559148
+    },
+    "BA": {
+      "code": 29,
+      "name": {
+        "pt": "Bahia",
+        "en": "Bahia",
+        "es": "Bahia"
+      },
+      "region": "nordeste",
+      "capital": "Salvador",
+      "population_2022": 14985284,
+      "area_km2": 564732
+    },
+    "CE": {
+      "code": 23,
+      "name": {
+        "pt": "Ceará",
+        "en": "Ceará",
+        "es": "Ceará"
+      },
+      "region": "nordeste",
+      "capital": "Fortaleza",
+      "population_2022": 9240580,
+      "area_km2": 148894
+    },
+    "DF": {
+      "code": 53,
+      "name": {
+        "pt": "Distrito Federal",
+        "en": "Federal District",
+        "es": "Distrito Federal"
+      },
+      "region": "centro_oeste",
+      "capital": "Brasília",
+      "population_2022": 3094325,
+      "area_km2": 5760
+    },
+    "ES": {
+      "code": 32,
+      "name": {
+        "pt": "Espírito Santo",
+        "en": "Espírito Santo",
+        "es": "Espírito Santo"
+      },
+      "region": "sudeste",
+      "capital": "Vitória",
+      "population_2022": 4108508,
+      "area_km2": 46074
+    },
+    "GO": {
+      "code": 52,
+      "name": {
+        "pt": "Goiás",
+        "en": "Goiás",
+        "es": "Goiás"
+      },
+      "region": "centro_oeste",
+      "capital": "Goiânia",
+      "population_2022": 7206589,
+      "area_km2": 340242
+    },
+    "MA": {
+      "code": 21,
+      "name": {
+        "pt": "Maranhão",
+        "en": "Maranhão",
+        "es": "Maranhão"
+      },
+      "region": "nordeste",
+      "capital": "São Luís",
+      "population_2022": 7153262,
+      "area_km2": 329642
+    },
+    "MT": {
+      "code": 51,
+      "name": {
+        "pt": "Mato Grosso",
+        "en": "Mato Grosso",
+        "es": "Mato Grosso"
+      },
+      "region": "centro_oeste",
+      "capital": "Cuiabá",
+      "population_2022": 3567234,
+      "area_km2": 903207
+    },
+    "MS": {
+      "code": 50,
+      "name": {
+        "pt": "Mato Grosso do Sul",
+        "en": "Mato Grosso do Sul",
+        "es": "Mato Grosso do Sul"
+      },
+      "region": "centro_oeste",
+      "capital": "Campo Grande",
+      "population_2022": 2839188,
+      "area_km2": 357145
+    },
+    "MG": {
+      "code": 31,
+      "name": {
+        "pt": "Minas Gerais",
+        "en": "Minas Gerais",
+        "es": "Minas Gerais"
+      },
+      "region": "sudeste",
+      "capital": "Belo Horizonte",
+      "population_2022": 21411923,
+      "area_km2": 586521
+    },
+    "PA": {
+      "code": 15,
+      "name": {
+        "pt": "Pará",
+        "en": "Pará",
+        "es": "Pará"
+      },
+      "region": "norte",
+      "capital": "Belém",
+      "population_2022": 8777124,
+      "area_km2": 1245870
+    },
+    "PB": {
+      "code": 25,
+      "name": {
+        "pt": "Paraíba",
+        "en": "Paraíba",
+        "es": "Paraíba"
+      },
+      "region": "nordeste",
+      "capital": "João Pessoa",
+      "population_2022": 4059905,
+      "area_km2": 56467
+    },
+    "PR": {
+      "code": 41,
+      "name": {
+        "pt": "Paraná",
+        "en": "Paraná",
+        "es": "Paraná"
+      },
+      "region": "sul",
+      "capital": "Curitiba",
+      "population_2022": 11597484,
+      "area_km2": 199307
+    },
+    "PE": {
+      "code": 26,
+      "name": {
+        "pt": "Pernambuco",
+        "en": "Pernambuco",
+        "es": "Pernambuco"
+      },
+      "region": "nordeste",
+      "capital": "Recife",
+      "population_2022": 9674793,
+      "area_km2": 98067
+    },
+    "PI": {
+      "code": 22,
+      "name": {
+        "pt": "Piauí",
+        "en": "Piauí",
+        "es": "Piauí"
+      },
+      "region": "nordeste",
+      "capital": "Teresina",
+      "population_2022": 3289290,
+      "area_km2": 251616
+    },
+    "RJ": {
+      "code": 33,
+      "name": {
+        "pt": "Rio de Janeiro",
+        "en": "Rio de Janeiro",
+        "es": "Río de Janeiro"
+      },
+      "region": "sudeste",
+      "capital": "Rio de Janeiro",
+      "population_2022": 17463349,
+      "area_km2": 43750
+    },
+    "RN": {
+      "code": 24,
+      "name": {
+        "pt": "Rio Grande do Norte",
+        "en": "Rio Grande do Norte",
+        "es": "Río Grande del Norte"
+      },
+      "region": "nordeste",
+      "capital": "Natal",
+      "population_2022": 3560903,
+      "area_km2": 52809
+    },
+    "RS": {
+      "code": 43,
+      "name": {
+        "pt": "Rio Grande do Sul",
+        "en": "Rio Grande do Sul",
+        "es": "Río Grande del Sur"
+      },
+      "region": "sul",
+      "capital": "Porto Alegre",
+      "population_2022": 11466630,
+      "area_km2": 281707
+    },
+    "RO": {
+      "code": 11,
+      "name": {
+        "pt": "Rondônia",
+        "en": "Rondônia",
+        "es": "Rondônia"
+      },
+      "region": "norte",
+      "capital": "Porto Velho",
+      "population_2022": 1815278,
+      "area_km2": 237765
+    },
+    "RR": {
+      "code": 14,
+      "name": {
+        "pt": "Roraima",
+        "en": "Roraima",
+        "es": "Roraima"
+      },
+      "region": "norte",
+      "capital": "Boa Vista",
+      "population_2022": 652713,
+      "area_km2": 224300
+    },
+    "SC": {
+      "code": 42,
+      "name": {
+        "pt": "Santa Catarina",
+        "en": "Santa Catarina",
+        "es": "Santa Catarina"
+      },
+      "region": "sul",
+      "capital": "Florianópolis",
+      "population_2022": 7338473,
+      "area_km2": 95730
+    },
+    "SP": {
+      "code": 35,
+      "name": {
+        "pt": "São Paulo",
+        "en": "São Paulo",
+        "es": "São Paulo"
+      },
+      "region": "sudeste",
+      "capital": "São Paulo",
+      "population_2022": 46649132,
+      "area_km2": 248219
+    },
+    "SE": {
+      "code": 28,
+      "name": {
+        "pt": "Sergipe",
+        "en": "Sergipe",
+        "es": "Sergipe"
+      },
+      "region": "nordeste",
+      "capital": "Aracaju",
+      "population_2022": 2338474,
+      "area_km2": 21926
+    },
+    "TO": {
+      "code": 17,
+      "name": {
+        "pt": "Tocantins",
+        "en": "Tocantins",
+        "es": "Tocantins"
+      },
+      "region": "norte",
+      "capital": "Palmas",
+      "population_2022": 1607363,
+      "area_km2": 277720
+    }
+  },
+  "mappings": {
+    "code_to_uf": {
+      "11": "RO",
+      "12": "AC",
+      "13": "AM",
+      "14": "RR",
+      "15": "PA",
+      "16": "AP",
+      "17": "TO",
+      "21": "MA",
+      "22": "PI",
+      "23": "CE",
+      "24": "RN",
+      "25": "PB",
+      "26": "PE",
+      "27": "AL",
+      "28": "SE",
+      "29": "BA",
+      "31": "MG",
+      "32": "ES",
+      "33": "RJ",
+      "35": "SP",
+      "41": "PR",
+      "42": "SC",
+      "43": "RS",
+      "50": "MS",
+      "51": "MT",
+      "52": "GO",
+      "53": "DF"
+    },
+    "uf_to_code": {
+      "AC": 12,
+      "AL": 27,
+      "AP": 16,
+      "AM": 13,
+      "BA": 29,
+      "CE": 23,
+      "DF": 53,
+      "ES": 32,
+      "GO": 52,
+      "MA": 21,
+      "MT": 51,
+      "MS": 50,
+      "MG": 31,
+      "PA": 15,
+      "PB": 25,
+      "PR": 41,
+      "PE": 26,
+      "PI": 22,
+      "RJ": 33,
+      "RN": 24,
+      "RS": 43,
+      "RO": 11,
+      "RR": 14,
+      "SC": 42,
+      "SP": 35,
+      "SE": 28,
+      "TO": 17
+    }
+  },
+  "validation": {
+    "valid_ufs": ["AC", "AL", "AP", "AM", "BA", "CE", "DF", "ES", "GO", "MA", "MT", "MS", "MG", "PA", "PB", "PR", "PE", "PI", "RJ", "RN", "RS", "RO", "RR", "SC", "SP", "SE", "TO"],
+    "valid_codes": [11, 12, 13, 14, 15, 16, 17, 21, 22, 23, 24, 25, 26, 27, 28, 29, 31, 32, 33, 35, 41, 42, 43, 50, 51, 52, 53]
+  }
+}

@@ -12,6 +12,3 @@ Thumbs.db
 # Arquivos temporários
 *.tmp
 *.bak
-
-# Manifesto gerado
-manifest.json

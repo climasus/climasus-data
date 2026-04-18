@@ -1,0 +1,64 @@
+{
+  "name": "climasus-data",
+  "version": "0.1.0",
+  "description": "Shared metadata catalog for climasus4r (R) and climasus4py (Python)",
+  "last_updated": "2026-04-06",
+  "schema_version": 1,
+  "files": [
+    {
+      "path": "dictionaries/pt-en/categories.json",
+      "size_bytes": 2731,
+      "md5": "ac067eadd6ce5b685943e495d63c0519"
+    },
+    {
+      "path": "dictionaries/pt-en/columns.json",
+      "size_bytes": 6124,
+      "md5": "35f41adef63a02d74d46b8b54e703cbc"
+    },
+    {
+      "path": "dictionaries/pt-es/categories.json",
+      "size_bytes": 2787,
+      "md5": "d87c0a92ce035137c1a14d5bda720f16"
+    },
+    {
+      "path": "dictionaries/pt-es/columns.json",
+      "size_bytes": 3461,
+      "md5": "e7d46ccdf973f00cb02828de0455fea4"
+    },
+    {
+      "path": "disease_groups/climate_sensitive.json",
+      "size_bytes": 7347,
+      "md5": "0413a0a82b39621a78f2684b0ada91d6"
+    },
+    {
+      "path": "disease_groups/core.json",
+      "size_bytes": 9884,
+      "md5": "95ea6c2448be42fa2fbb70216538d7ee"
+    },
+    {
+      "path": "geo/municipios.json",
+      "size_bytes": 1175431,
+      "md5": "d166fcfdafa551ee3d4944393288ac03"
+    },
+    {
+      "path": "metadata/inmet_normals.json",
+      "size_bytes": 38805,
+      "md5": "437771c9c9a119b0762a9e34a95c1a88"
+    },
+    {
+      "path": "metadata/regions.json",
+      "size_bytes": 10057,
+      "md5": "fa0b90cc6a7b1fe2fb6cc3c019b6d3c5"
+    },
+    {
+      "path": "metadata/sus_systems.json",
+      "size_bytes": 32685,
+      "md5": "e3123e11110174fac9d076cd74b6fcc8"
+    },
+    {
+      "path": "metadata/uf_codes.json",
+      "size_bytes": 8972,
+      "md5": "b1db9d0149de6e85d73b7f55f870217b"
+    }
+  ]
+}

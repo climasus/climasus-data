@@ -1,0 +1,2 @@
+# Data files are populated by the sync-r-pkg.yml GitHub Actions workflow.
+# Run `git pull` after each tag release to get the latest data.

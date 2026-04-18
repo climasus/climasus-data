@@ -2,7 +2,7 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](../LICENSE.md)
 
-Catálogo de metadados compartilhado para os projetos CLIMA-SUS.
+Catálogo de metadados compartilhado para os projetos CLIMA-SUS. 
 
 - **Usado por:** [climasus4r](https://github.com/ClimaHealth/climasus4r) (R), [climasus4py](https://github.com/ClimaHealth/climasus4py) (Python)
 - **Formato:** JSON, organizado por tema

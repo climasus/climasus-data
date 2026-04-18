@@ -1,0 +1,141 @@
+{
+  "_meta": {
+    "description": "Categorical value translations: Portuguese to English",
+    "version": "3.0",
+    "last_updated": "2026-04-03"
+  },
+  
+  "sex": {
+    "M": "Male",
+    "F": "Female",
+    "I": "Indeterminate",
+    "0": "Ignored",
+    "1": "Male",
+    "2": "Female",
+    "9": "Ignored"
+  },
+  
+  "race": {
+    "1": "White",
+    "2": "Black",
+    "3": "Yellow",
+    "4": "Brown",
+    "5": "Indigenous",
+    "9": "Ignored"
+  },
+  
+  "education": {
+    "0": "None",
+    "1": "1 to 3 years",
+    "2": "4 to 7 years",
+    "3": "8 to 11 years",
+    "4": "12 or more years",
+    "9": "Ignored"
+  },
+  
+  "education_2010": {
+    "0": "No schooling",
+    "1": "Incomplete elementary 1 (1st to 4th grade)",
+    "2": "Complete elementary 1 (5th grade)",
+    "3": "Incomplete elementary 2 (6th to 9th grade)",
+    "4": "Complete elementary 2 (9th grade)",
+    "5": "Incomplete high school",
+    "6": "Complete high school",
+    "7": "Incomplete higher education",
+    "8": "Complete higher education",
+    "9": "Ignored"
+  },
+  
+  "marital_status": {
+    "1": "Single",
+    "2": "Married",
+    "3": "Widowed",
+    "4": "Legally separated",
+    "5": "Consensual union",
+    "9": "Ignored"
+  },
+  
+  "birth_location": {
+    "1": "Hospital",
+    "2": "Other health facility",
+    "3": "Home",
+    "4": "Other",
+    "5": "Indigenous village",
+    "9": "Ignored"
+  },
+  
+  "delivery_type": {
+    "1": "Vaginal",
+    "2": "Cesarean",
+    "9": "Ignored"
+  },
+  
+  "pregnancy_type": {
+    "1": "Single",
+    "2": "Twin",
+    "3": "Triple or more",
+    "9": "Ignored"
+  },
+  
+  "gestational_age": {
+    "1": "Less than 22 weeks",
+    "2": "22 to 27 weeks",
+    "3": "28 to 31 weeks",
+    "4": "32 to 36 weeks",
+    "5": "37 to 41 weeks",
+    "6": "42 weeks or more",
+    "9": "Ignored"
+  },
+  
+  "prenatal_consultations": {
+    "1": "None",
+    "2": "1 to 3",
+    "3": "4 to 6",
+    "4": "7 or more",
+    "9": "Ignored"
+  },
+  
+  "congenital_anomaly": {
+    "1": "Yes",
+    "2": "No",
+    "9": "Ignored"
+  },
+  
+  "death_location": {
+    "1": "Hospital",
+    "2": "Other health facility",
+    "3": "Home",
+    "4": "Public place",
+    "5": "Other",
+    "9": "Ignored"
+  },
+  
+  "death_circumstance": {
+    "1": "Accident",
+    "2": "Suicide",
+    "3": "Homicide",
+    "4": "Other",
+    "5": "Natural",
+    "9": "Ignored"
+  },
+  
+  "medical_assistance": {
+    "1": "Yes",
+    "2": "No",
+    "9": "Ignored"
+  },
+  
+  "autopsy": {
+    "1": "Yes",
+    "2": "No",
+    "9": "Ignored"
+  },
+  
+  "yes_no_ignored": {
+    "1": "Yes",
+    "2": "No",
+    "9": "Ignored",
+    "S": "Yes",
+    "N": "No"
+  }
+}

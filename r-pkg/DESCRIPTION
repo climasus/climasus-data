@@ -1,6 +1,6 @@
 Package: climasus.data
 Title: Shared Metadata Catalog for CLIMA-SUS Packages
-Version: 0.1.0
+Version: 0.1.2
 Authors@R: c(
     person("Max", "Anjos", email = "maxanjos@campus.ul.pt",
            role = c("aut", "cre"),

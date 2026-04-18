@@ -24,10 +24,10 @@ jobs:
           python-version: "3.12"
 
       - name: Install build tools
-        run: pip install hatchling build
+        run: pip install hatch
 
       - name: Build wheel and sdist
-        run: python -m build
+        run: hatch build
 
       - name: Publish to PyPI
         uses: pypa/gh-action-pypi-publish@release/v1

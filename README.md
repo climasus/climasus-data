@@ -1,6 +1,7 @@
 # climasus-data
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](../LICENSE.md)
+[![r-universe version](https://r-lib.r-universe.dev/cpp11/badges/version)](https://r-lib.r-universe.dev/cpp11)
 
 Catálogo de metadados compartilhado para os projetos CLIMA-SUS. 
 

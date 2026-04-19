@@ -1,5 +1,6 @@
 # climasus-data
-
+[![PyPI version](https://img.shields.io/pypi/v/readdbc.svg)](https://pypi.org/project/climasus-data/)
+[![Python Versions](https://img.shields.io/pypi/pyversions/readdbc.svg)](https://pypi.org/project/climasus-data/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](../LICENSE.md)
 [![r-universe version](https://r-lib.r-universe.dev/cpp11/badges/version)](https://r-lib.r-universe.dev/cpp11)
 

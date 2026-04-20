@@ -3,8 +3,17 @@ Title: Shared Metadata Catalog for CLIMA-SUS Packages
 Version: 0.1.2
 Authors@R: c(
     person("Max", "Anjos", email = "maxanjos@campus.ul.pt",
-           role = c("aut", "cre"),
-           comment = c(ORCID = "0000-0001-5765-5838"))
+           role = c("aut", "cre", "cph"),
+           comment = c(ORCID = "0000-0001-5765-5838")),
+    person("Thau\u00e3", "Menezes",
+           email = "thaua.menezes@unesp.br",
+           role = "aut"),
+    person("Marlon", "Resende Faria",
+           email = "marlon.faria@usp.br",
+           role = "aut"),
+    person("ClimaSUS Team",
+           role = "aut",
+           comment = c(url = "https://climasus.github.io/"))
     )
 Description: Provides access to the shared JSON metadata catalog used by
     climasus4r and climasus4py, including disease group classifications,

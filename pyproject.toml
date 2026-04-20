@@ -9,6 +9,9 @@ description = "Shared metadata catalog for climasus4r (R) and climasus4py (Pytho
 readme = "README.md"
 requires-python = ">=3.10"
 authors = [
+    { name = "ClimaSUS Team", email = "maxanjos@campus.ul.pt" },
+]
+maintainers = [
     { name = "Max Anjos", email = "maxanjos@campus.ul.pt" },
 ]
 keywords = ["datasus", "sus", "climate", "health", "brazil", "metadata"]

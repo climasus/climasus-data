@@ -4,13 +4,14 @@ on:
   push:
     tags:
       - "v*.*.*"
+  workflow_dispatch:
 
 permissions:
   contents: write   # needed to commit and push back to the repo
 
 jobs:
   sync:
-    name: Copy JSON files to r-pkg/inst/extdata and update DESCRIPTION
+    name: Sync JSONs → r-pkg/inst/extdata, R CMD check, commit
     runs-on: ubuntu-latest
 
     steps:
@@ -21,7 +22,13 @@ jobs:
 
       - name: Extract version from tag
         id: version
-        run: echo "VERSION=${GITHUB_REF_NAME#v}" >> "$GITHUB_OUTPUT"
+        run: |
+          if [[ "${GITHUB_REF}" == refs/tags/* ]]; then
+            echo "VERSION=${GITHUB_REF_NAME#v}" >> "$GITHUB_OUTPUT"
+          else
+            # workflow_dispatch: use current DESCRIPTION version
+            echo "VERSION=$(grep '^Version:' r-pkg/DESCRIPTION | awk '{print $2}')" >> "$GITHUB_OUTPUT"
+          fi
 
       - name: Sync JSON directories to r-pkg/inst/extdata
         run: |
@@ -45,12 +52,34 @@ jobs:
         run: |
           sed -i "s/^Version: .*/Version: ${{ steps.version.outputs.VERSION }}/" r-pkg/DESCRIPTION
 
+      - name: Set up R
+        uses: r-lib/actions/setup-r@v2
+        with:
+          r-version: "release"
+          use-public-rspm: true
+
+      - name: Install R dependencies for check
+        run: |
+          install.packages(c("jsonlite", "testthat", "rcmdcheck"), repos = "https://cloud.r-project.org")
+        shell: Rscript {0}
+
+      - name: R CMD check --as-cran
+        run: |
+          rcmdcheck::rcmdcheck(
+            path      = "r-pkg",
+            args      = c("--as-cran", "--no-manual"),
+            error_on  = "error"
+          )
+        shell: Rscript {0}
+
       - name: Commit and push updated r-pkg
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
-          git add r-pkg/inst/extdata/ r-pkg/DESCRIPTION
+          # -f: force-add files ignored by .gitignore (inst/extdata/*.json)
+          git add -f r-pkg/inst/extdata/
+          git add r-pkg/DESCRIPTION
 
           # only commit if there are changes
           if git diff --cached --quiet; then

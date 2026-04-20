@@ -12,3 +12,17 @@ Thumbs.db
 # Arquivos temporários
 *.tmp
 *.bak
+
+# r-pkg/inst/extdata — gerado pelo CI (sync-r-pkg.yml) a cada tag de release.
+# NÃO edite esses arquivos aqui. Edite os JSONs na raiz do repositório:
+#   dictionaries/, disease_groups/, geo/, metadata/, manifest.json
+# O workflow copia tudo para inst/extdata/ automaticamente.
+r-pkg/inst/extdata/**/*.json
+!r-pkg/inst/extdata/.gitkeep
+
+# Python build artifacts
+dist/
+*.egg-info/
+__pycache__/
+*.pyc
+.venv/

@@ -1,19 +1,19 @@
 Package: climasus.data
 Title: Shared Metadata Catalog for CLIMA-SUS Packages
-Version: 0.1.3
+Version: 0.1.4
 Authors@R:
-    c(      person(given = "Max",
-             family = "Anjos",
-             role = c('aut', 'cre', 'cph'),
-             email = "max.anjos@campus.ul.pt"),
+    c(      person(given = "Marlon Resende",
+             family = "Faria",
+             role = 'aut',
+             email = "marlon.faria@usp.br"),
       person(given = "Thauã",
              family = "Menezes",
              role = 'aut',
              email = "thaua.menezes@unesp.br"),
-      person(given = "Marlon Resende",
-             family = "Faria",
-             role = 'aut',
-             email = "marlon.faria@usp.br"),
+      person(given = "Max",
+             family = "Anjos",
+             role = c('aut', 'cre', 'cph'),
+             email = "max.anjos@campus.ul.pt"),
       person(given = "Andrey",
              family = "Araújo",
              role = 'aut',

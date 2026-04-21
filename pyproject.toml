@@ -4,14 +4,14 @@ build-backend = "hatchling.build"
 
 [project]
 name = "climasus-data"
-version = "0.1.3"
+version = "0.1.4"
 description = "Shared metadata catalog for climasus4r (R) and climasus4py (Python)"
 readme = "README.md"
 requires-python = ">=3.10"
 authors = [
-    { name = "Dr. Max Anjos", email = "max.anjos@campus.ul.pt" },
-    { name = "Thauã Menezes", email = "thaua.menezes@unesp.br" },
     { name = "Marlon Resende Faria", email = "marlon.faria@usp.br" },
+    { name = "Thauã Menezes", email = "thaua.menezes@unesp.br" },
+    { name = "Dr. Max Anjos", email = "max.anjos@campus.ul.pt" },
     { name = "Andrey Araújo", email = "andreyke.araujo@gmail.com" },
 ]
 maintainers = [

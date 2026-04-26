@@ -38,7 +38,7 @@ jobs:
           find "$TARGET" -mindepth 1 ! -name '.gitkeep' -delete
 
           # copy each data directory
-          for dir in dictionaries disease_groups geo metadata; do
+          for dir in dictionaries disease_groups geo metadata templates; do
             cp -r "$dir" "$TARGET/$dir"
           done
 

@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "description": "Standard age group definitions. null represents no upper bound (Inf in R, 999 in Python SQL context).",
+  "default": "epidemiological_default",
+  "presets": {
+    "who": {
+      "breaks": [0, 1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, null],
+      "description": "WHO standard age bands"
+    },
+    "decadal": {
+      "breaks": [0, 10, 20, 30, 40, 50, 60, 70, 80, 90, null],
+      "description": "Decadal age groups (0-9, 10-19, ...)"
+    },
+    "epidemiological_default": {
+      "breaks": [0, 5, 15, 60, null],
+      "description": "Simplified epidemiological grouping"
+    }
+  }
+}

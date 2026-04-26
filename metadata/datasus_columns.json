@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "description": "DATASUS column metadata — shared between climasus4r and climasus4py",
+  "all_date_columns": [
+    "DTOBITO", "DTNASC", "DTCADINF", "DTCADMUN", "DTCONCASO", "DTINVESTIG",
+    "DTRECEBIM", "DTRECORIG", "DTCONINV", "DTINTERNACAO", "DTSAIDA",
+    "DTCADASTRO", "DTATESTADO", "DTREGCART", "DTCASAM", "DTULTMENST",
+    "DTCONSULT", "DTDECLARAC"
+  ],
+  "all_numeric_columns": [
+    "CONTADOR", "PESO", "QTDFILVIVO", "QTDFILMORT", "GESTACAO",
+    "SEMAGESTAC", "OBITOGRAV", "GRAESSION", "CODMUNNATU", "CODMUNRES",
+    "CODMUNOCOR", "CODESTAB", "LOCOCOR", "IDADEMAE", "ESCMAE", "CODOCUPMAE",
+    "QTDGESTANT", "QTDPARTNOR", "QTDPARTCES", "IDADEPAI", "ESCPAI",
+    "SERIESCPAI", "SERIESCMAE"
+  ],
+  "system_signatures": {
+    "SIM-DO":       {"any_of": ["CAUSABAS", "DTOBITO"]},
+    "SIH-RD":       {"any_of": ["DIAG_PRINC"]},
+    "SINAN-DENGUE": {"any_of": ["NU_NOTIFIC"]},
+    "SINASC":       {"any_of": ["NUMERODN"]}
+  },
+  "role_priority": {
+    "date":         ["death_date", "date", "DTOBITO", "DTNASC", "admission_date"],
+    "cause":        ["underlying_cause", "cause", "CAUSABAS", "DIAG_PRINC"],
+    "age":          ["age", "age_years", "age_code", "IDADE", "IDADEMAE"],
+    "sex":          ["sex", "SEXO", "CS_SEXO"],
+    "municipality": ["municipality_code", "CODMUNRES", "ID_MUNICIP"],
+    "state":        ["state", "SG_UF", "UF", "SG_UF_NOT"]
+  }
+}

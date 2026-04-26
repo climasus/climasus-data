@@ -16,7 +16,8 @@ Catálogo de metadados compartilhado para os projetos CLIMA-SUS.
 
 ```
 climasus-data/
-├── metadata/           # Metadados principais (UFs, regiões, sistemas, clima)
+├── metadata/           # Metadados principais (UFs, regiões, sistemas, clima, colunas DATASUS)
+├── templates/          # Templates reutilizáveis (faixas etárias, padrões sazonais)
 ├── disease_groups/     # Grupos de doenças (CID-10, sensíveis ao clima)
 ├── dictionaries/       # Dicionários multilíngues (colunas, categorias)
 ├── geo/                # Geolocalização de municípios
@@ -28,6 +29,11 @@ climasus-data/
 - `metadata/uf_codes.json`: UFs do Brasil, códigos IBGE, população, área
 - `metadata/regions.json`: Macro-regiões, agrupamentos, aliases
 - `metadata/sus_systems.json`: Sistemas do SUS (SIM, SIH, SINAN, SINASC)
+- `metadata/datasus_columns.json`: Colunas DATASUS (datas, numéricas), assinaturas de sistema e prioridade de detecção por papel (date, cause, age, sex, municipality, state) — compartilhado entre R e Python
+- `metadata/datasus_sources.json`: Catálogo declarativo de fontes DATASUS/FTP, templates de URLs, granularidade e filtros de partição
+- `metadata/sinan_diseases.json`: Códigos de agravos SINAN validados contra FTP DATASUS e documentação PySUS
+- `templates/seasonal_patterns.json`: Mapeamento mês → estação por hemisfério (sul/norte); default `"south"`
+- `templates/age_groups.json`: Presets de faixas etárias (`who`, `decadal`, `epidemiological_default`); `null` = sem limite superior (Inf em R, 999 em Python)
 - `disease_groups/core.json`: Grupos principais de doenças
 - `dictionaries/pt-en/columns.json`: Tradução de nomes de colunas PT→EN
 - `geo/municipios.json`: 5.570+ municípios, coordenadas, timezone
@@ -66,13 +72,18 @@ uf_codes = data.load("metadata/uf_codes.json")
 
 | Arquivo                  | Fonte   | Descrição |
 |--------------------------|---------|-----------|
-| metadata/uf_codes.json   | IBGE    | 27 UFs, códigos, nomes, população, área |
-| metadata/regions.json    | IBGE    | 5 macro-regiões, agrupamentos, aliases |
-| metadata/sus_systems.json| DATASUS | Definições dos sistemas, granularidade |
-| metadata/inmet_normals.json | INMET | Normais climatológicas (1961-1990, 1991-2020) |
-| disease_groups/*.json    | CID-10/WHO | Grupos de doenças, sensibilidade climática |
-| dictionaries/            | Projeto | Traduções multilíngues |
-| geo/municipios.json      | IBGE    | Municípios, geocódigos, coordenadas |
+| metadata/uf_codes.json          | IBGE       | 27 UFs, códigos, nomes, população, área |
+| metadata/regions.json           | IBGE       | 5 macro-regiões, agrupamentos, aliases |
+| metadata/sus_systems.json       | DATASUS    | Definições dos sistemas, granularidade |
+| metadata/datasus_columns.json   | DATASUS    | Colunas datas/numéricas, assinaturas de sistema, prioridade de detecção por papel |
+| metadata/datasus_sources.json   | DATASUS/PySUS | Base FTP, templates de URL, granularidade e filtros por partição |
+| metadata/sinan_diseases.json    | DATASUS/PySUS | Códigos de agravos SINAN, prefixos de arquivo e disponibilidade observada |
+| metadata/inmet_normals.json     | INMET      | Normais climatológicas (1961-1990, 1991-2020) |
+| templates/seasonal_patterns.json| Projeto    | Mês → estação por hemisfério (sul/norte) |
+| templates/age_groups.json       | WHO/DATASUS| Presets de faixas etárias (who, decadal, epidemiológico) |
+| disease_groups/*.json           | CID-10/WHO | Grupos de doenças, sensibilidade climática |
+| dictionaries/                   | Projeto    | Traduções multilíngues |
+| geo/municipios.json             | IBGE       | Municípios, geocódigos, coordenadas |
 
 ---
 

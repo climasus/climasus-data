@@ -1,8 +1,8 @@
 {
   "name": "climasus-data",
-  "version": "0.1.0",
+  "version": "0.1.5",
   "description": "Shared metadata catalog for climasus4r (R) and climasus4py (Python)",
-  "last_updated": "2026-04-06",
+  "last_updated": "2026-04-26",
   "schema_version": 1,
   "files": [
     {
@@ -41,6 +41,16 @@
       "md5": "d166fcfdafa551ee3d4944393288ac03"
     },
     {
+      "path": "metadata/datasus_columns.json",
+      "size_bytes": 1429,
+      "md5": "4725c63358038fa79cafec3b5abeebc3"
+    },
+    {
+      "path": "metadata/datasus_sources.json",
+      "size_bytes": 7097,
+      "md5": "a3b932bc546da57096739a7f2de3f61a"
+    },
+    {
       "path": "metadata/inmet_normals.json",
       "size_bytes": 38805,
       "md5": "437771c9c9a119b0762a9e34a95c1a88"
@@ -51,6 +61,11 @@
       "md5": "fa0b90cc6a7b1fe2fb6cc3c019b6d3c5"
     },
     {
+      "path": "metadata/sinan_diseases.json",
+      "size_bytes": 3104,
+      "md5": "0a5c658ef7ea3937751eb3a7131f2a6a"
+    },
+    {
       "path": "metadata/sus_systems.json",
       "size_bytes": 32685,
       "md5": "e3123e11110174fac9d076cd74b6fcc8"
@@ -59,6 +74,16 @@
       "path": "metadata/uf_codes.json",
       "size_bytes": 8972,
       "md5": "b1db9d0149de6e85d73b7f55f870217b"
+    },
+    {
+      "path": "templates/age_groups.json",
+      "size_bytes": 669,
+      "md5": "dce9b6030a8e5721da60a9c28fb7b530"
+    },
+    {
+      "path": "templates/seasonal_patterns.json",
+      "size_bytes": 436,
+      "md5": "3c0255edd18a39f8ac62770644231d32"
     }
   ]
 }

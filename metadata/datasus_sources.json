@@ -1,0 +1,250 @@
+{
+  "schema_version": 1,
+  "description": "Declarative DATASUS source catalog consumed by ClimaSUS clients.",
+  "last_updated": "2026-04-26",
+  "sources": {
+    "datasus_ftp": {
+      "protocol": "ftp",
+      "base_url": "ftp://ftp.datasus.gov.br/dissemin/publicos",
+      "official": true
+    }
+  },
+  "template_variables": {
+    "uf": "Two-letter state abbreviation.",
+    "yyyy": "Four-digit year.",
+    "yy": "Two-digit year.",
+    "month": "Two-digit month.",
+    "disease_code": "SINAN disease/condition code."
+  },
+  "systems": {
+    "SIM-DO": {
+      "source": "datasus_ftp",
+      "family": "SIM",
+      "file_format": "dbc",
+      "temporal_granularity": "annual",
+      "requires_month": false,
+      "geographic_scope": "state",
+      "filename_template": "DO{uf}{yyyy}.dbc",
+      "url_templates": [
+        {
+          "status": "preliminary",
+          "valid_from_year": 2022,
+          "path_template": "SIM/PRELIM/DORES/DO{uf}{yyyy}.dbc"
+        },
+        {
+          "status": "final",
+          "path_template": "SIM/CID10/DORES/DO{uf}{yyyy}.dbc"
+        }
+      ]
+    },
+    "SIM-DOFET": {
+      "source": "datasus_ftp",
+      "family": "SIM",
+      "file_format": "dbc",
+      "temporal_granularity": "annual",
+      "requires_month": false,
+      "geographic_scope": "national",
+      "filename_template": "DOFET{yy}.dbc",
+      "url_templates": [
+        {
+          "status": "preliminary",
+          "valid_from_year": 2022,
+          "path_template": "SIM/PRELIM/DOFET/DOFET{yy}.dbc"
+        },
+        {
+          "status": "final",
+          "path_template": "SIM/CID10/DOFET/DOFET{yy}.dbc"
+        }
+      ]
+    },
+    "SIM-DOEXT": {
+      "source": "datasus_ftp",
+      "family": "SIM",
+      "file_format": "dbc",
+      "temporal_granularity": "annual",
+      "requires_month": false,
+      "geographic_scope": "national",
+      "filename_template": "DOEXT{yy}.dbc",
+      "url_templates": [
+        {
+          "status": "preliminary",
+          "valid_from_year": 2022,
+          "path_template": "SIM/PRELIM/DOFET/DOEXT{yy}.dbc"
+        },
+        {
+          "status": "final",
+          "path_template": "SIM/CID10/DOFET/DOEXT{yy}.dbc"
+        }
+      ]
+    },
+    "SIM-DOINF": {
+      "source": "datasus_ftp",
+      "family": "SIM",
+      "file_format": "dbc",
+      "temporal_granularity": "annual",
+      "requires_month": false,
+      "geographic_scope": "national",
+      "filename_template": "DOINF{yy}.dbc",
+      "url_templates": [
+        {
+          "status": "preliminary",
+          "valid_from_year": 2022,
+          "path_template": "SIM/PRELIM/DOFET/DOINF{yy}.dbc"
+        },
+        {
+          "status": "final",
+          "path_template": "SIM/CID10/DOFET/DOINF{yy}.dbc"
+        }
+      ]
+    },
+    "SIM-DOMAT": {
+      "source": "datasus_ftp",
+      "family": "SIM",
+      "file_format": "dbc",
+      "temporal_granularity": "annual",
+      "requires_month": false,
+      "geographic_scope": "national",
+      "filename_template": "DOMAT{yy}.dbc",
+      "url_templates": [
+        {
+          "status": "preliminary",
+          "valid_from_year": 2022,
+          "path_template": "SIM/PRELIM/DOFET/DOMAT{yy}.dbc"
+        },
+        {
+          "status": "final",
+          "path_template": "SIM/CID10/DOFET/DOMAT{yy}.dbc"
+        }
+      ]
+    },
+    "SINASC": {
+      "source": "datasus_ftp",
+      "family": "SINASC",
+      "file_format": "dbc",
+      "temporal_granularity": "annual",
+      "requires_month": false,
+      "geographic_scope": "state",
+      "filename_template": "DN{uf}{yyyy}.dbc",
+      "url_templates": [
+        {
+          "status": "preliminary",
+          "valid_from_year": 2022,
+          "path_template": "SINASC/PRELIM/DNRES/DN{uf}{yyyy}.dbc"
+        },
+        {
+          "status": "final",
+          "path_template": "SINASC/NOV/DNRES/DN{uf}{yyyy}.dbc"
+        }
+      ]
+    },
+    "SIH-RD": {
+      "source": "datasus_ftp",
+      "family": "SIH",
+      "file_format": "dbc",
+      "temporal_granularity": "monthly",
+      "requires_month": true,
+      "geographic_scope": "state",
+      "filename_template": "RD{uf}{yy}{month}.dbc",
+      "url_templates": [
+        {
+          "status": "current",
+          "valid_from_year": 2008,
+          "path_template": "SIHSUS/200801_/Dados/RD{uf}{yy}{month}.dbc"
+        },
+        {
+          "status": "historical",
+          "valid_until_year": 2007,
+          "path_template": "SIHSUS/199201_200712/Dados/RD{uf}{yy}{month}.dbc"
+        }
+      ]
+    },
+    "SIH-RJ": {
+      "source": "datasus_ftp",
+      "family": "SIH",
+      "file_format": "dbc",
+      "temporal_granularity": "monthly",
+      "requires_month": true,
+      "geographic_scope": "state",
+      "filename_template": "RJ{uf}{yy}{month}.dbc",
+      "url_templates": [
+        {
+          "status": "current",
+          "valid_from_year": 2008,
+          "path_template": "SIHSUS/200801_/Dados/RJ{uf}{yy}{month}.dbc"
+        },
+        {
+          "status": "historical",
+          "valid_until_year": 2007,
+          "path_template": "SIHSUS/199201_200712/Dados/RJ{uf}{yy}{month}.dbc"
+        }
+      ]
+    },
+    "SIH-SP": {
+      "source": "datasus_ftp",
+      "family": "SIH",
+      "file_format": "dbc",
+      "temporal_granularity": "monthly",
+      "requires_month": true,
+      "geographic_scope": "state",
+      "filename_template": "SP{uf}{yy}{month}.dbc",
+      "url_templates": [
+        {
+          "status": "current",
+          "valid_from_year": 2008,
+          "path_template": "SIHSUS/200801_/Dados/SP{uf}{yy}{month}.dbc"
+        },
+        {
+          "status": "historical",
+          "valid_until_year": 2007,
+          "path_template": "SIHSUS/199201_200712/Dados/SP{uf}{yy}{month}.dbc"
+        }
+      ]
+    },
+    "SIH-ER": {
+      "source": "datasus_ftp",
+      "family": "SIH",
+      "file_format": "dbc",
+      "temporal_granularity": "monthly",
+      "requires_month": true,
+      "geographic_scope": "state",
+      "filename_template": "ER{uf}{yy}{month}.dbc",
+      "url_templates": [
+        {
+          "status": "current",
+          "valid_from_year": 2008,
+          "path_template": "SIHSUS/200801_/Dados/ER{uf}{yy}{month}.dbc"
+        },
+        {
+          "status": "historical",
+          "valid_until_year": 2007,
+          "path_template": "SIHSUS/199201_200712/Dados/ER{uf}{yy}{month}.dbc"
+        }
+      ]
+    },
+    "SINAN-DENGUE": {
+      "source": "datasus_ftp",
+      "family": "SINAN",
+      "disease_code": "DENG",
+      "file_format": "dbc",
+      "temporal_granularity": "annual",
+      "requires_month": false,
+      "geographic_scope": "national",
+      "filename_template": "DENGBR{yy}.dbc",
+      "partition_filter": {
+        "state_column": "SG_UF_NOT",
+        "state_code_source": "metadata/uf_codes.json",
+        "state_code_type": "ibge_numeric"
+      },
+      "url_templates": [
+        {
+          "status": "final",
+          "path_template": "SINAN/DADOS/FINAIS/DENGBR{yy}.dbc"
+        },
+        {
+          "status": "preliminary",
+          "path_template": "SINAN/DADOS/PRELIM/DENGBR{yy}.dbc"
+        }
+      ]
+    }
+  }
+}

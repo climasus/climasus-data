@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "description": "Month to season mapping by hemisphere. Keys 'south' and 'north'.",
+  "default": "south",
+  "patterns": {
+    "south": {
+      "summer": [12, 1, 2],
+      "autumn": [3, 4, 5],
+      "winter": [6, 7, 8],
+      "spring": [9, 10, 11]
+    },
+    "north": {
+      "winter": [12, 1, 2],
+      "spring": [3, 4, 5],
+      "summer": [6, 7, 8],
+      "autumn": [9, 10, 11]
+    }
+  }
+}

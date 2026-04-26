@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "description": "SINAN disease/condition codes used by DATASUS FTP files.",
+  "last_updated": "2026-04-26",
+  "sources": [
+    {
+      "name": "DATASUS FTP",
+      "url": "ftp://ftp.datasus.gov.br/dissemin/publicos/SINAN/DADOS",
+      "role": "official_file_listing"
+    },
+    {
+      "name": "PySUS SINAN documentation",
+      "url": "https://pysus.readthedocs.io/en/latest/databases/SINAN.html",
+      "role": "reference_catalog"
+    }
+  ],
+  "diseases": {
+    "DENG": {
+      "name_pt": "Dengue",
+      "system": "SINAN-DENGUE",
+      "file_prefix": "DENG",
+      "filename_template": "DENGBR{yy}.dbc",
+      "availability": {
+        "first_year_observed": 2000,
+        "latest_final_year_observed": 2024,
+        "latest_prelim_year_observed": 2026
+      }
+    },
+    "CHIK": {
+      "name_pt": "Febre de Chikungunya",
+      "system": "SINAN-CHIKUNGUNYA",
+      "file_prefix": "CHIK",
+      "filename_template": "CHIKBR{yy}.dbc",
+      "availability": {
+        "first_year_observed": 2015,
+        "latest_final_year_observed": 2024,
+        "latest_prelim_year_observed": 2026
+      }
+    },
+    "ZIKA": {
+      "name_pt": "Zika virus",
+      "system": "SINAN-ZIKA",
+      "file_prefix": "ZIKA",
+      "filename_template": "ZIKABR{yy}.dbc",
+      "availability": {
+        "first_year_observed": 2016,
+        "latest_final_year_observed": 2024,
+        "latest_prelim_year_observed": 2026
+      }
+    },
+    "CHAG": {
+      "name_pt": "Doenca de Chagas aguda",
+      "system": "SINAN-CHAGAS",
+      "file_prefix": "CHAG",
+      "filename_template": "CHAGBR{yy}.dbc",
+      "availability": {
+        "first_year_observed": 2000,
+        "latest_final_year_observed": 2022,
+        "latest_prelim_year_observed": 2024
+      }
+    },
+    "MALA": {
+      "name_pt": "Malaria",
+      "system": "SINAN-MALARIA",
+      "file_prefix": "MALA",
+      "filename_template": "MALABR{yy}.dbc",
+      "availability": {
+        "first_year_observed": 2004,
+        "latest_final_year_observed": 2022,
+        "latest_prelim_year_observed": 2024
+      }
+    },
+    "LEIV": {
+      "name_pt": "Leishmaniose visceral",
+      "system": "SINAN-LEISHMANIOSE-VISCERAL",
+      "file_prefix": "LEIV",
+      "filename_template": "LEIVBR{yy}.dbc",
+      "availability": {
+        "first_year_observed": 2000,
+        "latest_final_year_observed": 2024,
+        "latest_prelim_year_observed": 2025
+      }
+    },
+    "LTAN": {
+      "name_pt": "Leishmaniose tegumentar americana",
+      "system": "SINAN-LEISHMANIOSE-TEGUMENTAR",
+      "file_prefix": "LTAN",
+      "filename_template": "LTANBR{yy}.dbc",
+      "availability": {
+        "first_year_observed": 2000,
+        "latest_final_year_observed": 2024,
+        "latest_prelim_year_observed": 2025
+      }
+    },
+    "LEPT": {
+      "name_pt": "Leptospirose",
+      "system": "SINAN-LEPTOSPIROSE",
+      "file_prefix": "LEPT",
+      "filename_template": "LEPTBR{yy}.dbc",
+      "availability": {
+        "first_year_observed": 2000,
+        "latest_final_year_observed": 2024,
+        "latest_prelim_year_observed": 2026
+      }
+    }
+  }
+}

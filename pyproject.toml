@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "climasus-data"
-version = "0.1.4"
+version = "0.1.5"
 description = "Shared metadata catalog for climasus4r (R) and climasus4py (Python)"
 readme = "README.md"
 requires-python = ">=3.10"
@@ -46,6 +46,7 @@ packages = ["src/climasus_data"]
 "disease_groups" = "climasus_data/disease_groups"
 "geo" = "climasus_data/geo"
 "metadata" = "climasus_data/metadata"
+"templates" = "climasus_data/templates"
 "manifest.json" = "climasus_data/manifest.json"
 
 [tool.hatch.build.targets.sdist]
@@ -55,6 +56,7 @@ include = [
     "disease_groups/",
     "geo/",
     "metadata/",
+    "templates/",
     "manifest.json",
     "README.md",
     "LICENSE",

@@ -24,7 +24,7 @@ from functools import lru_cache
 from pathlib import Path
 from typing import Any
 
-__version__ = "0.1.0"
+__version__ = "0.1.5"
 
 # ---------------------------------------------------------------------------
 # Data root resolution

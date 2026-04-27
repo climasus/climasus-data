@@ -3,7 +3,7 @@
   "version": "0.1.5",
   "description": "Shared metadata catalog for climasus4r (R) and climasus4py (Python)",
   "last_updated": "2026-04-26",
-  "schema_version": 1,
+  "schema_version": 2,
   "files": [
     {
       "path": "dictionaries/pt-en/categories.json",
@@ -49,6 +49,11 @@
       "path": "metadata/datasus_sources.json",
       "size_bytes": 7097,
       "md5": "a3b932bc546da57096739a7f2de3f61a"
+    },
+    {
+      "path": "metadata/datasus_systems.json",
+      "size_bytes": 37975,
+      "md5": "751ec5849b5d265ba0f4028497c9ed2f"
     },
     {
       "path": "metadata/inmet_normals.json",

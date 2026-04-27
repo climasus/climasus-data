@@ -3,7 +3,7 @@
   "version": "0.1.5",
   "description": "Shared metadata catalog for climasus4r (R) and climasus4py (Python)",
   "last_updated": "2026-04-26",
-  "schema_version": 1,
+  "schema_version": 2,
   "files": [
     {
       "path": "dictionaries/pt-en/categories.json",
@@ -46,9 +46,9 @@
       "md5": "4725c63358038fa79cafec3b5abeebc3"
     },
     {
-      "path": "metadata/datasus_sources.json",
-      "size_bytes": 7097,
-      "md5": "a3b932bc546da57096739a7f2de3f61a"
+      "path": "metadata/datasus_systems.json",
+      "size_bytes": 37925,
+      "md5": "b28b208a615acafbddfb3664bf681085"
     },
     {
       "path": "metadata/inmet_normals.json",
@@ -64,11 +64,6 @@
       "path": "metadata/sinan_diseases.json",
       "size_bytes": 3104,
       "md5": "0a5c658ef7ea3937751eb3a7131f2a6a"
-    },
-    {
-      "path": "metadata/sus_systems.json",
-      "size_bytes": 32685,
-      "md5": "e3123e11110174fac9d076cd74b6fcc8"
     },
     {
       "path": "metadata/uf_codes.json",

@@ -12,7 +12,7 @@ test_that("cd_list_files() returns character vector with JSON files", {
 })
 
 test_that("cd_path() returns existing path for known file", {
-  p <- cd_path("metadata/sus_systems.json")
+  p <- cd_path("metadata/datasus_systems.json")
   expect_type(p, "character")
   expect_true(file.exists(p))
 })
@@ -21,9 +21,9 @@ test_that("cd_path() errors for non-existent file", {
   expect_error(cd_path("nao_existe.json"), "File not found")
 })
 
-test_that("cd_load() returns a list or data.frame for sus_systems.json", {
+test_that("cd_load() returns a list or data.frame for datasus_systems.json", {
   skip_if_not_installed("jsonlite")
-  result <- cd_load("metadata/sus_systems.json")
+  result <- cd_load("metadata/datasus_systems.json")
   expect_true(is.list(result) || is.data.frame(result))
 })
 

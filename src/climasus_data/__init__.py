@@ -11,7 +11,7 @@ Usage::
     path = climasus_data.get_path("geo/municipios.json")
 
     # Load a JSON file directly
-    data = climasus_data.load_json("metadata/sus_systems.json")
+    data = climasus_data.load_json("metadata/datasus_systems.json")
 
     # Get the root data directory
     root = climasus_data.data_root()
@@ -83,7 +83,7 @@ def load_json(relative: str) -> Any:
     Parameters
     ----------
     relative : str
-        Path relative to the data root, e.g. ``"metadata/sus_systems.json"``.
+        Path relative to the data root, e.g. ``"metadata/datasus_systems.json"``.
     """
     path = get_path(relative)
     if not path.is_file():

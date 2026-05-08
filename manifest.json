@@ -1,6 +1,6 @@
 {
   "name": "climasus-data",
-  "version": "1.1.0",
+  "version": "0.2.0",
   "description": "Shared metadata catalog for climasus4r (R) and climasus4py (Python)",
   "last_updated": "2026-05-02",
   "schema_version": 2,

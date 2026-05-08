@@ -1,10 +1,58 @@
 {
   "name": "climasus-data",
-  "version": "0.1.5",
+  "version": "1.1.0",
   "description": "Shared metadata catalog for climasus4r (R) and climasus4py (Python)",
-  "last_updated": "2026-04-26",
+  "last_updated": "2026-05-02",
   "schema_version": 2,
   "files": [
+    {
+      "path": "assets/census/census_2010.parquet",
+      "size_bytes": 373655,
+      "md5": "a965ba8e3809ced922ea4b4ebaed2192",
+      "rows": 5570
+    },
+    {
+      "path": "assets/census/census_2022.parquet",
+      "size_bytes": 272404,
+      "md5": "bd34cd8c5efd9cc4c0c902647cb02a2e",
+      "rows": 5570
+    },
+    {
+      "path": "assets/climate/idw_weights_municipality.parquet",
+      "size_bytes": 39177,
+      "md5": "5f3ce6769c8441fd45bb2cb6d675f4dc",
+      "rows": 5570
+    },
+    {
+      "path": "assets/climate/inmet_observations_2023.parquet",
+      "size_bytes": 20735,
+      "md5": "0ea6bc7b6944e15d3837402b6b2b1f0b",
+      "rows": 366
+    },
+    {
+      "path": "assets/climate/inmet_stations.parquet",
+      "size_bytes": 33034,
+      "md5": "387f5a7feaa330363fc9d1fabaee973e",
+      "rows": 636
+    },
+    {
+      "path": "assets/spatial/municipalities.parquet",
+      "size_bytes": 150361734,
+      "md5": "7e5c7dae7ac53db928bfd6364100e6a5",
+      "rows": 5570
+    },
+    {
+      "path": "assets/spatial/regions.parquet",
+      "size_bytes": 3812012,
+      "md5": "0cd0423d29a0c4c8a35473b3e8b16f0b",
+      "rows": 5
+    },
+    {
+      "path": "assets/spatial/states.parquet",
+      "size_bytes": 11862853,
+      "md5": "72230b5663fb99d0fac14e8705e80e10",
+      "rows": 27
+    },
     {
       "path": "dictionaries/pt-en/categories.json",
       "size_bytes": 2731,

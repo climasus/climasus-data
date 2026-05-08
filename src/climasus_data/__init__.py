@@ -19,12 +19,13 @@ Usage::
 
 from __future__ import annotations
 
+import copy
 import json
 from functools import lru_cache
 from pathlib import Path
 from typing import Any
 
-__version__ = "0.1.5"
+__version__ = "1.1.0"
 
 # ---------------------------------------------------------------------------
 # Data root resolution
@@ -73,7 +74,13 @@ def get_path(relative: str) -> Path:
     relative : str
         Path relative to the data root, e.g. ``"geo/municipios.json"``.
     """
-    return data_root() / relative
+    root = data_root().resolve()
+    resolved = (root / relative).resolve()
+    if not resolved.is_relative_to(root):
+        raise ValueError(
+            f"Path traversal not allowed: {relative!r} resolves outside the data root."
+        )
+    return resolved
 
 
 @lru_cache(maxsize=32)
@@ -93,4 +100,4 @@ def load_json(relative: str) -> Any:
             "Ensure the package is installed correctly and up to date."
         )
     with open(path, encoding="utf-8") as f:
-        return json.load(f)
+        return copy.deepcopy(json.load(f))

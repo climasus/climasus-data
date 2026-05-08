@@ -67,6 +67,24 @@ uf_codes = data.load("metadata/uf_codes.json")
 
 ---
 
+## Assets Parquet 1.1.0
+
+`climasus-data>=1.1.0` tambem inclui assets Parquet usados pelo pipeline lazy
+do `climasus4py`:
+
+- `assets/spatial/municipalities.parquet`, `assets/spatial/states.parquet`,
+  `assets/spatial/regions.parquet`: geometrias WKT para enriquecimento espacial.
+- `assets/climate/inmet_observations_2023.parquet`: observacoes INMET diarias
+  por estacao/data, geradas a partir de fixture real do `climasus4r`.
+- `assets/climate/inmet_stations.parquet`: metadados reais de estacoes INMET.
+- `assets/climate/idw_weights_municipality.parquet`: pesos IDW municipio-estacao
+  calculados contra as estacoes presentes nos assets de observacao.
+- `assets/census/census_2022.parquet`: indicadores municipais reais derivados de
+  `municipio_meta` do `climasus4r`.
+
+Scripts de reproducao ficam em `scripts/` e atualizam o `manifest.json` com
+`scripts/update_manifest.py`.
+
 ## Fontes dos dados
 
 | Arquivo                  | Fonte   | Descrição |

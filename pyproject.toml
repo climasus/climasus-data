@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "climasus-data"
-version = "0.1.5"
+version = "1.1.0"
 description = "Shared metadata catalog for climasus4r (R) and climasus4py (Python)"
 readme = "README.md"
 requires-python = ">=3.10"
@@ -19,7 +19,7 @@ maintainers = [
 ]
 keywords = ["datasus", "sus", "climate", "health", "brazil", "metadata"]
 classifiers = [
-    "Development Status :: 3 - Alpha",
+    "Development Status :: 4 - Beta",
     "Intended Audience :: Science/Research",
     "License :: OSI Approved :: MIT License",
     "Programming Language :: Python :: 3",
@@ -40,11 +40,15 @@ Repository = "https://github.com/climasus/climasus-data"
 [tool.hatch.build.targets.wheel]
 packages = ["src/climasus_data"]
 
-# Include data files (at repo root) inside the wheel package directory
+# Include data files inside the wheel package directory
+# JSON/metadata: live at repo root; Parquets: live under assets/
 [tool.hatch.build.targets.wheel.force-include]
 "dictionaries" = "climasus_data/dictionaries"
 "disease_groups" = "climasus_data/disease_groups"
 "geo" = "climasus_data/geo"
+"assets/spatial" = "climasus_data/spatial"
+"assets/climate" = "climasus_data/climate"
+"assets/census" = "climasus_data/census"
 "metadata" = "climasus_data/metadata"
 "templates" = "climasus_data/templates"
 "manifest.json" = "climasus_data/manifest.json"
@@ -55,6 +59,9 @@ include = [
     "dictionaries/",
     "disease_groups/",
     "geo/",
+    "assets/spatial/",
+    "assets/climate/",
+    "assets/census/",
     "metadata/",
     "templates/",
     "manifest.json",

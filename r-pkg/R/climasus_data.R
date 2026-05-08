@@ -30,12 +30,12 @@
 #' Return the full path to a data file
 #'
 #' @param relative Character. Path relative to the extdata root, e.g.
-#'   `"geo/municipios.json"` or `"metadata/sus_systems.json"`.
+#'   `"geo/municipios.json"` or `"metadata/datasus_systems.json"`.
 #'
 #' @return A character string with the absolute path to the file.
 #'
 #' @examples
-#' cd_path("metadata/sus_systems.json")
+#' cd_path("metadata/datasus_systems.json")
 #' cd_path("geo/municipios.json")
 #'
 #' @export
@@ -55,7 +55,7 @@ cd_path <- function(relative) {
 #' named list). Requires the \pkg{jsonlite} package.
 #'
 #' @param relative Character. Path relative to the extdata root, e.g.
-#'   `"metadata/sus_systems.json"`.
+#'   `"metadata/datasus_systems.json"`.
 #' @param simplifyVector Logical. Passed to [jsonlite::fromJSON()]. Default
 #'   `TRUE` converts JSON arrays into R vectors/data frames.
 #'
@@ -63,7 +63,7 @@ cd_path <- function(relative) {
 #'
 #' @examples
 #' \donttest{
-#'   systems <- cd_load("metadata/sus_systems.json")
+#'   systems <- cd_load("metadata/datasus_systems.json")
 #'   regions <- cd_load("metadata/regions.json")
 #' }
 #'

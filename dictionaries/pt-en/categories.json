@@ -1,10 +1,9 @@
 {
   "_meta": {
     "description": "Categorical value translations: Portuguese to English",
-    "version": "3.0",
-    "last_updated": "2026-04-03"
+    "version": "4.0",
+    "last_updated": "2026-06-19"
   },
-  
   "sex": {
     "M": "Male",
     "F": "Female",
@@ -14,7 +13,6 @@
     "2": "Female",
     "9": "Ignored"
   },
-  
   "race": {
     "1": "White",
     "2": "Black",
@@ -23,29 +21,23 @@
     "5": "Indigenous",
     "9": "Ignored"
   },
-  
   "education": {
-    "0": "None",
-    "1": "1 to 3 years",
-    "2": "4 to 7 years",
-    "3": "8 to 11 years",
-    "4": "12 or more years",
+    "1": "None",
+    "2": "1 to 3 years",
+    "3": "4 to 7 years",
+    "4": "8 to 11 years",
+    "5": "12 years or more",
     "9": "Ignored"
   },
-  
   "education_2010": {
-    "0": "No schooling",
-    "1": "Incomplete elementary 1 (1st to 4th grade)",
-    "2": "Complete elementary 1 (5th grade)",
-    "3": "Incomplete elementary 2 (6th to 9th grade)",
-    "4": "Complete elementary 2 (9th grade)",
-    "5": "Incomplete high school",
-    "6": "Complete high school",
-    "7": "Incomplete higher education",
-    "8": "Complete higher education",
+    "0": "No education",
+    "1": "Elementary I (1st to 4th grade)",
+    "2": "Elementary II (5th to 8th grade)",
+    "3": "High school (formerly 2nd grade)",
+    "4": "Incomplete higher education",
+    "5": "Complete higher education",
     "9": "Ignored"
   },
-  
   "marital_status": {
     "1": "Single",
     "2": "Married",
@@ -54,7 +46,13 @@
     "5": "Consensual union",
     "9": "Ignored"
   },
-  
+  "mother_marital_status": {
+    "1": "Single",
+    "2": "Married",
+    "3": "Widowed",
+    "4": "Legally separated",
+    "5": "Common-law marriage"
+  },
   "birth_location": {
     "1": "Hospital",
     "2": "Other health facility",
@@ -63,20 +61,17 @@
     "5": "Indigenous village",
     "9": "Ignored"
   },
-  
   "delivery_type": {
     "1": "Vaginal",
     "2": "Cesarean",
     "9": "Ignored"
   },
-  
   "pregnancy_type": {
     "1": "Single",
     "2": "Twin",
     "3": "Triple or more",
     "9": "Ignored"
   },
-  
   "gestational_age": {
     "1": "Less than 22 weeks",
     "2": "22 to 27 weeks",
@@ -86,7 +81,6 @@
     "6": "42 weeks or more",
     "9": "Ignored"
   },
-  
   "prenatal_consultations": {
     "1": "None",
     "2": "1 to 3",
@@ -94,22 +88,20 @@
     "4": "7 or more",
     "9": "Ignored"
   },
-  
   "congenital_anomaly": {
     "1": "Yes",
     "2": "No",
     "9": "Ignored"
   },
-  
   "death_location": {
     "1": "Hospital",
     "2": "Other health facility",
     "3": "Home",
     "4": "Public place",
     "5": "Other",
+    "6": "Indigenous village",
     "9": "Ignored"
   },
-  
   "death_circumstance": {
     "1": "Accident",
     "2": "Suicide",
@@ -118,24 +110,1007 @@
     "5": "Natural",
     "9": "Ignored"
   },
-  
+  "death_type": {
+    "1": "Fetal",
+    "2": "Non-fetal"
+  },
+  "death_timing_delivery": {
+    "1": "Before",
+    "2": "During",
+    "3": "After",
+    "9": "Ignored"
+  },
+  "death_timing_partum": {
+    "1": "Before",
+    "2": "During",
+    "3": "After",
+    "9": "Ignored"
+  },
+  "death_timing_pregnancy": {
+    "1": "During pregnancy",
+    "2": "During delivery",
+    "3": "During abortion",
+    "4": "Up to 42 days after delivery",
+    "5": "43 days to 1 year after pregnancy",
+    "8": "Did not occur in these periods",
+    "9": "Ignored"
+  },
+  "corrected_death_type": {
+    "1": "During pregnancy",
+    "2": "During abortion",
+    "3": "After abortion",
+    "4": "During delivery or up to 1 hour after",
+    "5": "During puerperium up to 42 days after delivery",
+    "6": "Between 43 days and up to 1 year after delivery",
+    "7": "Investigation did not identify death timing",
+    "8": "More than one year after delivery",
+    "9": "Death did not occur in previous circumstances"
+  },
+  "death_during_pregnancy": {
+    "1": "Yes",
+    "2": "No",
+    "9": "Ignored"
+  },
+  "death_during_puerperium": {
+    "1": "Yes, up to 42 days after delivery",
+    "2": "Yes, 43 days to 1 year",
+    "3": "No",
+    "9": "Ignored"
+  },
   "medical_assistance": {
     "1": "Yes",
     "2": "No",
     "9": "Ignored"
   },
-  
   "autopsy": {
     "1": "Yes",
     "2": "No",
     "9": "Ignored"
   },
-  
+  "examination_performed": {
+    "1": "Yes",
+    "2": "No",
+    "9": "Ignored"
+  },
+  "surgery_performed": {
+    "1": "Yes",
+    "2": "No",
+    "9": "Ignored"
+  },
+  "work_accident": {
+    "1": "Yes",
+    "2": "No",
+    "9": "Ignored"
+  },
+  "information_source": {
+    "1": "Police report",
+    "2": "Hospital",
+    "3": "Family",
+    "4": "Other",
+    "9": "Ignored"
+  },
+  "investigation_source": {
+    "1": "Maternal and/or Infant Death Committee",
+    "2": "Home visit / Family interview",
+    "3": "Health facility / Medical record",
+    "4": "Related to other databases",
+    "5": "SVO",
+    "6": "IML",
+    "7": "Other source",
+    "8": "Multiple sources",
+    "9": "Ignored"
+  },
+  "record_origin": {
+    "1": "Oracle",
+    "2": "State database via FTP",
+    "3": "SEADE database",
+    "9": "Ignored"
+  },
+  "coding_status": {
+    "S": "Coder",
+    "N": "Non-coder"
+  },
+  "coded": {
+    "S": "Coded",
+    "N": "Not coded"
+  },
+  "cause_modified": {
+    "1": "Yes",
+    "2": "No"
+  },
+  "death_investigated": {
+    "1": "Yes",
+    "2": "No"
+  },
+  "epidemiological_death_certificate_status": {
+    "1": "Yes",
+    "0": "No"
+  },
+  "new_death_certificate_status": {
+    "1": "Yes",
+    "0": "No"
+  },
+  "information_retrieval_type": {
+    "01": "Did not add or correct information",
+    "02": "Yes, allowed retrieval of new information",
+    "03": "Yes, allowed correction of originally informed causes"
+  },
+  "investigator_level_type": {
+    "E": "State",
+    "R": "Regional",
+    "M": "Municipal"
+  },
+  "combined_sources": {
+    "S": "Yes",
+    "X": "No"
+  },
+  "information_sources": {
+    "S": "Yes",
+    "X": "No"
+  },
+  "age_unit": {
+    "0": "Ignored",
+    "1": "Minute",
+    "2": "Hour",
+    "3": "Day",
+    "4": "Month",
+    "5": "Year"
+  },
+  "aggregated_deceased_education": {
+    "00": "No education",
+    "01": "Incomplete Elementary I",
+    "02": "Complete Elementary I",
+    "03": "Incomplete Elementary II",
+    "04": "Complete Elementary II",
+    "05": "Incomplete High School",
+    "06": "Complete High School",
+    "07": "Incomplete Higher Education",
+    "08": "Complete Higher Education",
+    "09": "Ignored",
+    "10": "Incomplete or unspecified Elementary I",
+    "11": "Incomplete or unspecified Elementary II",
+    "12": "Incomplete or unspecified High School"
+  },
+  "aggregated_mother_education": {
+    "00": "No education",
+    "01": "Incomplete Elementary I",
+    "02": "Complete Elementary I",
+    "03": "Incomplete Elementary II",
+    "04": "Complete Elementary II",
+    "05": "Incomplete High School",
+    "06": "Complete High School",
+    "07": "Incomplete Higher Education",
+    "08": "Complete Higher Education",
+    "09": "Ignored",
+    "10": "Incomplete or unspecified Elementary I",
+    "11": "Incomplete or unspecified Elementary II",
+    "12": "Incomplete or unspecified High School"
+  },
   "yes_no_ignored": {
     "1": "Yes",
     "2": "No",
     "9": "Ignored",
     "S": "Yes",
     "N": "No"
+  },
+  "aih_type_identifier": {
+    "1": "Main",
+    "3": "Long Stay",
+    "5": "Continuation"
+  },
+  "education_level": {
+    "1": "Illiterate",
+    "2": "Primary School",
+    "3": "High School",
+    "4": "Higher Education",
+    "9": "Unknown"
+  },
+  "death_indicator": {
+    "1": "Yes",
+    "0": "No"
+  },
+  "admission_character": {
+    "1": "Elective",
+    "2": "Urgent",
+    "3": "Workplace accident",
+    "4": "Commuting accident",
+    "5": "Traffic accident",
+    "6": "Other injuries/poisoning"
+  },
+  "social_security_link": {
+    "1": "Self-employed",
+    "2": "Unemployed",
+    "3": "Retired",
+    "4": "Not insured",
+    "5": "Employee",
+    "6": "Employer",
+    "7": "Beneficiary",
+    "9": "Unknown"
+  },
+  "manager_type": {
+    "E": "State",
+    "M": "Municipal"
+  },
+  "high_risk_pregnancy": {
+    "1": "Yes",
+    "0": "No"
+  },
+  "race_color": {
+    "01": "White",
+    "02": "Black",
+    "03": "Yellow",
+    "04": "Pardo/Mixed",
+    "05": "Indigenous",
+    "99": "No Information"
+  },
+  "financing_type": {
+    "1": "Own Resources",
+    "2": "Maintenance",
+    "3": "Investment",
+    "4": "FAEC",
+    "5": "Others",
+    "6": "Medium/High Complexity"
+  },
+  "complexity_level": {
+    "1": "Primary Care",
+    "2": "Medium Complexity",
+    "3": "High Complexity"
+  },
+  "organization_nature": {
+    "10": "Public Administration",
+    "20": "Business Entities",
+    "30": "Non-Profit Entities",
+    "40": "Natural Persons",
+    "50": "International Organizations",
+    "99": "Not Applicable"
+  },
+  "value_type_sp_sh": {
+    "1": "Professional Services (SP)",
+    "2": "Hospital Services (SH)"
+  },
+  "sp_unique_aih_indicator": {
+    "1": "Unique Record",
+    "0": "Repeated/Audit Line"
+  },
+  "person_type": {
+    "1": "Individual",
+    "3": "Juridical Entity"
+  },
+  "dependency_level": {
+    "1": "Individual",
+    "3": "Maintained"
+  },
+  "sus_link": {
+    "1": "Yes",
+    "0": "No"
+  },
+  "management_type": {
+    "M": "Municipal",
+    "E": "State",
+    "D": "Dual"
+  },
+  "administrative_sphere": {
+    "01": "Federal",
+    "02": "State",
+    "03": "Municipal",
+    "04": "Private"
+  },
+  "teaching_research_activity": {
+    "01": "Teaching",
+    "02": "Research",
+    "03": "Teaching and Research",
+    "04": "None"
+  },
+  "provider_type": {
+    "40": "Public",
+    "50": "Private"
+  },
+  "terceiro": {
+    "1": "Yes",
+    "0": "No",
+    "2": "No"
+  },
+  "hospital_accreditation_evaluation": {
+    "1": "Yes",
+    "0": "No"
+  },
+  "pnass_evaluation": {
+    "1": "Yes",
+    "0": "No"
+  },
+  "management_basic_care_state": {
+    "1": "Yes",
+    "0": "No"
+  },
+  "management_basic_care_municipal": {
+    "1": "Yes",
+    "0": "No"
+  },
+  "management_medium_complexity_amb_state": {
+    "1": "Yes",
+    "0": "No"
+  },
+  "management_medium_complexity_amb_municipal": {
+    "1": "Yes",
+    "0": "No"
+  },
+  "management_program_3_state": {
+    "1": "Yes",
+    "0": "No"
+  },
+  "management_program_3_municipal": {
+    "1": "Yes",
+    "0": "No"
+  },
+  "management_high_complexity_amb_state": {
+    "1": "Yes",
+    "0": "No"
+  },
+  "management_high_complexity_amb_municipal": {
+    "1": "Yes",
+    "0": "No"
+  },
+  "management_medium_complexity_hosp_state": {
+    "1": "Yes",
+    "0": "No"
+  },
+  "management_medium_complexity_hosp_municipal": {
+    "1": "Yes",
+    "0": "No"
+  },
+  "management_high_complexity_hosp_state": {
+    "1": "Yes",
+    "0": "No"
+  },
+  "management_high_complexity_hosp_municipal": {
+    "1": "Yes",
+    "0": "No"
+  },
+  "has_ambulatory_care_level": {
+    "1": "Yes",
+    "0": "No"
+  },
+  "has_hospital_care_level": {
+    "1": "Yes",
+    "0": "No"
+  },
+  "has_hospital_bed": {
+    "1": "Yes",
+    "0": "No"
+  },
+  "has_emergency_unit": {
+    "1": "Yes",
+    "0": "No"
+  },
+  "has_ambulatory_care": {
+    "1": "Yes",
+    "0": "No"
+  },
+  "has_surgical_center": {
+    "1": "Yes",
+    "0": "No"
+  },
+  "has_obstetric_center": {
+    "1": "Yes",
+    "0": "No"
+  },
+  "has_neonatal_unit": {
+    "1": "Yes",
+    "0": "No"
+  },
+  "has_hospital_care": {
+    "1": "Yes",
+    "0": "No"
+  },
+  "has_support_service": {
+    "1": "Yes",
+    "0": "No"
+  },
+  "has_waste_collection": {
+    "1": "Yes",
+    "0": "No"
+  },
+  "has_committee": {
+    "1": "Yes",
+    "0": "No"
+  },
+  "committee_medical_ethics": {
+    "1": "Yes",
+    "0": "No"
+  },
+  "committee_nursing_ethics": {
+    "1": "Yes",
+    "0": "No"
+  },
+  "committee_pharmacy_therapeutics": {
+    "1": "Yes",
+    "0": "No"
+  },
+  "committee_hospital_infection_control": {
+    "1": "Yes",
+    "0": "No"
+  },
+  "committee_cost_appropriation": {
+    "1": "Yes",
+    "0": "No"
+  },
+  "committee_cipa": {
+    "1": "Yes",
+    "0": "No"
+  },
+  "committee_medical_record_review": {
+    "1": "Yes",
+    "0": "No"
+  },
+  "committee_medical_documentation_review": {
+    "1": "Yes",
+    "0": "No"
+  },
+  "committee_death_biopsy_analysis": {
+    "1": "Yes",
+    "0": "No"
+  },
+  "committee_epidemiological_investigation": {
+    "1": "Yes",
+    "0": "No"
+  },
+  "committee_disease_notification": {
+    "1": "Yes",
+    "0": "No"
+  },
+  "committee_zoonoses_vectors_control": {
+    "1": "Yes",
+    "0": "No"
+  },
+  "has_service_provided": {
+    "1": "Yes",
+    "0": "No"
+  },
+  "provides_hospitalization_sus": {
+    "1": "Yes",
+    "0": "No"
+  },
+  "provides_hospitalization_private": {
+    "1": "Yes",
+    "0": "No"
+  },
+  "support_service_medical_records_own": {
+    "1": "Yes",
+    "0": "No"
+  },
+  "support_service_medical_records_outsourced": {
+    "1": "Yes",
+    "0": "No"
+  },
+  "support_service_social_work_own": {
+    "1": "Yes",
+    "0": "No"
+  },
+  "support_service_social_work_outsourced": {
+    "1": "Yes",
+    "0": "No"
+  },
+  "support_service_pharmacy_own": {
+    "1": "Yes",
+    "0": "No"
+  },
+  "support_service_pharmacy_outsourced": {
+    "1": "Yes",
+    "0": "No"
+  },
+  "unit_type": {
+    "36": "Health Facility"
+  },
+  "origin_document": {
+    "P": "Main APAC",
+    "S": "Secondary APAC",
+    "C": "Consolidated BPA",
+    "I": "Individualized BPA",
+    "A": "Home Care RAAS",
+    "B": "Psychosocial RAAS"
+  },
+  "discharge_reason": {
+    "11": "Discharge (cured)",
+    "12": "Discharge (improved)",
+    "14": "Discharge by request",
+    "15": "Discharge with return planned",
+    "16": "Discharge by evasion",
+    "21": "Transfer to another facility",
+    "41": "Death with death certificate",
+    "42": "Death without death certificate",
+    "51": "Administrative closure"
+  },
+  "care_character": {
+    "01": "Elective",
+    "02": "Urgency",
+    "03": "Workplace accident",
+    "04": "Commuting accident",
+    "05": "Other traffic accidents",
+    "06": "Other injuries/poisonings"
+  },
+  "age_compatibility_flag": {
+    "0": "Age not required",
+    "1": "Compatible age",
+    "2": "Age out of range",
+    "3": "Non-existent age"
+  },
+  "patient_sex": {
+    "M": "Male",
+    "F": "Female",
+    "I": "Ignored"
+  },
+  "patient_race_color": {
+    "01": "White",
+    "02": "Black",
+    "03": "Brown",
+    "04": "Asian",
+    "05": "Indigenous",
+    "99": "No information"
+  },
+  "production_status_indicator": {
+    "0": "Not approved",
+    "5": "Fully approved",
+    "6": "Partially approved"
+  },
+  "legal_nature": {
+    "1000": "Public Administration",
+    "2000": "Business Entities",
+    "3000": "Non-profit Entities",
+    "4000": "Individuals",
+    "5000": "International Organizations"
+  },
+  "yes_no_flag": {
+    "1": "Yes",
+    "0": "No"
+  },
+  "death": {
+    "1": "Yes",
+    "0": "No"
+  },
+  "closure": {
+    "1": "Yes",
+    "0": "No"
+  },
+  "permanence": {
+    "1": "Yes",
+    "0": "No"
+  },
+  "discharge": {
+    "1": "Yes",
+    "0": "No"
+  },
+  "transfer": {
+    "1": "Yes",
+    "0": "No"
+  },
+  "residence_uf_difference": {
+    "1": "Yes",
+    "0": "No"
+  },
+  "residence_municipality_difference": {
+    "1": "Yes",
+    "0": "No"
+  },
+  "notification_type": {
+    "2": "Individual"
+  },
+  "gestation_status": {
+    "1": "1st Trimester",
+    "2": "2nd Trimester",
+    "3": "3rd Trimester",
+    "4": "Gestational age ignored",
+    "5": "No",
+    "6": "Not applicable",
+    "9": "Ignored"
+  },
+  "final_classification": {
+    "5": "Discarded",
+    "10": "Dengue",
+    "11": "Dengue with warning signs",
+    "12": "Severe Dengue",
+    "13": "Chikungunya"
+  },
+  "confirmation_criteria": {
+    "1": "Laboratory",
+    "2": "Clinical-epidemiological",
+    "3": "Under investigation"
+  },
+  "case_evolution": {
+    "1": "Cure",
+    "2": "Death by disease",
+    "3": "Death by other causes",
+    "4": "Death under investigation",
+    "9": "Ignored"
+  },
+  "hospitalization": {
+    "1": "Yes",
+    "2": "No",
+    "9": "Ignored"
+  },
+  "autochthonous_case": {
+    "1": "Yes",
+    "2": "No",
+    "3": "Indeterminate"
+  },
+  "work_related_disease": {
+    "1": "Yes",
+    "2": "No",
+    "9": "Ignored"
+  },
+  "chikungunya_clinical_presentation": {
+    "1": "Acute",
+    "2": "Chronic"
+  },
+  "serotype": {
+    "1": "DEN-1",
+    "2": "DEN-2",
+    "3": "DEN-3",
+    "4": "DEN-4"
+  },
+  "symptom_fever": {
+    "1": "Yes",
+    "2": "No",
+    "9": "Ignored"
+  },
+  "symptom_myalgia": {
+    "1": "Yes",
+    "2": "No",
+    "9": "Ignored"
+  },
+  "symptom_headache": {
+    "1": "Yes",
+    "2": "No",
+    "9": "Ignored"
+  },
+  "symptom_exanthem": {
+    "1": "Yes",
+    "2": "No",
+    "9": "Ignored"
+  },
+  "symptom_vomiting": {
+    "1": "Yes",
+    "2": "No",
+    "9": "Ignored"
+  },
+  "symptom_nausea": {
+    "1": "Yes",
+    "2": "No",
+    "9": "Ignored"
+  },
+  "symptom_back_pain": {
+    "1": "Yes",
+    "2": "No",
+    "9": "Ignored"
+  },
+  "symptom_conjunctivitis": {
+    "1": "Yes",
+    "2": "No",
+    "9": "Ignored"
+  },
+  "symptom_arthritis": {
+    "1": "Yes",
+    "2": "No",
+    "9": "Ignored"
+  },
+  "symptom_arthralgia": {
+    "1": "Yes",
+    "2": "No",
+    "9": "Ignored"
+  },
+  "symptom_petechiae": {
+    "1": "Yes",
+    "2": "No",
+    "9": "Ignored"
+  },
+  "symptom_leukopenia": {
+    "1": "Yes",
+    "2": "No",
+    "9": "Ignored"
+  },
+  "symptom_tourniquet_test_positive": {
+    "1": "Yes",
+    "2": "No",
+    "9": "Ignored"
+  },
+  "symptom_retro_orbital_pain": {
+    "1": "Yes",
+    "2": "No",
+    "9": "Ignored"
+  },
+  "comorbidity_diabetes": {
+    "1": "Yes",
+    "2": "No",
+    "9": "Ignored"
+  },
+  "comorbidity_hematologic_disease": {
+    "1": "Yes",
+    "2": "No",
+    "9": "Ignored"
+  },
+  "comorbidity_liver_disease": {
+    "1": "Yes",
+    "2": "No",
+    "9": "Ignored"
+  },
+  "comorbidity_renal_disease": {
+    "1": "Yes",
+    "2": "No",
+    "9": "Ignored"
+  },
+  "comorbidity_hypertension": {
+    "1": "Yes",
+    "2": "No",
+    "9": "Ignored"
+  },
+  "comorbidity_peptic_acid_disease": {
+    "1": "Yes",
+    "2": "No",
+    "9": "Ignored"
+  },
+  "comorbidity_autoimmune_disease": {
+    "1": "Yes",
+    "2": "No",
+    "9": "Ignored"
+  },
+  "warning_sign_hypotension": {
+    "1": "Yes",
+    "2": "No",
+    "9": "Ignored"
+  },
+  "warning_sign_platelet_drop": {
+    "1": "Yes",
+    "2": "No",
+    "9": "Ignored"
+  },
+  "warning_sign_persistent_vomiting": {
+    "1": "Yes",
+    "2": "No",
+    "9": "Ignored"
+  },
+  "warning_sign_mucosal_bleed": {
+    "1": "Yes",
+    "2": "No",
+    "9": "Ignored"
+  },
+  "warning_sign_hematocrit_increase": {
+    "1": "Yes",
+    "2": "No",
+    "9": "Ignored"
+  },
+  "warning_sign_abdominal_pain": {
+    "1": "Yes",
+    "2": "No",
+    "9": "Ignored"
+  },
+  "warning_sign_lethargy_irritability": {
+    "1": "Yes",
+    "2": "No",
+    "9": "Ignored"
+  },
+  "warning_sign_hepatomegaly": {
+    "1": "Yes",
+    "2": "No",
+    "9": "Ignored"
+  },
+  "warning_sign_fluid_accumulation": {
+    "1": "Yes",
+    "2": "No",
+    "9": "Ignored"
+  },
+  "severe_sign_weak_pulse": {
+    "1": "Yes",
+    "2": "No",
+    "9": "Ignored"
+  },
+  "severe_sign_convergent_bp": {
+    "1": "Yes",
+    "2": "No",
+    "9": "Ignored"
+  },
+  "severe_sign_slow_capillary_refill": {
+    "1": "Yes",
+    "2": "No",
+    "9": "Ignored"
+  },
+  "severe_sign_respiratory_failure": {
+    "1": "Yes",
+    "2": "No",
+    "9": "Ignored"
+  },
+  "severe_sign_tachycardia": {
+    "1": "Yes",
+    "2": "No",
+    "9": "Ignored"
+  },
+  "severe_sign_cold_extremities": {
+    "1": "Yes",
+    "2": "No",
+    "9": "Ignored"
+  },
+  "severe_sign_late_hypotension": {
+    "1": "Yes",
+    "2": "No",
+    "9": "Ignored"
+  },
+  "severe_sign_hematemesis": {
+    "1": "Yes",
+    "2": "No",
+    "9": "Ignored"
+  },
+  "severe_sign_melena": {
+    "1": "Yes",
+    "2": "No",
+    "9": "Ignored"
+  },
+  "severe_sign_voluminous_metrorrhagia": {
+    "1": "Yes",
+    "2": "No",
+    "9": "Ignored"
+  },
+  "severe_sign_cns_bleeding": {
+    "1": "Yes",
+    "2": "No",
+    "9": "Ignored"
+  },
+  "severe_sign_ast_alt_high": {
+    "1": "Yes",
+    "2": "No",
+    "9": "Ignored"
+  },
+  "severe_sign_myocarditis": {
+    "1": "Yes",
+    "2": "No",
+    "9": "Ignored"
+  },
+  "severe_sign_consciousness_alteration": {
+    "1": "Yes",
+    "2": "No",
+    "9": "Ignored"
+  },
+  "severe_sign_organ_failure": {
+    "1": "Yes",
+    "2": "No",
+    "9": "Ignored"
+  },
+  "hemorrhagic_manifestation": {
+    "1": "Yes",
+    "2": "No",
+    "9": "Ignored"
+  },
+  "symptom_epistaxis": {
+    "1": "Yes",
+    "2": "No",
+    "9": "Ignored"
+  },
+  "symptom_gingivorrhagia": {
+    "1": "Yes",
+    "2": "No",
+    "9": "Ignored"
+  },
+  "symptom_metrorrhagia": {
+    "1": "Yes",
+    "2": "No",
+    "9": "Ignored"
+  },
+  "symptom_spontaneous_petechiae": {
+    "1": "Yes",
+    "2": "No",
+    "9": "Ignored"
+  },
+  "symptom_hematuria": {
+    "1": "Yes",
+    "2": "No",
+    "9": "Ignored"
+  },
+  "symptom_digestive_tract_bleeding": {
+    "1": "Yes",
+    "2": "No",
+    "9": "Ignored"
+  },
+  "plasma_leakage": {
+    "1": "Yes",
+    "2": "No",
+    "9": "Ignored"
+  },
+  "plasma_leakage_evidence": {
+    "1": "Yes",
+    "2": "No",
+    "9": "Ignored"
+  },
+  "platelets_below_100k": {
+    "1": "Yes",
+    "2": "No",
+    "9": "Ignored"
+  },
+  "chik_s1_result": {
+    "1": "Positive",
+    "2": "Negative",
+    "3": "Inconclusive",
+    "4": "Not performed"
+  },
+  "chik_s2_result": {
+    "1": "Positive",
+    "2": "Negative",
+    "3": "Inconclusive",
+    "4": "Not performed"
+  },
+  "prnt_result": {
+    "1": "Positive",
+    "2": "Negative",
+    "3": "Inconclusive",
+    "4": "Not performed"
+  },
+  "dengue_serology_result": {
+    "1": "Positive",
+    "2": "Negative",
+    "3": "Inconclusive",
+    "4": "Not performed"
+  },
+  "ns1_result": {
+    "1": "Positive",
+    "2": "Negative",
+    "3": "Inconclusive",
+    "4": "Not performed"
+  },
+  "viral_isolation_result": {
+    "1": "Positive",
+    "2": "Negative",
+    "3": "Inconclusive",
+    "4": "Not performed"
+  },
+  "pcr_result": {
+    "1": "Positive",
+    "2": "Negative",
+    "3": "Inconclusive",
+    "4": "Not performed"
+  },
+  "histopathology_result": {
+    "1": "Positive",
+    "2": "Negative",
+    "3": "Inconclusive",
+    "4": "Not performed"
+  },
+  "immunohistochemistry_result": {
+    "1": "Positive",
+    "2": "Negative",
+    "3": "Inconclusive",
+    "4": "Not performed"
+  },
+  "tourniquet_test_result": {
+    "1": "Positive",
+    "2": "Negative",
+    "3": "Inconclusive",
+    "4": "Not performed"
+  },
+  "place_of_birth": {
+    "1": "Hospital",
+    "2": "Other health facility",
+    "3": "Home",
+    "4": "Others",
+    "9": "Ignored"
+  },
+  "mother_education_level": {
+    "1": "None",
+    "2": "1 to 3 years",
+    "3": "4 to 7 years",
+    "4": "8 to 11 years",
+    "5": "12 years and more",
+    "9": "Ignored"
+  },
+  "gestational_weeks": {
+    "1": "Less than 22 weeks",
+    "2": "22 to 27 weeks",
+    "3": "28 to 31 weeks",
+    "4": "32 to 36 weeks",
+    "5": "37 to 41 weeks",
+    "6": "42 weeks and more",
+    "9": "Ignored"
+  },
+  "prenatal_visits_count": {
+    "1": "None",
+    "2": "1 to 3",
+    "3": "4 to 6",
+    "4": "7 and more",
+    "9": "Ignored"
   }
 }

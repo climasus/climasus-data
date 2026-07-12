@@ -1,0 +1,1200 @@
+{
+  "_meta": {
+    "description": "Tradução de valores categóricos: DATASUS → Português",
+    "version": "4.0",
+    "last_updated": "2026-06-19"
+  },
+  "sexo": {
+    "M": "Masculino",
+    "F": "Feminino",
+    "I": "Indeterminado",
+    "0": "Ignorado",
+    "1": "Masculino",
+    "2": "Feminino",
+    "9": "Ignorado"
+  },
+  "raca": {
+    "1": "Branca",
+    "2": "Preta",
+    "3": "Amarela",
+    "4": "Parda",
+    "5": "Indígena",
+    "9": "Ignorado"
+  },
+  "escolaridade": {
+    "1": "Nenhuma",
+    "2": "1 a 3 anos",
+    "3": "4 a 7 anos",
+    "4": "8 a 11 anos",
+    "5": "12 anos ou mais",
+    "9": "Ignorado"
+  },
+  "escolaridade_2010": {
+    "0": "Sem escolaridade",
+    "1": "Fundamental I incompleto (1ª a 4ª série)",
+    "2": "Fundamental I completo (4ª série)",
+    "3": "Fundamental II incompleto (5ª a 8ª série)",
+    "4": "Fundamental II completo (8ª série)",
+    "5": "Médio incompleto",
+    "6": "Médio completo",
+    "7": "Superior incompleto",
+    "8": "Superior completo",
+    "9": "Ignorado"
+  },
+  "estado_civil": {
+    "1": "Solteiro",
+    "2": "Casado",
+    "3": "Viúvo",
+    "4": "Separado judicialmente",
+    "5": "União consensual",
+    "9": "Ignorado"
+  },
+  "estado_civil_mae": {
+    "1": "Solteira",
+    "2": "Casada",
+    "3": "Viúva",
+    "4": "Separada judicialmente",
+    "5": "União consensual"
+  },
+  "local_nascimento": {
+    "1": "Hospital",
+    "2": "Outro estabelecimento de saúde",
+    "3": "Domicílio",
+    "4": "Outros",
+    "5": "Aldeia indígena",
+    "9": "Ignorado"
+  },
+  "tipo_parto": {
+    "1": "Vaginal",
+    "2": "Cesáreo",
+    "9": "Ignorado"
+  },
+  "tipo_gravidez": {
+    "1": "Única",
+    "2": "Dupla",
+    "3": "Tripla ou mais",
+    "9": "Ignorado"
+  },
+  "idade_gestacional": {
+    "1": "Menos de 22 semanas",
+    "2": "22 a 27 semanas",
+    "3": "28 a 31 semanas",
+    "4": "32 a 36 semanas",
+    "5": "37 a 41 semanas",
+    "6": "42 semanas ou mais",
+    "9": "Ignorado"
+  },
+  "consultas_pre_natal": {
+    "1": "Nenhuma",
+    "2": "1 a 3",
+    "3": "4 a 6",
+    "4": "7 ou mais",
+    "9": "Ignorado"
+  },
+  "anomalia_congenita": {
+    "1": "Sim",
+    "2": "Não",
+    "9": "Ignorado"
+  },
+  "local_obito": {
+    "1": "Hospital",
+    "2": "Outro estabelecimento de saúde",
+    "3": "Domicílio",
+    "4": "Via pública",
+    "5": "Outros",
+    "6": "Aldeia indígena",
+    "9": "Ignorado"
+  },
+  "circunstancia_obito": {
+    "1": "Acidente",
+    "2": "Suicídio",
+    "3": "Homicídio",
+    "4": "Outros",
+    "5": "Natural",
+    "9": "Ignorado"
+  },
+  "tipo_obito": {
+    "1": "Fetal",
+    "2": "Não fetal"
+  },
+  "momento_obito_parto": {
+    "1": "Antes",
+    "2": "Durante",
+    "3": "Após",
+    "9": "Ignorado"
+  },
+  "momento_obito_puerperio": {
+    "1": "Antes",
+    "2": "Durante",
+    "3": "Após",
+    "9": "Ignorado"
+  },
+  "momento_obito_gestacao": {
+    "1": "Durante a gestação",
+    "2": "No parto",
+    "3": "No abortamento",
+    "4": "Até 42 dias após o parto",
+    "5": "De 43 dias a 1 ano após o parto",
+    "8": "Não ocorreu nesses períodos",
+    "9": "Ignorado"
+  },
+  "tipo_obito_corrigido": {
+    "1": "Durante a gestação",
+    "2": "Durante o abortamento",
+    "3": "Após o abortamento",
+    "4": "No parto ou até 1 hora após",
+    "5": "No puerpério até 42 dias após o parto",
+    "6": "Entre 43 dias e até 1 ano após o parto",
+    "7": "A investigação não identificou o momento",
+    "8": "Mais de 1 ano após o parto",
+    "9": "O óbito não ocorreu nas circunstâncias anteriores"
+  },
+  "obito_durante_gestacao": {
+    "1": "Sim",
+    "2": "Não",
+    "9": "Ignorado"
+  },
+  "obito_durante_puerperio": {
+    "1": "Sim, até 42 dias após o parto",
+    "2": "Sim, de 43 dias a 1 ano",
+    "3": "Não",
+    "9": "Ignorado"
+  },
+  "assistencia_medica": {
+    "1": "Sim",
+    "2": "Não",
+    "9": "Ignorado"
+  },
+  "necropsia": {
+    "1": "Sim",
+    "2": "Não",
+    "9": "Ignorado"
+  },
+  "exame_realizado": {
+    "1": "Sim",
+    "2": "Não",
+    "9": "Ignorado"
+  },
+  "cirurgia_realizada": {
+    "1": "Sim",
+    "2": "Não",
+    "9": "Ignorado"
+  },
+  "acidente_trabalho": {
+    "1": "Sim",
+    "2": "Não",
+    "9": "Ignorado"
+  },
+  "fonte_informacao": {
+    "1": "Boletim de ocorrência",
+    "2": "Hospital",
+    "3": "Família",
+    "4": "Outros",
+    "9": "Ignorado"
+  },
+  "fonte_investigacao": {
+    "1": "Comitê de Morte Materna e/ou Infantil",
+    "2": "Visita domiciliar / Entrevista familiar",
+    "3": "Estabelecimento de saúde / Prontuário",
+    "4": "Relacionado a outros bancos de dados",
+    "5": "SVO",
+    "6": "IML",
+    "7": "Outra fonte",
+    "8": "Múltiplas fontes",
+    "9": "Ignorado"
+  },
+  "origem_registro": {
+    "1": "Oracle",
+    "2": "Banco estadual via FTP",
+    "3": "Banco SEADE",
+    "9": "Ignorado"
+  },
+  "status_codificacao": {
+    "S": "Codificador",
+    "N": "Não codificador"
+  },
+  "codificado": {
+    "S": "Codificado",
+    "N": "Não codificado"
+  },
+  "causa_modificada": {
+    "1": "Sim",
+    "2": "Não"
+  },
+  "obito_investigado": {
+    "1": "Sim",
+    "2": "Não"
+  },
+  "status_do_epidemiologico": {
+    "1": "Sim",
+    "0": "Não"
+  },
+  "status_novo_do": {
+    "1": "Sim",
+    "0": "Não"
+  },
+  "tipo_recuperacao_informacao": {
+    "01": "Não acrescentou nem corrigiu informação",
+    "02": "Sim, permitiu recuperar nova informação",
+    "03": "Sim, permitiu corrigir causas originalmente informadas"
+  },
+  "nivel_investigador": {
+    "E": "Estadual",
+    "R": "Regional",
+    "M": "Municipal"
+  },
+  "fontes_combinadas": {
+    "S": "Sim",
+    "X": "Não"
+  },
+  "fontes_informacao": {
+    "S": "Sim",
+    "X": "Não"
+  },
+  "unidade_idade": {
+    "0": "Ignorado",
+    "1": "Minuto",
+    "2": "Hora",
+    "3": "Dia",
+    "4": "Mês",
+    "5": "Ano"
+  },
+  "escolaridade_agregada_falecido": {
+    "00": "Sem escolaridade",
+    "01": "Fund. I incompleto",
+    "02": "Fund. I completo",
+    "03": "Fund. II incompleto",
+    "04": "Fund. II completo",
+    "05": "Médio incompleto",
+    "06": "Médio completo",
+    "07": "Superior incompleto",
+    "08": "Superior completo",
+    "09": "Ignorado",
+    "10": "Fund. I incompleto ou sem especificação",
+    "11": "Fund. II incompleto ou sem especificação",
+    "12": "Médio incompleto ou sem especificação"
+  },
+  "escolaridade_agregada_mae": {
+    "00": "Sem escolaridade",
+    "01": "Fund. I incompleto",
+    "02": "Fund. I completo",
+    "03": "Fund. II incompleto",
+    "04": "Fund. II completo",
+    "05": "Médio incompleto",
+    "06": "Médio completo",
+    "07": "Superior incompleto",
+    "08": "Superior completo",
+    "09": "Ignorado",
+    "10": "Fund. I incompleto ou sem especificação",
+    "11": "Fund. II incompleto ou sem especificação",
+    "12": "Médio incompleto ou sem especificação"
+  },
+  "sim_nao_ignorado": {
+    "1": "Sim",
+    "2": "Não",
+    "9": "Ignorado",
+    "S": "Sim",
+    "N": "Não"
+  },
+  "identificador_aih": {
+    "1": "Principal",
+    "3": "Longa permanencia",
+    "5": "Continuacao"
+  },
+  "instrucao": {
+    "1": "Analfabeto",
+    "2": "1 Grau",
+    "3": "2 Grau",
+    "4": "3 Grau",
+    "9": "Ignorado"
+  },
+  "obito": {
+    "1": "Sim",
+    "0": "Nao"
+  },
+  "carater_internacao": {
+    "1": "Eletivo",
+    "2": "Urgencia",
+    "3": "Acidente no local de trabalho",
+    "4": "Acidente no trajeto",
+    "5": "Outros acidentes de transito",
+    "6": "Outras lesoes/envenenamentos"
+  },
+  "vinculo_previdencia": {
+    "1": "Autonomo",
+    "2": "Desempregado",
+    "3": "Aposentado",
+    "4": "Nao segurado",
+    "5": "Empregado",
+    "6": "Empregador",
+    "7": "Beneficiario",
+    "9": "Ignorado"
+  },
+  "tipo_gestor": {
+    "E": "Estadual",
+    "M": "Municipal"
+  },
+  "gestante_risco": {
+    "1": "Sim",
+    "0": "Nao"
+  },
+  "tipo_financiamento": {
+    "1": "Recursos proprios",
+    "2": "Custeio",
+    "3": "Investimento",
+    "4": "FAEC",
+    "5": "Outros",
+    "6": "Media e alta complexidade"
+  },
+  "complexidade": {
+    "1": "Atencao basica",
+    "2": "Media complexidade",
+    "3": "Alta complexidade"
+  },
+  "natureza_organizacao": {
+    "10": "Administracao Publica",
+    "20": "Entidades Empresariais",
+    "30": "Entidades sem Fins Lucrativos",
+    "40": "Pessoas Fisicas",
+    "50": "Organizacoes Internacionais",
+    "99": "Nao se aplica"
+  },
+  "tipo_valor_sp_sh": {
+    "1": "SP",
+    "2": "SH"
+  },
+  "indicador_unico_aih_sp": {
+    "1": "Unica",
+    "0": "Repetida"
+  },
+  "pessoa_fisica_juridica": {
+    "1": "Pessoa Fisica",
+    "3": "Pessoa Juridica"
+  },
+  "grau_dependencia": {
+    "1": "Individual",
+    "3": "Mantida"
+  },
+  "vinculo_sus": {
+    "1": "Sim",
+    "0": "Nao"
+  },
+  "tipo_gestao": {
+    "M": "Municipal",
+    "E": "Estadual",
+    "D": "Dupla"
+  },
+  "esfera_administrativa": {
+    "01": "Federal",
+    "02": "Estadual",
+    "03": "Municipal",
+    "04": "Privada"
+  },
+  "atividade_ensino_pesquisa": {
+    "01": "Ensino",
+    "02": "Pesquisa",
+    "03": "Ensino e Pesquisa",
+    "04": "Nenhuma"
+  },
+  "tipo_prestador": {
+    "40": "Publico",
+    "50": "Privado"
+  },
+  "terceiro": {
+    "1": "Sim",
+    "0": "Nao",
+    "2": "Nao"
+  },
+  "avaliacao_acreditacao_hospitalar": {
+    "1": "Sim",
+    "0": "Nao"
+  },
+  "avaliacao_pnass": {
+    "1": "Sim",
+    "0": "Nao"
+  },
+  "gestao_atencao_basica_estadual": {
+    "1": "Sim",
+    "0": "Nao"
+  },
+  "gestao_atencao_basica_municipal": {
+    "1": "Sim",
+    "0": "Nao"
+  },
+  "gestao_media_complexidade_amb_estadual": {
+    "1": "Sim",
+    "0": "Nao"
+  },
+  "gestao_media_complexidade_amb_municipal": {
+    "1": "Sim",
+    "0": "Nao"
+  },
+  "gestao_programa_3_estadual": {
+    "1": "Sim",
+    "0": "Nao"
+  },
+  "gestao_programa_3_municipal": {
+    "1": "Sim",
+    "0": "Nao"
+  },
+  "gestao_alta_complexidade_amb_estadual": {
+    "1": "Sim",
+    "0": "Nao"
+  },
+  "gestao_alta_complexidade_amb_municipal": {
+    "1": "Sim",
+    "0": "Nao"
+  },
+  "gestao_media_complexidade_hosp_estadual": {
+    "1": "Sim",
+    "0": "Nao"
+  },
+  "gestao_media_complexidade_hosp_municipal": {
+    "1": "Sim",
+    "0": "Nao"
+  },
+  "gestao_alta_complexidade_hosp_estadual": {
+    "1": "Sim",
+    "0": "Nao"
+  },
+  "gestao_alta_complexidade_hosp_municipal": {
+    "1": "Sim",
+    "0": "Nao"
+  },
+  "possui_nivel_atencao_ambulatorial": {
+    "1": "Sim",
+    "0": "Nao"
+  },
+  "possui_nivel_atencao_hospitalar": {
+    "1": "Sim",
+    "0": "Nao"
+  },
+  "possui_leito_hospitalar": {
+    "1": "Sim",
+    "0": "Nao"
+  },
+  "possui_urgencia_emergencia": {
+    "1": "Sim",
+    "0": "Nao"
+  },
+  "possui_atendimento_ambulatorial": {
+    "1": "Sim",
+    "0": "Nao"
+  },
+  "possui_centro_cirurgico": {
+    "1": "Sim",
+    "0": "Nao"
+  },
+  "possui_centro_obstetrico": {
+    "1": "Sim",
+    "0": "Nao"
+  },
+  "possui_unidade_neonatal": {
+    "1": "Sim",
+    "0": "Nao"
+  },
+  "possui_atendimento_hospitalar": {
+    "1": "Sim",
+    "0": "Nao"
+  },
+  "possui_servico_apoio": {
+    "1": "Sim",
+    "0": "Nao"
+  },
+  "coleta_residuo_biologico": {
+    "1": "Sim",
+    "0": "Nao"
+  },
+  "coleta_residuo_quimico": {
+    "1": "Sim",
+    "0": "Nao"
+  },
+  "coleta_rejeito_radioativo": {
+    "1": "Sim",
+    "0": "Nao"
+  },
+  "coleta_residuo_comum": {
+    "1": "Sim",
+    "0": "Nao"
+  },
+  "possui_coleta_residuos": {
+    "1": "Sim",
+    "0": "Nao"
+  },
+  "possui_comissao": {
+    "1": "Sim",
+    "0": "Nao"
+  },
+  "comissao_etica_medica": {
+    "1": "Sim",
+    "0": "Nao"
+  },
+  "comissao_etica_enfermagem": {
+    "1": "Sim",
+    "0": "Nao"
+  },
+  "comissao_farmacia_terapeutica": {
+    "1": "Sim",
+    "0": "Nao"
+  },
+  "comissao_controle_infeccao": {
+    "1": "Sim",
+    "0": "Nao"
+  },
+  "comissao_apropriacao_custos": {
+    "1": "Sim",
+    "0": "Nao"
+  },
+  "comissao_cipa": {
+    "1": "Sim",
+    "0": "Nao"
+  },
+  "comissao_revisao_prontuarios": {
+    "1": "Sim",
+    "0": "Nao"
+  },
+  "comissao_revisao_documentacao": {
+    "1": "Sim",
+    "0": "Nao"
+  },
+  "comissao_analise_obitos_biopsias": {
+    "1": "Sim",
+    "0": "Nao"
+  },
+  "comissao_investigacao_epidemiologica": {
+    "1": "Sim",
+    "0": "Nao"
+  },
+  "comissao_notificacao_doencas": {
+    "1": "Sim",
+    "0": "Nao"
+  },
+  "comissao_controle_zoonoses": {
+    "1": "Sim",
+    "0": "Nao"
+  },
+  "possui_atendimento_prestado": {
+    "1": "Sim",
+    "0": "Nao"
+  },
+  "atende_internacao_sus": {
+    "1": "Sim",
+    "0": "Nao"
+  },
+  "atende_internacao_particular": {
+    "1": "Sim",
+    "0": "Nao"
+  },
+  "servico_apoio_same_proprio": {
+    "1": "Sim",
+    "0": "Nao"
+  },
+  "servico_apoio_same_terceirizado": {
+    "1": "Sim",
+    "0": "Nao"
+  },
+  "servico_apoio_social_proprio": {
+    "1": "Sim",
+    "0": "Nao"
+  },
+  "servico_apoio_social_terceirizado": {
+    "1": "Sim",
+    "0": "Nao"
+  },
+  "servico_apoio_farmacia_proprio": {
+    "1": "Sim",
+    "0": "Nao"
+  },
+  "servico_apoio_farmacia_terceirizado": {
+    "1": "Sim",
+    "0": "Nao"
+  },
+  "tipo_unidade": {
+    "36": "Estabelecimento de Saude"
+  },
+  "nivel_complexidade": {
+    "1": "Atencao Basica",
+    "2": "Media Complexidade",
+    "3": "Alta Complexidade"
+  },
+  "documento_origem": {
+    "P": "APAC Principal",
+    "S": "APAC Secundaria",
+    "C": "BPA Consolidado",
+    "I": "BPA Individualizado",
+    "A": "RAAS Atencao Domiciliar",
+    "B": "RAAS Psicossocial"
+  },
+  "motivo_saida": {
+    "11": "Alta curado",
+    "12": "Alta melhorado",
+    "14": "Alta a pedido",
+    "15": "Alta com previsao de retorno",
+    "16": "Alta por evasao",
+    "21": "Transferencia para outro estabelecimento",
+    "41": "Obito com DO",
+    "42": "Obito sem DO",
+    "51": "Encerramento administrativo"
+  },
+  "carater_atendimento": {
+    "01": "Eletivo",
+    "02": "Urgencia",
+    "03": "Acidente no local de trabalho",
+    "04": "Acidente no trajeto para o trabalho",
+    "05": "Outros acidentes de transito",
+    "06": "Outras lesoes/envenenamentos"
+  },
+  "flag_compatibilidade_idade": {
+    "0": "Idade nao exigida",
+    "1": "Idade compativel",
+    "2": "Idade fora da faixa",
+    "3": "Idade inexistente"
+  },
+  "indicador_situacao_producao": {
+    "0": "Nao aprovado",
+    "5": "Aprovado total",
+    "6": "Aprovado parcial"
+  },
+  "natureza_juridica": {
+    "1000": "Administracao Publica",
+    "2000": "Entidades Empresariais",
+    "3000": "Entidades sem Fins Lucrativos",
+    "4000": "Pessoas Fisicas",
+    "5000": "Organizacoes Internacionais"
+  },
+  "sim_nao_flag": {
+    "1": "Sim",
+    "0": "Nao"
+  },
+  "encerramento": {
+    "1": "Sim",
+    "0": "Nao"
+  },
+  "permanencia": {
+    "1": "Sim",
+    "0": "Nao"
+  },
+  "alta": {
+    "1": "Sim",
+    "0": "Nao"
+  },
+  "transferencia": {
+    "1": "Sim",
+    "0": "Nao"
+  },
+  "diferenca_uf_residencia": {
+    "1": "Sim",
+    "0": "Nao"
+  },
+  "diferenca_municipio_residencia": {
+    "1": "Sim",
+    "0": "Nao"
+  },
+  "uf_residencia": {
+    "12": "AC",
+    "13": "AM",
+    "15": "PA",
+    "14": "RR",
+    "17": "TO",
+    "27": "AL",
+    "29": "BA",
+    "23": "CE",
+    "PE": "26",
+    "RN": "24",
+    "32": "ES",
+    "31": "MG",
+    "33": "RJ",
+    "35": "SP",
+    "41": "PR",
+    "42": "SC",
+    "43": "RS",
+    "53": "DF",
+    "52": "GO",
+    "51": "MT",
+    "50": "MS"
+  },
+  "uf_hospitalizacao": {
+    "12": "AC",
+    "13": "AM",
+    "15": "PA",
+    "14": "RR",
+    "17": "TO",
+    "27": "AL",
+    "29": "BA",
+    "23": "CE",
+    "PE": "26",
+    "RN": "24",
+    "32": "ES",
+    "31": "MG",
+    "33": "RJ",
+    "35": "SP",
+    "41": "PR",
+    "42": "SC",
+    "43": "RS",
+    "53": "DF",
+    "52": "GO",
+    "51": "MT",
+    "50": "MS"
+  },
+  "uf_provavel_infeccao": {
+    "12": "AC",
+    "13": "AM",
+    "15": "PA",
+    "14": "RR",
+    "17": "TO",
+    "27": "AL",
+    "29": "BA",
+    "23": "CE",
+    "PE": "26",
+    "RN": "24",
+    "32": "ES",
+    "31": "MG",
+    "33": "RJ",
+    "35": "SP",
+    "41": "PR",
+    "42": "SC",
+    "43": "RS",
+    "53": "DF",
+    "52": "GO",
+    "51": "MT",
+    "50": "MS"
+  },
+  "uf_notificacao": {
+    "12": "AC",
+    "13": "AM",
+    "15": "PA",
+    "14": "RR",
+    "17": "TO",
+    "27": "AL",
+    "29": "BA",
+    "23": "CE",
+    "PE": "26",
+    "RN": "24",
+    "32": "ES",
+    "31": "MG",
+    "33": "RJ",
+    "35": "SP",
+    "41": "PR",
+    "42": "SC",
+    "43": "RS",
+    "53": "DF",
+    "52": "GO",
+    "51": "MT",
+    "50": "MS"
+  },
+  "tipo_notificacao": {
+    "2": "Individual"
+  },
+  "gestante": {
+    "1": "1 Trimestre",
+    "2": "2 Trimestre",
+    "3": "3 Trimestre",
+    "4": "Idade gestacional ignorada",
+    "5": "Nao",
+    "6": "Nao se aplica",
+    "9": "Ignorado"
+  },
+  "classificacao_final": {
+    "5": "Descartado",
+    "10": "Dengue",
+    "11": "Dengue com sinais de alarme",
+    "12": "Dengue grave",
+    "13": "Chikungunya"
+  },
+  "criterio_confirmacao": {
+    "1": "Laboratorio",
+    "2": "Clinico-epidemiologico",
+    "3": "Em investigacao"
+  },
+  "evolucao_caso": {
+    "1": "Cura",
+    "2": "Obito pelo agravo",
+    "3": "Obito por outras causas",
+    "4": "Obito em investigacao",
+    "9": "Ignorado"
+  },
+  "hospitalizacao": {
+    "1": "Sim",
+    "2": "Nao",
+    "9": "Ignorado"
+  },
+  "caso_autoctone": {
+    "1": "Sim",
+    "2": "Nao",
+    "3": "Indeterminado"
+  },
+  "doenca_trabalho": {
+    "1": "Sim",
+    "2": "Nao",
+    "9": "Ignorado"
+  },
+  "apresentacao_clinica_chikungunya": {
+    "1": "Aguda",
+    "2": "Cronica"
+  },
+  "sorotipo": {
+    "1": "DEN-1",
+    "2": "DEN-2",
+    "3": "DEN-3",
+    "4": "DEN-4"
+  },
+  "sinal_febre": {
+    "1": "Sim",
+    "2": "Nao",
+    "9": "Ignorado"
+  },
+  "sinal_mialgia": {
+    "1": "Sim",
+    "2": "Nao",
+    "9": "Ignorado"
+  },
+  "sinal_cefaleia": {
+    "1": "Sim",
+    "2": "Nao",
+    "9": "Ignorado"
+  },
+  "sinal_exantema": {
+    "1": "Sim",
+    "2": "Nao",
+    "9": "Ignorado"
+  },
+  "sinal_vomito": {
+    "1": "Sim",
+    "2": "Nao",
+    "9": "Ignorado"
+  },
+  "sinal_nausea": {
+    "1": "Sim",
+    "2": "Nao",
+    "9": "Ignorado"
+  },
+  "sinal_dor_costas": {
+    "1": "Sim",
+    "2": "Nao",
+    "9": "Ignorado"
+  },
+  "sinal_conjuntivite": {
+    "1": "Sim",
+    "2": "Nao",
+    "9": "Ignorado"
+  },
+  "sinal_artrite": {
+    "1": "Sim",
+    "2": "Nao",
+    "9": "Ignorado"
+  },
+  "sinal_artralgia": {
+    "1": "Sim",
+    "2": "Nao",
+    "9": "Ignorado"
+  },
+  "sinal_petequias": {
+    "1": "Sim",
+    "2": "Nao",
+    "9": "Ignorado"
+  },
+  "sinal_leucopenia": {
+    "1": "Sim",
+    "2": "Nao",
+    "9": "Ignorado"
+  },
+  "sinal_prova_laco_positiva": {
+    "1": "Sim",
+    "2": "Nao",
+    "9": "Ignorado"
+  },
+  "sinal_dor_retro_orbital": {
+    "1": "Sim",
+    "2": "Nao",
+    "9": "Ignorado"
+  },
+  "comorbidade_diabetes": {
+    "1": "Sim",
+    "2": "Nao",
+    "9": "Ignorado"
+  },
+  "comorbidade_doenca_hematologica": {
+    "1": "Sim",
+    "2": "Nao",
+    "9": "Ignorado"
+  },
+  "comorbidade_hepatopatia": {
+    "1": "Sim",
+    "2": "Nao",
+    "9": "Ignorado"
+  },
+  "comorbidade_doenca_renal": {
+    "1": "Sim",
+    "2": "Nao",
+    "9": "Ignorado"
+  },
+  "comorbidade_hipertensao_arterial": {
+    "1": "Sim",
+    "2": "Nao",
+    "9": "Ignorado"
+  },
+  "comorbidade_doenca_acido_peptica": {
+    "1": "Sim",
+    "2": "Nao",
+    "9": "Ignorado"
+  },
+  "comorbidade_doenca_autoimune": {
+    "1": "Sim",
+    "2": "Nao",
+    "9": "Ignorado"
+  },
+  "alarme_hipotensao": {
+    "1": "Sim",
+    "2": "Nao",
+    "9": "Ignorado"
+  },
+  "alarme_queda_plaquetas": {
+    "1": "Sim",
+    "2": "Nao",
+    "9": "Ignorado"
+  },
+  "alarme_vomito_persistente": {
+    "1": "Sim",
+    "2": "Nao",
+    "9": "Ignorado"
+  },
+  "alarme_sangramento_mucosa": {
+    "1": "Sim",
+    "2": "Nao",
+    "9": "Ignorado"
+  },
+  "alarme_aumento_hematocrito": {
+    "1": "Sim",
+    "2": "Nao",
+    "9": "Ignorado"
+  },
+  "alarme_dor_abdominal": {
+    "1": "Sim",
+    "2": "Nao",
+    "9": "Ignorado"
+  },
+  "alarme_letargia_irritabilidade": {
+    "1": "Sim",
+    "2": "Nao",
+    "9": "Ignorado"
+  },
+  "alarme_hepatomegalia": {
+    "1": "Sim",
+    "2": "Nao",
+    "9": "Ignorado"
+  },
+  "alarme_acumulo_liquidos": {
+    "1": "Sim",
+    "2": "Nao",
+    "9": "Ignorado"
+  },
+  "grave_pulso_debil": {
+    "1": "Sim",
+    "2": "Nao",
+    "9": "Ignorado"
+  },
+  "grave_pa_convergente": {
+    "1": "Sim",
+    "2": "Nao",
+    "9": "Ignorado"
+  },
+  "grave_enchimento_capilar_lento": {
+    "1": "Sim",
+    "2": "Nao",
+    "9": "Ignorado"
+  },
+  "grave_insuficiencia_respiratoria": {
+    "1": "Sim",
+    "2": "Nao",
+    "9": "Ignorado"
+  },
+  "grave_taquicardia": {
+    "1": "Sim",
+    "2": "Nao",
+    "9": "Ignorado"
+  },
+  "grave_extremidades_frias": {
+    "1": "Sim",
+    "2": "Nao",
+    "9": "Ignorado"
+  },
+  "grave_hipotensao_arterial": {
+    "1": "Sim",
+    "2": "Nao",
+    "9": "Ignorado"
+  },
+  "grave_hematemese": {
+    "1": "Sim",
+    "2": "Nao",
+    "9": "Ignorado"
+  },
+  "grave_melena": {
+    "1": "Sim",
+    "2": "Nao",
+    "9": "Ignorado"
+  },
+  "grave_metrorragia_volumosa": {
+    "1": "Sim",
+    "2": "Nao",
+    "9": "Ignorado"
+  },
+  "grave_sangramento_snc": {
+    "1": "Sim",
+    "2": "Nao",
+    "9": "Ignorado"
+  },
+  "grave_ast_alt_elevado": {
+    "1": "Sim",
+    "2": "Nao",
+    "9": "Ignorado"
+  },
+  "grave_miocardite": {
+    "1": "Sim",
+    "2": "Nao",
+    "9": "Ignorado"
+  },
+  "grave_alteracao_consciencia": {
+    "1": "Sim",
+    "2": "Nao",
+    "9": "Ignorado"
+  },
+  "grave_falencia_orgaos": {
+    "1": "Sim",
+    "2": "Nao",
+    "9": "Ignorado"
+  },
+  "manifestacao_hemorragica": {
+    "1": "Sim",
+    "2": "Nao",
+    "9": "Ignorado"
+  },
+  "sinal_epistaxe": {
+    "1": "Sim",
+    "2": "Nao",
+    "9": "Ignorado"
+  },
+  "sinal_gengivorragia": {
+    "1": "Sim",
+    "2": "Nao",
+    "9": "Ignorado"
+  },
+  "sinal_metrorragia": {
+    "1": "Sim",
+    "2": "Nao",
+    "9": "Ignorado"
+  },
+  "sinal_petequias_espontaneas": {
+    "1": "Sim",
+    "2": "Nao",
+    "9": "Ignorado"
+  },
+  "sinal_hematuria": {
+    "1": "Sim",
+    "2": "Nao",
+    "9": "Ignorado"
+  },
+  "sinal_sangramento_trato_digestivo": {
+    "1": "Sim",
+    "2": "Nao",
+    "9": "Ignorado"
+  },
+  "extravasamento_plasmatico": {
+    "1": "Sim",
+    "2": "Nao",
+    "9": "Ignorado"
+  },
+  "evidencia_extravasamento": {
+    "1": "Sim",
+    "2": "Nao",
+    "9": "Ignorado"
+  },
+  "plaquetas_menor_100mil": {
+    "1": "Sim",
+    "2": "Nao",
+    "9": "Ignorado"
+  },
+  "resultado_chik_s1": {
+    "1": "Positivo",
+    "2": "Negativo",
+    "3": "Inconclusivo",
+    "4": "Nao realizado"
+  },
+  "resultado_chik_s2": {
+    "1": "Positivo",
+    "2": "Negativo",
+    "3": "Inconclusivo",
+    "4": "Nao realizado"
+  },
+  "resultado_prnt": {
+    "1": "Positivo",
+    "2": "Negativo",
+    "3": "Inconclusivo",
+    "4": "Nao realizado"
+  },
+  "resultado_sorologia_dengue": {
+    "1": "Positivo",
+    "2": "Negativo",
+    "3": "Inconclusivo",
+    "4": "Nao realizado"
+  },
+  "resultado_ns1": {
+    "1": "Positivo",
+    "2": "Negativo",
+    "3": "Inconclusivo",
+    "4": "Nao realizado"
+  },
+  "resultado_isolamento_viral": {
+    "1": "Positivo",
+    "2": "Negativo",
+    "3": "Inconclusivo",
+    "4": "Nao realizado"
+  },
+  "resultado_pcr": {
+    "1": "Positivo",
+    "2": "Negativo",
+    "3": "Inconclusivo",
+    "4": "Nao realizado"
+  },
+  "resultado_histopatologia": {
+    "1": "Positivo",
+    "2": "Negativo",
+    "3": "Inconclusivo",
+    "4": "Nao realizado"
+  },
+  "resultado_imunohistoquimica": {
+    "1": "Positivo",
+    "2": "Negativo",
+    "3": "Inconclusivo",
+    "4": "Nao realizado"
+  },
+  "resultado_prova_laco": {
+    "1": "Positivo",
+    "2": "Negativo",
+    "3": "Inconclusivo",
+    "4": "Nao realizado"
+  },
+  "escolaridade_mae": {
+    "1": "Nenhuma",
+    "2": "1 a 3 anos",
+    "3": "4 a 7 anos",
+    "4": "8 a 11 anos",
+    "5": "12 anos e mais",
+    "9": "Ignorado"
+  },
+  "semanas_gestacao": {
+    "1": "Menos de 22 semanas",
+    "2": "22 a 27 semanas",
+    "3": "28 a 31 semanas",
+    "4": "32 a 36 semanas",
+    "5": "37 a 41 semanas",
+    "6": "42 semanas e mais",
+    "9": "Ignorado"
+  },
+  "numero_consultas_pre_natal": {
+    "1": "Nenhuma",
+    "2": "1 a 3",
+    "3": "4 a 6",
+    "4": "7 e mais",
+    "9": "Ignorado"
+  }
+}

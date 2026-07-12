@@ -1,0 +1,159 @@
+{
+  "schema_version": 1,
+  "description": "Calendar labels and variable names for sus_data_create_variables.",
+  "month_names": {
+    "en": [
+      "January",
+      "February",
+      "March",
+      "April",
+      "May",
+      "June",
+      "July",
+      "August",
+      "September",
+      "October",
+      "November",
+      "December"
+    ],
+    "pt": [
+      "Janeiro",
+      "Fevereiro",
+      "Marco",
+      "Abril",
+      "Maio",
+      "Junho",
+      "Julho",
+      "Agosto",
+      "Setembro",
+      "Outubro",
+      "Novembro",
+      "Dezembro"
+    ],
+    "es": [
+      "Enero",
+      "Febrero",
+      "Marzo",
+      "Abril",
+      "Mayo",
+      "Junio",
+      "Julio",
+      "Agosto",
+      "Septiembre",
+      "Octubre",
+      "Noviembre",
+      "Diciembre"
+    ]
+  },
+  "month_names_abbr": {
+    "en": [
+      "Jan",
+      "Feb",
+      "Mar",
+      "Apr",
+      "May",
+      "Jun",
+      "Jul",
+      "Aug",
+      "Sep",
+      "Oct",
+      "Nov",
+      "Dec"
+    ],
+    "pt": [
+      "Jan",
+      "Fev",
+      "Mar",
+      "Abr",
+      "Mai",
+      "Jun",
+      "Jul",
+      "Ago",
+      "Set",
+      "Out",
+      "Nov",
+      "Dez"
+    ],
+    "es": [
+      "Ene",
+      "Feb",
+      "Mar",
+      "Abr",
+      "May",
+      "Jun",
+      "Jul",
+      "Ago",
+      "Sep",
+      "Oct",
+      "Nov",
+      "Dic"
+    ]
+  },
+  "day_names": {
+    "en": [
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday",
+      "Saturday",
+      "Sunday"
+    ],
+    "pt": [
+      "Segunda-feira",
+      "Terca-feira",
+      "Quarta-feira",
+      "Quinta-feira",
+      "Sexta-feira",
+      "Sabado",
+      "Domingo"
+    ],
+    "es": [
+      "Lunes",
+      "Martes",
+      "Miercoles",
+      "Jueves",
+      "Viernes",
+      "Sabado",
+      "Domingo"
+    ]
+  },
+  "variable_names": {
+    "en": {
+      "year": "year",
+      "month": "month",
+      "quarter": "quarter",
+      "day_of_year": "day_of_year",
+      "day_of_week": "day_of_week",
+      "is_weekend": "is_weekend",
+      "semester": "semester",
+      "epi_week": "epidemiological_week",
+      "month_name": "month_name",
+      "dow_name": "day_of_week_name"
+    },
+    "pt": {
+      "year": "ano",
+      "month": "mes",
+      "quarter": "trimestre",
+      "day_of_year": "dia_ano",
+      "day_of_week": "dia_semana",
+      "is_weekend": "fim_semana",
+      "semester": "semestre",
+      "epi_week": "semana_epidemiologica",
+      "month_name": "nome_mes",
+      "dow_name": "nome_dia_semana"
+    },
+    "es": {
+      "year": "anio",
+      "month": "mes",
+      "quarter": "trimestre",
+      "day_of_year": "dia_anio",
+      "day_of_week": "dia_semana",
+      "is_weekend": "fin_semana",
+      "semester": "semestre",
+      "epi_week": "semana_epidemiologica",
+      "month_name": "nombre_mes",
+      "dow_name": "nombre_dia_semana"
+    }
+  }
+}

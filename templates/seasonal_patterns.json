@@ -1,19 +1,214 @@
 {
-  "schema_version": 1,
-  "description": "Month to season mapping by hemisphere. Keys 'south' and 'north'.",
+  "schema_version": 2,
+  "description": "Season definitions by hemisphere and Brazilian climate regions.",
   "default": "south",
-  "patterns": {
-    "south": {
-      "summer": [12, 1, 2],
-      "autumn": [3, 4, 5],
-      "winter": [6, 7, 8],
-      "spring": [9, 10, 11]
+  "astronomical": {
+    "patterns": {
+      "south": {
+        "summer": [
+          12,
+          1,
+          2
+        ],
+        "autumn": [
+          3,
+          4,
+          5
+        ],
+        "winter": [
+          6,
+          7,
+          8
+        ],
+        "spring": [
+          9,
+          10,
+          11
+        ]
+      },
+      "north": {
+        "winter": [
+          12,
+          1,
+          2
+        ],
+        "spring": [
+          3,
+          4,
+          5
+        ],
+        "summer": [
+          6,
+          7,
+          8
+        ],
+        "autumn": [
+          9,
+          10,
+          11
+        ]
+      }
     },
-    "north": {
-      "winter": [12, 1, 2],
-      "spring": [3, 4, 5],
-      "summer": [6, 7, 8],
-      "autumn": [9, 10, 11]
+    "labels": {
+      "south": {
+        "en": [
+          "Summer",
+          "Autumn",
+          "Winter",
+          "Spring"
+        ],
+        "pt": [
+          "Verao",
+          "Outono",
+          "Inverno",
+          "Primavera"
+        ],
+        "es": [
+          "Verano",
+          "Otono",
+          "Invierno",
+          "Primavera"
+        ]
+      },
+      "north": {
+        "en": [
+          "Winter",
+          "Spring",
+          "Summer",
+          "Autumn"
+        ],
+        "pt": [
+          "Inverno",
+          "Primavera",
+          "Verao",
+          "Outono"
+        ],
+        "es": [
+          "Invierno",
+          "Primavera",
+          "Verano",
+          "Otono"
+        ]
+      }
+    },
+    "variable_names": {
+      "en": "astronomical_season",
+      "pt": "estacao_astronomica",
+      "es": "estacion_astronomica"
+    }
+  },
+  "climatic": {
+    "description": "Brazilian climatic seasons by macro-region",
+    "regions": {
+      "norte": {
+        "rainy_months": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "dry_months": [
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ],
+        "transition_months": [
+          12
+        ]
+      },
+      "nordeste": {
+        "rainy_months": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "dry_months": [
+          8,
+          9,
+          10,
+          11,
+          12,
+          1
+        ]
+      },
+      "centro-oeste": {
+        "rainy_months": [
+          10,
+          11,
+          12,
+          1,
+          2,
+          3
+        ],
+        "dry_months": [
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ]
+      },
+      "sudeste": {
+        "rainy_months": [
+          10,
+          11,
+          12,
+          1,
+          2,
+          3
+        ],
+        "dry_months": [
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ]
+      },
+      "sul": {
+        "note": "No defined dry season"
+      }
+    },
+    "labels": {
+      "en": {
+        "rainy": "Rainy",
+        "transition": "Transition",
+        "dry": "Dry",
+        "no_dry": "No defined dry season"
+      },
+      "pt": {
+        "rainy": "Chuvosa",
+        "transition": "Transicao",
+        "dry": "Seca",
+        "no_dry": "Sem estacao seca definida"
+      },
+      "es": {
+        "rainy": "Lluviosa",
+        "transition": "Transicion",
+        "dry": "Seca",
+        "no_dry": "Sin estacion seca definida"
+      }
+    },
+    "variable_names": {
+      "climatic_season": {
+        "en": "climatic_season",
+        "pt": "estacao_climatica",
+        "es": "estacion_climatica"
+      },
+      "dry_rainy_season": {
+        "en": "dry_rainy_season",
+        "pt": "estacao_seca_chuvosa",
+        "es": "estacion_seca_lluviosa"
+      }
     }
   }
 }

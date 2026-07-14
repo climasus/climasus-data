@@ -1,75 +1,235 @@
 {
   "_meta": {
-    "description": "Core disease groups for climasus4r - Main epidemiological categories",
-    "version": "3.0",
-    "last_updated": "2026-04-03",
-    "note": "This file contains the most commonly used disease groups. Users can add custom groups in inst/disease_groups/custom/"
+    "description": "Core disease groups for climasus4py - Based on climasus4r classification",
+    "version": "4.0",
+    "last_updated": "2026-06-15",
+    "note": "Groups aligned with climasus4r sus_data_cid_select() — 58 groups from R + extras"
   },
-  
+
+  "diarrheal": {
+    "codes": ["A00-A09"],
+    "label": {
+      "pt": "Doenças Diarreicas",
+      "en": "Diarrheal Diseases",
+      "es": "Enfermedades Diarreicas"
+    },
+    "description": {
+      "pt": "Doenças infecciosas intestinais incluindo cólera, febre tifoide, shigelose",
+      "en": "Intestinal infectious diseases including cholera, typhoid, shigellosis",
+      "es": "Enfermedades infecciosas intestinales incluyendo cólera, fiebre tifoidea, shigelosis"
+    },
+    "climate_sensitive": true,
+    "climate_factors": ["temperature", "precipitation", "flooding"]
+  },
+
+  "tuberculosis": {
+    "codes": ["A15-A19"],
+    "label": {
+      "pt": "Tuberculose",
+      "en": "Tuberculosis",
+      "es": "Tuberculosis"
+    },
+    "description": {
+      "pt": "Tuberculose respiratória e outras formas",
+      "en": "Respiratory and other forms of tuberculosis",
+      "es": "Tuberculosis respiratoria y otras formas"
+    },
+    "climate_sensitive": true,
+    "climate_factors": ["temperature", "humidity", "seasonality"]
+  },
+
   "dengue": {
-    "codes": ["A90", "A91"],
+    "codes": ["A90-A91"],
     "label": {
       "pt": "Dengue",
       "en": "Dengue",
       "es": "Dengue"
     },
     "description": {
-      "pt": "Dengue clássica e dengue hemorrágica",
-      "en": "Classical dengue and dengue hemorrhagic fever",
-      "es": "Dengue clásico y dengue hemorrágico"
+      "pt": "Dengue clássica e hemorrágica",
+      "en": "Classic and hemorrhagic dengue",
+      "es": "Dengue clásico y hemorrágico"
     },
     "climate_sensitive": true,
     "climate_factors": ["temperature", "precipitation", "humidity"]
   },
-  
-  "zika_chikungunya": {
-    "codes": ["A92.8", "A92.0"],
+
+  "chikungunya": {
+    "codes": ["A92.0"],
     "label": {
-      "pt": "Zika e Chikungunya",
-      "en": "Zika and Chikungunya",
-      "es": "Zika y Chikungunya"
+      "pt": "Chikungunya",
+      "en": "Chikungunya",
+      "es": "Chikungunya"
     },
     "description": {
-      "pt": "Doenças virais transmitidas por mosquitos: Zika e Chikungunya",
-      "en": "Mosquito-borne viral diseases: Zika and Chikungunya",
-      "es": "Enfermedades virales transmitidas por mosquitos: Zika y Chikungunya"
+      "pt": "Febre de chikungunya",
+      "en": "Chikungunya fever",
+      "es": "Fiebre de chikungunya"
+    },
+    "climate_sensitive": true,
+    "climate_factors": ["temperature", "precipitation"]
+  },
+
+  "zika": {
+    "codes": ["A92.5", "P35.4", "Q02"],
+    "label": {
+      "pt": "Zika",
+      "en": "Zika",
+      "es": "Zika"
+    },
+    "description": {
+      "pt": "Vírus Zika e microcefalia associada",
+      "en": "Zika virus and associated microcephaly",
+      "es": "Virus Zika y microcefalia asociada"
+    },
+    "climate_sensitive": true,
+    "climate_factors": ["temperature", "precipitation"]
+  },
+
+  "malaria": {
+    "codes": ["B50-B54"],
+    "label": {
+      "pt": "Malária",
+      "en": "Malaria",
+      "es": "Malaria"
+    },
+    "description": {
+      "pt": "Malária por Plasmodium",
+      "en": "Malaria by Plasmodium",
+      "es": "Malaria por Plasmodium"
     },
     "climate_sensitive": true,
     "climate_factors": ["temperature", "precipitation", "humidity"]
   },
-  
-  "covid19": {
-    "codes": ["U07.1", "U07.2"],
+
+  "leishmaniasis": {
+    "codes": ["B55"],
     "label": {
-      "pt": "COVID-19",
-      "en": "COVID-19",
-      "es": "COVID-19"
+      "pt": "Leishmaniose",
+      "en": "Leishmaniasis",
+      "es": "Leishmaniasis"
     },
     "description": {
-      "pt": "COVID-19 confirmado e suspeito",
-      "en": "Confirmed and suspected COVID-19",
-      "es": "COVID-19 confirmado y sospechoso"
+      "pt": "Leishmaniose visceral e cutânea",
+      "en": "Visceral and cutaneous leishmaniasis",
+      "es": "Leishmaniasis visceral y cutánea"
+    },
+    "climate_sensitive": true,
+    "climate_factors": ["temperature", "humidity", "deforestation"]
+  },
+
+  "chagas": {
+    "codes": ["B57"],
+    "label": {
+      "pt": "Doença de Chagas",
+      "en": "Chagas Disease",
+      "es": "Enfermedad de Chagas"
+    },
+    "description": {
+      "pt": "Doença de Chagas (tripanossomíase americana)",
+      "en": "Chagas disease (American trypanosomiasis)",
+      "es": "Enfermedad de Chagas (tripanosomiasis americana)"
+    },
+    "climate_sensitive": true,
+    "climate_factors": ["temperature", "housing_conditions"]
+  },
+
+  "zoonotic_bacterial": {
+    "codes": ["A20-A28"],
+    "label": {
+      "pt": "Doenças Bacterianas Zoonóticas",
+      "en": "Zoonotic Bacterial Diseases",
+      "es": "Enfermedades Bacterianas Zoonóticas"
+    },
+    "description": {
+      "pt": "Peste, tularemia, antraz, leptospirose",
+      "en": "Plague, tularemia, anthrax, leptospirosis",
+      "es": "Peste, tularemia, ántrax, leptospirosis"
+    },
+    "climate_sensitive": true,
+    "climate_factors": ["precipitation", "flooding", "temperature"]
+  },
+
+  "leptospirosis": {
+    "codes": ["A27"],
+    "label": {
+      "pt": "Leptospirose",
+      "en": "Leptospirosis",
+      "es": "Leptospirosis"
+    },
+    "description": {
+      "pt": "Leptospirose (doença de Weil)",
+      "en": "Leptospirosis (Weil's disease)",
+      "es": "Leptospirosis (enfermedad de Weil)"
+    },
+    "climate_sensitive": true,
+    "climate_factors": ["precipitation", "flooding"]
+  },
+
+  "hansen": {
+    "codes": ["A30"],
+    "label": {
+      "pt": "Hanseníase",
+      "en": "Leprosy (Hansen's Disease)",
+      "es": "Lepra (Enfermedad de Hansen)"
+    },
+    "description": {
+      "pt": "Hanseníase (lepra)",
+      "en": "Leprosy (Hansen's disease)",
+      "es": "Lepra (enfermedad de Hansen)"
     },
     "climate_sensitive": false,
     "climate_factors": []
   },
-  
-  "tuberculosis_respiratory": {
-    "codes": ["A15", "A16"],
+
+  "yellow_fever": {
+    "codes": ["A95"],
     "label": {
-      "pt": "Tuberculose Respiratória",
-      "en": "Respiratory Tuberculosis",
-      "es": "Tuberculosis Respiratoria"
+      "pt": "Febre Amarela",
+      "en": "Yellow Fever",
+      "es": "Fiebre Amarilla"
     },
     "description": {
-      "pt": "Tuberculose respiratória confirmada bacteriologicamente e histologicamente",
-      "en": "Respiratory tuberculosis confirmed bacteriologically and histologically",
-      "es": "Tuberculosis respiratoria confirmada bacteriológicamente e histológicamente"
+      "pt": "Febre amarela silvestre e urbana",
+      "en": "Sylvatic and urban yellow fever",
+      "es": "Fiebre amarilla selvática y urbana"
     },
     "climate_sensitive": true,
-    "climate_factors": ["humidity", "ventilation"]
+    "climate_factors": ["temperature", "precipitation", "deforestation"]
   },
-  
+
+  "schistosomiasis": {
+    "codes": ["B65"],
+    "label": {
+      "pt": "Esquistossomose",
+      "en": "Schistosomiasis",
+      "es": "Esquistosomiasis"
+    },
+    "description": {
+      "pt": "Esquistossomose (barriga d'água)",
+      "en": "Schistosomiasis (bilharzia)",
+      "es": "Esquistosomiasis (bilharzia)"
+    },
+    "climate_sensitive": true,
+    "climate_factors": ["water_availability", "temperature"]
+  },
+
+  "helminthiasis": {
+    "codes": ["B65-B83"],
+    "label": {
+      "pt": "Helmintíases",
+      "en": "Helminthiasis",
+      "es": "Helmintiasis"
+    },
+    "description": {
+      "pt": "Infecções por helmintos (vermes)",
+      "en": "Helminth infections (worms)",
+      "es": "Infecciones por helmintos (gusanos)"
+    },
+    "climate_sensitive": true,
+    "climate_factors": ["temperature", "humidity", "sanitation"]
+  },
+
   "cardiovascular": {
     "codes": ["I00-I99"],
     "label": {
@@ -78,14 +238,110 @@
       "es": "Enfermedades Cardiovasculares"
     },
     "description": {
-      "pt": "Todas as doenças do aparelho circulatório",
-      "en": "All diseases of the circulatory system",
-      "es": "Todas las enfermedades del sistema circulatorio"
+      "pt": "Doenças do coração e sistema circulatório",
+      "en": "Heart and circulatory system diseases",
+      "es": "Enfermedades del corazón y sistema circulatorio"
     },
     "climate_sensitive": true,
-    "climate_factors": ["temperature", "pressure"]
+    "climate_factors": ["temperature", "heatwaves", "cold_spells"]
   },
-  
+
+  "ischemic_heart": {
+    "codes": ["I20-I25"],
+    "label": {
+      "pt": "Doença Isquêmica do Coração",
+      "en": "Ischemic Heart Disease",
+      "es": "Enfermedad Isquémica del Corazón"
+    },
+    "description": {
+      "pt": "Doença arterial coronariana, infarto do miocárdio",
+      "en": "Coronary artery disease, myocardial infarction",
+      "es": "Enfermedad arterial coronaria, infarto de miocardio"
+    },
+    "climate_sensitive": true,
+    "climate_factors": ["temperature", "heatwaves", "cold_spells", "air_pollution"]
+  },
+
+  "cerebrovascular": {
+    "codes": ["I60-I69"],
+    "label": {
+      "pt": "Doenças Cerebrovasculares",
+      "en": "Cerebrovascular Diseases",
+      "es": "Enfermedades Cerebrovasculares"
+    },
+    "description": {
+      "pt": "AVC e ataque isquêmico transitório",
+      "en": "Stroke and transient ischemic attack",
+      "es": "Accidente cerebrovascular y ataque isquémico transitorio"
+    },
+    "climate_sensitive": true,
+    "climate_factors": ["temperature", "air_pollution"]
+  },
+
+  "hypertension": {
+    "codes": ["I10-I15"],
+    "label": {
+      "pt": "Hipertensão Arterial",
+      "en": "Hypertension",
+      "es": "Hipertensión Arterial"
+    },
+    "description": {
+      "pt": "Pressão arterial elevada",
+      "en": "High blood pressure",
+      "es": "Presión arterial elevada"
+    },
+    "climate_sensitive": true,
+    "climate_factors": ["temperature", "seasonality"]
+  },
+
+  "heart_failure": {
+    "codes": ["I50"],
+    "label": {
+      "pt": "Insuficiência Cardíaca",
+      "en": "Heart Failure",
+      "es": "Insuficiencia Cardíaca"
+    },
+    "description": {
+      "pt": "Insuficiência cardíaca crônica e aguda",
+      "en": "Chronic and acute heart failure",
+      "es": "Insuficiencia cardíaca crónica y aguda"
+    },
+    "climate_sensitive": true,
+    "climate_factors": ["temperature", "humidity"]
+  },
+
+  "arrhythmias": {
+    "codes": ["I47-I49"],
+    "label": {
+      "pt": "Arritmias Cardíacas",
+      "en": "Cardiac Arrhythmias",
+      "es": "Arritmias Cardíacas"
+    },
+    "description": {
+      "pt": "Ritmos cardíacos anormais",
+      "en": "Abnormal heart rhythms",
+      "es": "Ritmos cardíacos anormales"
+    },
+    "climate_sensitive": true,
+    "climate_factors": ["temperature", "heatwaves"]
+  },
+
+  "stroke": {
+    "codes": ["I63-I64"],
+    "label": {
+      "pt": "AVC",
+      "en": "Stroke",
+      "es": "Accidente Cerebrovascular"
+    },
+    "description": {
+      "pt": "AVC isquêmico e hemorrágico",
+      "en": "Ischemic and hemorrhagic stroke",
+      "es": "ACV isquémico y hemorrágico"
+    },
+    "climate_sensitive": true,
+    "climate_factors": ["temperature", "air_pollution"]
+  },
+
   "respiratory": {
     "codes": ["J00-J99"],
     "label": {
@@ -94,14 +350,46 @@
       "es": "Enfermedades Respiratorias"
     },
     "description": {
-      "pt": "Todas as doenças do aparelho respiratório",
-      "en": "All diseases of the respiratory system",
-      "es": "Todas las enfermedades del sistema respiratorio"
+      "pt": "Doenças do sistema respiratório",
+      "en": "Diseases of the respiratory system",
+      "es": "Enfermedades del sistema respiratorio"
     },
     "climate_sensitive": true,
-    "climate_factors": ["temperature", "humidity", "air_quality"]
+    "climate_factors": ["temperature", "air_pollution", "humidity", "seasonality"]
   },
-  
+
+  "upper_respiratory": {
+    "codes": ["J00-J06"],
+    "label": {
+      "pt": "Infecções Respiratórias Altas",
+      "en": "Upper Respiratory Infections",
+      "es": "Infecciones Respiratorias Altas"
+    },
+    "description": {
+      "pt": "Resfriado, gripe, bronquite aguda",
+      "en": "Common cold, flu, acute bronchitis",
+      "es": "Resfriado común, gripe, bronquitis aguda"
+    },
+    "climate_sensitive": true,
+    "climate_factors": ["temperature", "humidity", "seasonality"]
+  },
+
+  "influenza_pneumonia": {
+    "codes": ["J09-J18"],
+    "label": {
+      "pt": "Influenza e Pneumonia",
+      "en": "Influenza and Pneumonia",
+      "es": "Influenza y Neumonía"
+    },
+    "description": {
+      "pt": "Gripe e pneumonia",
+      "en": "Flu and pneumonia",
+      "es": "Gripe y neumonía"
+    },
+    "climate_sensitive": true,
+    "climate_factors": ["temperature", "humidity", "seasonality"]
+  },
+
   "pneumonia": {
     "codes": ["J12-J18"],
     "label": {
@@ -110,14 +398,14 @@
       "es": "Neumonía"
     },
     "description": {
-      "pt": "Pneumonias de diversas etiologias",
-      "en": "Pneumonia of various etiologies",
-      "es": "Neumonías de diversas etiologías"
+      "pt": "Pneumonia viral, bacteriana e não especificada",
+      "en": "Viral, bacterial, and unspecified pneumonia",
+      "es": "Neumonía viral, bacteriana y no especificada"
     },
     "climate_sensitive": true,
-    "climate_factors": ["temperature", "humidity"]
+    "climate_factors": ["temperature", "humidity", "air_pollution"]
   },
-  
+
   "asthma": {
     "codes": ["J45", "J46"],
     "label": {
@@ -131,138 +419,90 @@
       "es": "Asma y estado asmático"
     },
     "climate_sensitive": true,
-    "climate_factors": ["temperature", "humidity", "air_quality", "allergens"]
+    "climate_factors": ["air_pollution", "temperature", "humidity", "allergens"]
   },
-  
-  "infectious_diseases": {
-    "codes": ["A00-B99"],
+
+  "copd": {
+    "codes": ["J40-J44"],
     "label": {
-      "pt": "Doenças Infecciosas e Parasitárias",
-      "en": "Infectious and Parasitic Diseases",
-      "es": "Enfermedades Infecciosas y Parasitarias"
+      "pt": "DPOC",
+      "en": "COPD",
+      "es": "EPOC"
     },
     "description": {
-      "pt": "Todas as doenças infecciosas e parasitárias",
-      "en": "All infectious and parasitic diseases",
-      "es": "Todas las enfermedades infecciosas y parasitarias"
+      "pt": "Doença pulmonar obstrutiva crônica",
+      "en": "Chronic obstructive pulmonary disease",
+      "es": "Enfermedad pulmonar obstructiva crónica"
     },
     "climate_sensitive": true,
-    "climate_factors": ["temperature", "precipitation", "humidity"]
+    "climate_factors": ["air_pollution", "temperature"]
   },
-  
-  "diarrheal_diseases": {
-    "codes": ["A00-A09"],
+
+  "digestive": {
+    "codes": ["K00-K93"],
     "label": {
-      "pt": "Doenças Diarreicas",
-      "en": "Diarrheal Diseases",
-      "es": "Enfermedades Diarreicas"
+      "pt": "Doenças Digestivas",
+      "en": "Digestive Diseases",
+      "es": "Enfermedades Digestivas"
     },
     "description": {
-      "pt": "Doenças infecciosas intestinais",
-      "en": "Intestinal infectious diseases",
-      "es": "Enfermedades infecciosas intestinales"
-    },
-    "climate_sensitive": true,
-    "climate_factors": ["temperature", "precipitation", "sanitation"]
-  },
-  
-  "malaria": {
-    "codes": ["B50-B54"],
-    "label": {
-      "pt": "Malária",
-      "en": "Malaria",
-      "es": "Malaria"
-    },
-    "description": {
-      "pt": "Malária (paludismo)",
-      "en": "Malaria",
-      "es": "Malaria (paludismo)"
-    },
-    "climate_sensitive": true,
-    "climate_factors": ["temperature", "precipitation", "humidity"]
-  },
-  
-  "neoplasms": {
-    "codes": ["C00-D48"],
-    "label": {
-      "pt": "Neoplasias",
-      "en": "Neoplasms",
-      "es": "Neoplasias"
-    },
-    "description": {
-      "pt": "Todas as neoplasias (tumores)",
-      "en": "All neoplasms (tumors)",
-      "es": "Todas las neoplasias (tumores)"
+      "pt": "Doenças do aparelho digestivo",
+      "en": "Diseases of the digestive system",
+      "es": "Enfermedades del sistema digestivo"
     },
     "climate_sensitive": false,
     "climate_factors": []
   },
-  
-  "external_causes": {
-    "codes": ["V01-Y98"],
+
+  "skin_infections": {
+    "codes": ["L00-L08"],
     "label": {
-      "pt": "Causas Externas",
-      "en": "External Causes",
-      "es": "Causas Externas"
+      "pt": "Infecções de Pele",
+      "en": "Skin Infections",
+      "es": "Infecciones de Piel"
     },
     "description": {
-      "pt": "Causas externas de morbidade e mortalidade",
-      "en": "External causes of morbidity and mortality",
-      "es": "Causas externas de morbilidad y mortalidad"
-    },
-    "climate_sensitive": false,
-    "climate_factors": []
-  },
-  
-  "violence": {
-    "codes": ["X85-Y09", "Y35-Y36"],
-    "label": {
-      "pt": "Violência",
-      "en": "Violence",
-      "es": "Violencia"
-    },
-    "description": {
-      "pt": "Agressões e intervenções legais",
-      "en": "Assaults and legal interventions",
-      "es": "Agresiones e intervenciones legales"
-    },
-    "climate_sensitive": false,
-    "climate_factors": []
-  },
-  
-  "traffic_accidents": {
-    "codes": ["V01-V89"],
-    "label": {
-      "pt": "Acidentes de Trânsito",
-      "en": "Traffic Accidents",
-      "es": "Accidentes de Tránsito"
-    },
-    "description": {
-      "pt": "Acidentes de transporte",
-      "en": "Transport accidents",
-      "es": "Accidentes de transporte"
+      "pt": "Infecções bacterianas e virais da pele",
+      "en": "Bacterial and viral skin infections",
+      "es": "Infecciones bacterianas y virales de la piel"
     },
     "climate_sensitive": true,
-    "climate_factors": ["precipitation", "visibility"]
+    "climate_factors": ["temperature", "humidity"]
   },
-  
-  "maternal_causes": {
+
+  "renal": {
+    "codes": ["N00-N39"],
+    "label": {
+      "pt": "Doenças Renais",
+      "en": "Renal Diseases",
+      "es": "Enfermedades Renales"
+    },
+    "description": {
+      "pt": "Doenças dos rins e vias urinárias",
+      "en": "Diseases of kidneys and urinary tract",
+      "es": "Enfermedades de riñones y vías urinarias"
+    },
+    "climate_sensitive": true,
+    "climate_factors": ["temperature", "dehydration"]
+  },
+
+  "pregnancy_complications": {
     "codes": ["O00-O99"],
     "label": {
-      "pt": "Causas Maternas",
-      "en": "Maternal Causes",
-      "es": "Causas Maternas"
+      "pt": "Complicações da Gravidez",
+      "en": "Pregnancy Complications",
+      "es": "Complicaciones del Embarazo"
     },
     "description": {
-      "pt": "Gravidez, parto e puerpério",
-      "en": "Pregnancy, childbirth and puerperium",
-      "es": "Embarazo, parto y puerperio"
+      "pt": "Complicações da gravidez, parto e puerpério",
+      "en": "Complications of pregnancy, childbirth, and puerperium",
+      "es": "Complicaciones del embarazo, parto y puerperio"
     },
-    "climate_sensitive": false,
-    "climate_factors": []
+    "climate_sensitive": true,
+    "climate_factors": ["temperature", "heatwaves"]
   },
-  
-  "perinatal_conditions": {
+
+  "perinatal": {
     "codes": ["P00-P96"],
     "label": {
       "pt": "Afecções Perinatais",
@@ -274,10 +514,154 @@
       "en": "Conditions originating in the perinatal period",
       "es": "Afecciones originadas en el período perinatal"
     },
+    "climate_sensitive": true,
+    "climate_factors": ["temperature", "heatwaves"]
+  },
+
+  "congenital": {
+    "codes": ["Q00-Q99"],
+    "label": {
+      "pt": "Malformações Congênitas",
+      "en": "Congenital Malformations",
+      "es": "Malformaciones Congénitas"
+    },
+    "description": {
+      "pt": "Malformações congênitas, deformidades e anomalias cromossômicas",
+      "en": "Congenital malformations, deformations, and chromosomal abnormalities",
+      "es": "Malformaciones congénitas, deformidades y anomalías cromosómicas"
+    },
     "climate_sensitive": false,
     "climate_factors": []
   },
-  
+
+  "microcephaly": {
+    "codes": ["Q02"],
+    "label": {
+      "pt": "Microcefalia",
+      "en": "Microcephaly",
+      "es": "Microcefalia"
+    },
+    "description": {
+      "pt": "Microcefalia (associada ao Zika)",
+      "en": "Microcephaly (Zika-associated)",
+      "es": "Microcefalia (asociada al Zika)"
+    },
+    "climate_sensitive": true,
+    "climate_factors": ["temperature", "precipitation"]
+  },
+
+  "ill_defined": {
+    "codes": ["R00-R99"],
+    "label": {
+      "pt": "Sintomas e Sinais Mal Definidos",
+      "en": "Ill-Defined Symptoms and Signs",
+      "es": "Síntomas y Signos Mal Definidos"
+    },
+    "description": {
+      "pt": "Sintomas, sinais e achados anormais",
+      "en": "Symptoms, signs, and abnormal findings",
+      "es": "Síntomas, signos y hallazgos anormales"
+    },
+    "climate_sensitive": false,
+    "climate_factors": []
+  },
+
+  "injuries": {
+    "codes": ["S00-T98"],
+    "label": {
+      "pt": "Lesões e Traumatismos",
+      "en": "Injuries and Trauma",
+      "es": "Lesiones y Traumatismos"
+    },
+    "description": {
+      "pt": "Lesões, envenenamentos e outras causas externas",
+      "en": "Injuries, poisonings, and other external causes",
+      "es": "Lesiones, envenenamientos y otras causas externas"
+    },
+    "climate_sensitive": true,
+    "climate_factors": ["extreme_weather", "flooding", "heatwaves"]
+  },
+
+  "transport_accidents": {
+    "codes": ["V01-V99"],
+    "label": {
+      "pt": "Acidentes de Transporte",
+      "en": "Transport Accidents",
+      "es": "Accidentes de Transporte"
+    },
+    "description": {
+      "pt": "Acidentes de trânsito e transporte",
+      "en": "Traffic and transport accidents",
+      "es": "Accidentes de tráfico y transporte"
+    },
+    "climate_sensitive": true,
+    "climate_factors": ["extreme_weather", "flooding"]
+  },
+
+  "natural_disasters": {
+    "codes": ["X33-X39"],
+    "label": {
+      "pt": "Desastres Naturais",
+      "en": "Natural Disasters",
+      "es": "Desastres Naturales"
+    },
+    "description": {
+      "pt": "Vítimas de raios, terremotos, inundações, tempestades",
+      "en": "Victims of lightning, earthquakes, floods, storms",
+      "es": "Víctimas de rayos, terremotos, inundaciones, tormentas"
+    },
+    "climate_sensitive": true,
+    "climate_factors": ["extreme_weather", "precipitation", "flooding"]
+  },
+
+  "suicide_self_harm": {
+    "codes": ["X60-X84"],
+    "label": {
+      "pt": "Lesões Autoprovocadas e Suicídio",
+      "en": "Suicide and Self-Harm",
+      "es": "Suicidio y Autolesiones"
+    },
+    "description": {
+      "pt": "Lesões autoprovocadas intencionalmente e suicídio",
+      "en": "Intentional self-harm and suicide",
+      "es": "Lesiones autoinfligidas intencionalmente y suicidio"
+    },
+    "climate_sensitive": true,
+    "climate_factors": ["temperature", "seasonality", "sunlight", "heatwaves"]
+  },
+
+  "skin_cancer": {
+    "codes": ["C43-C44"],
+    "label": {
+      "pt": "Câncer de Pele",
+      "en": "Skin Cancer",
+      "es": "Cáncer de Piel"
+    },
+    "description": {
+      "pt": "Melanoma e outros cânceres de pele",
+      "en": "Melanoma and other skin cancers",
+      "es": "Melanoma y otros cánceres de piel"
+    },
+    "climate_sensitive": true,
+    "climate_factors": ["uv_radiation", "temperature"]
+  },
+
+  "respiratory_cancer": {
+    "codes": ["C33-C34"],
+    "label": {
+      "pt": "Câncer Respiratório",
+      "en": "Respiratory Cancer",
+      "es": "Cáncer Respiratorio"
+    },
+    "description": {
+      "pt": "Câncer de pulmão, brônquios e traqueia",
+      "en": "Lung, bronchus, and trachea cancer",
+      "es": "Cáncer de pulmón, bronquios y tráquea"
+    },
+    "climate_sensitive": true,
+    "climate_factors": ["air_pollution"]
+  },
+
   "diabetes": {
     "codes": ["E10-E14"],
     "label": {
@@ -286,59 +670,340 @@
       "es": "Diabetes Mellitus"
     },
     "description": {
-      "pt": "Diabetes mellitus de todos os tipos",
-      "en": "Diabetes mellitus, all types",
-      "es": "Diabetes mellitus de todos los tipos"
+      "pt": "Diabetes tipo 1, tipo 2 e outras formas",
+      "en": "Type 1, type 2, and other forms of diabetes",
+      "es": "Diabetes tipo 1, tipo 2 y otras formas"
     },
     "climate_sensitive": true,
-    "climate_factors": ["temperature"]
+    "climate_factors": ["temperature", "heatwaves"]
   },
-  
-  "stroke": {
-    "codes": ["I60-I69"],
+
+  "malnutrition": {
+    "codes": ["E40-E46"],
     "label": {
-      "pt": "Acidente Vascular Cerebral",
-      "en": "Stroke",
-      "es": "Accidente Cerebrovascular"
+      "pt": "Desnutrição",
+      "en": "Malnutrition",
+      "es": "Desnutrición"
     },
     "description": {
-      "pt": "Doenças cerebrovasculares",
-      "en": "Cerebrovascular diseases",
-      "es": "Enfermedades cerebrovasculares"
+      "pt": "Desnutrição proteico-calórica",
+      "en": "Protein-energy malnutrition",
+      "es": "Desnutrición proteico-energética"
     },
     "climate_sensitive": true,
-    "climate_factors": ["temperature", "pressure"]
+    "climate_factors": ["drought", "food_security"]
   },
-  
-  "hypertension": {
-    "codes": ["I10-I15"],
+
+  "mental_disorders": {
+    "codes": ["F00-F99"],
     "label": {
-      "pt": "Hipertensão Arterial",
-      "en": "Hypertension",
-      "es": "Hipertensión Arterial"
+      "pt": "Transtornos Mentais",
+      "en": "Mental Disorders",
+      "es": "Trastornos Mentales"
     },
     "description": {
-      "pt": "Doenças hipertensivas",
-      "en": "Hypertensive diseases",
-      "es": "Enfermedades hipertensivas"
+      "pt": "Depressão, ansiedade, esquizofrenia, transtornos por uso de substâncias",
+      "en": "Depression, anxiety, schizophrenia, substance use disorders",
+      "es": "Depresión, ansiedad, esquizofrenia, trastornos por uso de sustancias"
     },
     "climate_sensitive": true,
-    "climate_factors": ["temperature", "pressure"]
+    "climate_factors": ["temperature", "seasonality", "natural_disasters"]
   },
-  
-  "ischemic_heart": {
-    "codes": ["I20-I25"],
+
+  "neurological_disorders": {
+    "codes": ["G00-G99"],
     "label": {
-      "pt": "Doença Isquêmica do Coração",
-      "en": "Ischemic Heart Disease",
-      "es": "Enfermedad Isquémica del Corazón"
+      "pt": "Doenças Neurológicas",
+      "en": "Neurological Disorders",
+      "es": "Trastornos Neurológicos"
     },
     "description": {
-      "pt": "Doenças isquêmicas do coração",
-      "en": "Ischemic heart diseases",
-      "es": "Enfermedades isquémicas del corazón"
+      "pt": "Doenças do sistema nervoso (meningite, epilepsia, enxaqueca)",
+      "en": "Diseases of the nervous system (meningitis, epilepsy, migraine)",
+      "es": "Enfermedades del sistema nervioso (meningitis, epilepsia, migraña)"
     },
     "climate_sensitive": true,
-    "climate_factors": ["temperature", "pressure"]
-  }
+    "climate_factors": ["temperature", "humidity", "seasonality"]
+  },
+
+  "vector_borne": {
+      "codes": [
+        "A90-A92",
+        "A95",
+        "B50-B55"
+      ],
+      "label": {
+        "pt": "Doenças Vetoriais",
+        "en": "Vector-Borne Diseases",
+        "es": "Enfermedades Vectoriales"
+      },
+      "description": {
+        "pt": "Dengue, febre amarela, zika, chikungunya, malária, leishmaniose",
+        "en": "Dengue, yellow fever, zika, chikungunya, malaria, leishmaniasis",
+        "es": "Dengue, fiebre amarilla, zika, chikungunya, malaria, leishmaniasis"
+      },
+      "climate_sensitive": true,
+      "climate_factors": [
+        "temperature",
+        "precipitation",
+        "humidity"
+      ]
+    },
+    "heat_exposure": {
+      "codes": [
+        "X30"
+      ],
+      "label": {
+        "pt": "Exposição ao Calor",
+        "en": "Heat Exposure",
+        "es": "Exposición al Calor"
+      },
+      "description": {
+        "pt": "Exposição ao calor natural excessivo",
+        "en": "Exposure to excessive natural heat",
+        "es": "Exposición al calor natural excesivo"
+      },
+      "climate_sensitive": true,
+      "climate_factors": [
+        "temperature",
+        "heatwaves"
+      ]
+    },
+    "cold_exposure": {
+      "codes": [
+        "X31"
+      ],
+      "label": {
+        "pt": "Exposição ao Frio",
+        "en": "Cold Exposure",
+        "es": "Exposición al Frío"
+      },
+      "description": {
+        "pt": "Exposição ao frio natural excessivo",
+        "en": "Exposure to excessive natural cold",
+        "es": "Exposición al frío natural excesivo"
+      },
+      "climate_sensitive": true,
+      "climate_factors": [
+        "temperature",
+        "cold_spells"
+      ]
+    },
+    "drowning": {
+      "codes": [
+        "W65-W74"
+      ],
+      "label": {
+        "pt": "Afogamento",
+        "en": "Drowning",
+        "es": "Ahogamiento"
+      },
+      "description": {
+        "pt": "Afogamento e submersão",
+        "en": "Drowning and submersion",
+        "es": "Ahogamiento y sumersión"
+      },
+      "climate_sensitive": true,
+      "climate_factors": [
+        "flooding",
+        "precipitation"
+      ]
+    },
+    "heat_related": {
+      "codes": [
+        "E86",
+        "T67",
+        "X30"
+      ],
+      "label": {
+        "pt": "Doenças Relacionadas ao Calor",
+        "en": "Heat-Related Illnesses",
+        "es": "Enfermedades Relacionadas con el Calor"
+      },
+      "description": {
+        "pt": "Desidratação, insolação, exaustão pelo calor",
+        "en": "Dehydration, sunstroke, heat exhaustion",
+        "es": "Deshidratación, insolación, agotamiento por calor"
+      },
+      "climate_sensitive": true,
+      "climate_factors": [
+        "temperature",
+        "heatwaves"
+      ]
+    },
+    "waterborne": {
+      "codes": [
+        "A00-A09",
+        "A27"
+      ],
+      "label": {
+        "pt": "Doenças de Veiculação Hídrica",
+        "en": "Waterborne Diseases",
+        "es": "Enfermedades de Transmisión Hídrica"
+      },
+      "description": {
+        "pt": "Doenças transmitidas pela água contaminada",
+        "en": "Diseases transmitted by contaminated water",
+        "es": "Enfermedades transmitidas por agua contaminada"
+      },
+      "climate_sensitive": true,
+      "climate_factors": [
+        "precipitation",
+        "flooding",
+        "water_quality"
+      ]
+    },
+    "air_pollution_related": {
+      "codes": [
+        "J40-J47",
+        "I20-I25"
+      ],
+      "label": {
+        "pt": "Doenças por Poluição do Ar",
+        "en": "Air Pollution-Related Diseases",
+        "es": "Enfermedades por Contaminación del Aire"
+      },
+      "description": {
+        "pt": "Doenças respiratórias e cardiovasculares associadas à poluição",
+        "en": "Respiratory and cardiovascular diseases associated with air pollution",
+        "es": "Enfermedades respiratorias y cardiovasculares asociadas a la contaminación"
+      },
+      "climate_sensitive": true,
+      "climate_factors": [
+        "air_pollution",
+        "temperature"
+      ]
+    },
+    "climate_sensitive_all": {
+      "codes": [
+        "Multiple"
+      ],
+      "label": {
+        "pt": "Todas as Doenças Climáticas",
+        "en": "All Climate-Sensitive Diseases",
+        "es": "Todas las Enfermedades Climáticas"
+      },
+      "description": {
+        "pt": "Conjunto completo de doenças com sensibilidade climática documentada",
+        "en": "Complete set of diseases with documented climate sensitivity",
+        "es": "Conjunto completo de enfermedades con sensibilidad climática documentada"
+      },
+      "climate_sensitive": true,
+      "climate_factors": [
+        "temperature",
+        "precipitation",
+        "humidity",
+        "air_pollution",
+        "extreme_weather"
+      ]
+    },
+    "pediatric_respiratory": {
+      "codes": [
+        "J00-J22"
+      ],
+      "label": {
+        "pt": "Respiratório Pediátrico",
+        "en": "Pediatric Respiratory",
+        "es": "Respiratorio Pediátrico"
+      },
+      "description": {
+        "pt": "Infecções respiratórias agudas em crianças",
+        "en": "Acute respiratory infections in children",
+        "es": "Infecciones respiratorias agudas en niños"
+      },
+      "climate_sensitive": true,
+      "climate_factors": [
+        "temperature",
+        "humidity",
+        "air_pollution"
+      ]
+    },
+    "elderly_cardiovascular": {
+      "codes": [
+        "I20-I25",
+        "I60-I69"
+      ],
+      "label": {
+        "pt": "Cardiovascular em Idosos",
+        "en": "Elderly Cardiovascular",
+        "es": "Cardiovascular en Ancianos"
+      },
+      "description": {
+        "pt": "Doenças cardíacas e cerebrovasculares em população idosa",
+        "en": "Cardiac and cerebrovascular diseases in elderly population",
+        "es": "Enfermedades cardíacas y cerebrovasculares en población anciana"
+      },
+      "climate_sensitive": true,
+      "climate_factors": [
+        "temperature",
+        "heatwaves",
+        "cold_spells",
+        "air_pollution"
+      ]
+    },
+    "fever_syndrome": {
+      "codes": [
+        "A00-B99",
+        "R50"
+      ],
+      "label": {
+        "pt": "Síndrome Febril",
+        "en": "Fever Syndrome",
+        "es": "Síndrome Febril"
+      },
+      "description": {
+        "pt": "Doenças caracterizadas por febre (vigilância sindrômica)",
+        "en": "Diseases characterized by fever (syndromic surveillance)",
+        "es": "Enfermedades caracterizadas por fiebre (vigilancia sindrómica)"
+      },
+      "climate_sensitive": true,
+      "climate_factors": [
+        "temperature",
+        "precipitation",
+        "humidity"
+      ]
+    },
+    "respiratory_syndrome": {
+      "codes": [
+        "J00-J99"
+      ],
+      "label": {
+        "pt": "Síndrome Respiratória",
+        "en": "Respiratory Syndrome",
+        "es": "Síndrome Respiratorio"
+      },
+      "description": {
+        "pt": "Doenças respiratórias agudas e crônicas (vigilância sindrômica)",
+        "en": "Acute and chronic respiratory diseases (syndromic surveillance)",
+        "es": "Enfermedades respiratorias agudas y crónicas (vigilancia sindrómica)"
+      },
+      "climate_sensitive": true,
+      "climate_factors": [
+        "temperature",
+        "air_pollution",
+        "humidity"
+      ]
+    },
+    "diarrheal_syndrome": {
+      "codes": [
+        "A00-A09"
+      ],
+      "label": {
+        "pt": "Síndrome Diarreica",
+        "en": "Diarrheal Syndrome",
+        "es": "Síndrome Diarreico"
+      },
+      "description": {
+        "pt": "Doenças diarreicas agudas (vigilância sindrômica)",
+        "en": "Acute diarrheal diseases (syndromic surveillance)",
+        "es": "Enfermedades diarreicas agudas (vigilancia sindrómica)"
+      },
+      "climate_sensitive": true,
+      "climate_factors": [
+        "temperature",
+        "precipitation",
+        "flooding"
+      ]
+    }
+
 }

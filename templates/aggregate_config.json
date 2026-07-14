@@ -1,0 +1,78 @@
+{
+  "_meta": {
+    "description": "Date and geographic column candidates for sus_data_aggregate()",
+    "version": "1.0",
+    "last_updated": "2026-07-15"
+  },
+  "date_candidates": {
+    "SIM": [
+      "death_date",
+      "DTOBITO"
+    ],
+    "SINASC": [
+      "birth_date",
+      "DTNASC"
+    ],
+    "SIH": [
+      "admission_date",
+      "DT_INTER"
+    ],
+    "SINAN": [
+      "notification_date",
+      "DT_NOTIFIC",
+      "first_symptom_date",
+      "DT_SIN_PRI"
+    ],
+    "CNES": [
+      "update_date",
+      "DT_COMPET"
+    ],
+    "common": [
+      "death_date",
+      "birth_date",
+      "admission_date",
+      "notification_date",
+      "date",
+      "DTOBITO",
+      "DT_NOTIFIC",
+      "DT_INTER",
+      "DTNASC"
+    ]
+  },
+  "geo_candidates": {
+    "SIM": [
+      "occurrence_municipality_code",
+      "residence_municipality_code",
+      "CODMUNOCOR",
+      "CODMUNRES"
+    ],
+    "SIH": [
+      "residence_municipality_code",
+      "CODMUNRES"
+    ],
+    "SINAN": [
+      "residence_municipality_code",
+      "notification_municipality_code",
+      "CODMUNRES",
+      "ID_MUNICIP"
+    ],
+    "SIA": [
+      "residence_municipality_code",
+      "CODMUNRES"
+    ],
+    "CNES": [
+      "CODMUNRES"
+    ],
+    "SINASC": [
+      "residence_municipality_code",
+      "CODMUNRES"
+    ],
+    "common": [
+      "residence_municipality_code",
+      "occurrence_municipality_code",
+      "municipality_code",
+      "CODMUNRES",
+      "ID_MUNICIP"
+    ]
+  }
+}

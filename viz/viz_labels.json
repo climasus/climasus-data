@@ -1,0 +1,247 @@
+{
+  "_meta": {
+    "description": "Multilingual labels for sus_data_plot_demographics()",
+    "version": "1.0",
+    "last_updated": "2026-07-15"
+  },
+  "sex": {
+    "en": "Sex",
+    "pt": "Sexo",
+    "es": "Sexo"
+  },
+  "race": {
+    "en": "Race/Colour",
+    "pt": "Raça/Cor",
+    "es": "Raza/Color"
+  },
+  "age": {
+    "en": "Age (years)",
+    "pt": "Idade (anos)",
+    "es": "Edad (años)"
+  },
+  "age_group": {
+    "en": "Age Group",
+    "pt": "Faixa Etária",
+    "es": "Grupo de Edad"
+  },
+  "ibge_age_group": {
+    "en": "Age Group",
+    "pt": "Faixa Etária",
+    "es": "Grupo de Edad"
+  },
+  "education": {
+    "en": "Education",
+    "pt": "Escolaridade",
+    "es": "Escolaridad"
+  },
+  "climate_risk": {
+    "en": "Climate Risk",
+    "pt": "Risco Climático",
+    "es": "Riesgo Climático"
+  },
+  "region": {
+    "en": "State/Region",
+    "pt": "Estado/Região",
+    "es": "Estado/Región"
+  },
+  "municipality": {
+    "en": "Municipality",
+    "pt": "Município",
+    "es": "Municipio"
+  },
+  "dimension": {
+    "en": "Dimension",
+    "pt": "Dimensão",
+    "es": "Dimensión"
+  },
+  "category": {
+    "en": "Category",
+    "pt": "Categoria",
+    "es": "Categoría"
+  },
+  "count": {
+    "en": "Count",
+    "pt": "Contagem",
+    "es": "Conteo"
+  },
+  "percent": {
+    "en": "Percent",
+    "pt": "Percentual",
+    "es": "Porcentaje"
+  },
+  "male": {
+    "en": "Male",
+    "pt": "Masculino",
+    "es": "Masculino"
+  },
+  "female": {
+    "en": "Female",
+    "pt": "Feminino",
+    "es": "Femenino"
+  },
+  "sex_ratio": {
+    "en": "Sex ratio (M:F)",
+    "pt": "Razão de sexo (M:F)",
+    "es": "Razón de sexo (M:F)"
+  },
+  "month": {
+    "en": "Month",
+    "pt": "Mês",
+    "es": "Mes"
+  },
+  "epi_week": {
+    "en": "Epidemiological Week",
+    "pt": "Semana Epidemiológica",
+    "es": "Semana Epidemiológica"
+  },
+  "year": {
+    "en": "Year",
+    "pt": "Ano",
+    "es": "Año"
+  },
+  "quarter": {
+    "en": "Quarter",
+    "pt": "Trimestre",
+    "es": "Trimestre"
+  },
+  "semester": {
+    "en": "Semester",
+    "pt": "Semestre",
+    "es": "Semestre"
+  },
+  "season": {
+    "en": "Season",
+    "pt": "Estação",
+    "es": "Estación"
+  },
+  "time": {
+    "en": "Period",
+    "pt": "Período",
+    "es": "Período"
+  },
+  "source": {
+    "en": "Source: DATASUS / Brazilian Ministry of Health",
+    "pt": "Fonte: DATASUS / Ministério da Saúde",
+    "es": "Fuente: DATASUS / Ministerio de Salud de Brasil"
+  },
+  "demographic_summary": {
+    "en": "Demographic Summary",
+    "pt": "Resumo Demográfico",
+    "es": "Resumen Demográfico"
+  },
+  "pyramid_title": {
+    "en": "Age-sex distribution",
+    "pt": "Distribuição etária por sexo",
+    "es": "Distribución por edad y sexo"
+  },
+  "temporal_title": {
+    "en": "Temporal distribution of reported records",
+    "pt": "Distribuição temporal dos registros notificados",
+    "es": "Distribución temporal de los registros notificados"
+  },
+  "heatmap_title": {
+    "en": "Cross-tabulated demographic profile",
+    "pt": "Perfil demográfico cruzado",
+    "es": "Perfil demográfico cruzado"
+  },
+  "climate_bar_title": {
+    "en": "Records by climate risk group",
+    "pt": "Registros por grupo de risco climático",
+    "es": "Registros por grupo de riesgo climático"
+  },
+  "climate_heat_title": {
+    "en": "Records by month and season",
+    "pt": "Registros por mês e estação",
+    "es": "Registros por mes y estación"
+  },
+  "equity_title": {
+    "en": "Race/Colour Equity vs. National Census Benchmark",
+    "pt": "Equidade Racial vs. Censo Nacional (IBGE 2022)",
+    "es": "Equidad Racial vs. Censo Nacional (IBGE 2022)"
+  },
+  "equity_subtitle": {
+    "en": "Percentage-point difference: observed vs. IBGE 2022 Census proportions",
+    "pt": "Diferença em pontos percentuais: observado vs. Censo IBGE 2022",
+    "es": "Diferencia en puntos porcentuales: observado vs. Censo IBGE 2022"
+  },
+  "equity_axis": {
+    "en": "Difference from national proportion (pp)",
+    "pt": "Diferença da proporção nacional (pp)",
+    "es": "Diferencia de la proporción nacional (pp)"
+  },
+  "overrep": {
+    "en": "Over-represented",
+    "pt": "Sobre-representado",
+    "es": "Sobrerrepresentado"
+  },
+  "underrep": {
+    "en": "Under-represented",
+    "pt": "Sub-representado",
+    "es": "Subrepresentado"
+  },
+  "dashboard_title": {
+    "en": "Demographic Profile",
+    "pt": "Perfil Demográfico",
+    "es": "Perfil Demográfico"
+  },
+  "within_row": {
+    "en": "within row",
+    "pt": "dentro da linha",
+    "es": "dentro de fila"
+  },
+  "within_col": {
+    "en": "within column",
+    "pt": "dentro da coluna",
+    "es": "dentro de columna"
+  },
+  "of_total": {
+    "en": "of total",
+    "pt": "do total",
+    "es": "del total"
+  },
+  "legend_count": {
+    "en": "Records",
+    "pt": "Registros",
+    "es": "Registros"
+  },
+  "metric": {
+    "en": "Metric",
+    "pt": "Métrica",
+    "es": "Métrica"
+  },
+  "bar_title_sex": {
+    "en": "Distribution by Sex",
+    "pt": "Distribuição por Sexo",
+    "es": "Distribución por Sexo"
+  },
+  "bar_title_race": {
+    "en": "Distribution by Race/Colour",
+    "pt": "Distribuição por Raça/Cor",
+    "es": "Distribución por Raza/Color"
+  },
+  "bar_title_age_group": {
+    "en": "Distribution by Age Group",
+    "pt": "Distribuição por Faixa Etária",
+    "es": "Distribución por Grupo de Edad"
+  },
+  "bar_title_ibge_age_group": {
+    "en": "Distribution by Age Group",
+    "pt": "Distribuição por Faixa Etária",
+    "es": "Distribución por Grupo de Edad"
+  },
+  "bar_title_education": {
+    "en": "Distribution by Education Level",
+    "pt": "Distribuição por Escolaridade",
+    "es": "Distribución por Nivel Educativo"
+  },
+  "bar_title_climate_risk": {
+    "en": "Distribution by Climate Risk Group",
+    "pt": "Distribuição por Grupo de Risco Climático",
+    "es": "Distribución por Grupo de Riesgo Climático"
+  },
+  "bar_title_region": {
+    "en": "Distribution by State/Region",
+    "pt": "Distribuição por Estado/Região",
+    "es": "Distribución por Estado/Región"
+  }
+}

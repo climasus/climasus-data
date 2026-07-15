@@ -243,5 +243,95 @@
     "en": "Distribution by State/Region",
     "pt": "Distribuição por Estado/Região",
     "es": "Distribución por Estado/Región"
+  },
+  "ts_epidemic_title": {
+    "en": "Epidemic curve",
+    "pt": "Curva epidêmica",
+    "es": "Curva epidémica"
+  },
+  "ts_seasonal_title": {
+    "en": "Seasonal distribution",
+    "pt": "Distribuição sazonal",
+    "es": "Distribución estacional"
+  },
+  "ts_heatmap_title": {
+    "en": "Temporal heatmap (Year × Month)",
+    "pt": "Heatmap temporal (Ano × Mês)",
+    "es": "Heatmap temporal (Año × Mes)"
+  },
+  "ts_trend_title": {
+    "en": "Trend analysis",
+    "pt": "Análise de tendência",
+    "es": "Análisis de tendencia"
+  },
+  "ts_subtitle_fmt": {
+    "en": "{n} observations | {col} | {start} to {end}",
+    "pt": "{n} observações | {col} | {start} a {end}",
+    "es": "{n} observaciones | {col} | {start} a {end}"
+  },
+  "ts_axis_count": {
+    "en": "Count",
+    "pt": "Contagem",
+    "es": "Conteo"
+  },
+  "ts_axis_date": {
+    "en": "Date",
+    "pt": "Data",
+    "es": "Fecha"
+  },
+  "ts_axis_month": {
+    "en": "Month",
+    "pt": "Mês",
+    "es": "Mes"
+  },
+  "ts_axis_year": {
+    "en": "Year",
+    "pt": "Ano",
+    "es": "Año"
+  },
+  "map_title_bubble": {
+    "en": "Spatial distribution of reported health events",
+    "pt": "Distribuição espacial de eventos de saúde notificados",
+    "es": "Distribución espacial de eventos de salud notificados"
+  },
+  "map_title_choropleth": {
+    "en": "Municipal incidence of reported health events",
+    "pt": "Incidência municipal de eventos de saúde notificados",
+    "es": "Incidencia municipal de eventos de salud notificados"
+  },
+  "map_title_quantile": {
+    "en": "Classified municipal incidence (quintiles)",
+    "pt": "Incidência municipal classificada por quintis",
+    "es": "Incidencia municipal clasificada (quintiles)"
+  },
+  "map_fill_label": {
+    "en": "Reported events",
+    "pt": "Eventos notificados",
+    "es": "Eventos notificados"
+  },
+  "map_rate_label": {
+    "en": "Rate per 100,000 pop.",
+    "pt": "Taxa por 100.000 hab.",
+    "es": "Tasa por 100.000 hab."
+  },
+  "map_size_label": {
+    "en": "Total events",
+    "pt": "Total de eventos",
+    "es": "Total de eventos"
+  },
+  "map_n_muni": {
+    "en": "{n} municipalities mapped",
+    "pt": "{n} municípios mapeados",
+    "es": "{n} municipios mapeados"
+  },
+  "map_no_pop": {
+    "en": "Column pop_25 not found — using raw counts.",
+    "pt": "Coluna pop_25 não encontrada — usando contagens brutas.",
+    "es": "Columna pop_25 no encontrada — usando conteos brutos."
+  },
+  "map_municipalities": {
+    "en": "municipalities",
+    "pt": "municípios",
+    "es": "municipios"
   }
 }

@@ -53,6 +53,14 @@
     "4": "Legally separated",
     "5": "Common-law marriage"
   },
+  "mother_education": {
+    "1": "None",
+    "2": "1 to 3 years",
+    "3": "4 to 7 years",
+    "4": "8 to 11 years",
+    "5": "12 years or more",
+    "9": "Ignored"
+  },
   "birth_location": {
     "1": "Hospital",
     "2": "Other health facility",
@@ -1087,14 +1095,6 @@
     "2": "Other health facility",
     "3": "Home",
     "4": "Others",
-    "9": "Ignored"
-  },
-  "mother_education_level": {
-    "1": "None",
-    "2": "1 to 3 years",
-    "3": "4 to 7 years",
-    "4": "8 to 11 years",
-    "5": "12 years and more",
     "9": "Ignored"
   },
   "gestational_weeks": {

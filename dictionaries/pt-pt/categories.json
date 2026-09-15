@@ -7,11 +7,12 @@
   "sexo": {
     "M": "Masculino",
     "F": "Feminino",
-    "I": "Indeterminado",
+    "I": "Ignorado",
     "0": "Ignorado",
     "1": "Masculino",
     "2": "Feminino",
-    "9": "Ignorado"
+    "9": "Ignorado",
+    "3": "Feminino"
   },
   "raca": {
     "1": "Branca",
@@ -19,7 +20,13 @@
     "3": "Amarela",
     "4": "Parda",
     "5": "Indígena",
-    "9": "Ignorado"
+    "9": "Ignorado",
+    "01": "Branca",
+    "02": "Preta",
+    "03": "Parda",
+    "04": "Amarela",
+    "05": "Indígena",
+    "99": "Sem informação"
   },
   "escolaridade": {
     "1": "Nenhuma",
@@ -27,15 +34,20 @@
     "3": "4 a 7 anos",
     "4": "8 a 11 anos",
     "5": "12 anos ou mais",
-    "9": "Ignorado"
+    "9": "Ignorado",
+    "0": "Analfabeto",
+    "6": "Ensino medio completo",
+    "7": "Educacao superior incompleta",
+    "8": "Educacao superior completa",
+    "10": "Nao se aplica"
   },
   "escolaridade_2010": {
     "0": "Sem escolaridade",
-    "1": "Fundamental I incompleto (1ª a 4ª série)",
-    "2": "Fundamental I completo (4ª série)",
-    "3": "Fundamental II incompleto (5ª a 8ª série)",
-    "4": "Fundamental II completo (8ª série)",
-    "5": "Médio incompleto",
+    "1": "Fundamental I (1 a 4 série)",
+    "2": "Fundamental II (5 a 8 série)",
+    "3": "Médio (antigo 2 Grau)",
+    "4": "Superior incompleto",
+    "5": "Superior completo",
     "6": "Médio completo",
     "7": "Superior incompleto",
     "8": "Superior completo",
@@ -54,7 +66,8 @@
     "2": "Casada",
     "3": "Viúva",
     "4": "Separada judicialmente",
-    "5": "União consensual"
+    "5": "União consensual",
+    "9": "Ignorado"
   },
   "local_nascimento": {
     "1": "Hospital",
@@ -84,19 +97,12 @@
     "6": "42 semanas ou mais",
     "9": "Ignorado"
   },
-  "consultas_pre_natal": {
-    "1": "Nenhuma",
-    "2": "1 a 3",
-    "3": "4 a 6",
-    "4": "7 ou mais",
-    "9": "Ignorado"
-  },
   "anomalia_congenita": {
     "1": "Sim",
     "2": "Não",
     "9": "Ignorado"
   },
-  "local_obito": {
+  "local_ocorrencia_obito": {
     "1": "Hospital",
     "2": "Outro estabelecimento de saúde",
     "3": "Domicílio",
@@ -123,13 +129,13 @@
     "3": "Após",
     "9": "Ignorado"
   },
-  "momento_obito_puerperio": {
+  "momento_morte_parto": {
     "1": "Antes",
     "2": "Durante",
     "3": "Após",
     "9": "Ignorado"
   },
-  "momento_obito_gestacao": {
+  "momento_morte_gestacao": {
     "1": "Durante a gestação",
     "2": "No parto",
     "3": "No abortamento",
@@ -149,12 +155,12 @@
     "8": "Mais de 1 ano após o parto",
     "9": "O óbito não ocorreu nas circunstâncias anteriores"
   },
-  "obito_durante_gestacao": {
+  "obito_gravidez": {
     "1": "Sim",
     "2": "Não",
     "9": "Ignorado"
   },
-  "obito_durante_puerperio": {
+  "obito_puerperio": {
     "1": "Sim, até 42 dias após o parto",
     "2": "Sim, de 43 dias a 1 ano",
     "3": "Não",
@@ -217,7 +223,7 @@
     "S": "Codificado",
     "N": "Não codificado"
   },
-  "causa_modificada": {
+  "alteracao_causa": {
     "1": "Sim",
     "2": "Não"
   },
@@ -225,20 +231,20 @@
     "1": "Sim",
     "2": "Não"
   },
-  "status_do_epidemiologico": {
+  "status_do_epidemiologica": {
     "1": "Sim",
     "0": "Não"
   },
-  "status_novo_do": {
+  "status_do_nova": {
     "1": "Sim",
     "0": "Não"
   },
-  "tipo_recuperacao_informacao": {
+  "tipo_resgate_informacao": {
     "01": "Não acrescentou nem corrigiu informação",
     "02": "Sim, permitiu recuperar nova informação",
     "03": "Sim, permitiu corrigir causas originalmente informadas"
   },
-  "nivel_investigador": {
+  "tipo_nivel_investigador": {
     "E": "Estadual",
     "R": "Regional",
     "M": "Municipal"
@@ -259,7 +265,7 @@
     "4": "Mês",
     "5": "Ano"
   },
-  "escolaridade_agregada_falecido": {
+  "escolaridade_falecido_agregada": {
     "00": "Sem escolaridade",
     "01": "Fund. I incompleto",
     "02": "Fund. I completo",
@@ -274,7 +280,7 @@
     "11": "Fund. II incompleto ou sem especificação",
     "12": "Médio incompleto ou sem especificação"
   },
-  "escolaridade_agregada_mae": {
+  "escolaridade_mae_agregada": {
     "00": "Sem escolaridade",
     "01": "Fund. I incompleto",
     "02": "Fund. I completo",
@@ -344,7 +350,12 @@
     "3": "Investimento",
     "4": "FAEC",
     "5": "Outros",
-    "6": "Media e alta complexidade"
+    "6": "Media e alta complexidade",
+    "01": "Atencao Basica (PAB)",
+    "02": "Assistencia Farmaceutica",
+    "04": "FAEC",
+    "05": "Incentivo",
+    "06": "Media e Alta Complexidade"
   },
   "complexidade": {
     "1": "Atencao basica",
@@ -398,7 +409,9 @@
   },
   "tipo_prestador": {
     "40": "Publico",
-    "50": "Privado"
+    "50": "Privado",
+    "1": "Publico",
+    "2": "Privado"
   },
   "terceiro": {
     "1": "Sim",
@@ -1196,5 +1209,26 @@
     "3": "4 a 6",
     "4": "7 e mais",
     "9": "Ignorado"
+  },
+  "escolaridade_mae_2010": {
+    "0": "Sem escolaridade",
+    "1": "Fundamental I (1 a 4 série)",
+    "2": "Fundamental II (5 a 8 série)",
+    "3": "Médio (antigo 2 Grau)",
+    "4": "Superior incompleto",
+    "5": "Superior completo",
+    "9": "Ignorado"
+  },
+  "natureza_juridica_antiga": {
+    "10": "Administracao Publica",
+    "20": "Entidades Empresariais",
+    "30": "Entidades sem Fins Lucrativos",
+    "40": "Pessoas Fisicas",
+    "50": "Organizacoes Internacionais",
+    "99": "Nao se aplica"
+  },
+  "status_declaracao_nova": {
+    "1": "Sim",
+    "0": "Não"
   }
 }

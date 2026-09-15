@@ -4,38 +4,22 @@
     "version": "4.0",
     "last_updated": "2026-06-19"
   },
-  "sex": {
-    "M": "Masculino",
-    "F": "Femenino",
-    "I": "Indeterminado",
-    "0": "Ignorado",
-    "1": "Masculino",
-    "2": "Femenino",
-    "9": "Ignorado"
-  },
-  "race": {
-    "1": "Blanca",
-    "2": "Negra",
-    "3": "Amarilla",
-    "4": "Parda",
-    "5": "Indígena",
-    "9": "Ignorado"
-  },
-  "education": {
+  "escolaridad": {
     "0": "Ninguna",
     "1": "1 a 3 años",
     "2": "4 a 7 años",
     "3": "8 a 11 años",
     "4": "12 años o más",
-    "9": "Ignorado"
+    "9": "Ignorado",
+    "5": "12 años o más"
   },
   "escolaridad_2010": {
     "0": "Sin escolaridad",
-    "1": "Primaria 1 incompleta (1° a 4° grado)",
-    "2": "Primaria 1 completa (5° grado)",
-    "3": "Primaria 2 incompleta (6° a 9° grado)",
-    "4": "Primaria 2 completa (9° grado)",
-    "5": "Secundaria incompleta",
+    "1": "Primaria I (1 a 4 serie)",
+    "2": "Primaria II (5 a 8 serie)",
+    "3": "Secundaria (antiguo 2 Grado)",
+    "4": "Superior incompleto",
+    "5": "Superior completo",
     "6": "Secundaria completa",
     "7": "Superior incompleto",
     "8": "Superior completo",
@@ -49,51 +33,13 @@
     "5": "Unión consensual",
     "9": "Ignorado"
   },
-  "mother_marital_status": {
-    "1": "Soltera",
-    "2": "Casada",
-    "3": "Viuda",
-    "4": "Separada judicialmente",
-    "5": "Unión consensual"
-  },
-  "birth_location": {
-    "1": "Hospital",
-    "2": "Otro establecimiento de salud",
-    "3": "Domicilio",
-    "4": "Otro",
-    "5": "Aldea indígena",
-    "9": "Ignorado"
-  },
-  "delivery_type": {
-    "1": "Vaginal",
-    "2": "Cesárea",
-    "9": "Ignorado"
-  },
-  "pregnancy_type": {
-    "1": "Único",
-    "2": "Gemelar",
-    "3": "Triple o más",
-    "9": "Ignorado"
-  },
-  "gestational_age": {
+  "edad_gestacional": {
     "1": "Menos de 22 semanas",
     "2": "22 a 27 semanas",
     "3": "28 a 31 semanas",
     "4": "32 a 36 semanas",
     "5": "37 a 41 semanas",
     "6": "42 semanas o más",
-    "9": "Ignorado"
-  },
-  "prenatal_consultations": {
-    "1": "Ninguna",
-    "2": "1 a 3",
-    "3": "4 a 6",
-    "4": "7 o más",
-    "9": "Ignorado"
-  },
-  "congenital_anomaly": {
-    "1": "Sí",
-    "2": "No",
     "9": "Ignorado"
   },
   "lugar_ocurrencia_muerte": {
@@ -305,7 +251,11 @@
     "1": "Masculino",
     "3": "Femenino",
     "0": "Ignorado",
-    "9": "Ignorado"
+    "9": "Ignorado",
+    "M": "Masculino",
+    "F": "Femenino",
+    "I": "Ignorado",
+    "2": "Femenino"
   },
   "nivel_instruccion": {
     "1": "Analfabeto",
@@ -354,7 +304,12 @@
     "3": "Inversion",
     "4": "FAEC",
     "5": "Otros",
-    "6": "Media/Alta complejidad"
+    "6": "Media/Alta complejidad",
+    "01": "Atencion Basica (PAB)",
+    "02": "Asistencia Farmaceutica",
+    "04": "FAEC",
+    "05": "Incentivo",
+    "06": "Media y Alta Complejidad"
   },
   "nivel_complejidad": {
     "1": "Atencion basica",
@@ -407,7 +362,9 @@
   },
   "tipo_proveedor": {
     "40": "Publico",
-    "50": "Privado"
+    "50": "Privado",
+    "1": "Publico",
+    "2": "Privado"
   },
   "terceiro": {
     "1": "Si",
@@ -707,7 +664,7 @@
     "2": "Negra",
     "3": "Asiatica",
     "4": "Parda",
-    "5": "Indigena",
+    "5": "Indígena",
     "9": "Ignorado"
   },
   "educacion": {
@@ -1107,14 +1064,15 @@
     "2": "Otro establecimiento de salud",
     "3": "Domicilio",
     "4": "Otros",
-    "9": "Ignorado"
+    "9": "Ignorado",
+    "5": "Aldea indígena"
   },
   "estado_civil_madre": {
     "1": "Soltera",
     "2": "Casada",
     "3": "Viuda",
     "4": "Separada/Divorciada",
-    "5": "Union consensual",
+    "5": "Unión consensual",
     "9": "Ignorado"
   },
   "escolaridad_madre": {
@@ -1135,14 +1093,14 @@
     "9": "Ignorado"
   },
   "tipo_embarazo": {
-    "1": "Unico",
+    "1": "Único",
     "2": "Doble",
     "3": "Triple y mas",
     "9": "Ignorado"
   },
   "tipo_parto": {
     "1": "Vaginal",
-    "2": "Cesarea",
+    "2": "Cesárea",
     "9": "Ignorado"
   },
   "numero_consultas_prenatales": {
@@ -1153,8 +1111,30 @@
     "9": "Ignorado"
   },
   "anomalia_congenita": {
-    "1": "Si",
+    "1": "Sí",
     "2": "No",
     "9": "Ignorado"
+  },
+  "escolaridad_madre_2010": {
+    "0": "Sin escolaridad",
+    "1": "Primaria I (1 a 4 serie)",
+    "2": "Primaria II (5 a 8 serie)",
+    "3": "Secundaria (antiguo 2 Grado)",
+    "4": "Superior incompleto",
+    "5": "Superior completo",
+    "9": "Ignorado"
+  },
+  "nivel_educativo": {
+    "0": "Analfabeto",
+    "1": "Primaria incompleta (1-4 anos)",
+    "2": "Primaria 4 anos completa",
+    "3": "Primaria incompleta (5-8 anos)",
+    "4": "Primaria completa",
+    "5": "Secundaria incompleta",
+    "6": "Secundaria completa",
+    "7": "Superior incompleta",
+    "8": "Superior completa",
+    "9": "Ignorado",
+    "10": "No aplica"
   }
 }

@@ -7,11 +7,12 @@
   "sex": {
     "M": "Male",
     "F": "Female",
-    "I": "Indeterminate",
+    "I": "Ignored",
     "0": "Ignored",
     "1": "Male",
     "2": "Female",
-    "9": "Ignored"
+    "9": "Ignored",
+    "3": "Female"
   },
   "race": {
     "1": "White",
@@ -51,7 +52,8 @@
     "2": "Married",
     "3": "Widowed",
     "4": "Legally separated",
-    "5": "Common-law marriage"
+    "5": "Common-law marriage",
+    "9": "Ignored"
   },
   "mother_education": {
     "1": "None",
@@ -59,14 +61,6 @@
     "3": "4 to 7 years",
     "4": "8 to 11 years",
     "5": "12 years or more",
-    "9": "Ignored"
-  },
-  "birth_location": {
-    "1": "Hospital",
-    "2": "Other health facility",
-    "3": "Home",
-    "4": "Other",
-    "5": "Indigenous village",
     "9": "Ignored"
   },
   "delivery_type": {
@@ -87,13 +81,6 @@
     "4": "32 to 36 weeks",
     "5": "37 to 41 weeks",
     "6": "42 weeks or more",
-    "9": "Ignored"
-  },
-  "prenatal_consultations": {
-    "1": "None",
-    "2": "1 to 3",
-    "3": "4 to 6",
-    "4": "7 or more",
     "9": "Ignored"
   },
   "congenital_anomaly": {
@@ -311,7 +298,13 @@
     "2": "Primary School",
     "3": "High School",
     "4": "Higher Education",
-    "9": "Unknown"
+    "9": "Unknown",
+    "0": "Illiterate",
+    "5": "High school (incomplete)",
+    "6": "High school (complete)",
+    "7": "Higher education (incomplete)",
+    "8": "Higher education (complete)",
+    "10": "Not applicable"
   },
   "death_indicator": {
     "1": "Yes",
@@ -357,7 +350,12 @@
     "3": "Investment",
     "4": "FAEC",
     "5": "Others",
-    "6": "Medium/High Complexity"
+    "6": "Medium/High Complexity",
+    "01": "Basic Care (PAB)",
+    "02": "Pharmaceutical Assistance",
+    "04": "FAEC",
+    "05": "Incentive",
+    "06": "Medium and High Complexity"
   },
   "complexity_level": {
     "1": "Primary Care",
@@ -411,7 +409,9 @@
   },
   "provider_type": {
     "40": "Public",
-    "50": "Private"
+    "50": "Private",
+    "1": "Public",
+    "2": "Private"
   },
   "terceiro": {
     "1": "Yes",
@@ -1095,7 +1095,8 @@
     "2": "Other health facility",
     "3": "Home",
     "4": "Others",
-    "9": "Ignored"
+    "9": "Ignored",
+    "5": "Indigenous village"
   },
   "gestational_weeks": {
     "1": "Less than 22 weeks",
@@ -1112,5 +1113,96 @@
     "3": "4 to 6",
     "4": "7 and more",
     "9": "Ignored"
+  },
+  "apac_type": {
+    "1": "Initial APAC",
+    "2": "Continuation APAC"
+  },
+  "esf_coverage": {
+    "1": "Yes",
+    "0": "No"
+  },
+  "had_transplant": {
+    "S": "Yes",
+    "N": "No"
+  },
+  "mother_education_2010": {
+    "0": "No education",
+    "1": "Elementary I (1st to 4th grade)",
+    "2": "Elementary II (5th to 8th grade)",
+    "3": "High school (formerly 2nd grade)",
+    "4": "Incomplete higher education",
+    "5": "Complete higher education",
+    "9": "Ignored"
+  },
+  "mother_education_level": {
+    "1": "None",
+    "2": "1 to 3 years",
+    "3": "4 to 7 years",
+    "4": "8 to 11 years",
+    "5": "12 years and more",
+    "9": "Ignored"
+  },
+  "municipality_residence_difference": {
+    "1": "Yes",
+    "0": "No"
+  },
+  "old_legal_nature": {
+    "10": "Public Administration",
+    "20": "Business Entities",
+    "30": "Non-Profit Entities",
+    "40": "Natural Persons",
+    "50": "International Organizations",
+    "99": "Not Applicable"
+  },
+  "patient_destination": {
+    "1": "Discharge (cured)",
+    "2": "Discharge (improved)",
+    "3": "Discharge by request",
+    "4": "Discharge (abandoned)",
+    "5": "Internal transfer",
+    "6": "External transfer",
+    "7": "Death",
+    "8": "Other"
+  },
+  "pregnant_patient": {
+    "S": "Yes",
+    "N": "No"
+  },
+  "previous_treatment": {
+    "0": "No prior treatment",
+    "1": "Surgery",
+    "2": "Radiotherapy",
+    "3": "Chemotherapy",
+    "4": "Hormone therapy",
+    "5": "Other"
+  },
+  "radiotherapy_purpose": {
+    "1": "Curative",
+    "2": "Palliative",
+    "3": "Prophylactic",
+    "4": "Adjuvant",
+    "5": "Neoadjuvant",
+    "9": "Not applicable"
+  },
+  "street_situation": {
+    "1": "Yes",
+    "0": "No"
+  },
+  "treatment_continuation": {
+    "1": "Treatment start",
+    "2": "Treatment continuation"
+  },
+  "tumor_staging": {
+    "0": "In situ",
+    "1": "Stage I",
+    "2": "Stage II",
+    "3": "Stage III",
+    "4": "Stage IV",
+    "9": "Not staged"
+  },
+  "uf_residence_difference": {
+    "1": "Yes",
+    "0": "No"
   }
 }

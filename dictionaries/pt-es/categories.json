@@ -29,7 +29,7 @@
     "4": "12 años o más",
     "9": "Ignorado"
   },
-  "education_2010": {
+  "escolaridad_2010": {
     "0": "Sin escolaridad",
     "1": "Primaria 1 incompleta (1° a 4° grado)",
     "2": "Primaria 1 completa (5° grado)",
@@ -41,7 +41,7 @@
     "8": "Superior completo",
     "9": "Ignorado"
   },
-  "marital_status": {
+  "estado_civil": {
     "1": "Soltero/a",
     "2": "Casado/a",
     "3": "Viudo/a",
@@ -96,7 +96,7 @@
     "2": "No",
     "9": "Ignorado"
   },
-  "death_location": {
+  "lugar_ocurrencia_muerte": {
     "1": "Hospital",
     "2": "Otro establecimiento de salud",
     "3": "Domicilio",
@@ -105,7 +105,7 @@
     "6": "Aldea indígena",
     "9": "Ignorado"
   },
-  "death_circumstance": {
+  "circunstancia_muerte": {
     "1": "Accidente",
     "2": "Suicidio",
     "3": "Homicidio",
@@ -113,23 +113,23 @@
     "5": "Natural",
     "9": "Ignorado"
   },
-  "death_type": {
+  "tipo_muerte": {
     "1": "Fetal",
     "2": "No fetal"
   },
-  "death_timing_delivery": {
+  "momento_muerte_parto": {
     "1": "Antes",
     "2": "Durante",
     "3": "Después",
     "9": "Ignorado"
   },
-  "death_timing_partum": {
+  "momento_muerte_partum": {
     "1": "Antes",
     "2": "Durante",
     "3": "Después",
     "9": "Ignorado"
   },
-  "death_timing_pregnancy": {
+  "momento_muerte_embarazo": {
     "1": "Durante el embarazo",
     "2": "Durante el parto",
     "3": "Durante el aborto",
@@ -138,7 +138,7 @@
     "8": "No ocurrió en estos períodos",
     "9": "Ignorado"
   },
-  "corrected_death_type": {
+  "tipo_muerte_corregido": {
     "1": "Durante el embarazo",
     "2": "Durante el aborto",
     "3": "Después del aborto",
@@ -149,50 +149,50 @@
     "8": "Más de un año después del parto",
     "9": "La muerte no ocurrió en estas circunstancias"
   },
-  "death_during_pregnancy": {
+  "muerte_durante_embarazo": {
     "1": "Sí",
     "2": "No",
     "9": "Ignorado"
   },
-  "death_during_puerperium": {
+  "muerte_durante_puerperio": {
     "1": "Sí, hasta 42 días después del parto",
     "2": "Sí, 43 días a 1 año",
     "3": "No",
     "9": "Ignorado"
   },
-  "medical_assistance": {
+  "asistencia_medica": {
     "1": "Sí",
     "2": "No",
     "9": "Ignorado"
   },
-  "autopsy": {
+  "autopsia": {
     "1": "Sí",
     "2": "No",
     "9": "Ignorado"
   },
-  "examination_performed": {
+  "examen_realizado": {
     "1": "Sí",
     "2": "No",
     "9": "Ignorado"
   },
-  "surgery_performed": {
+  "cirugia_realizada": {
     "1": "Sí",
     "2": "No",
     "9": "Ignorado"
   },
-  "work_accident": {
+  "accidente_trabajo": {
     "1": "Sí",
     "2": "No",
     "9": "Ignorado"
   },
-  "information_source": {
+  "fuente_informacion": {
     "1": "Parte policial",
     "2": "Hospital",
     "3": "Familia",
     "4": "Otro",
     "9": "Ignorado"
   },
-  "investigation_source": {
+  "fuente_investigacion": {
     "1": "Comité de Muerte Materna y/o Infantil",
     "2": "Visita domiciliaria / Entrevista familiar",
     "3": "Establecimiento de salud / Historia clínica",
@@ -203,51 +203,51 @@
     "8": "Múltiples fuentes",
     "9": "Ignorado"
   },
-  "record_origin": {
+  "origen_registro": {
     "1": "Oracle",
     "2": "Base estatal vía FTP",
     "3": "Base SEADE",
     "9": "Ignorado"
   },
-  "coding_status": {
+  "estado_codificacion": {
     "S": "Codificador",
     "N": "No codificador"
   },
-  "coded": {
+  "codificado": {
     "S": "Codificado",
     "N": "No codificado"
   },
-  "cause_modified": {
+  "causa_modificada": {
     "1": "Sí",
     "2": "No"
   },
-  "death_investigated": {
+  "muerte_investigada": {
     "1": "Sí",
     "2": "No"
   },
-  "epidemiological_death_certificate_status": {
+  "estado_certificado_muerte_epidemiologica": {
     "1": "Sí",
     "0": "No"
   },
-  "new_death_certificate_status": {
+  "estado_certificado_muerte_nuevo": {
     "1": "Sí",
     "0": "No"
   },
-  "information_retrieval_type": {
+  "tipo_recuperacion_informacion": {
     "01": "No agregó ni corrigió información",
     "02": "Sí, permitió recuperar nueva información",
     "03": "Sí, permitió corregir causas originalmente informadas"
   },
-  "investigator_level_type": {
+  "tipo_nivel_investigador": {
     "E": "Estatal",
     "R": "Regional",
     "M": "Municipal"
   },
-  "combined_sources": {
+  "fuentes_combinadas": {
     "S": "Sí",
     "X": "No"
   },
-  "information_sources": {
+  "fuentes_informacion": {
     "S": "Sí",
     "X": "No"
   },
@@ -259,7 +259,7 @@
     "4": "Mes",
     "5": "Año"
   },
-  "aggregated_deceased_education": {
+  "escolaridad_fallecido_agregada": {
     "00": "Sin escolaridad",
     "01": "Primaria I incompleta",
     "02": "Primaria I completa",
@@ -274,7 +274,7 @@
     "11": "Primaria II incompleta o sin especificar",
     "12": "Secundaria incompleta o sin especificar"
   },
-  "aggregated_mother_education": {
+  "escolaridad_madre_agregada": {
     "00": "Sin escolaridad",
     "01": "Primaria I incompleta",
     "02": "Primaria I completa",

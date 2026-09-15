@@ -1,0 +1,847 @@
+{
+  "columns": {
+    "V0001": "unidade_federacao",
+    "V0002": "codigo_municipio",
+    "V0011": "area_ponderacao",
+    "V0300": "controle",
+    "V0010": "peso_amostral",
+    "V1001": "regiao_geografica",
+    "V1002": "codigo_mesorregiao",
+    "V1003": "codigo_microrregiao",
+    "V1004": "codigo_regiao_metropolitana",
+    "V1006": "situacao_domicilio",
+    "V0502": "relacao_parentesco_responsavel",
+    "V0504": "ordem_logica",
+    "V0601": "sexo",
+    "V6033": "idade_calculada_anos_meses",
+    "V6036": "idade_calculada_anos",
+    "V6037": "idade_calculada_meses",
+    "V6040": "forma_declaracao_idade",
+    "V0606": "cor_raca",
+    "V0613": "registro_nascimento",
+    "V0614": "dificuldade_permanente_enxergar",
+    "V0615": "dificuldade_permanente_ouvir",
+    "V0616": "dificuldade_permanente_caminhar_subir",
+    "V0617": "deficiencia_mental_intelectual",
+    "V0618": "nasceu_municipio",
+    "V0619": "nasceu_unidade_federacao",
+    "V0620": "nacionalidade",
+    "V0621": "ano_fixou_residencia_brasil",
+    "V0622": "uf_pais_estrangeiro_nascimento",
+    "V6222": "codigo_uf_nascimento",
+    "V6224": "codigo_pais_nascimento",
+    "V0623": "tempo_moradia_uf",
+    "V0624": "tempo_moradia_municipio",
+    "V0625": "tipo_residencia_anterior",
+    "V6252": "codigo_uf_residencia_anterior",
+    "V6254": "codigo_municipio_residencia_anterior",
+    "V6256": "codigo_pais_residencia_anterior",
+    "V0626": "residencia_31_julho_2005",
+    "V6262": "codigo_uf_residencia_2005",
+    "V6264": "codigo_municipio_residencia_2005",
+    "V6266": "codigo_pais_residencia_2005",
+    "V0627": "sabe_ler_escrever",
+    "V0628": "frequenta_escola_creche",
+    "V0629": "curso_frequenta",
+    "V0630": "serie_ano_frequenta",
+    "V0631": "serie_frequenta",
+    "V0632": "conclusao_outro_curso_superior",
+    "V0633": "curso_mais_elevado_frequentou",
+    "V0634": "conclusao_curso_elevado",
+    "V0635": "especie_curso_mais_elevado_concluido",
+    "V6400": "nivel_instrucao",
+    "V6352": "codigo_curso_superior_graduacao",
+    "V6354": "codigo_curso_mestrado",
+    "V6356": "codigo_curso_doutorado",
+    "V0636": "local_frequencia_escola",
+    "V6362": "codigo_uf_frequencia_escola",
+    "V6364": "codigo_municipio_frequencia_escola",
+    "V6366": "codigo_pais_frequencia_escola",
+    "V0637": "vive_companhia_conjuge",
+    "V0638": "numero_ordem_conjuge_companheiro",
+    "V0639": "natureza_uniao",
+    "V0640": "estado_civil",
+    "V0604": "tem_mae_viva",
+    "V0605": "numero_ordem_mae",
+    "V0641": "trabalhou_semana_referencia",
+    "V0642": "tinha_trabalho_afastado",
+    "V0643": "ajudou_sem_pagamento",
+    "V0644": "trabalhou_agricultura_consumo_proprio",
+    "V0645": "quantos_trabalhos",
+    "V6461": "codigo_ocupacao",
+    "V6471": "codigo_atividade",
+    "V0648": "condicao_trabalho",
+    "V0649": "quantas_pessoas_empregava",
+    "V0650": "contribuinte_previdencia",
+    "V0651": "tipo_rendimento_trabalho_principal",
+    "V6511": "valor_rendimento_bruto_principal",
+    "V6513": "rendimento_trabalho_principal",
+    "V6514": "rendimento_principal_salarios_minimos",
+    "V0652": "tipo_rendimento_outros_trabalhos",
+    "V6521": "valor_rendimento_bruto_outros_trabalhos",
+    "V6524": "rendimento_outros_trabalhos_salarios_minimos",
+    "V6525": "rendimento_todos_trabalhos",
+    "V6526": "rendimento_todos_trabalhos_salarios_minimos",
+    "V6527": "rendimento_mensal_total_julho_2010",
+    "V6528": "rendimento_mensal_total_salarios_minimos",
+    "V6529": "rendimento_domiciliar_julho_2010",
+    "V6530": "rendimento_domiciliar_salarios_minimos",
+    "V6531": "rendimento_domiciliar_per_capita",
+    "V6532": "rendimento_domiciliar_per_capita_salarios_minimos",
+    "V0653": "horas_trabalho_semanal",
+    "V0654": "procurou_trabalho_julho_2010",
+    "V0655": "disponivel_assumir_trabalho",
+    "V0656": "rendimento_aposentadoria_pensao",
+    "V0657": "rendimento_bolsa_familia_peti",
+    "V0658": "rendimento_outros_programas_sociais",
+    "V0659": "rendimento_outras_fontes",
+    "V6591": "valor_total_outros_rendimentos",
+    "V0660": "local_trabalho",
+    "V6602": "codigo_uf_trabalho",
+    "V6604": "codigo_municipio_trabalho",
+    "V6606": "codigo_pais_trabalho",
+    "V0661": "retorna_trabalho_casa_diariamente",
+    "V0662": "tempo_deslocamento_casa_trabalho",
+    "V0663": "teve_filhos_nascidos_vivos",
+    "V6631": "quantos_filhos_nascidos_vivos",
+    "V6632": "quantas_filhas_nascidas_vivas",
+    "V6633": "total_filhos_nascidos_vivos",
+    "V0664": "filhos_estavam_vivos_julho_2010",
+    "V6641": "quantos_filhos_vivos",
+    "V6642": "quantas_filhas_vivas",
+    "V6643": "total_filhos_vivos",
+    "V0665": "sexo_ultimo_filho",
+    "V6660": "idade_ultimo_filho",
+    "V6664": "filho_nascido_vivo_12_meses_anteriores",
+    "V0667": "este_filho_estava_vivo",
+    "V0668": "conhece_mes_ano_filho_faleceu",
+    "V6681": "mes_filho_faleceu",
+    "V6682": "ano_filho_faleceu",
+    "V0669": "teve_filhos_nascidos_mortos",
+    "V6691": "quantos_filhos_nascidos_mortos",
+    "V6692": "quantas_filhas_nascidas_mortas",
+    "V6693": "total_filhos_nascidos_mortos",
+    "V6800": "total_filhos_nascidos_vivos_mortos",
+    "V0670": "quem_prestou_informacoes",
+    "V0671": "numero_ordem_informante",
+    "V6900": "condicao_atividade_semana_referencia",
+    "V6910": "condicao_ocupacao_semana_referencia",
+    "V6920": "situacao_ocupacao_semana_referencia",
+    "V6930": "posicao_ocupacao_categoria_emprego",
+    "V6940": "subgrupo_categoria_emprego",
+    "V6121": "codigo_religiao",
+    "V5020": "numero_familia",
+    "V5060": "numero_pessoas_familia",
+    "V5070": "rendimento_familiar_per_capita",
+    "V5080": "rendimento_familiar_per_capita_salarios_minimos",
+    "V5030": "tipo_unidade_domestica",
+    "V5040": "indicadora_familia",
+    "V5090": "tipo_composicao_familiar_principal",
+    "V5100": "tipo_composicao_familiar_secundaria",
+    "V5130": "ordem_logica_familia",
+    "V5110": "condicao_contribuicao_previdencia_principal",
+    "V5120": "condicao_contribuicao_previdencia_qualquer_trabalho",
+    "M0502": "marca_imputacao_V0502",
+    "M0601": "marca_imputacao_V0601",
+    "M6033": "marca_imputacao_V6033",
+    "M0606": "marca_imputacao_V0606",
+    "M0613": "marca_imputacao_V0613",
+    "M0614": "marca_imputacao_V0614",
+    "M0615": "marca_imputacao_V0615",
+    "M0616": "marca_imputacao_V0616",
+    "M0617": "marca_imputacao_V0617",
+    "M0618": "marca_imputacao_V0618",
+    "M0619": "marca_imputacao_V0619",
+    "M0620": "marca_imputacao_V0620",
+    "M0621": "marca_imputacao_V0621",
+    "M0622": "marca_imputacao_V0622",
+    "M6222": "marca_imputacao_V6222",
+    "M6224": "marca_imputacao_V6224",
+    "M0623": "marca_imputacao_V0623",
+    "M0624": "marca_imputacao_V0624",
+    "M0625": "marca_imputacao_V0625",
+    "M6252": "marca_imputacao_V6252",
+    "M6254": "marca_imputacao_V6254",
+    "M6256": "marca_imputacao_V6256",
+    "M0626": "marca_imputacao_V0626",
+    "M6262": "marca_imputacao_V6262",
+    "M6264": "marca_imputacao_V6264",
+    "M6266": "marca_imputacao_V6266",
+    "M0627": "marca_imputacao_V0627",
+    "M0628": "marca_imputacao_V0628",
+    "M0629": "marca_imputacao_V0629",
+    "M0630": "marca_imputacao_V0630",
+    "M0631": "marca_imputacao_V0631",
+    "M0632": "marca_imputacao_V0632",
+    "M0633": "marca_imputacao_V0633",
+    "M0634": "marca_imputacao_V0634",
+    "M0635": "marca_imputacao_V0635",
+    "M6352": "marca_imputacao_V6352",
+    "M6354": "marca_imputacao_V6354",
+    "M6356": "marca_imputacao_V6356",
+    "M0636": "marca_imputacao_V0636",
+    "M6362": "marca_imputacao_V6362",
+    "M6364": "marca_imputacao_V6364",
+    "M6366": "marca_imputacao_V6366",
+    "M0637": "marca_imputacao_V0637",
+    "M0638": "marca_imputacao_V0638",
+    "M0639": "marca_imputacao_V0639",
+    "M0640": "marca_imputacao_V0640",
+    "M0641": "marca_imputacao_V0641",
+    "M0642": "marca_imputacao_V0642",
+    "M0643": "marca_imputacao_V0643",
+    "M0644": "marca_imputacao_V0644"
+  },
+  "values": {
+    "V0001": {
+      "11": "Rondonia",
+      "12": "Acre",
+      "13": "Amazonas",
+      "14": "Roraima",
+      "15": "Para",
+      "16": "Amapa",
+      "17": "Tocantins",
+      "21": "Maranhao",
+      "22": "Piaui",
+      "23": "Ceara",
+      "24": "Rio Grande do Norte",
+      "25": "Paraiba",
+      "26": "Pernambuco",
+      "27": "Alagoas",
+      "28": "Sergipe",
+      "29": "Bahia",
+      "31": "Minas Gerais",
+      "32": "Espirito Santo",
+      "33": "Rio de Janeiro",
+      "35": "Sao Paulo",
+      "41": "Parana",
+      "42": "Santa Catarina",
+      "43": "Rio Grande do Sul",
+      "50": "Mato Grosso do Sul",
+      "51": "Mato Grosso",
+      "52": "Goias",
+      "53": "Distrito Federal"
+    },
+    "V1001": {
+      "1": "Regiao norte (uf=11 a 17)",
+      "2": "Regiao nordeste (uf=21 a 29)",
+      "3": "Regiao sudeste (uf=31 a 33 e 35)",
+      "4": "Regiao sul (uf=41 a 43)",
+      "5": "Regiao centro-oeste (uf=50 a 53)"
+    },
+    "V1006": {
+      "1": "Urbana",
+      "2": "Rural"
+    },
+    "V0502": {
+      "01": "Pessoa responsavel pelo domicilio",
+      "02": "Conjuge ou companheiro(a) de sexo diferente",
+      "03": "Conjuge ou companheiro(a) do mesmo sexo",
+      "04": "Filho(a) do responsavel e do conjuge",
+      "05": "Filho(a) somente do responsavel",
+      "06": "Enteado(a)",
+      "07": "Genro ou nora",
+      "08": "Pai, mae, padrasto ou madrasta",
+      "09": "Sogro(a)",
+      "10": "Neto(a)",
+      "11": "Bisneto(a)",
+      "12": "Irmao ou irma",
+      "13": "Avo ou avo",
+      "14": "Outro parente",
+      "15": "Agregado(a)",
+      "16": "Convivente",
+      "17": "Pensionista",
+      "18": "Empregado(a) domestico(a)",
+      "19": "Parente do(a) empregado(a) domestico(a)",
+      "20": "Individual em domicilio coletivo"
+    },
+    "V0601": {
+      "1": "Masculino",
+      "2": "Feminino"
+    },
+    "V6040": {
+      "1": "Data de nascimento",
+      "2": "Idade declarada"
+    },
+    "V0606": {
+      "1": "Branca",
+      "2": "Preta",
+      "3": "Amarela",
+      "4": "Parda",
+      "5": "Indigena",
+      "9": "Ignorado"
+    },
+    "V0613": {
+      "1": "Do cartorio",
+      "2": "Declaracao de nascido vivo (DNV) do hospital ou da maternidade",
+      "3": "Registro administrativo de nascimento indigena (RANI)",
+      "4": "Nao tem",
+      "5": "Nao sabe",
+      "9": "Ignorado"
+    },
+    "V0614": {
+      "1": "Sim, nao consegue de modo algum",
+      "2": "Sim, grande dificuldade",
+      "3": "Sim, alguma dificuldade",
+      "4": "Nao, nenhuma dificuldade",
+      "9": "Ignorado"
+    },
+    "V0615": {
+      "1": "Sim, nao consegue de modo algum",
+      "2": "Sim, grande dificuldade",
+      "3": "Sim, alguma dificuldade",
+      "4": "Nao, nenhuma dificuldade",
+      "9": "Ignorado"
+    },
+    "V0616": {
+      "1": "Sim, nao consegue de modo algum",
+      "2": "Sim, grande dificuldade",
+      "3": "Sim, alguma dificuldade",
+      "4": "Nao, nenhuma dificuldade",
+      "9": "Ignorado"
+    },
+    "V0617": {
+      "1": "Sim",
+      "2": "Nao",
+      "9": "Ignorado"
+    },
+    "V0618": {
+      "1": "Sim e sempre morou",
+      "2": "Sim mas morou em outro municipio ou pais estrangeiro",
+      "3": "Nao"
+    },
+    "V0619": {
+      "1": "Sim, e sempre morou",
+      "2": "Sim, mas morou em outra UF ou pais estrangeiro",
+      "3": "Nao"
+    },
+    "V0620": {
+      "1": "Brasileiro nato",
+      "2": "Naturalizado brasileiro",
+      "3": "Estrangeiro"
+    },
+    "V0622": {
+      "1": "UF",
+      "2": "Pais estrangeiro"
+    },
+    "V0625": {
+      "1": "UF/Municipio",
+      "2": "Pais estrangeiro"
+    },
+    "V0626": {
+      "1": "UF/Municipio",
+      "2": "Pais estrangeiro"
+    },
+    "V0627": {
+      "1": "Sim",
+      "2": "Nao"
+    },
+    "V0628": {
+      "1": "Sim, publica",
+      "2": "Sim, particular",
+      "3": "Nao, ja frequentou",
+      "4": "Nao, nunca frequentou"
+    },
+    "V0629": {
+      "01": "Creche",
+      "02": "Pre-escolar (maternal e jardim da infancia)",
+      "03": "Classe de alfabetizacao - CA",
+      "04": "Alfabetizacao de jovens e adultos",
+      "05": "Regular do ensino fundamental",
+      "06": "Educacao de jovens e adultos - EJA - ou supletivo do ensino fundamental",
+      "07": "Regular do ensino medio",
+      "08": "Educacao de jovens e adultos - EJA - ou supletivo do ensino medio",
+      "09": "Superior de graduacao",
+      "10": "Especializacao de nivel superior (minimo de 360 horas)",
+      "11": "Mestrado",
+      "12": "Doutorado"
+    },
+    "V0630": {
+      "01": "Primeiro ano",
+      "02": "Primeira serie / Segundo ano",
+      "03": "Segunda serie / Terceiro ano",
+      "04": "Terceira serie / Quarto ano",
+      "05": "Quarta serie / Quinto ano",
+      "06": "Quinta serie / Sexto ano",
+      "07": "Sexta serie / Setimo ano",
+      "08": "Setima serie / Oitavo ano",
+      "09": "Oitava serie / Nono ano",
+      "10": "Nao seriado"
+    },
+    "V0631": {
+      "1": "Primeira serie",
+      "2": "Segunda serie",
+      "3": "Terceira serie",
+      "4": "Quarta serie",
+      "5": "Nao seriado"
+    },
+    "V0632": {
+      "1": "Sim",
+      "2": "Nao"
+    },
+    "V0633": {
+      "01": "Creche, pre-escolar (maternal e jardim de infancia), classe de alfabetizacao - CA",
+      "02": "Alfabetizacao de jovens e adultos",
+      "03": "Antigo primario (elementar)",
+      "04": "Antigo ginasio (medio 1o ciclo)",
+      "05": "Ensino fundamental ou 1o grau (da 1a a 3a serie/ do 1o ao 4o ano)",
+      "06": "Ensino fundamental ou 1o grau (4a serie/ 5o ano)",
+      "07": "Ensino fundamental ou 1o grau (da 5a a 8a serie/ 6o ao 9o ano)",
+      "08": "Supletivo do ensino fundamental ou do 1o grau",
+      "09": "Antigo cientifico, classico, etc. (medio 2o ciclo)",
+      "10": "Regular ou supletivo do ensino medio ou do 2o grau",
+      "11": "Superior de graduacao",
+      "12": "Especializacao de nivel superior (minimo de 360 horas)",
+      "13": "Mestrado",
+      "14": "Doutorado"
+    },
+    "V0634": {
+      "1": "Sim",
+      "2": "Nao"
+    },
+    "V0635": {
+      "1": "Superior de graduacao",
+      "2": "Mestrado",
+      "3": "Doutorado"
+    },
+    "V6400": {
+      "1": "Sem instrucao e fundamental incompleto",
+      "2": "Fundamental completo e medio incompleto",
+      "3": "Medio completo e superior incompleto",
+      "4": "Superior completo",
+      "5": "Nao determinado"
+    },
+    "V0636": {
+      "1": "Neste municipio",
+      "2": "Em outro municipio",
+      "3": "Em pais estrangeiro"
+    },
+    "V0637": {
+      "1": "Sim",
+      "2": "Nao, mas viveu",
+      "3": "Nao, nunca viveu"
+    },
+    "V0639": {
+      "1": "Casamento civil e religioso",
+      "2": "So casamento civil",
+      "3": "So casamento religioso",
+      "4": "Uniao consensual"
+    },
+    "V0640": {
+      "1": "Casado(a)",
+      "2": "Desquitado(a) ou separado(a) judicialmente",
+      "3": "Divorciado(a)",
+      "4": "Viuvo(a)",
+      "5": "Solteiro(a)"
+    },
+    "V0641": {
+      "1": "Sim",
+      "2": "Nao"
+    },
+    "V0642": {
+      "1": "Sim",
+      "2": "Nao"
+    },
+    "V0643": {
+      "1": "Sim",
+      "2": "Nao"
+    },
+    "V0644": {
+      "1": "Sim",
+      "2": "Nao"
+    },
+    "V0645": {
+      "1": "Um",
+      "2": "Dois ou mais"
+    },
+    "V0648": {
+      "1": "Empregado com carteira de trabalho assinada",
+      "2": "Militar do exercito, marinha, aeronautica, policia militar ou corpo de bombeiros",
+      "3": "Empregado pelo regime juridico dos funcionarios publicos",
+      "4": "Empregado sem carteira de trabalho assinada",
+      "5": "Conta propria",
+      "6": "Empregador",
+      "7": "Nao remunerado"
+    },
+    "V0649": {
+      "1": "1 a 5 pessoas",
+      "2": "6 ou mais pessoas"
+    },
+    "V0650": {
+      "1": "Sim, no trabalho principal",
+      "2": "Sim, em outro trabalho",
+      "3": "Nao"
+    },
+    "V0651": {
+      "0": "Nao tem",
+      "1": "Em dinheiro, produtos ou mercadorias",
+      "2": "Somente em beneficios"
+    },
+    "V0652": {
+      "0": "Nao tem",
+      "1": "Em dinheiro, produtos ou mercadorias",
+      "2": "Somente em beneficios"
+    },
+    "V0654": {
+      "1": "Sim",
+      "2": "Nao"
+    },
+    "V0655": {
+      "1": "Sim",
+      "2": "Nao"
+    },
+    "V0656": {
+      "0": "Nao",
+      "1": "Sim",
+      "9": "Ignorado"
+    },
+    "V0657": {
+      "0": "Nao",
+      "1": "Sim",
+      "9": "Ignorado"
+    },
+    "V0658": {
+      "0": "Nao",
+      "1": "Sim",
+      "9": "Ignorado"
+    },
+    "V0659": {
+      "0": "Nao",
+      "1": "Sim",
+      "9": "Ignorado"
+    },
+    "V0660": {
+      "1": "No proprio domicilio",
+      "2": "Apenas neste municipio, mas nao no proprio domicilio",
+      "3": "Em outro municipio",
+      "4": "Em pais estrangeiro",
+      "5": "Em mais de um municipio ou pais"
+    },
+    "V0661": {
+      "1": "Sim",
+      "2": "Nao"
+    },
+    "V0662": {
+      "1": "Ate 05 minutos",
+      "2": "De 06 minutos ate meia hora",
+      "3": "Mais de meia hora ate uma hora",
+      "4": "Mais de uma hora ate duas horas",
+      "5": "Mais de duas horas"
+    },
+    "V0663": {
+      "1": "Teve filhos nascidos vivos",
+      "2": "Nao teve nenhum filho nascido vivo"
+    },
+    "V0664": {
+      "1": "Filhos vivos",
+      "2": "Nao sabe"
+    },
+    "V0665": {
+      "1": "Masculino",
+      "2": "Feminino"
+    },
+    "V6664": {
+      "1": "Sim",
+      "0": "Nao"
+    },
+    "V0667": {
+      "1": "Sim",
+      "2": "Nao",
+      "9": "Nao sabe"
+    },
+    "V0668": {
+      "1": "Sabe o mes e ano ou somente o ano",
+      "2": "Nao sabe"
+    },
+    "V0669": {
+      "1": "Teve filho nascido morto",
+      "2": "Nao teve filho nascido morto",
+      "3": "Nao sabe"
+    },
+    "V0670": {
+      "1": "A propria pessoa",
+      "2": "Outro morador",
+      "3": "Nao morador",
+      "9": "Ignorado"
+    },
+    "V6900": {
+      "1": "Economicamente ativas",
+      "2": "Nao economicamente ativas"
+    },
+    "V6910": {
+      "1": "Ocupadas",
+      "2": "Desocupadas"
+    },
+    "V6920": {
+      "1": "Ocupadas",
+      "2": "Nao ocupadas"
+    },
+    "V6930": {
+      "1": "Empregados com carteira de trabalho assinada",
+      "2": "Militares e funcionarios publicos estatutarios",
+      "3": "Empregados sem carteira de trabalho assinada",
+      "4": "Conta propria",
+      "5": "Empregadores",
+      "6": "Nao remunerados",
+      "7": "Trabalhadores na producao para o proprio consumo"
+    },
+    "V6940": {
+      "1": "Trabalhadores domesticos com carteira de trabalho assinada",
+      "2": "Trabalhadores domesticos sem carteira de trabalho assinada",
+      "3": "Demais empregados com carteira de trabalho assinada",
+      "4": "Militares e funcionarios publicos estatutarios",
+      "5": "Demais empregados sem carteira de trabalho assinada"
+    },
+    "V0604": {
+      "1": "Sim e mora neste domicilio",
+      "2": "Sim e mora em outro domicilio",
+      "3": "Nao",
+      "4": "Nao sabe",
+      "9": "Ignorado"
+    },
+    "V5020": {
+      "01": "Familias unicas ou conviventes principais",
+      "02": "Familia convivente - segunda",
+      "03": "Familia convivente - terceira",
+      "04": "Familia convivente - quarta",
+      "05": "Familia convivente - quinta",
+      "06": "Familia convivente - sexta",
+      "07": "Familia convivente - setima",
+      "08": "Familia convivente - oitava",
+      "09": "Familia convivente - nona"
+    },
+    "V5030": {
+      "1": "Unipessoal",
+      "2": "Duas pessoas ou mais sem parentesco",
+      "3": "Duas pessoas ou mais com parentesco"
+    },
+    "V5040": {
+      "1": "Arranjo familiar",
+      "0": "Arranjo nao familiar"
+    },
+    "V5090": {
+      "1": "Casal sem filho(s)",
+      "2": "Casal sem filho(s) e com parente(s)",
+      "3": "Casal com filho(s)",
+      "4": "Casal com filho(s) e com parente(s)",
+      "5": "Mulher sem conjuge com filho(s)",
+      "6": "Mulher sem conjuge com filho(s) e com parente(s)",
+      "7": "Homem sem conjuge com filho(s)",
+      "8": "Homem sem conjuge com filho(s) e com parente(s)",
+      "9": "Outro"
+    },
+    "V5100": {
+      "1": "Casal sem filho(s)",
+      "2": "Casal com filho(s)",
+      "3": "Mulher sem conjuge com filho(s)"
+    },
+    "V5110": {
+      "Contribuintes": "Contribuintes",
+      "Nao contribuintes": "Nao contribuintes"
+    },
+    "V5120": {
+      "Contribuintes": "Contribuintes",
+      "Nao contribuintes": "Nao contribuintes"
+    },
+    "M0502": {
+      "1": "Sim",
+      "2": "Nao"
+    },
+    "M0601": {
+      "1": "Sim",
+      "2": "Nao"
+    },
+    "M6033": {
+      "1": "Sim",
+      "2": "Nao"
+    },
+    "M0606": {
+      "1": "Sim",
+      "2": "Nao"
+    },
+    "M0613": {
+      "1": "Sim",
+      "2": "Nao"
+    },
+    "M0614": {
+      "1": "Sim",
+      "2": "Nao"
+    },
+    "M0615": {
+      "1": "Sim",
+      "2": "Nao"
+    },
+    "M0616": {
+      "1": "Sim",
+      "2": "Nao"
+    },
+    "M0617": {
+      "1": "Sim",
+      "2": "Nao"
+    },
+    "M0618": {
+      "1": "Sim",
+      "2": "Nao"
+    },
+    "M0619": {
+      "1": "Sim",
+      "2": "Nao"
+    },
+    "M0620": {
+      "1": "Sim",
+      "2": "Nao"
+    },
+    "M0621": {
+      "1": "Sim",
+      "2": "Nao"
+    },
+    "M0622": {
+      "1": "Sim",
+      "2": "Nao"
+    },
+    "M6222": {
+      "1": "Sim",
+      "2": "Nao"
+    },
+    "M6224": {
+      "1": "Sim",
+      "2": "Nao"
+    },
+    "M0623": {
+      "1": "Sim",
+      "2": "Nao"
+    },
+    "M0624": {
+      "1": "Sim",
+      "2": "Nao"
+    },
+    "M0625": {
+      "1": "Sim",
+      "2": "Nao"
+    },
+    "M6252": {
+      "1": "Sim",
+      "2": "Nao"
+    },
+    "M6254": {
+      "1": "Sim",
+      "2": "Nao"
+    },
+    "M6256": {
+      "1": "Sim",
+      "2": "Nao"
+    },
+    "M0626": {
+      "1": "Sim",
+      "2": "Nao"
+    },
+    "M6262": {
+      "1": "Sim",
+      "2": "Nao"
+    },
+    "M6264": {
+      "1": "Sim",
+      "2": "Nao"
+    },
+    "M6266": {
+      "1": "Sim",
+      "2": "Nao"
+    },
+    "M0627": {
+      "1": "Sim",
+      "2": "Nao"
+    },
+    "M0628": {
+      "1": "Sim",
+      "2": "Nao"
+    },
+    "M0629": {
+      "1": "Sim",
+      "2": "Nao"
+    },
+    "M0630": {
+      "1": "Sim",
+      "2": "Nao"
+    },
+    "M0631": {
+      "1": "Sim",
+      "2": "Nao"
+    },
+    "M0632": {
+      "1": "Sim",
+      "2": "Nao"
+    },
+    "M0633": {
+      "1": "Sim",
+      "2": "Nao"
+    },
+    "M0634": {
+      "1": "Sim",
+      "2": "Nao"
+    },
+    "M0635": {
+      "1": "Sim",
+      "2": "Nao"
+    },
+    "M6352": {
+      "1": "Sim",
+      "2": "Nao"
+    },
+    "M6354": {
+      "1": "Sim",
+      "2": "Nao"
+    },
+    "M6356": {
+      "1": "Sim",
+      "2": "Nao"
+    },
+    "M0636": {
+      "1": "Sim",
+      "2": "Nao"
+    },
+    "M6362": {
+      "1": "Sim",
+      "2": "Nao"
+    },
+    "M6364": {
+      "1": "Sim",
+      "2": "Nao"
+    },
+    "M6366": {
+      "1": "Sim",
+      "2": "Nao"
+    },
+    "M0637": {
+      "1": "Sim",
+      "2": "Nao"
+    },
+    "M0638": {
+      "1": "Sim",
+      "2": "Nao"
+    },
+    "M0639": {
+      "1": "Sim",
+      "2": "Nao"
+    },
+    "M0640": {
+      "1": "Sim",
+      "2": "Nao"
+    },
+    "M0641": {
+      "1": "Sim",
+      "2": "Nao"
+    },
+    "M0642": {
+      "1": "Sim",
+      "2": "Nao"
+    },
+    "M0643": {
+      "1": "Sim",
+      "2": "Nao"
+    },
+    "M0644": {
+      "1": "Sim",
+      "2": "Nao"
+    }
+  }
+}

@@ -1,0 +1,269 @@
+{
+  "columns": {
+    "V0001": "federation_unit",
+    "V0002": "municipality_code",
+    "V0011": "weighting_area",
+    "V0300": "control_number",
+    "V0010": "sample_weight",
+    "V1001": "geographic_region",
+    "V1002": "mesoregion_code",
+    "V1003": "microregion_code",
+    "V1004": "metropolitan_area_code",
+    "V1005": "census_tract_situation_detailed",
+    "V1006": "household_situation",
+    "V4001": "visited_unit_type",
+    "V4002": "household_type",
+    "V0201": "occupancy_condition",
+    "V0202": "predominant_wall_material",
+    "V0203": "number_of_rooms",
+    "V6203": "resident_room_density",
+    "V0204": "number_of_bedrooms",
+    "V6204": "resident_bedroom_density",
+    "V0205": "number_of_bathrooms",
+    "V0206": "has_sanitary_facility",
+    "V0207": "sewage_disposal_type",
+    "V0208": "water_supply_source",
+    "V0209": "piped_water_existence",
+    "V0210": "garbage_disposal",
+    "V0211": "electricity_existence",
+    "V0212": "electricity_meter_existence",
+    "V0213": "has_radio",
+    "V0214": "has_television",
+    "V0215": "has_washing_machine",
+    "V0216": "has_refrigerator",
+    "V0217": "has_cellphone",
+    "V0218": "has_landline_phone",
+    "V0219": "has_computer",
+    "V0220": "has_internet_access",
+    "V0221": "has_motorcycle",
+    "V0222": "has_automobile",
+    "V0301": "resident_abroad_last_year",
+    "V0401": "total_residents",
+    "V0402": "household_responsibility",
+    "V0701": "death_in_household_last_year",
+    "V6600": "household_unit_type",
+    "V6210": "housing_adequacy",
+    "V2011": "rent_value",
+    "V2012": "rent_minimum_wages",
+    "V6529": "monthly_household_income",
+    "V6530": "household_income_min_wages",
+    "V6531": "per_capita_income",
+    "V6532": "per_capita_income_min_wages"
+  },
+  "values": {
+    "V0001": {
+      "11": "Rondonia",
+      "12": "Acre",
+      "13": "Amazonas",
+      "14": "Roraima",
+      "15": "Para",
+      "16": "Amapa",
+      "17": "Tocantins",
+      "21": "Maranhao",
+      "22": "Piaui",
+      "23": "Ceara",
+      "24": "Rio Grande do Norte",
+      "25": "Paraiba",
+      "26": "Pernambuco",
+      "27": "Alagoas",
+      "28": "Sergipe",
+      "29": "Bahia",
+      "31": "Minas Gerais",
+      "32": "Espirito Santo",
+      "33": "Rio de Janeiro",
+      "35": "Sao Paulo",
+      "41": "Parana",
+      "42": "Santa Catarina",
+      "43": "Rio Grande do Sul",
+      "50": "Mato Grosso do Sul",
+      "51": "Mato Grosso",
+      "52": "Goias",
+      "53": "Distrito Federal"
+    },
+    "V1001": {
+      "1": "North",
+      "2": "Northeast",
+      "3": "Southeast",
+      "4": "South",
+      "5": "Center-West"
+    },
+    "V1006": {
+      "1": "Urban",
+      "2": "Rural"
+    },
+    "V1005": {
+      "1": "Urbanized area",
+      "2": "Non-urbanized area",
+      "3": "Isolated urbanized area",
+      "4": "Rural area with urban extension",
+      "5": "Rural settlement - Village",
+      "6": "Rural settlement - Nucleus",
+      "7": "Rural settlement - Other",
+      "8": "Rural area exclusive of settlements"
+    },
+    "V4001": {
+      "01": "Occupied permanent private household",
+      "02": "Occupied permanent private household without interview",
+      "05": "Occupied improvised private household",
+      "06": "Collective household with residents"
+    },
+    "V4002": {
+      "11": "House",
+      "12": "House in a gated community or village",
+      "13": "Apartment",
+      "14": "Tenement or rooming house",
+      "15": "Indigenous hut (Oca/Maloca)",
+      "51": "Tent",
+      "52": "Inside establishment",
+      "53": "Other (wagon, trailer, cave, etc.)",
+      "61": "Asylum, orphanage, and similar",
+      "62": "Hotel, boarding house, and similar",
+      "63": "Workers' lodging",
+      "64": "Penitentiary, jail, or detention center",
+      "65": "Other collective household"
+    },
+    "V0201": {
+      "1": "Owned by resident - fully paid",
+      "2": "Owned by resident - still paying",
+      "3": "Rented",
+      "4": "Provided by employer",
+      "5": "Provided in another way",
+      "6": "Other condition"
+    },
+    "V0202": {
+      "1": "Masonry with coating",
+      "2": "Masonry without coating",
+      "3": "Appropriate wood (planed)",
+      "4": "Coated rammed earth/wattle and daub",
+      "5": "Uncoated rammed earth/wattle and daub",
+      "6": "Reused wood/Scrap material",
+      "7": "Straw",
+      "8": "Other material",
+      "9": "No walls"
+    },
+    "V0205": {
+      "0": "Zero",
+      "1": "One",
+      "2": "Two",
+      "3": "Three",
+      "4": "Four",
+      "5": "Five",
+      "6": "Six",
+      "7": "Seven",
+      "8": "Eight",
+      "9": "Nine or more"
+    },
+    "V0206": {
+      "1": "Yes",
+      "2": "No"
+    },
+    "V0207": {
+      "1": "General sewage or rainwater network",
+      "2": "Septic tank",
+      "3": "Rudimentary cesspit",
+      "4": "Ditch",
+      "5": "River, lake, or sea",
+      "6": "Other"
+    },
+    "V0208": {
+      "01": "General distribution network",
+      "02": "Well or spring on property",
+      "03": "Well or spring outside property",
+      "04": "Water truck",
+      "05": "Rainwater (cistern)",
+      "06": "Rainwater (other storage)",
+      "07": "River, reservoir, lake, or creek",
+      "08": "Other",
+      "09": "Well or spring in village (Indigenous)",
+      "10": "Well or spring outside village (Indigenous)"
+    },
+    "V0209": {
+      "1": "Yes, in at least one room",
+      "2": "Yes, only on property/plot",
+      "3": "No"
+    },
+    "V0210": {
+      "1": "Collected directly by cleaning service",
+      "2": "Placed in cleaning service skip/dumpster",
+      "3": "Burned on property",
+      "4": "Buried on property",
+      "5": "Dumped on open lot or public area",
+      "6": "Dumped in river, lake, or sea",
+      "7": "Other destination"
+    },
+    "V0211": {
+      "1": "Yes, from distribution company",
+      "2": "Yes, from other sources",
+      "3": "No electricity"
+    },
+    "V0212": {
+      "1": "Yes, exclusive use",
+      "2": "Yes, common use",
+      "3": "No meter"
+    },
+    "V0213": {
+      "1": "Yes",
+      "2": "No"
+    },
+    "V0214": {
+      "1": "Yes",
+      "2": "No"
+    },
+    "V0215": {
+      "1": "Yes",
+      "2": "No"
+    },
+    "V0216": {
+      "1": "Yes",
+      "2": "No"
+    },
+    "V0217": {
+      "1": "Yes",
+      "2": "No"
+    },
+    "V0218": {
+      "1": "Yes",
+      "2": "No"
+    },
+    "V0219": {
+      "1": "Yes",
+      "2": "No"
+    },
+    "V0220": {
+      "1": "Yes",
+      "2": "No"
+    },
+    "V0221": {
+      "1": "Yes",
+      "2": "No"
+    },
+    "V0222": {
+      "1": "Yes",
+      "2": "No"
+    },
+    "V0301": {
+      "1": "Yes",
+      "2": "No"
+    },
+    "V0701": {
+      "1": "Yes",
+      "2": "No"
+    },
+    "V0402": {
+      "1": "Single resident",
+      "2": "More than one resident",
+      "9": "Ignored"
+    },
+    "V6600": {
+      "1": "One-person",
+      "2": "Nuclear",
+      "3": "Extended",
+      "4": "Composite"
+    },
+    "V6210": {
+      "1": "Adequate",
+      "2": "Semi-adequate",
+      "3": "Inadequate"
+    }
+  }
+}

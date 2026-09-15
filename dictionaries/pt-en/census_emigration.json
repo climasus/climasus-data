@@ -1,0 +1,96 @@
+{
+  "columns": {
+    "V0001": "federation_unit",
+    "V0002": "municipality_code",
+    "V0011": "weighting_area",
+    "V0300": "control_number",
+    "V0010": "sample_weight",
+    "V1001": "geographic_region",
+    "V1002": "mesoregion_code",
+    "V1003": "microregion_code",
+    "V1004": "metropolitan_area_code",
+    "V1006": "household_situation",
+    "V1005": "sector_situation",
+    "V0303": "emigrant_sex",
+    "V0304": "emigrant_birth_year",
+    "V0305": "emigrant_last_departure_year",
+    "V3061": "country_of_residence_july_2010",
+    "M0303": "imputation_emigrant_sex",
+    "M0304": "imputation_birth_year",
+    "M0305": "imputation_last_departure_year",
+    "M3061": "imputation_country_of_residence"
+  },
+  "values": {
+    "V0001": {
+      "11": "Rondonia",
+      "12": "Acre",
+      "13": "Amazonas",
+      "14": "Roraima",
+      "15": "Para",
+      "16": "Amapa",
+      "17": "Tocantins",
+      "21": "Maranhao",
+      "22": "Piaui",
+      "23": "Ceara",
+      "24": "Rio Grande do Norte",
+      "25": "Paraiba",
+      "26": "Pernambuco",
+      "27": "Alagoas",
+      "28": "Sergipe",
+      "29": "Bahia",
+      "31": "Minas Gerais",
+      "32": "Espirito Santo",
+      "33": "Rio de Janeiro",
+      "35": "Sao Paulo",
+      "41": "Parana",
+      "42": "Santa Catarina",
+      "43": "Rio Grande do Sul",
+      "50": "Mato Grosso do Sul",
+      "51": "Mato Grosso",
+      "52": "Goias",
+      "53": "Distrito Federal"
+    },
+    "V1001": {
+      "1": "North",
+      "2": "Northeast",
+      "3": "Southeast",
+      "4": "South",
+      "5": "Center-West"
+    },
+    "V1006": {
+      "1": "Urban",
+      "2": "Rural"
+    },
+    "V1005": {
+      "1": "Urbanized area",
+      "2": "Non-urbanized area",
+      "3": "Isolated urbanized area",
+      "4": "Rural area with urban extension",
+      "5": "Rural settlement (povoado)",
+      "6": "Rural settlement (nucleo)",
+      "7": "Rural settlement (other)",
+      "8": "Rural area excluding settlements"
+    },
+    "V0303": {
+      "1": "Male",
+      "2": "Female",
+      "9": "Ignored"
+    },
+    "M0303": {
+      "1": "Yes",
+      "2": "No"
+    },
+    "M0304": {
+      "1": "Yes",
+      "2": "No"
+    },
+    "M0305": {
+      "1": "Yes",
+      "2": "No"
+    },
+    "M3061": {
+      "1": "Yes",
+      "2": "No"
+    }
+  }
+}

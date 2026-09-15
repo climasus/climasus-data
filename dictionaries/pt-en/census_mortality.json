@@ -1,0 +1,111 @@
+{
+  "columns": {
+    "V0001": "federation_unit",
+    "V0002": "municipality_code",
+    "V0011": "weighting_area",
+    "V0300": "control_number",
+    "V0010": "sample_weight",
+    "V1001": "geographic_region",
+    "V1002": "mesoregion_code",
+    "V1003": "microregion_code",
+    "V1004": "metropolitan_area_code",
+    "V1006": "household_situation",
+    "V1005": "sector_situation",
+    "V0703": "month_year_of_death",
+    "V0704": "deceased_sex",
+    "V7051": "age_at_death_years",
+    "V7052": "age_at_death_months",
+    "M0703": "imputation_month_year_death",
+    "M0704": "imputation_sex",
+    "M7051": "imputation_age_years",
+    "M7052": "imputation_age_months"
+  },
+  "values": {
+    "V0001": {
+      "11": "Rondonia",
+      "12": "Acre",
+      "13": "Amazonas",
+      "14": "Roraima",
+      "15": "Para",
+      "16": "Amapa",
+      "17": "Tocantins",
+      "21": "Maranhao",
+      "22": "Piaui",
+      "23": "Ceara",
+      "24": "Rio Grande do Norte",
+      "25": "Paraiba",
+      "26": "Pernambuco",
+      "27": "Alagoas",
+      "28": "Sergipe",
+      "29": "Bahia",
+      "31": "Minas Gerais",
+      "32": "Espirito Santo",
+      "33": "Rio de Janeiro",
+      "35": "Sao Paulo",
+      "41": "Parana",
+      "42": "Santa Catarina",
+      "43": "Rio Grande do Sul",
+      "50": "Mato Grosso do Sul",
+      "51": "Mato Grosso",
+      "52": "Goias",
+      "53": "Distrito Federal"
+    },
+    "V1001": {
+      "1": "North",
+      "2": "Northeast",
+      "3": "Southeast",
+      "4": "South",
+      "5": "Center-West"
+    },
+    "V1006": {
+      "1": "Urban",
+      "2": "Rural"
+    },
+    "V1005": {
+      "1": "Urbanized area",
+      "2": "Non-urbanized area",
+      "3": "Isolated urbanized area",
+      "4": "Rural area with urban extension",
+      "5": "Rural settlement (povoado)",
+      "6": "Rural settlement (nucleo)",
+      "7": "Rural settlement (other)",
+      "8": "Rural area excluding settlements"
+    },
+    "V0703": {
+      "01": "August 2009",
+      "02": "September 2009",
+      "03": "October 2009",
+      "04": "November 2009",
+      "05": "December 2009",
+      "06": "January 2010",
+      "07": "February 2010",
+      "08": "March 2010",
+      "09": "April 2010",
+      "10": "May 2010",
+      "11": "June 2010",
+      "12": "July 2010",
+      "99": "Ignored"
+    },
+    "V0704": {
+      "1": "Male",
+      "2": "Female",
+      "9": "Ignored"
+    },
+    "M0703": {
+      "1": "Yes",
+      "2": "No"
+    },
+    "M0704": {
+      "1": "Yes",
+      "2": "No"
+    },
+    "M7051": {
+      "1": "Yes",
+      "2": "No"
+    },
+    "M7052": {
+      "1": "Yes",
+      "2": "No"
+    }
+  }
+}

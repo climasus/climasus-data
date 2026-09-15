@@ -21,7 +21,7 @@
     "SINASC":       {"any_of": ["NUMERODN"]}
   },
   "role_priority": {
-    "date":         ["death_date", "date", "DTOBITO", "DTNASC", "admission_date"],
+    "date":         ["death_date", "date", "DTOBITO", "DTNASC", "admission_date", "DT_NOTIFIC", "DT_INTER"],
     "cause":        ["underlying_cause", "cause", "CAUSABAS", "DIAG_PRINC"],
     "age":          ["age", "age_years", "age_code", "IDADE", "IDADEMAE"],
     "sex":          ["sex", "SEXO", "CS_SEXO"],

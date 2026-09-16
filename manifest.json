@@ -2,99 +2,9 @@
   "name": "climasus-data",
   "version": "0.2.0",
   "description": "Shared metadata catalog for climasus4r (R) and climasus4py (Python)",
-  "last_updated": "2026-09-15",
+  "last_updated": "2026-09-16",
   "schema_version": 2,
   "files": [
-    {
-      "path": "dictionaries/pt-en/census_emigration.json",
-      "size_bytes": 2375,
-      "md5": "a6a1044ae159281e5ae3e037f785561d",
-      "rows": 19
-    },
-    {
-      "path": "dictionaries/pt-en/census_families.json",
-      "size_bytes": 4707,
-      "md5": "f9e2a9f9c214dbf39cde90d3829eb4cf",
-      "rows": 26
-    },
-    {
-      "path": "dictionaries/pt-en/census_households.json",
-      "size_bytes": 7249,
-      "md5": "fa28b36594d5ec39c62e141bb1d757bd",
-      "rows": 49
-    },
-    {
-      "path": "dictionaries/pt-en/census_mortality.json",
-      "size_bytes": 2716,
-      "md5": "897a3bd8cff46db7ef51665857bda64f",
-      "rows": 19
-    },
-    {
-      "path": "dictionaries/pt-en/census_population.json",
-      "size_bytes": 23213,
-      "md5": "6eb0290bd39cfd3f07603b4f2f8198a9",
-      "rows": 191
-    },
-    {
-      "path": "dictionaries/pt-es/census_emigration.json",
-      "size_bytes": 2391,
-      "md5": "de60b00bf281cb6d7cbdd96db2363c61",
-      "rows": 19
-    },
-    {
-      "path": "dictionaries/pt-es/census_families.json",
-      "size_bytes": 4712,
-      "md5": "2913ff11d3667b0472ee88003b2a799c",
-      "rows": 26
-    },
-    {
-      "path": "dictionaries/pt-es/census_households.json",
-      "size_bytes": 7461,
-      "md5": "651420f5dede81636ac6b070d3667bb1",
-      "rows": 49
-    },
-    {
-      "path": "dictionaries/pt-es/census_mortality.json",
-      "size_bytes": 2779,
-      "md5": "bd669f39494b7be49ffddf789ae29d43",
-      "rows": 19
-    },
-    {
-      "path": "dictionaries/pt-es/census_population.json",
-      "size_bytes": 23668,
-      "md5": "ff4ac3738555455652082a4ac8de0315",
-      "rows": 191
-    },
-    {
-      "path": "dictionaries/pt-pt/census_emigration.json",
-      "size_bytes": 2393,
-      "md5": "4afeafd6ec2dac2892fbe7db28c154a9",
-      "rows": 19
-    },
-    {
-      "path": "dictionaries/pt-pt/census_families.json",
-      "size_bytes": 4761,
-      "md5": "e6188acdc5cded69d62c1684038bfb43",
-      "rows": 26
-    },
-    {
-      "path": "dictionaries/pt-pt/census_households.json",
-      "size_bytes": 6947,
-      "md5": "3da47a971acf9164d8207dbd34d38852",
-      "rows": 49
-    },
-    {
-      "path": "dictionaries/pt-pt/census_mortality.json",
-      "size_bytes": 2778,
-      "md5": "67dae90d5f73aa4160270b4c1e1b7e55",
-      "rows": 19
-    },
-    {
-      "path": "dictionaries/pt-pt/census_population.json",
-      "size_bytes": 23850,
-      "md5": "868560772815c0dfae4741727c7e7fb2",
-      "rows": 191
-    },
     {
       "path": "assets/census/census_2010.parquet",
       "size_bytes": 373655,
@@ -132,6 +42,12 @@
       "rows": 5570
     },
     {
+      "path": "assets/spatial/municipio_meta.parquet",
+      "size_bytes": 495273,
+      "md5": "abedb98be8e098e880ec7fc060821a25",
+      "rows": 5570
+    },
+    {
       "path": "assets/spatial/regions.parquet",
       "size_bytes": 3812012,
       "md5": "0cd0423d29a0c4c8a35473b3e8b16f0b",
@@ -145,23 +61,123 @@
     },
     {
       "path": "dictionaries/pt-en/categories.json",
-      "size_bytes": 2731,
-      "md5": "ac067eadd6ce5b685943e495d63c0519"
+      "size_bytes": 25534,
+      "md5": "755da77372edd8c2be3c79ecc90203fb"
+    },
+    {
+      "path": "dictionaries/pt-en/census_emigration.json",
+      "size_bytes": 2375,
+      "md5": "a6a1044ae159281e5ae3e037f785561d",
+      "rows": 19
+    },
+    {
+      "path": "dictionaries/pt-en/census_families.json",
+      "size_bytes": 4707,
+      "md5": "f9e2a9f9c214dbf39cde90d3829eb4cf",
+      "rows": 26
+    },
+    {
+      "path": "dictionaries/pt-en/census_households.json",
+      "size_bytes": 7249,
+      "md5": "fa28b36594d5ec39c62e141bb1d757bd",
+      "rows": 49
+    },
+    {
+      "path": "dictionaries/pt-en/census_mortality.json",
+      "size_bytes": 2716,
+      "md5": "897a3bd8cff46db7ef51665857bda64f",
+      "rows": 19
+    },
+    {
+      "path": "dictionaries/pt-en/census_population.json",
+      "size_bytes": 23213,
+      "md5": "6eb0290bd39cfd3f07603b4f2f8198a9",
+      "rows": 191
     },
     {
       "path": "dictionaries/pt-en/columns.json",
-      "size_bytes": 6124,
-      "md5": "35f41adef63a02d74d46b8b54e703cbc"
+      "size_bytes": 35199,
+      "md5": "5e7b256bf96e61b364310ea5c07eaa68"
     },
     {
       "path": "dictionaries/pt-es/categories.json",
-      "size_bytes": 2787,
-      "md5": "d87c0a92ce035137c1a14d5bda720f16"
+      "size_bytes": 24536,
+      "md5": "f38ae03538ac77f322fb98ff1b52b23f"
+    },
+    {
+      "path": "dictionaries/pt-es/census_emigration.json",
+      "size_bytes": 2391,
+      "md5": "de60b00bf281cb6d7cbdd96db2363c61",
+      "rows": 19
+    },
+    {
+      "path": "dictionaries/pt-es/census_families.json",
+      "size_bytes": 4712,
+      "md5": "2913ff11d3667b0472ee88003b2a799c",
+      "rows": 26
+    },
+    {
+      "path": "dictionaries/pt-es/census_households.json",
+      "size_bytes": 7461,
+      "md5": "651420f5dede81636ac6b070d3667bb1",
+      "rows": 49
+    },
+    {
+      "path": "dictionaries/pt-es/census_mortality.json",
+      "size_bytes": 2779,
+      "md5": "bd669f39494b7be49ffddf789ae29d43",
+      "rows": 19
+    },
+    {
+      "path": "dictionaries/pt-es/census_population.json",
+      "size_bytes": 23668,
+      "md5": "ff4ac3738555455652082a4ac8de0315",
+      "rows": 191
     },
     {
       "path": "dictionaries/pt-es/columns.json",
-      "size_bytes": 3461,
-      "md5": "e7d46ccdf973f00cb02828de0455fea4"
+      "size_bytes": 21930,
+      "md5": "6c33af5f5d83a12ffe41a8b9ec0b0cb2"
+    },
+    {
+      "path": "dictionaries/pt-pt/categories.json",
+      "size_bytes": 25799,
+      "md5": "231c733c052241fbfa0e9307524a37b6"
+    },
+    {
+      "path": "dictionaries/pt-pt/census_emigration.json",
+      "size_bytes": 2393,
+      "md5": "4afeafd6ec2dac2892fbe7db28c154a9",
+      "rows": 19
+    },
+    {
+      "path": "dictionaries/pt-pt/census_families.json",
+      "size_bytes": 4761,
+      "md5": "e6188acdc5cded69d62c1684038bfb43",
+      "rows": 26
+    },
+    {
+      "path": "dictionaries/pt-pt/census_households.json",
+      "size_bytes": 6947,
+      "md5": "3da47a971acf9164d8207dbd34d38852",
+      "rows": 49
+    },
+    {
+      "path": "dictionaries/pt-pt/census_mortality.json",
+      "size_bytes": 2778,
+      "md5": "67dae90d5f73aa4160270b4c1e1b7e55",
+      "rows": 19
+    },
+    {
+      "path": "dictionaries/pt-pt/census_population.json",
+      "size_bytes": 23850,
+      "md5": "868560772815c0dfae4741727c7e7fb2",
+      "rows": 191
+    },
+    {
+      "path": "dictionaries/pt-pt/columns.json",
+      "size_bytes": 23236,
+      "md5": "e559736c5f96f9c10249c623b375b18c"
     },
     {
       "path": "disease_groups/climate_sensitive.json",
@@ -170,23 +186,23 @@
     },
     {
       "path": "disease_groups/core.json",
-      "size_bytes": 9884,
-      "md5": "95ea6c2448be42fa2fbb70216538d7ee"
+      "size_bytes": 29595,
+      "md5": "a42ba3dd40d2b86fb67ff1ca18ea6edc"
     },
     {
       "path": "geo/municipios.json",
-      "size_bytes": 1175431,
-      "md5": "d166fcfdafa551ee3d4944393288ac03"
+      "size_bytes": 1219993,
+      "md5": "0fcf9fef5f50a85b6f87bd7c0f314a08"
     },
     {
       "path": "metadata/datasus_columns.json",
-      "size_bytes": 1429,
-      "md5": "4725c63358038fa79cafec3b5abeebc3"
+      "size_bytes": 1455,
+      "md5": "92d096e8cbb0e697984d3b14ef8d2918"
     },
     {
       "path": "metadata/datasus_systems.json",
-      "size_bytes": 37925,
-      "md5": "b28b208a615acafbddfb3664bf681085"
+      "size_bytes": 48768,
+      "md5": "75e0825b93f1a818afc618a02edfd378"
     },
     {
       "path": "metadata/inmet_normals.json",
@@ -200,8 +216,8 @@
     },
     {
       "path": "metadata/sinan_diseases.json",
-      "size_bytes": 3104,
-      "md5": "0a5c658ef7ea3937751eb3a7131f2a6a"
+      "size_bytes": 3211,
+      "md5": "db46ba3554d1a13fe1a85ceda6c73a8d"
     },
     {
       "path": "metadata/uf_codes.json",
@@ -210,13 +226,28 @@
     },
     {
       "path": "templates/age_groups.json",
-      "size_bytes": 669,
-      "md5": "dce9b6030a8e5721da60a9c28fb7b530"
+      "size_bytes": 2410,
+      "md5": "f2c79c3a834a94192839c0f332b3981b"
+    },
+    {
+      "path": "templates/aggregate_config.json",
+      "size_bytes": 1539,
+      "md5": "36e5b1084511bc70ca87bf25004170ba"
+    },
+    {
+      "path": "templates/aggregate_labels.json",
+      "size_bytes": 1656,
+      "md5": "4c15237a75689dce4732bc469bb1c289"
+    },
+    {
+      "path": "templates/calendar_labels.json",
+      "size_bytes": 2979,
+      "md5": "4bc9112ba89dd0f1f6391d0c5215bf4e"
     },
     {
       "path": "templates/seasonal_patterns.json",
-      "size_bytes": 436,
-      "md5": "3c0255edd18a39f8ac62770644231d32"
+      "size_bytes": 3900,
+      "md5": "8b29dfec03b89bc6bbaa4d1f9a7c9ae4"
     }
   ]
 }

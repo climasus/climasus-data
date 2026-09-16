@@ -1,4 +1,20 @@
-"""Update climasus-data manifest entries for generated parquet assets."""
+"""Update the climasus-data manifest: checksums for every file it lists.
+
+Before 2026-09-16 this script recomputed the MD5 of the eight parquet assets
+only. The thirty JSON entries were copied forward from the previous manifest
+verbatim, md5 included, and the last line stamped ``last_updated`` with today's
+date - so every JSON entry carried the hash it was first written with while the
+file claimed to be current. Measured at that point: 11 of 38 checksums stale,
+oldest from May, against a ``last_updated`` of the day before.
+
+It also never *added* a JSON file, only preserved what was already listed,
+which is why both pt-pt dictionaries had never been in the inventory while
+their pt-en and pt-es siblings were.
+
+Now every listed file is hashed, and JSON files found under DATA_DIRS are added
+if missing. ``rows`` is recomputed for parquet and otherwise preserved when
+present - fifteen entries carry it and fifteen do not, so it is never invented.
+"""
 
 from __future__ import annotations
 
@@ -10,6 +26,13 @@ from pathlib import Path
 import pyarrow.parquet as pq
 
 ROOT = Path(__file__).resolve().parents[1]
+
+# Directories the inventory covers. Scanned for JSON files to add. `viz/` is
+# deliberately not here: it holds no entry at all, so bringing the whole
+# directory in is a scope decision, not a missing checksum. Its two files
+# (viz_config.json, viz_labels.json) stay out until someone decides otherwise.
+DATA_DIRS = ("assets", "dictionaries", "disease_groups", "geo", "metadata",
+             "templates")
 
 
 def file_md5(path: Path) -> str:
@@ -35,33 +58,67 @@ def _package_version() -> str:
         return "unknown"
 
 
-def update_manifest(version: str | None = None) -> None:
+def _entry(rel: str, anterior: dict | None) -> dict:
+    """Fresh entry for one file: size and md5 always recomputed.
+
+    ``rows`` comes from the parquet metadata for parquet, and is carried over
+    for anything else only when the previous entry had it. Fifteen JSON entries
+    carry a variable count and fifteen do not, so there is no convention to
+    infer - inventing one would put a made-up number next to a real checksum.
+    """
+    path = ROOT / rel
+    entry = {
+        "path": rel,
+        "size_bytes": path.stat().st_size,
+        "md5": file_md5(path),
+    }
+    if rel.endswith(".parquet"):
+        entry["rows"] = parquet_rows(path)
+    elif anterior is not None and "rows" in anterior:
+        entry["rows"] = anterior["rows"]
+    return entry
+
+
+def update_manifest(version: str | None = None, verbose: bool = True) -> dict:
     if version is None:
         version = _package_version()
     manifest_path = ROOT / "manifest.json"
     manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
-    existing = {
-        item["path"]: item
-        for item in manifest.get("files", [])
-        if not item["path"].endswith(".parquet") and (ROOT / item["path"]).is_file()
-    }
+    anteriores = {item["path"]: item for item in manifest.get("files", [])}
 
-    for path in sorted((ROOT / "assets").rglob("*.parquet")):
-        rel = path.relative_to(ROOT).as_posix()
-        existing[rel] = {
-            "path": rel,
-            "size_bytes": path.stat().st_size,
-            "md5": file_md5(path),
-            "rows": parquet_rows(path),
-        }
+    # everything the manifest lists and that still exists, plus every JSON and
+    # parquet under DATA_DIRS - so a new data file cannot stay invisible
+    caminhos = {p for p in anteriores if (ROOT / p).is_file()}
+    for base in DATA_DIRS:
+        for padrao in ("*.json", "*.parquet"):
+            caminhos |= {p.relative_to(ROOT).as_posix()
+                         for p in (ROOT / base).rglob(padrao)}
+
+    sumidos = sorted(set(anteriores) - caminhos)
+    novos = sorted(caminhos - set(anteriores))
+    entradas = {rel: _entry(rel, anteriores.get(rel)) for rel in sorted(caminhos)}
+    mudados = sorted(rel for rel, e in entradas.items()
+                     if rel in anteriores and e["md5"] != anteriores[rel].get("md5"))
 
     manifest["version"] = version
     manifest["last_updated"] = datetime.date.today().isoformat()
-    manifest["files"] = [existing[key] for key in sorted(existing)]
+    manifest["files"] = [entradas[key] for key in sorted(entradas)]
     manifest_path.write_text(
         json.dumps(manifest, ensure_ascii=False, indent=2) + "\n",
         encoding="utf-8",
     )
+
+    resumo = {"total": len(entradas), "md5_corrigido": mudados,
+              "acrescentados": novos, "removidos": sumidos}
+    if verbose:
+        print(f"manifest: {len(entradas)} arquivos")
+        for rotulo, lista in (("md5 corrigido", mudados),
+                              ("acrescentado", novos),
+                              ("removido (nao existe mais)", sumidos)):
+            print(f"  {rotulo}: {len(lista)}")
+            for rel in lista:
+                print(f"      {rel}")
+    return resumo
 
 
 if __name__ == "__main__":

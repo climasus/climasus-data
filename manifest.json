@@ -2,7 +2,7 @@
   "name": "climasus-data",
   "version": "0.2.0",
   "description": "Shared metadata catalog for climasus4r (R) and climasus4py (Python)",
-  "last_updated": "2026-09-16",
+  "last_updated": "2026-09-17",
   "schema_version": 2,
   "files": [
     {
@@ -28,6 +28,12 @@
       "size_bytes": 20735,
       "md5": "0ea6bc7b6944e15d3837402b6b2b1f0b",
       "rows": 366
+    },
+    {
+      "path": "assets/climate/inmet_station_meta.parquet",
+      "size_bytes": 40088,
+      "md5": "300c211d2037399714406b542e92f0bf",
+      "rows": 609
     },
     {
       "path": "assets/climate/inmet_stations.parquet",

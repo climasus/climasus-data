@@ -27,12 +27,18 @@ import pyarrow.parquet as pq
 
 ROOT = Path(__file__).resolve().parents[1]
 
-# Directories the inventory covers. Scanned for JSON files to add. `viz/` is
-# deliberately not here: it holds no entry at all, so bringing the whole
-# directory in is a scope decision, not a missing checksum. Its two files
-# (viz_config.json, viz_labels.json) stay out until someone decides otherwise.
+# Directories the inventory covers. Scanned for JSON files to add.
+#
+# `viz/` came in on 21/09/2026 (D7). It used to be left out as a scope
+# decision rather than a missing checksum, because the manifest held no
+# entry for it at all. The decision was settled by looking at who reads
+# it: `climasus4py/viz/plot_aggregate_map.py` and `plot_aggregate_ts.py`
+# both load `viz/viz_labels.json` and `viz/viz_config.json` at run time.
+# They are consumed data, not scratch files, so leaving them out meant two
+# files the package reads were outside the integrity contract — which is
+# exactly the gap M99 (c) is about.
 DATA_DIRS = ("assets", "dictionaries", "disease_groups", "geo", "metadata",
-             "templates")
+             "templates", "viz")
 
 
 def file_md5(path: Path) -> str:

@@ -202,8 +202,8 @@
     },
     {
       "path": "metadata/datasus_columns.json",
-      "size_bytes": 3244,
-      "md5": "ef4f1e3331c8e2336abeee05ab7e80fb"
+      "size_bytes": 4755,
+      "md5": "50f53b654e12fa4d833f9a2ebf5ed92c"
     },
     {
       "path": "metadata/datasus_systems.json",
@@ -254,6 +254,16 @@
       "path": "templates/seasonal_patterns.json",
       "size_bytes": 3900,
       "md5": "8b29dfec03b89bc6bbaa4d1f9a7c9ae4"
+    },
+    {
+      "path": "viz/viz_config.json",
+      "size_bytes": 3426,
+      "md5": "1cc3545960ed179fe8ece751a0c3aed4"
+    },
+    {
+      "path": "viz/viz_labels.json",
+      "size_bytes": 8900,
+      "md5": "41b40826fcdce0140043ac7c25438dfd"
     }
   ]
 }

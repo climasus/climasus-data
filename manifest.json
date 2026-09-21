@@ -2,7 +2,7 @@
   "name": "climasus-data",
   "version": "0.2.0",
   "description": "Shared metadata catalog for climasus4r (R) and climasus4py (Python)",
-  "last_updated": "2026-09-17",
+  "last_updated": "2026-09-21",
   "schema_version": 2,
   "files": [
     {
@@ -67,8 +67,8 @@
     },
     {
       "path": "dictionaries/pt-en/categories.json",
-      "size_bytes": 25534,
-      "md5": "755da77372edd8c2be3c79ecc90203fb"
+      "size_bytes": 55972,
+      "md5": "93f01980c1fc6a7d89026ec781d53ace"
     },
     {
       "path": "dictionaries/pt-en/census_emigration.json",
@@ -107,8 +107,8 @@
     },
     {
       "path": "dictionaries/pt-es/categories.json",
-      "size_bytes": 24536,
-      "md5": "f38ae03538ac77f322fb98ff1b52b23f"
+      "size_bytes": 54714,
+      "md5": "938e59b805c5c8ac8d0f484e4884d92b"
     },
     {
       "path": "dictionaries/pt-es/census_emigration.json",
@@ -142,13 +142,13 @@
     },
     {
       "path": "dictionaries/pt-es/columns.json",
-      "size_bytes": 21930,
-      "md5": "6c33af5f5d83a12ffe41a8b9ec0b0cb2"
+      "size_bytes": 33597,
+      "md5": "c90b0c474e67596df1c9171275885231"
     },
     {
       "path": "dictionaries/pt-pt/categories.json",
-      "size_bytes": 25799,
-      "md5": "231c733c052241fbfa0e9307524a37b6"
+      "size_bytes": 58375,
+      "md5": "fcfd735da9f824c4bd30b51f4e6a68a0"
     },
     {
       "path": "dictionaries/pt-pt/census_emigration.json",
@@ -182,8 +182,8 @@
     },
     {
       "path": "dictionaries/pt-pt/columns.json",
-      "size_bytes": 23236,
-      "md5": "e559736c5f96f9c10249c623b375b18c"
+      "size_bytes": 34790,
+      "md5": "9825485eeb25d588a233df4387796eff"
     },
     {
       "path": "disease_groups/climate_sensitive.json",

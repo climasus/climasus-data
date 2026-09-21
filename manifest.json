@@ -202,8 +202,8 @@
     },
     {
       "path": "metadata/datasus_columns.json",
-      "size_bytes": 1455,
-      "md5": "92d096e8cbb0e697984d3b14ef8d2918"
+      "size_bytes": 3244,
+      "md5": "ef4f1e3331c8e2336abeee05ab7e80fb"
     },
     {
       "path": "metadata/datasus_systems.json",

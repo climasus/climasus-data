@@ -48,6 +48,12 @@
       "rows": 5570
     },
     {
+      "path": "assets/spatial/municipalities_simplified.parquet",
+      "size_bytes": 29577691,
+      "md5": "6d10508425d6c55dc1418b89d2a55345",
+      "rows": 5570
+    },
+    {
       "path": "assets/spatial/municipio_meta.parquet",
       "size_bytes": 495273,
       "md5": "abedb98be8e098e880ec7fc060821a25",
@@ -60,9 +66,21 @@
       "rows": 5
     },
     {
+      "path": "assets/spatial/regions_simplified.parquet",
+      "size_bytes": 1127977,
+      "md5": "0468042daa2d73fff6933aa440bf7e6a",
+      "rows": 5
+    },
+    {
       "path": "assets/spatial/states.parquet",
       "size_bytes": 11862853,
       "md5": "72230b5663fb99d0fac14e8705e80e10",
+      "rows": 27
+    },
+    {
+      "path": "assets/spatial/states_simplified.parquet",
+      "size_bytes": 2728031,
+      "md5": "56b023544abed326bd66f0f659f16193",
       "rows": 27
     },
     {

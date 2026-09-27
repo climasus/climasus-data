@@ -2,7 +2,8 @@
   "_meta": {
     "description": "Date and geographic column candidates for sus_data_aggregate()",
     "version": "1.0",
-    "last_updated": "2026-07-15"
+    "last_updated": "2026-07-15",
+    "date_candidates_note": "A lista 'common' vale quando o sistema e desconhecido e esta ordenada por CATEGORIA, nao por frequencia: datas de EVENTO primeiro e nascimento por ultimo. Data de nascimento nao e data de evento para analise de exposicao, e ate 26/09/2026 ela vinha em segundo, o que fazia o sus_climate_aggregate casar o clima pelo nascimento num arquivo do SINAN (M127). O SINASC tem entrada propria, consultada antes desta, entao nao e prejudicado."
   },
   "date_candidates": {
     "SIM": [
@@ -29,13 +30,13 @@
     ],
     "common": [
       "death_date",
-      "birth_date",
-      "admission_date",
       "notification_date",
+      "admission_date",
       "date",
       "DTOBITO",
       "DT_NOTIFIC",
       "DT_INTER",
+      "birth_date",
       "DTNASC"
     ]
   },

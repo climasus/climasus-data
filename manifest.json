@@ -2,7 +2,7 @@
   "name": "climasus-data",
   "version": "0.2.0",
   "description": "Shared metadata catalog for climasus4r (R) and climasus4py (Python)",
-  "last_updated": "2026-09-22",
+  "last_updated": "2026-09-26",
   "schema_version": 2,
   "files": [
     {
@@ -255,8 +255,8 @@
     },
     {
       "path": "templates/aggregate_config.json",
-      "size_bytes": 1539,
-      "md5": "36e5b1084511bc70ca87bf25004170ba"
+      "size_bytes": 2008,
+      "md5": "1999993792cfce77227006f81257b994"
     },
     {
       "path": "templates/aggregate_labels.json",

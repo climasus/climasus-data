@@ -1,5 +1,5 @@
 {
-  "schema_version": 4,
+  "schema_version": 5,
   "description": "DATASUS column metadata - shared between climasus4r and climasus4py. schema_version 2 (2026-09-21) splits what used to be a single all_numeric_columns list of 23 entries into three, because those 23 were three different kinds of column and coercing all of them with to_numeric corrupted the identifiers: measured on SIM-DO SP 2023, 13294 of 262909 rows with CODESTAB (5.1%) lost leading zeros, e.g. 10049 for CNES 0010049. all_numeric_columns now lists ONLY genuine quantities, so a consumer that keeps coercing it is doing the right thing. all_identifier_columns maps each fixed-width code to its width (null where the width is not known; none are null today) and must be kept as text, padded and never used in arithmetic. all_categorical_columns must be kept as text so the values match the label books in dictionaries/*/categories.json. GRAESSION was dropped: it matches no column in any available DATASUS file, no field in the climasus4r dictionaries and no entry in any columns.json. CODOCUPMAE is 6 because the CBO-2002 occupation code is six digits -- it appears in no SIM-DO file available here, so the width comes from the code system and not from measurement, as the M5 stopgap already declared. See M64 and M5. schema_version 3 (2026-09-21) makes this file the single source for municipality column detection. There used to be five lists -- this one, detect_geo_column's own dict, climate_aggregate's _MUNI_CANDIDATES, and the two in the plotting modules -- disagreeing on both membership and ORDER. Order is what matters, because the first name that matches wins and residence, occurrence and notification are different epidemiological cuts. role_priority.municipality is now the union in a declared fallback order, and municipality_by_basis says which name belongs to which cut, so a caller that needs a specific one can ask instead of relying on list order. See M96 and D6.",
   "all_date_columns": [
     "DTOBITO",
@@ -81,23 +81,27 @@
   "role_priority": {
     "date": [
       "death_date",
-      "date",
-      "DTOBITO",
       "data_obito",
       "fecha_muerte",
-      "DTNASC",
-      "birth_date",
-      "data_nascimento",
-      "fecha_nacimiento",
-      "admission_date",
-      "DT_NOTIFIC",
+      "DTOBITO",
       "notification_date",
       "data_notificacao",
       "fecha_notificacion",
-      "DT_INTER",
+      "DT_NOTIFIC",
+      "first_symptom_date",
+      "DT_SIN_PRI",
+      "admission_date",
       "data_internacao",
       "fecha_internacion",
-      "fecha_ingreso"
+      "fecha_ingreso",
+      "DT_INTER",
+      "update_date",
+      "DT_COMPET",
+      "date",
+      "birth_date",
+      "data_nascimento",
+      "fecha_nacimiento",
+      "DTNASC"
     ],
     "cause": [
       "underlying_cause",
@@ -189,5 +193,5 @@
       "code_muni"
     ]
   },
-  "last_updated": "2026-09-22"
+  "last_updated": "2026-10-02"
 }

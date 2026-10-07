@@ -185,7 +185,12 @@
       "uf_gestor",
       "UF_ZI",
       "SG_UF_NOT",
-      "notification_uf"
+      "notification_uf",
+      "abbrev_state",
+      "name_state",
+      "name_region",
+      "code_state",
+      "code_region"
     ],
     "municipality": [
       "residence_municipality_code",

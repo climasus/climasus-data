@@ -2,7 +2,7 @@
   "name": "climasus-data",
   "version": "0.2.0",
   "description": "Shared metadata catalog for climasus4r (R) and climasus4py (Python)",
-  "last_updated": "2026-10-02",
+  "last_updated": "2026-10-07",
   "schema_version": 2,
   "files": [
     {
@@ -275,8 +275,8 @@
     },
     {
       "path": "viz/viz_config.json",
-      "size_bytes": 3426,
-      "md5": "1cc3545960ed179fe8ece751a0c3aed4"
+      "size_bytes": 3535,
+      "md5": "59244fcdd46472e58e878fbaf8ba7c1b"
     },
     {
       "path": "viz/viz_labels.json",

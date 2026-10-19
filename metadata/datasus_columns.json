@@ -193,5 +193,28 @@
       "code_muni"
     ]
   },
-  "last_updated": "2026-10-02"
+  "basis_aliases": {
+    "_description": "How a caller may SPELL each basis when passing basis= to sus_spatial_join or sus_data_aggregate. The keys of municipality_by_basis are English, but the package is trilingual and sus_filter already accepts values in the three languages (sex='Masculino', race=...), so basis had to as well. Match is accent- and case-insensitive, so 'residência', 'RESIDENCIA' and 'residencia' all resolve. Portuguese is also what climasus4r uses for the same concept internally -- its .data_aggregate geo_groups are named residencia, ocorrencia, notificacao and generico -- so a reader coming from the R side types these names first. 'generico' and 'nao_especificado' both map to unspecified for that reason.",
+    "residence": [
+      "residence",
+      "residencia"
+    ],
+    "occurrence": [
+      "occurrence",
+      "ocorrencia",
+      "ocurrencia"
+    ],
+    "notification": [
+      "notification",
+      "notificacao",
+      "notificacion"
+    ],
+    "unspecified": [
+      "unspecified",
+      "nao_especificado",
+      "no_especificado",
+      "generico"
+    ]
+  },
+  "last_updated": "2026-10-19"
 }

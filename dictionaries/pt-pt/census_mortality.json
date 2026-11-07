@@ -1,0 +1,111 @@
+{
+  "columns": {
+    "V0001": "unidade_federacao",
+    "V0002": "codigo_municipio",
+    "V0011": "area_ponderacao",
+    "V0300": "controle",
+    "V0010": "peso_amostral",
+    "V1001": "regiao_geografica",
+    "V1002": "codigo_mesorregiao",
+    "V1003": "codigo_microrregiao",
+    "V1004": "codigo_regiao_metropolitana",
+    "V1006": "situacao_domicilio",
+    "V1005": "situacao_setor",
+    "V0703": "mes_ano_falecimento",
+    "V0704": "sexo_falecido",
+    "V7051": "idade_falecer_anos",
+    "V7052": "idade_falecer_meses",
+    "M0703": "imputacao_mes_ano_falecimento",
+    "M0704": "imputacao_sexo",
+    "M7051": "imputacao_idade_anos",
+    "M7052": "imputacao_idade_meses"
+  },
+  "values": {
+    "V0001": {
+      "11": "Rondonia",
+      "12": "Acre",
+      "13": "Amazonas",
+      "14": "Roraima",
+      "15": "Para",
+      "16": "Amapa",
+      "17": "Tocantins",
+      "21": "Maranhao",
+      "22": "Piaui",
+      "23": "Ceara",
+      "24": "Rio Grande do Norte",
+      "25": "Paraiba",
+      "26": "Pernambuco",
+      "27": "Alagoas",
+      "28": "Sergipe",
+      "29": "Bahia",
+      "31": "Minas Gerais",
+      "32": "Espirito Santo",
+      "33": "Rio de Janeiro",
+      "35": "Sao Paulo",
+      "41": "Parana",
+      "42": "Santa Catarina",
+      "43": "Rio Grande do Sul",
+      "50": "Mato Grosso do Sul",
+      "51": "Mato Grosso",
+      "52": "Goias",
+      "53": "Distrito Federal"
+    },
+    "V1001": {
+      "1": "Norte",
+      "2": "Nordeste",
+      "3": "Sudeste",
+      "4": "Sul",
+      "5": "Centro-Oeste"
+    },
+    "V1006": {
+      "1": "Urbana",
+      "2": "Rural"
+    },
+    "V1005": {
+      "1": "Area urbanizada",
+      "2": "Area nao urbanizada",
+      "3": "Area urbanizada isolada",
+      "4": "Area rural de extensao urbana",
+      "5": "Aglomerado rural (povoado)",
+      "6": "Aglomerado rural (nucleo)",
+      "7": "Aglomerado rural (outros)",
+      "8": "Area rural exclusive aglomerado rural"
+    },
+    "V0703": {
+      "01": "Agosto de 2009",
+      "02": "Setembro de 2009",
+      "03": "Outubro de 2009",
+      "04": "Novembro de 2009",
+      "05": "Dezembro de 2009",
+      "06": "Janeiro de 2010",
+      "07": "Fevereiro de 2010",
+      "08": "Marco de 2010",
+      "09": "Abril de 2010",
+      "10": "Maio de 2010",
+      "11": "Junho de 2010",
+      "12": "Julho de 2010",
+      "99": "Ignorado"
+    },
+    "V0704": {
+      "1": "Masculino",
+      "2": "Feminino",
+      "9": "Ignorado"
+    },
+    "M0703": {
+      "1": "Sim",
+      "2": "Nao"
+    },
+    "M0704": {
+      "1": "Sim",
+      "2": "Nao"
+    },
+    "M7051": {
+      "1": "Sim",
+      "2": "Nao"
+    },
+    "M7052": {
+      "1": "Sim",
+      "2": "Nao"
+    }
+  }
+}

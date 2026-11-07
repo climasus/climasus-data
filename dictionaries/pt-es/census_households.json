@@ -1,0 +1,269 @@
+{
+  "columns": {
+    "V0001": "unidad_federativa",
+    "V0002": "codigo_municipio",
+    "V0011": "area_ponderacion",
+    "V0300": "numero_control",
+    "V0010": "peso_muestral",
+    "V1001": "region_geografica",
+    "V1002": "codigo_mesorregion",
+    "V1003": "codigo_microrregion",
+    "V1004": "codigo_region_metropolitana",
+    "V1005": "situacion_sector_detallada",
+    "V1006": "situacion_domicilio",
+    "V4001": "especie_unidad_visitada",
+    "V4002": "tipo_domicilio",
+    "V0201": "condicion_ocupacion",
+    "V0202": "material_predominante_paredes",
+    "V0203": "numero_ambientes",
+    "V6203": "densidad_habitante_ambiente",
+    "V0204": "numero_dormitorios",
+    "V6204": "densidad_habitante_dormitorio",
+    "V0205": "numero_banios",
+    "V0206": "tiene_instalacion_sanitaria",
+    "V0207": "tipo_desague_sanitario",
+    "V0208": "forma_abastecimiento_agua",
+    "V0209": "existencia_agua_canalizada",
+    "V0210": "destino_basura",
+    "V0211": "existencia_energia_electrica",
+    "V0212": "existencia_medidor_energia",
+    "V0213": "tiene_radio",
+    "V0214": "tiene_television",
+    "V0215": "tiene_lavarropas",
+    "V0216": "tiene_heladera",
+    "V0217": "tiene_celular",
+    "V0218": "tiene_telefono_fijo",
+    "V0219": "tiene_computadora",
+    "V0220": "tiene_internet",
+    "V0221": "tiene_motocicleta",
+    "V0222": "tiene_automovil",
+    "V0301": "residente_exterior_anio_anterior",
+    "V0401": "total_residentes",
+    "V0402": "responsabilidad_domicilio",
+    "V0701": "fallecimiento_hogar_anio_anterior",
+    "V6600": "tipo_unidad_domestica",
+    "V6210": "adecuacion_vivienda",
+    "V2011": "valor_alquiler",
+    "V2012": "alquiler_salarios_minimos",
+    "V6529": "ingreso_mensual_hogar",
+    "V6530": "ingreso_hogar_salarios_minimos",
+    "V6531": "ingreso_per_capita",
+    "V6532": "ingreso_per_capita_salarios_minimos"
+  },
+  "values": {
+    "V0001": {
+      "11": "Rondonia",
+      "12": "Acre",
+      "13": "Amazonas",
+      "14": "Roraima",
+      "15": "Para",
+      "16": "Amapa",
+      "17": "Tocantins",
+      "21": "Maranhao",
+      "22": "Piaui",
+      "23": "Ceara",
+      "24": "Rio Grande do Norte",
+      "25": "Paraiba",
+      "26": "Pernambuco",
+      "27": "Alagoas",
+      "28": "Sergipe",
+      "29": "Bahia",
+      "31": "Minas Gerais",
+      "32": "Espirito Santo",
+      "33": "Rio de Janeiro",
+      "35": "Sao Paulo",
+      "41": "Parana",
+      "42": "Santa Catarina",
+      "43": "Rio Grande do Sul",
+      "50": "Mato Grosso do Sul",
+      "51": "Mato Grosso",
+      "52": "Goias",
+      "53": "Distrito Federal"
+    },
+    "V1001": {
+      "1": "Norte",
+      "2": "Noreste",
+      "3": "Sudeste",
+      "4": "Sur",
+      "5": "Centro-Oeste"
+    },
+    "V1006": {
+      "1": "Urbana",
+      "2": "Rural"
+    },
+    "V1005": {
+      "1": "Area urbanizada",
+      "2": "Area no urbanizada",
+      "3": "Area urbanizada aislada",
+      "4": "Area rural de extension urbana",
+      "5": "Aglomerado rural - Poblado",
+      "6": "Aglomerado rural - Nucleo",
+      "7": "Aglomerado rural - Otros",
+      "8": "Area rural exclusiva (sin aglomerado)"
+    },
+    "V4001": {
+      "01": "Domicilio particular permanente ocupado",
+      "02": "Domicilio particular permanente ocupado (sin entrevista)",
+      "05": "Domicilio particular improvisado ocupado",
+      "06": "Domicilio colectivo con residentes"
+    },
+    "V4002": {
+      "11": "Casa",
+      "12": "Casa en condominio o villa",
+      "13": "Apartamento",
+      "14": "Habitacion en casa de vecindad/inquilinato (cortico)",
+      "15": "Choza indigena (Oca/Maloca)",
+      "51": "Tienda de campana o carpa",
+      "52": "Dentro de establecimiento",
+      "53": "Otro (vagon, remolque, cueva, etc.)",
+      "61": "Asilo, orfanato y similares",
+      "62": "Hotel, pension y similares",
+      "63": "Alojamiento de trabajadores",
+      "64": "Penitenciaria, presidio o centro de detencion",
+      "65": "Otro domicilio colectivo"
+    },
+    "V0201": {
+      "1": "Propio (ya pagado)",
+      "2": "Propio (aun pagando)",
+      "3": "Alquilado",
+      "4": "Cedido por empleador",
+      "5": "Cedido de otra forma",
+      "6": "Otra condicion"
+    },
+    "V0202": {
+      "1": "Mamposteria/Albanileria con revestimiento",
+      "2": "Mamposteria/Albanileria sin revestimiento",
+      "3": "Madera apropiada para construccion",
+      "4": "Adobe/Tapial revestido",
+      "5": "Adobe/Tapial no revestido",
+      "6": "Madera aprovechada/desecho",
+      "7": "Paja",
+      "8": "Otro material",
+      "9": "Sin paredes"
+    },
+    "V0205": {
+      "0": "Cero",
+      "1": "Uno",
+      "2": "Dos",
+      "3": "Tres",
+      "4": "Cuatro",
+      "5": "Cinco",
+      "6": "Seis",
+      "7": "Siete",
+      "8": "Ocho",
+      "9": "Nueve o mas"
+    },
+    "V0206": {
+      "1": "Si",
+      "2": "No"
+    },
+    "V0207": {
+      "1": "Red general de desague o pluvial",
+      "2": "Fosa septica",
+      "3": "Fosa rudimentaria/Pozo negro",
+      "4": "Zanja",
+      "5": "Rio, lago o mar",
+      "6": "Otro"
+    },
+    "V0208": {
+      "01": "Red general de distribucion",
+      "02": "Pozo o manantial en la propiedad",
+      "03": "Pozo o manantial fuera de la propiedad",
+      "04": "Camion cisterna",
+      "05": "Agua de lluvia (cisterna)",
+      "06": "Agua de lluvia (otra forma)",
+      "07": "Rio, embalse, lago o arroyo",
+      "08": "Otra",
+      "09": "Pozo o manantial en la aldea (Indigena)",
+      "10": "Pozo o manantial fuera de la aldea (Indigena)"
+    },
+    "V0209": {
+      "1": "Si, en al menos un ambiente",
+      "2": "Si, solo en la propiedad/terreno",
+      "3": "No"
+    },
+    "V0210": {
+      "1": "Recolectada directamente por servicio de limpieza",
+      "2": "Colocada en contenedor de servicio de limpieza",
+      "3": "Quemada en la propiedad",
+      "4": "Enterrada en la propiedad",
+      "5": "Arrojada en terreno baldio o via publica",
+      "6": "Arrojada a rio, lago o mar",
+      "7": "Otro destino"
+    },
+    "V0211": {
+      "1": "Si, de compania distribuidora",
+      "2": "Si, de otras fuentes",
+      "3": "No existe energia electrica"
+    },
+    "V0212": {
+      "1": "Si, de uso exclusivo",
+      "2": "Si, de uso comun",
+      "3": "No tiene medidor"
+    },
+    "V0213": {
+      "1": "Si",
+      "2": "No"
+    },
+    "V0214": {
+      "1": "Si",
+      "2": "No"
+    },
+    "V0215": {
+      "1": "Si",
+      "2": "No"
+    },
+    "V0216": {
+      "1": "Si",
+      "2": "No"
+    },
+    "V0217": {
+      "1": "Si",
+      "2": "No"
+    },
+    "V0218": {
+      "1": "Si",
+      "2": "No"
+    },
+    "V0219": {
+      "1": "Si",
+      "2": "No"
+    },
+    "V0220": {
+      "1": "Si",
+      "2": "No"
+    },
+    "V0221": {
+      "1": "Si",
+      "2": "No"
+    },
+    "V0222": {
+      "1": "Si",
+      "2": "No"
+    },
+    "V0301": {
+      "1": "Si",
+      "2": "No"
+    },
+    "V0701": {
+      "1": "Si",
+      "2": "No"
+    },
+    "V0402": {
+      "1": "Un solo residente",
+      "2": "Mas de un residente",
+      "9": "Ignorado"
+    },
+    "V6600": {
+      "1": "Unipersonal",
+      "2": "Nuclear",
+      "3": "Extendida",
+      "4": "Compuesta"
+    },
+    "V6210": {
+      "1": "Adecuada",
+      "2": "Semi-adecuada",
+      "3": "Inadecuada"
+    }
+  }
+}

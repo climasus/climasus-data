@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "description": "Unified DATASUS systems catalog.",
-  "last_updated": "2026-04-26",
+  "last_updated": "2026-06-17",
   "sources": {
     "datasus_ftp": {
       "protocol": "ftp",
@@ -17,612 +17,10 @@
     "disease_code": "SINAN disease/condition code."
   },
   "systems": {
-    "CNES-DC": {
-      "category": "CNES",
-      "full_name": {
-        "pt": "Cadastro Nacional de Estabelecimentos de Saúde - Equipamentos Detalhado",
-        "en": "National Health Establishment Registry - Equipment Detailed",
-        "es": "Registro Nacional de Establecimientos de Salud - Equipamiento Detallado"
-      },
-      "description": {
-        "pt": "Cadastro detalhado de equipamentos médico-hospitalares",
-        "en": "Detailed registry of medical-hospital equipment",
-        "es": "Registro detallado de equipamiento médico-hospitalario"
-      },
-      "temporal_granularity": "monthly",
-      "requires_month": true,
-      "cache_days": 30,
-      "is_national": false,
-      "coverage": "state"
-    },
-    "CNES-EE": {
-      "category": "CNES",
-      "full_name": {
-        "pt": "Cadastro Nacional de Estabelecimentos de Saúde - Entidades de Ensino",
-        "en": "National Health Establishment Registry - Educational Entities",
-        "es": "Registro Nacional de Establecimientos de Salud - Entidades de Enseñanza"
-      },
-      "description": {
-        "pt": "Entidades de ensino em saúde",
-        "en": "Health education entities",
-        "es": "Entidades de enseñanza en salud"
-      },
-      "temporal_granularity": "monthly",
-      "requires_month": true,
-      "cache_days": 30,
-      "is_national": false,
-      "coverage": "state"
-    },
-    "CNES-EF": {
-      "category": "CNES",
-      "full_name": {
-        "pt": "Cadastro Nacional de Estabelecimentos de Saúde - Instalações de Ensino",
-        "en": "National Health Establishment Registry - Teaching Facilities",
-        "es": "Registro Nacional de Establecimientos de Salud - Instalaciones de Enseñanza"
-      },
-      "description": {
-        "pt": "Instalações físicas de ensino",
-        "en": "Teaching physical facilities",
-        "es": "Instalaciones físicas de enseñanza"
-      },
-      "temporal_granularity": "monthly",
-      "requires_month": true,
-      "cache_days": 30,
-      "is_national": false,
-      "coverage": "state"
-    },
-    "CNES-EP": {
-      "category": "CNES",
-      "full_name": {
-        "pt": "Cadastro Nacional de Estabelecimentos de Saúde - Participantes do Ensino",
-        "en": "National Health Establishment Registry - Teaching Participants",
-        "es": "Registro Nacional de Establecimientos de Salud - Participantes de Enseñanza"
-      },
-      "description": {
-        "pt": "Estabelecimentos vinculados ao ensino médico",
-        "en": "Medical teaching affiliated establishments",
-        "es": "Establecimientos vinculados a la enseñanza médica"
-      },
-      "temporal_granularity": "monthly",
-      "requires_month": true,
-      "cache_days": 30,
-      "is_national": false,
-      "coverage": "state"
-    },
-    "CNES-EQ": {
-      "category": "CNES",
-      "full_name": {
-        "pt": "Cadastro Nacional de Estabelecimentos de Saúde - Equipamentos Resumido",
-        "en": "National Health Establishment Registry - Equipment Summary",
-        "es": "Registro Nacional de Establecimientos de Salud - Equipamiento Resumido"
-      },
-      "description": {
-        "pt": "Cadastro resumido de equipamentos médico-hospitalares",
-        "en": "Summary registry of medical-hospital equipment",
-        "es": "Registro resumido de equipamiento médico-hospitalario"
-      },
-      "temporal_granularity": "monthly",
-      "requires_month": true,
-      "cache_days": 30,
-      "is_national": false,
-      "coverage": "state"
-    },
-    "CNES-GM": {
-      "category": "CNES",
-      "full_name": {
-        "pt": "Cadastro Nacional de Estabelecimentos de Saúde - Gestão e Apoio",
-        "en": "National Health Establishment Registry - Management/Support",
-        "es": "Registro Nacional de Establecimientos de Salud - Gestión y Apoyo"
-      },
-      "description": {
-        "pt": "Gestão e serviços de apoio",
-        "en": "Management and support services",
-        "es": "Gestión y servicios de apoyo"
-      },
-      "temporal_granularity": "monthly",
-      "requires_month": true,
-      "cache_days": 30,
-      "is_national": false,
-      "coverage": "state"
-    },
-    "CNES-HB": {
-      "category": "CNES",
-      "full_name": {
-        "pt": "Cadastro Nacional de Estabelecimentos de Saúde - Leitos Hospitalares",
-        "en": "National Health Establishment Registry - Hospital Beds",
-        "es": "Registro Nacional de Establecimientos de Salud - Camas Hospitalarias"
-      },
-      "description": {
-        "pt": "Cadastro de leitos hospitalares",
-        "en": "Hospital beds registry",
-        "es": "Registro de camas hospitalarias"
-      },
-      "temporal_granularity": "monthly",
-      "requires_month": true,
-      "cache_days": 30,
-      "is_national": false,
-      "coverage": "state"
-    },
-    "CNES-IN": {
-      "category": "CNES",
-      "full_name": {
-        "pt": "Cadastro Nacional de Estabelecimentos de Saúde - Indicadores Hospitalares",
-        "en": "National Health Establishment Registry - Hospital Indicators",
-        "es": "Registro Nacional de Establecimientos de Salud - Indicadores Hospitalarios"
-      },
-      "description": {
-        "pt": "Indicadores de desempenho hospitalar",
-        "en": "Hospital performance indicators",
-        "es": "Indicadores de desempeño hospitalario"
-      },
-      "temporal_granularity": "monthly",
-      "requires_month": true,
-      "cache_days": 30,
-      "is_national": false,
-      "coverage": "state"
-    },
-    "CNES-LT": {
-      "category": "CNES",
-      "full_name": {
-        "pt": "Cadastro Nacional de Estabelecimentos de Saúde - Leitos",
-        "en": "National Health Establishment Registry - Beds",
-        "es": "Registro Nacional de Establecimientos de Salud - Camas"
-      },
-      "description": {
-        "pt": "Cadastro de leitos hospitalares",
-        "en": "Hospital beds registry",
-        "es": "Registro de camas hospitalarias"
-      },
-      "temporal_granularity": "monthly",
-      "requires_month": true,
-      "cache_days": 30,
-      "is_national": false,
-      "coverage": "state"
-    },
-    "CNES-PF": {
-      "category": "CNES",
-      "full_name": {
-        "pt": "Cadastro Nacional de Estabelecimentos de Saúde - Profissionais Detalhado",
-        "en": "National Health Establishment Registry - Professionals Detailed",
-        "es": "Registro Nacional de Establecimientos de Salud - Profesionales Detallado"
-      },
-      "description": {
-        "pt": "Cadastro detalhado de pessoal físico",
-        "en": "Detailed health professionals registry",
-        "es": "Registro detallado de profesionales"
-      },
-      "temporal_granularity": "monthly",
-      "requires_month": true,
-      "cache_days": 30,
-      "is_national": false,
-      "coverage": "state"
-    },
-    "CNES-RC": {
-      "category": "CNES",
-      "full_name": {
-        "pt": "Cadastro Nacional de Estabelecimentos de Saúde - Classificação Hospitalar",
-        "en": "National Health Establishment Registry - Hospital Classification",
-        "es": "Registro Nacional de Establecimientos de Salud - Clasificación Hospitalaria"
-      },
-      "description": {
-        "pt": "Classificação e tipo de hospitais",
-        "en": "Hospital classification and type",
-        "es": "Clasificación y tipo de hospitales"
-      },
-      "temporal_granularity": "monthly",
-      "requires_month": true,
-      "cache_days": 30,
-      "is_national": false,
-      "coverage": "state"
-    },
-    "CNES-SR": {
-      "category": "CNES",
-      "full_name": {
-        "pt": "Cadastro Nacional de Estabelecimentos de Saúde - Serviços Especializados",
-        "en": "National Health Establishment Registry - Specialized Services",
-        "es": "Registro Nacional de Establecimientos de Salud - Servicios Especializados"
-      },
-      "description": {
-        "pt": "Cadastro de serviços especializados",
-        "en": "Specialized services registry",
-        "es": "Registro de servicios especializados"
-      },
-      "temporal_granularity": "monthly",
-      "requires_month": true,
-      "cache_days": 30,
-      "is_national": false,
-      "coverage": "state"
-    },
-    "CNES-ST": {
-      "category": "CNES",
-      "full_name": {
-        "pt": "Cadastro Nacional de Estabelecimentos de Saúde - Profissionais de Saúde",
-        "en": "National Health Establishment Registry - Health Professionals",
-        "es": "Registro Nacional de Establecimientos de Salud - Profesionales de Salud"
-      },
-      "description": {
-        "pt": "Cadastro de profissionais de saúde",
-        "en": "Health professionals registry",
-        "es": "Registro de profesionales de salud"
-      },
-      "temporal_granularity": "monthly",
-      "requires_month": true,
-      "cache_days": 30,
-      "is_national": false,
-      "coverage": "state"
-    },
-    "SIA-AB": {
-      "category": "SIA",
-      "full_name": {
-        "pt": "Sistema de Informações Ambulatoriais - Atenção Básica",
-        "en": "Outpatient Information System - Primary Care",
-        "es": "Sistema de Información Ambulatoria - Atención Básica"
-      },
-      "description": {
-        "pt": "Procedimentos da atenção básica/primária",
-        "en": "Primary care procedures",
-        "es": "Procedimientos de atención básica/primaria"
-      },
-      "temporal_granularity": "monthly",
-      "requires_month": true,
-      "cache_days": 30,
-      "is_national": false,
-      "coverage": "state"
-    },
-    "SIA-ABO": {
-      "category": "SIA",
-      "full_name": {
-        "pt": "Sistema de Informações Ambulatoriais - Procedimentos Odontológicos",
-        "en": "Outpatient Information System - Dental Procedures",
-        "es": "Sistema de Información Ambulatoria - Procedimientos Odontológicos"
-      },
-      "description": {
-        "pt": "Procedimentos odontológicos ambulatoriais",
-        "en": "Dental ambulatory procedures",
-        "es": "Procedimientos odontológicos ambulatorios"
-      },
-      "temporal_granularity": "monthly",
-      "requires_month": true,
-      "cache_days": 30,
-      "is_national": false,
-      "coverage": "state"
-    },
-    "SIA-ACF": {
-      "category": "SIA",
-      "full_name": {
-        "pt": "Sistema de Informações Ambulatoriais - Assistência Farmacêutica",
-        "en": "Outpatient Information System - Pharmaceutical Assistance",
-        "es": "Sistema de Información Ambulatoria - Asistencia Farmacéutica"
-      },
-      "description": {
-        "pt": "Dispensação de medicamentos",
-        "en": "Pharmaceutical dispensing",
-        "es": "Dispensación de medicamentos"
-      },
-      "temporal_granularity": "monthly",
-      "requires_month": true,
-      "cache_days": 30,
-      "is_national": false,
-      "coverage": "state"
-    },
-    "SIA-AD": {
-      "category": "SIA",
-      "full_name": {
-        "pt": "Sistema de Informações Ambulatoriais - Alta Complexidade",
-        "en": "Outpatient Information System - High Complexity",
-        "es": "Sistema de Información Ambulatoria - Alta Complejidad"
-      },
-      "description": {
-        "pt": "Procedimentos de alta complexidade/diferenciada",
-        "en": "High complexity/specialized procedures",
-        "es": "Procedimientos de alta complejidad/especializados"
-      },
-      "temporal_granularity": "monthly",
-      "requires_month": true,
-      "cache_days": 30,
-      "is_national": false,
-      "coverage": "state"
-    },
-    "SIA-AM": {
-      "category": "SIA",
-      "full_name": {
-        "pt": "Sistema de Informações Ambulatoriais - Ambulatório de Especialidades",
-        "en": "Outpatient Information System - Medical Specialties",
-        "es": "Sistema de Información Ambulatoria - Ambulatorio de Especialidades"
-      },
-      "description": {
-        "pt": "Consultas e procedimentos especializados",
-        "en": "Specialized consultations and procedures",
-        "es": "Consultas y procedimientos especializados"
-      },
-      "temporal_granularity": "monthly",
-      "requires_month": true,
-      "cache_days": 30,
-      "is_national": false,
-      "coverage": "state"
-    },
-    "SIA-AN": {
-      "category": "SIA",
-      "full_name": {
-        "pt": "Sistema de Informações Ambulatoriais - Atenção Domiciliar",
-        "en": "Outpatient Information System - Home Care",
-        "es": "Sistema de Información Ambulatoria - Atención Domiciliaria"
-      },
-      "description": {
-        "pt": "Atendimento domiciliar",
-        "en": "Home care services",
-        "es": "Servicios de atención domiciliaria"
-      },
-      "temporal_granularity": "monthly",
-      "requires_month": true,
-      "cache_days": 30,
-      "is_national": false,
-      "coverage": "state"
-    },
-    "SIA-AQ": {
-      "category": "SIA",
-      "full_name": {
-        "pt": "Sistema de Informações Ambulatoriais - Ações Estratégicas",
-        "en": "Outpatient Information System - Strategic Actions",
-        "es": "Sistema de Información Ambulatoria - Acciones Estratégicas"
-      },
-      "description": {
-        "pt": "Ações estratégicas de saúde pública",
-        "en": "Public health strategic actions",
-        "es": "Acciones estratégicas de salud pública"
-      },
-      "temporal_granularity": "monthly",
-      "requires_month": true,
-      "cache_days": 30,
-      "is_national": false,
-      "coverage": "state"
-    },
-    "SIA-AR": {
-      "category": "SIA",
-      "full_name": {
-        "pt": "Sistema de Informações Ambulatoriais - Regulação",
-        "en": "Outpatient Information System - Regulation",
-        "es": "Sistema de Información Ambulatoria - Regulación"
-      },
-      "description": {
-        "pt": "Regulação de acesso e filas",
-        "en": "Access regulation and queues",
-        "es": "Regulación de acceso y colas"
-      },
-      "temporal_granularity": "monthly",
-      "requires_month": true,
-      "cache_days": 30,
-      "is_national": false,
-      "coverage": "state"
-    },
-    "SIA-ATD": {
-      "category": "SIA",
-      "full_name": {
-        "pt": "Sistema de Informações Ambulatoriais - Urgência/Emergência",
-        "en": "Outpatient Information System - Urgency/Emergency",
-        "es": "Sistema de Información Ambulatoria - Urgencia/Emergencia"
-      },
-      "description": {
-        "pt": "Atendimentos de urgência e emergência",
-        "en": "Urgency and emergency care",
-        "es": "Atención de urgencia y emergencia"
-      },
-      "temporal_granularity": "monthly",
-      "requires_month": true,
-      "cache_days": 30,
-      "is_national": false,
-      "coverage": "state"
-    },
-    "SIA-PA": {
-      "category": "SIA",
-      "full_name": {
-        "pt": "Sistema de Informações Ambulatoriais - Procedimentos Ambulatoriais em Hospital",
-        "en": "Outpatient Information System - Hospital Outpatient Procedures",
-        "es": "Sistema de Información Ambulatoria - Procedimientos Ambulatorios en Hospital"
-      },
-      "description": {
-        "pt": "Procedimentos ambulatoriais realizados em hospitais",
-        "en": "Outpatient procedures performed in hospitals",
-        "es": "Procedimientos ambulatorios realizados en hospitales"
-      },
-      "temporal_granularity": "monthly",
-      "requires_month": true,
-      "cache_days": 30,
-      "is_national": false,
-      "coverage": "state"
-    },
-    "SIA-PS": {
-      "category": "SIA",
-      "full_name": {
-        "pt": "Sistema de Informações Ambulatoriais - Atenção Psicossocial",
-        "en": "Outpatient Information System - Psychosocial Care",
-        "es": "Sistema de Información Ambulatoria - Atención Psicosocial"
-      },
-      "description": {
-        "pt": "CAPS e atenção em saúde mental",
-        "en": "CAPS and mental health care",
-        "es": "CAPS y atención en salud mental"
-      },
-      "temporal_granularity": "monthly",
-      "requires_month": true,
-      "cache_days": 30,
-      "is_national": false,
-      "coverage": "state"
-    },
-    "SIA-SAD": {
-      "category": "SIA",
-      "full_name": {
-        "pt": "Sistema de Informações Ambulatoriais - Atenção Especializada",
-        "en": "Outpatient Information System - Specialized Care",
-        "es": "Sistema de Información Ambulatoria - Atención Especializada"
-      },
-      "description": {
-        "pt": "Atenção especializada ambulatorial",
-        "en": "Specialized outpatient care",
-        "es": "Atención especializada ambulatoria"
-      },
-      "temporal_granularity": "monthly",
-      "requires_month": true,
-      "cache_days": 30,
-      "is_national": false,
-      "coverage": "state"
-    },
-    "SIH-ER": {
-      "source": "datasus_ftp",
-      "family": "SIH",
-      "file_format": "dbc",
-      "filename_template": "ER{uf}{yy}{month}.dbc",
-      "url_templates": [
-        {
-          "status": "current",
-          "valid_from_year": 2008,
-          "path_template": "SIHSUS/200801_/Dados/ER{uf}{yy}{month}.dbc"
-        },
-        {
-          "status": "historical",
-          "valid_until_year": 2007,
-          "path_template": "SIHSUS/199201_200712/Dados/ER{uf}{yy}{month}.dbc"
-        }
-      ],
-      "geographic_scope": "state",
-      "category": "SIH",
-      "full_name": {
-        "pt": "Sistema de Informações Hospitalares - Prontuários de Emergência",
-        "en": "Hospital Information System - Emergency Room Records",
-        "es": "Sistema de Información Hospitalaria - Registros de Emergencia"
-      },
-      "description": {
-        "pt": "Prontuários de atendimento em emergência",
-        "en": "Emergency room medical records",
-        "es": "Historias clínicas de emergencia"
-      },
-      "temporal_granularity": "monthly",
-      "requires_month": true,
-      "cache_days": 30,
-      "is_national": false,
-      "coverage": "state"
-    },
-    "SIH-RD": {
-      "source": "datasus_ftp",
-      "family": "SIH",
-      "file_format": "dbc",
-      "filename_template": "RD{uf}{yy}{month}.dbc",
-      "url_templates": [
-        {
-          "status": "current",
-          "valid_from_year": 2008,
-          "path_template": "SIHSUS/200801_/Dados/RD{uf}{yy}{month}.dbc"
-        },
-        {
-          "status": "historical",
-          "valid_until_year": 2007,
-          "path_template": "SIHSUS/199201_200712/Dados/RD{uf}{yy}{month}.dbc"
-        }
-      ],
-      "geographic_scope": "state",
-      "category": "SIH",
-      "full_name": {
-        "pt": "Sistema de Informações Hospitalares - Autorizações de Internação Hospitalar",
-        "en": "Hospital Information System - Hospital Admission Authorizations",
-        "es": "Sistema de Información Hospitalaria - Autorizaciones de Internación Hospitalaria"
-      },
-      "description": {
-        "pt": "AIH - Autorizações de Internação Hospitalar",
-        "en": "AIH - Hospital Admission Authorizations",
-        "es": "AIH - Autorizaciones de Internación Hospitalaria"
-      },
-      "temporal_granularity": "monthly",
-      "requires_month": true,
-      "cache_days": 30,
-      "is_national": false,
-      "coverage": "state",
-      "data_characteristics": {
-        "typical_size_mb": 100,
-        "main_columns": [
-          "DT_INTER",
-          "DIAG_PRINC",
-          "IDADE",
-          "SEXO",
-          "MUNIC_RES",
-          "PROC_REA"
-        ]
-      }
-    },
-    "SIH-RJ": {
-      "source": "datasus_ftp",
-      "family": "SIH",
-      "file_format": "dbc",
-      "filename_template": "RJ{uf}{yy}{month}.dbc",
-      "url_templates": [
-        {
-          "status": "current",
-          "valid_from_year": 2008,
-          "path_template": "SIHSUS/200801_/Dados/RJ{uf}{yy}{month}.dbc"
-        },
-        {
-          "status": "historical",
-          "valid_until_year": 2007,
-          "path_template": "SIHSUS/199201_200712/Dados/RJ{uf}{yy}{month}.dbc"
-        }
-      ],
-      "geographic_scope": "state",
-      "category": "SIH",
-      "full_name": {
-        "pt": "Sistema de Informações Hospitalares - Rio de Janeiro",
-        "en": "Hospital Information System - Rio de Janeiro specific",
-        "es": "Sistema de Información Hospitalaria - Específico Río de Janeiro"
-      },
-      "description": {
-        "pt": "AIH específicas do Rio de Janeiro",
-        "en": "Rio de Janeiro specific Hospital Admissions",
-        "es": "Internaciones específicas de Río de Janeiro"
-      },
-      "temporal_granularity": "monthly",
-      "requires_month": true,
-      "cache_days": 30,
-      "is_national": false,
-      "coverage": "state"
-    },
-    "SIH-SP": {
-      "source": "datasus_ftp",
-      "family": "SIH",
-      "file_format": "dbc",
-      "filename_template": "SP{uf}{yy}{month}.dbc",
-      "url_templates": [
-        {
-          "status": "current",
-          "valid_from_year": 2008,
-          "path_template": "SIHSUS/200801_/Dados/SP{uf}{yy}{month}.dbc"
-        },
-        {
-          "status": "historical",
-          "valid_until_year": 2007,
-          "path_template": "SIHSUS/199201_200712/Dados/SP{uf}{yy}{month}.dbc"
-        }
-      ],
-      "geographic_scope": "state",
-      "category": "SIH",
-      "full_name": {
-        "pt": "Sistema de Informações Hospitalares - São Paulo",
-        "en": "Hospital Information System - São Paulo specific",
-        "es": "Sistema de Información Hospitalaria - Específico São Paulo"
-      },
-      "description": {
-        "pt": "AIH específicas de São Paulo",
-        "en": "São Paulo specific Hospital Admissions",
-        "es": "Internaciones específicas de São Paulo"
-      },
-      "temporal_granularity": "monthly",
-      "requires_month": true,
-      "cache_days": 30,
-      "is_national": false,
-      "coverage": "state"
-    },
     "SIM-DO": {
       "source": "datasus_ftp",
       "family": "SIM",
       "file_format": "dbc",
-      "filename_template": "DO{uf}{yyyy}.dbc",
       "url_templates": [
         {
           "status": "preliminary",
@@ -637,14 +35,14 @@
       "geographic_scope": "state",
       "category": "SIM",
       "full_name": {
-        "pt": "Sistema de Informações sobre Mortalidade - Declarações de Óbito",
-        "en": "Mortality Information System - Death Certificates",
-        "es": "Sistema de Información sobre Mortalidad - Certificados de Defunción"
+        "pt": "SIM - Declarações de Óbito",
+        "en": "SIM - Death Certificates",
+        "es": "SIM - Certificados de Defunción"
       },
       "description": {
-        "pt": "Declarações de óbito - Dataset completo",
-        "en": "Death certificates - Complete dataset",
-        "es": "Certificados de defunción - Dataset completo"
+        "pt": "Declarações de óbito - dataset completo",
+        "en": "Death certificates - complete dataset",
+        "es": "Certificados de defunción - dataset completo"
       },
       "temporal_granularity": "annual",
       "requires_month": false,
@@ -667,45 +65,10 @@
         ]
       }
     },
-    "SIM-DOEXT": {
-      "source": "datasus_ftp",
-      "family": "SIM",
-      "file_format": "dbc",
-      "filename_template": "DOEXT{yy}.dbc",
-      "url_templates": [
-        {
-          "status": "preliminary",
-          "valid_from_year": 2022,
-          "path_template": "SIM/PRELIM/DOFET/DOEXT{yy}.dbc"
-        },
-        {
-          "status": "final",
-          "path_template": "SIM/CID10/DOFET/DOEXT{yy}.dbc"
-        }
-      ],
-      "geographic_scope": "national",
-      "category": "SIM",
-      "full_name": {
-        "pt": "Sistema de Informações sobre Mortalidade - Óbitos por Causas Externas",
-        "en": "Mortality Information System - External Causes Deaths",
-        "es": "Sistema de Información sobre Mortalidad - Muertes por Causas Externas"
-      },
-      "description": {
-        "pt": "Óbitos por causas externas (acidentes, violência, envenenamento)",
-        "en": "Deaths by external causes (accidents, violence, poisoning)",
-        "es": "Muertes por causas externas (accidentes, violencia, envenenamiento)"
-      },
-      "temporal_granularity": "annual",
-      "requires_month": false,
-      "cache_days": 365,
-      "is_national": false,
-      "coverage": "state"
-    },
     "SIM-DOFET": {
       "source": "datasus_ftp",
       "family": "SIM",
       "file_format": "dbc",
-      "filename_template": "DOFET{yy}.dbc",
       "url_templates": [
         {
           "status": "preliminary",
@@ -720,9 +83,9 @@
       "geographic_scope": "national",
       "category": "SIM",
       "full_name": {
-        "pt": "Sistema de Informações sobre Mortalidade - Óbitos Fetais",
-        "en": "Mortality Information System - Fetal Deaths",
-        "es": "Sistema de Información sobre Mortalidad - Muertes Fetales"
+        "pt": "SIM - Óbitos Fetais",
+        "en": "SIM - Fetal Deaths",
+        "es": "SIM - Muertes Fetales"
       },
       "description": {
         "pt": "Óbitos fetais",
@@ -732,14 +95,56 @@
       "temporal_granularity": "annual",
       "requires_month": false,
       "cache_days": 365,
-      "is_national": false,
-      "coverage": "state"
+      "is_national": true,
+      "coverage": "national",
+      "partition_filter": {
+        "state_column": "CODMUNRES",
+        "state_code_source": "metadata/uf_codes.json",
+        "state_code_type": "ibge_prefix_2digit_str"
+      }
+    },
+    "SIM-DOEXT": {
+      "source": "datasus_ftp",
+      "family": "SIM",
+      "file_format": "dbc",
+      "url_templates": [
+        {
+          "status": "preliminary",
+          "valid_from_year": 2022,
+          "path_template": "SIM/PRELIM/DOFET/DOEXT{yy}.dbc"
+        },
+        {
+          "status": "final",
+          "path_template": "SIM/CID10/DOFET/DOEXT{yy}.dbc"
+        }
+      ],
+      "geographic_scope": "national",
+      "category": "SIM",
+      "full_name": {
+        "pt": "SIM - Óbitos por Causas Externas",
+        "en": "SIM - External Causes Deaths",
+        "es": "SIM - Muertes por Causas Externas"
+      },
+      "description": {
+        "pt": "Óbitos por causas externas",
+        "en": "Deaths by external causes",
+        "es": "Muertes por causas externas"
+      },
+      "temporal_granularity": "annual",
+      "requires_month": false,
+      "cache_days": 365,
+      "is_national": true,
+      "coverage": "national",
+      "partition_filter": {
+        "state_column": "CODMUNRES",
+        "state_code_source": "metadata/uf_codes.json",
+        "state_code_type": "ibge_prefix_2digit_str"
+      }
     },
     "SIM-DOINF": {
       "source": "datasus_ftp",
       "family": "SIM",
       "file_format": "dbc",
-      "filename_template": "DOINF{yy}.dbc",
       "url_templates": [
         {
           "status": "preliminary",
@@ -754,26 +159,30 @@
       "geographic_scope": "national",
       "category": "SIM",
       "full_name": {
-        "pt": "Sistema de Informações sobre Mortalidade - Óbitos Infantis",
-        "en": "Mortality Information System - Infant Deaths",
-        "es": "Sistema de Información sobre Mortalidad - Muertes Infantiles"
+        "pt": "SIM - Óbitos Infantis",
+        "en": "SIM - Infant Deaths",
+        "es": "SIM - Muertes Infantiles"
       },
       "description": {
-        "pt": "Óbitos infantis (menores de 1 ano)",
-        "en": "Infant deaths (under 1 year)",
-        "es": "Muertes infantiles (menores de 1 año)"
+        "pt": "Óbitos infantis (< 1 ano)",
+        "en": "Infant deaths (< 1 year)",
+        "es": "Muertes infantiles (< 1 año)"
       },
       "temporal_granularity": "annual",
       "requires_month": false,
       "cache_days": 365,
-      "is_national": false,
-      "coverage": "state"
+      "is_national": true,
+      "coverage": "national",
+      "partition_filter": {
+        "state_column": "CODMUNRES",
+        "state_code_source": "metadata/uf_codes.json",
+        "state_code_type": "ibge_prefix_2digit_str"
+      }
     },
     "SIM-DOMAT": {
       "source": "datasus_ftp",
       "family": "SIM",
       "file_format": "dbc",
-      "filename_template": "DOMAT{yy}.dbc",
       "url_templates": [
         {
           "status": "preliminary",
@@ -788,9 +197,9 @@
       "geographic_scope": "national",
       "category": "SIM",
       "full_name": {
-        "pt": "Sistema de Informações sobre Mortalidade - Óbitos Maternos",
-        "en": "Mortality Information System - Maternal Deaths",
-        "es": "Sistema de Información sobre Mortalidad - Muertes Maternas"
+        "pt": "SIM - Óbitos Maternos",
+        "en": "SIM - Maternal Deaths",
+        "es": "SIM - Muertes Maternas"
       },
       "description": {
         "pt": "Óbitos maternos",
@@ -800,203 +209,33 @@
       "temporal_granularity": "annual",
       "requires_month": false,
       "cache_days": 365,
-      "is_national": false,
-      "coverage": "state"
-    },
-    "SINAN-CHAGAS": {
-      "category": "SINAN",
-      "full_name": {
-        "pt": "Sistema de Informação de Agravos de Notificação - Doença de Chagas",
-        "en": "Notifiable Diseases Information System - Chagas Disease",
-        "es": "Sistema de Información de Enfermedades de Notificación - Enfermedad de Chagas"
-      },
-      "description": {
-        "pt": "Casos notificados de doença de Chagas",
-        "en": "Reported Chagas disease cases",
-        "es": "Casos notificados de enfermedad de Chagas"
-      },
-      "temporal_granularity": "annual",
-      "requires_month": false,
-      "cache_days": 90,
-      "is_national": true,
-      "coverage": "national"
-    },
-    "SINAN-CHIKUNGUNYA": {
-      "category": "SINAN",
-      "full_name": {
-        "pt": "Sistema de Informação de Agravos de Notificação - Chikungunya",
-        "en": "Notifiable Diseases Information System - Chikungunya",
-        "es": "Sistema de Información de Enfermedades de Notificación - Chikungunya"
-      },
-      "description": {
-        "pt": "Casos notificados de chikungunya",
-        "en": "Reported chikungunya cases",
-        "es": "Casos notificados de chikungunya"
-      },
-      "temporal_granularity": "annual",
-      "requires_month": false,
-      "cache_days": 90,
       "is_national": true,
       "coverage": "national",
-      "climate_sensitive": true
-    },
-    "SINAN-DENGUE": {
-      "source": "datasus_ftp",
-      "family": "SINAN",
-      "file_format": "dbc",
-      "filename_template": "DENGBR{yy}.dbc",
-      "url_templates": [
-        {
-          "status": "final",
-          "path_template": "SINAN/DADOS/FINAIS/DENGBR{yy}.dbc"
-        },
-        {
-          "status": "preliminary",
-          "path_template": "SINAN/DADOS/PRELIM/DENGBR{yy}.dbc"
-        }
-      ],
-      "geographic_scope": "national",
       "partition_filter": {
-        "state_column": "SG_UF_NOT",
+        "state_column": "CODMUNRES",
         "state_code_source": "metadata/uf_codes.json",
-        "state_code_type": "ibge_numeric"
-      },
-      "disease_code": "DENG",
-      "category": "SINAN",
-      "full_name": {
-        "pt": "Sistema de Informação de Agravos de Notificação - Dengue",
-        "en": "Notifiable Diseases Information System - Dengue",
-        "es": "Sistema de Información de Enfermedades de Notificación - Dengue"
-      },
-      "description": {
-        "pt": "Casos notificados de dengue",
-        "en": "Reported dengue cases",
-        "es": "Casos notificados de dengue"
-      },
-      "temporal_granularity": "annual",
-      "requires_month": false,
-      "cache_days": 90,
-      "is_national": true,
-      "coverage": "national",
-      "climate_sensitive": true,
-      "data_characteristics": {
-        "typical_size_mb": 200,
-        "main_columns": [
-          "DT_NOTIFIC",
-          "DT_SIN_PRI",
-          "MUNIC_RES",
-          "CLASSI_FIN"
-        ]
+        "state_code_type": "ibge_prefix_2digit_str"
       }
-    },
-    "SINAN-LEISHMANIOSE-TEGUMENTAR": {
-      "category": "SINAN",
-      "full_name": {
-        "pt": "Sistema de Informação de Agravos de Notificação - Leishmaniose Tegumentar",
-        "en": "Notifiable Diseases Information System - Cutaneous Leishmaniasis",
-        "es": "Sistema de Información de Enfermedades de Notificación - Leishmaniasis Cutánea"
-      },
-      "description": {
-        "pt": "Casos notificados de leishmaniose tegumentar (cutânea)",
-        "en": "Reported cutaneous leishmaniasis cases",
-        "es": "Casos notificados de leishmaniasis cutánea"
-      },
-      "temporal_granularity": "annual",
-      "requires_month": false,
-      "cache_days": 90,
-      "is_national": true,
-      "coverage": "national"
-    },
-    "SINAN-LEISHMANIOSE-VISCERAL": {
-      "category": "SINAN",
-      "full_name": {
-        "pt": "Sistema de Informação de Agravos de Notificação - Leishmaniose Visceral",
-        "en": "Notifiable Diseases Information System - Visceral Leishmaniasis",
-        "es": "Sistema de Información de Enfermedades de Notificación - Leishmaniasis Visceral"
-      },
-      "description": {
-        "pt": "Casos notificados de leishmaniose visceral (calazar)",
-        "en": "Reported visceral leishmaniasis cases",
-        "es": "Casos notificados de leishmaniasis visceral"
-      },
-      "temporal_granularity": "annual",
-      "requires_month": false,
-      "cache_days": 90,
-      "is_national": true,
-      "coverage": "national",
-      "climate_sensitive": true
-    },
-    "SINAN-LEPTOSPIROSE": {
-      "category": "SINAN",
-      "full_name": {
-        "pt": "Sistema de Informação de Agravos de Notificação - Leptospirose",
-        "en": "Notifiable Diseases Information System - Leptospirosis",
-        "es": "Sistema de Información de Enfermedades de Notificación - Leptospirosis"
-      },
-      "description": {
-        "pt": "Casos notificados de leptospirose",
-        "en": "Reported leptospirosis cases",
-        "es": "Casos notificados de leptospirosis"
-      },
-      "temporal_granularity": "annual",
-      "requires_month": false,
-      "cache_days": 90,
-      "is_national": true,
-      "coverage": "national",
-      "climate_sensitive": true
-    },
-    "SINAN-MALARIA": {
-      "category": "SINAN",
-      "full_name": {
-        "pt": "Sistema de Informação de Agravos de Notificação - Malária",
-        "en": "Notifiable Diseases Information System - Malaria",
-        "es": "Sistema de Información de Enfermedades de Notificación - Malaria"
-      },
-      "description": {
-        "pt": "Casos notificados de malária",
-        "en": "Reported malaria cases",
-        "es": "Casos notificados de malaria"
-      },
-      "temporal_granularity": "annual",
-      "requires_month": false,
-      "cache_days": 90,
-      "is_national": true,
-      "coverage": "national",
-      "climate_sensitive": true
-    },
-    "SINAN-ZIKA": {
-      "category": "SINAN",
-      "full_name": {
-        "pt": "Sistema de Informação de Agravos de Notificação - Zika",
-        "en": "Notifiable Diseases Information System - Zika",
-        "es": "Sistema de Información de Enfermedades de Notificación - Zika"
-      },
-      "description": {
-        "pt": "Casos notificados de zika vírus",
-        "en": "Reported zika virus cases",
-        "es": "Casos notificados de virus zika"
-      },
-      "temporal_granularity": "annual",
-      "requires_month": false,
-      "cache_days": 90,
-      "is_national": true,
-      "coverage": "national",
-      "climate_sensitive": true
     },
     "SINASC": {
       "source": "datasus_ftp",
       "family": "SINASC",
       "file_format": "dbc",
-      "filename_template": "DN{uf}{yyyy}.dbc",
       "url_templates": [
         {
           "status": "preliminary",
-          "valid_from_year": 2022,
+          "valid_from_year": 2023,
           "path_template": "SINASC/PRELIM/DNRES/DN{uf}{yyyy}.dbc"
         },
         {
           "status": "final",
-          "path_template": "SINASC/NOV/DNRES/DN{uf}{yyyy}.dbc"
+          "valid_from_year": 1996,
+          "path_template": "SINASC/1996_/Dados/DNRES/DN{uf}{yyyy}.dbc"
+        },
+        {
+          "status": "historical",
+          "valid_until_year": 1995,
+          "path_template": "SINASC/1994_1995/Dados/DNRES/DNR{uf}{yyyy}.dbc"
         }
       ],
       "geographic_scope": "state",
@@ -1027,6 +266,1259 @@
           "MUNIC_RES"
         ]
       }
+    },
+    "SIH-RD": {
+      "source": "datasus_ftp",
+      "family": "SIH",
+      "file_format": "dbc",
+      "url_templates": [
+        {
+          "status": "current",
+          "valid_from_year": 2008,
+          "path_template": "SIHSUS/200801_/Dados/RD{uf}{yy}{month}.dbc"
+        },
+        {
+          "status": "historical",
+          "valid_until_year": 2007,
+          "path_template": "SIHSUS/199201_200712/Dados/RD{uf}{yy}{month}.dbc"
+        }
+      ],
+      "geographic_scope": "state",
+      "category": "SIH",
+      "full_name": {
+        "pt": "SIH - Autorizações de Internação Hospitalar",
+        "en": "SIH - Hospital Admission Authorizations",
+        "es": "SIH - Autorizaciones de Internación Hospitalaria"
+      },
+      "description": {
+        "pt": "AIH - Autorizações de Internação Hospitalar",
+        "en": "AIH - Hospital Admission Authorizations",
+        "es": "AIH - Autorizaciones de Internación"
+      },
+      "temporal_granularity": "monthly",
+      "requires_month": true,
+      "cache_days": 30,
+      "is_national": false,
+      "coverage": "state",
+      "data_characteristics": {
+        "typical_size_mb": 100,
+        "main_columns": [
+          "DT_INTER",
+          "DIAG_PRINC",
+          "IDADE",
+          "SEXO",
+          "MUNIC_RES",
+          "PROC_REA"
+        ]
+      }
+    },
+    "SIH-RJ": {
+      "source": "datasus_ftp",
+      "family": "SIH",
+      "file_format": "dbc",
+      "url_templates": [
+        {
+          "status": "current",
+          "valid_from_year": 2008,
+          "path_template": "SIHSUS/200801_/Dados/RJ{uf}{yy}{month}.dbc"
+        },
+        {
+          "status": "historical",
+          "valid_until_year": 2007,
+          "path_template": "SIHSUS/199201_200712/Dados/RJ{uf}{yy}{month}.dbc"
+        }
+      ],
+      "geographic_scope": "state",
+      "category": "SIH",
+      "full_name": {
+        "pt": "SIH - Rio de Janeiro",
+        "en": "SIH - Rio de Janeiro specific",
+        "es": "SIH - Específico Río de Janeiro"
+      },
+      "description": {
+        "pt": "AIH específicas do Rio de Janeiro",
+        "en": "Rio de Janeiro specific hospital admissions",
+        "es": "Internaciones específicas de Río de Janeiro"
+      },
+      "temporal_granularity": "monthly",
+      "requires_month": true,
+      "cache_days": 30,
+      "is_national": false,
+      "coverage": "state"
+    },
+    "SIH-SP": {
+      "source": "datasus_ftp",
+      "family": "SIH",
+      "file_format": "dbc",
+      "url_templates": [
+        {
+          "status": "current",
+          "valid_from_year": 2008,
+          "path_template": "SIHSUS/200801_/Dados/SP{uf}{yy}{month}.dbc"
+        },
+        {
+          "status": "historical",
+          "valid_until_year": 2007,
+          "path_template": "SIHSUS/199201_200712/Dados/SP{uf}{yy}{month}.dbc"
+        }
+      ],
+      "geographic_scope": "state",
+      "category": "SIH",
+      "full_name": {
+        "pt": "SIH - São Paulo",
+        "en": "SIH - São Paulo specific",
+        "es": "SIH - Específico São Paulo"
+      },
+      "description": {
+        "pt": "AIH específicas de São Paulo",
+        "en": "São Paulo specific hospital admissions",
+        "es": "Internaciones específicas de São Paulo"
+      },
+      "temporal_granularity": "monthly",
+      "requires_month": true,
+      "cache_days": 30,
+      "is_national": false,
+      "coverage": "state"
+    },
+    "SIH-ER": {
+      "source": "datasus_ftp",
+      "family": "SIH",
+      "file_format": "dbc",
+      "url_templates": [
+        {
+          "status": "current",
+          "valid_from_year": 2008,
+          "path_template": "SIHSUS/200801_/Dados/ER{uf}{yy}{month}.dbc"
+        },
+        {
+          "status": "historical",
+          "valid_until_year": 2007,
+          "path_template": "SIHSUS/199201_200712/Dados/ER{uf}{yy}{month}.dbc"
+        }
+      ],
+      "geographic_scope": "state",
+      "category": "SIH",
+      "full_name": {
+        "pt": "SIH - Prontuários de Emergência",
+        "en": "SIH - Emergency Room Records",
+        "es": "SIH - Registros de Emergencia"
+      },
+      "description": {
+        "pt": "Prontuários de atendimento em emergência",
+        "en": "Emergency room medical records",
+        "es": "Historias clínicas de emergencia"
+      },
+      "temporal_granularity": "monthly",
+      "requires_month": true,
+      "cache_days": 30,
+      "is_national": false,
+      "coverage": "state"
+    },
+    "CNES-LT": {
+      "source": "datasus_ftp",
+      "family": "CNES",
+      "file_format": "dbc",
+      "url_templates": [
+        {
+          "status": "current",
+          "valid_from_year": 2005,
+          "path_template": "CNES/200508_/Dados/LT/LT{uf}{yy}{month}.dbc"
+        }
+      ],
+      "geographic_scope": "state",
+      "category": "CNES",
+      "full_name": {
+        "pt": "CNES - Leitos",
+        "en": "CNES - Beds",
+        "es": "CNES - Camas"
+      },
+      "description": {
+        "pt": "Cadastro de leitos hospitalares",
+        "en": "Hospital beds registry",
+        "es": "Registro de camas hospitalarias"
+      },
+      "temporal_granularity": "monthly",
+      "requires_month": true,
+      "cache_days": 30,
+      "is_national": false,
+      "coverage": "state"
+    },
+    "CNES-ST": {
+      "source": "datasus_ftp",
+      "family": "CNES",
+      "file_format": "dbc",
+      "url_templates": [
+        {
+          "status": "current",
+          "valid_from_year": 2005,
+          "path_template": "CNES/200508_/Dados/ST/ST{uf}{yy}{month}.dbc"
+        }
+      ],
+      "geographic_scope": "state",
+      "category": "CNES",
+      "full_name": {
+        "pt": "CNES - Profissionais de Saúde",
+        "en": "CNES - Health Professionals",
+        "es": "CNES - Profesionales de Salud"
+      },
+      "description": {
+        "pt": "Cadastro de profissionais de saúde",
+        "en": "Health professionals registry",
+        "es": "Registro de profesionales de salud"
+      },
+      "temporal_granularity": "monthly",
+      "requires_month": true,
+      "cache_days": 30,
+      "is_national": false,
+      "coverage": "state"
+    },
+    "CNES-DC": {
+      "source": "datasus_ftp",
+      "family": "CNES",
+      "file_format": "dbc",
+      "url_templates": [
+        {
+          "status": "current",
+          "valid_from_year": 2005,
+          "path_template": "CNES/200508_/Dados/DC/DC{uf}{yy}{month}.dbc"
+        }
+      ],
+      "geographic_scope": "state",
+      "category": "CNES",
+      "full_name": {
+        "pt": "CNES - Equipamentos Detalhado",
+        "en": "CNES - Equipment Detailed",
+        "es": "CNES - Equipamiento Detallado"
+      },
+      "description": {
+        "pt": "Cadastro detalhado de equipamentos",
+        "en": "Detailed equipment registry",
+        "es": "Registro detallado de equipamiento"
+      },
+      "temporal_granularity": "monthly",
+      "requires_month": true,
+      "cache_days": 30,
+      "is_national": false,
+      "coverage": "state"
+    },
+    "CNES-EQ": {
+      "source": "datasus_ftp",
+      "family": "CNES",
+      "file_format": "dbc",
+      "url_templates": [
+        {
+          "status": "current",
+          "valid_from_year": 2005,
+          "path_template": "CNES/200508_/Dados/EQ/EQ{uf}{yy}{month}.dbc"
+        }
+      ],
+      "geographic_scope": "state",
+      "category": "CNES",
+      "full_name": {
+        "pt": "CNES - Equipamentos Resumido",
+        "en": "CNES - Equipment Summary",
+        "es": "CNES - Equipamiento Resumido"
+      },
+      "description": {
+        "pt": "Cadastro resumido de equipamentos",
+        "en": "Summary equipment registry",
+        "es": "Registro resumido de equipamiento"
+      },
+      "temporal_granularity": "monthly",
+      "requires_month": true,
+      "cache_days": 30,
+      "is_national": false,
+      "coverage": "state"
+    },
+    "CNES-SR": {
+      "source": "datasus_ftp",
+      "family": "CNES",
+      "file_format": "dbc",
+      "url_templates": [
+        {
+          "status": "current",
+          "valid_from_year": 2005,
+          "path_template": "CNES/200508_/Dados/SR/SR{uf}{yy}{month}.dbc"
+        }
+      ],
+      "geographic_scope": "state",
+      "category": "CNES",
+      "full_name": {
+        "pt": "CNES - Serviços Especializados",
+        "en": "CNES - Specialized Services",
+        "es": "CNES - Servicios Especializados"
+      },
+      "description": {
+        "pt": "Cadastro de serviços especializados",
+        "en": "Specialized services registry",
+        "es": "Registro de servicios especializados"
+      },
+      "temporal_granularity": "monthly",
+      "requires_month": true,
+      "cache_days": 30,
+      "is_national": false,
+      "coverage": "state"
+    },
+    "CNES-HB": {
+      "source": "datasus_ftp",
+      "family": "CNES",
+      "file_format": "dbc",
+      "url_templates": [
+        {
+          "status": "current",
+          "valid_from_year": 2005,
+          "path_template": "CNES/200508_/Dados/HB/HB{uf}{yy}{month}.dbc"
+        }
+      ],
+      "geographic_scope": "state",
+      "category": "CNES",
+      "full_name": {
+        "pt": "CNES - Leitos Hospitalares",
+        "en": "CNES - Hospital Beds",
+        "es": "CNES - Camas Hospitalarias"
+      },
+      "description": {
+        "pt": "Cadastro de leitos hospitalares",
+        "en": "Hospital beds registry",
+        "es": "Registro de camas hospitalarias"
+      },
+      "temporal_granularity": "monthly",
+      "requires_month": true,
+      "cache_days": 30,
+      "is_national": false,
+      "coverage": "state"
+    },
+    "CNES-PF": {
+      "source": "datasus_ftp",
+      "family": "CNES",
+      "file_format": "dbc",
+      "url_templates": [
+        {
+          "status": "current",
+          "valid_from_year": 2005,
+          "path_template": "CNES/200508_/Dados/PF/PF{uf}{yy}{month}.dbc"
+        }
+      ],
+      "geographic_scope": "state",
+      "category": "CNES",
+      "full_name": {
+        "pt": "CNES - Profissionais Detalhado",
+        "en": "CNES - Professionals Detailed",
+        "es": "CNES - Profesionales Detallado"
+      },
+      "description": {
+        "pt": "Cadastro detalhado de profissionais",
+        "en": "Detailed professionals registry",
+        "es": "Registro detallado de profesionales"
+      },
+      "temporal_granularity": "monthly",
+      "requires_month": true,
+      "cache_days": 30,
+      "is_national": false,
+      "coverage": "state"
+    },
+    "CNES-EP": {
+      "source": "datasus_ftp",
+      "family": "CNES",
+      "file_format": "dbc",
+      "url_templates": [
+        {
+          "status": "current",
+          "valid_from_year": 2005,
+          "path_template": "CNES/200508_/Dados/EP/EP{uf}{yy}{month}.dbc"
+        }
+      ],
+      "geographic_scope": "state",
+      "category": "CNES",
+      "full_name": {
+        "pt": "CNES - Participantes do Ensino",
+        "en": "CNES - Teaching Participants",
+        "es": "CNES - Participantes de Enseñanza"
+      },
+      "description": {
+        "pt": "Estabelecimentos vinculados ao ensino",
+        "en": "Teaching affiliated establishments",
+        "es": "Establecimientos vinculados a la enseñanza"
+      },
+      "temporal_granularity": "monthly",
+      "requires_month": true,
+      "cache_days": 30,
+      "is_national": false,
+      "coverage": "state"
+    },
+    "CNES-RC": {
+      "source": "datasus_ftp",
+      "family": "CNES",
+      "file_format": "dbc",
+      "url_templates": [
+        {
+          "status": "current",
+          "valid_from_year": 2005,
+          "path_template": "CNES/200508_/Dados/RC/RC{uf}{yy}{month}.dbc"
+        }
+      ],
+      "geographic_scope": "state",
+      "category": "CNES",
+      "full_name": {
+        "pt": "CNES - Classificação Hospitalar",
+        "en": "CNES - Hospital Classification",
+        "es": "CNES - Clasificación Hospitalaria"
+      },
+      "description": {
+        "pt": "Classificação e tipo de hospitais",
+        "en": "Hospital classification and type",
+        "es": "Clasificación y tipo de hospitales"
+      },
+      "temporal_granularity": "monthly",
+      "requires_month": true,
+      "cache_days": 30,
+      "is_national": false,
+      "coverage": "state"
+    },
+    "CNES-IN": {
+      "source": "datasus_ftp",
+      "family": "CNES",
+      "file_format": "dbc",
+      "url_templates": [
+        {
+          "status": "current",
+          "valid_from_year": 2005,
+          "path_template": "CNES/200508_/Dados/IN/IN{uf}{yy}{month}.dbc"
+        }
+      ],
+      "geographic_scope": "state",
+      "category": "CNES",
+      "full_name": {
+        "pt": "CNES - Indicadores Hospitalares",
+        "en": "CNES - Hospital Indicators",
+        "es": "CNES - Indicadores Hospitalarios"
+      },
+      "description": {
+        "pt": "Indicadores de desempenho hospitalar",
+        "en": "Hospital performance indicators",
+        "es": "Indicadores de desempeño hospitalario"
+      },
+      "temporal_granularity": "monthly",
+      "requires_month": true,
+      "cache_days": 30,
+      "is_national": false,
+      "coverage": "state"
+    },
+    "CNES-EE": {
+      "source": "datasus_ftp",
+      "family": "CNES",
+      "file_format": "dbc",
+      "url_templates": [
+        {
+          "status": "current",
+          "valid_from_year": 2005,
+          "path_template": "CNES/200508_/Dados/EE/EE{uf}{yy}{month}.dbc"
+        }
+      ],
+      "geographic_scope": "state",
+      "category": "CNES",
+      "full_name": {
+        "pt": "CNES - Entidades de Ensino",
+        "en": "CNES - Educational Entities",
+        "es": "CNES - Entidades de Enseñanza"
+      },
+      "description": {
+        "pt": "Entidades de ensino em saúde",
+        "en": "Health education entities",
+        "es": "Entidades de enseñanza en salud"
+      },
+      "temporal_granularity": "monthly",
+      "requires_month": true,
+      "cache_days": 30,
+      "is_national": false,
+      "coverage": "state"
+    },
+    "CNES-EF": {
+      "source": "datasus_ftp",
+      "family": "CNES",
+      "file_format": "dbc",
+      "url_templates": [
+        {
+          "status": "current",
+          "valid_from_year": 2005,
+          "path_template": "CNES/200508_/Dados/EF/EF{uf}{yy}{month}.dbc"
+        }
+      ],
+      "geographic_scope": "state",
+      "category": "CNES",
+      "full_name": {
+        "pt": "CNES - Instalações de Ensino",
+        "en": "CNES - Teaching Facilities",
+        "es": "CNES - Instalaciones de Enseñanza"
+      },
+      "description": {
+        "pt": "Instalações físicas de ensino",
+        "en": "Teaching physical facilities",
+        "es": "Instalaciones físicas de enseñanza"
+      },
+      "temporal_granularity": "monthly",
+      "requires_month": true,
+      "cache_days": 30,
+      "is_national": false,
+      "coverage": "state"
+    },
+    "CNES-GM": {
+      "source": "datasus_ftp",
+      "family": "CNES",
+      "file_format": "dbc",
+      "url_templates": [
+        {
+          "status": "current",
+          "valid_from_year": 2005,
+          "path_template": "CNES/200508_/Dados/GM/GM{uf}{yy}{month}.dbc"
+        }
+      ],
+      "geographic_scope": "state",
+      "category": "CNES",
+      "full_name": {
+        "pt": "CNES - Gestão e Apoio",
+        "en": "CNES - Management/Support",
+        "es": "CNES - Gestión y Apoyo"
+      },
+      "description": {
+        "pt": "Gestão e serviços de apoio",
+        "en": "Management and support services",
+        "es": "Gestión y servicios de apoyo"
+      },
+      "temporal_granularity": "monthly",
+      "requires_month": true,
+      "cache_days": 30,
+      "is_national": false,
+      "coverage": "state"
+    },
+    "SIA-PA": {
+      "source": "datasus_ftp",
+      "family": "SIA",
+      "file_format": "dbc",
+      "url_templates": [
+        {
+          "status": "current",
+          "valid_from_year": 2008,
+          "path_template": "SIASUS/200801_/Dados/PA{uf}{yy}{month}.dbc"
+        },
+        {
+          "status": "historical",
+          "valid_until_year": 2007,
+          "path_template": "SIASUS/199407_200712/Dados/PA{uf}{yy}{month}.dbc"
+        }
+      ],
+      "geographic_scope": "state",
+      "category": "SIA",
+      "full_name": {
+        "pt": "SIA - Procedimentos Ambulatoriais",
+        "en": "SIA - Outpatient Procedures",
+        "es": "SIA - Procedimientos Ambulatorios"
+      },
+      "description": {
+        "pt": "Procedimentos ambulatoriais em hospitais",
+        "en": "Outpatient procedures in hospitals",
+        "es": "Procedimientos ambulatorios en hospitales"
+      },
+      "temporal_granularity": "monthly",
+      "requires_month": true,
+      "cache_days": 30,
+      "is_national": false,
+      "coverage": "state",
+      "data_characteristics": {
+        "typical_size_mb": 200,
+        "main_columns": [
+          "PA_PROC_ID",
+          "PA_CIDPRI",
+          "PA_MUNPCN",
+          "PA_QTDPRO",
+          "PA_VALAPR"
+        ]
+      }
+    },
+    "SIA-AM": {
+      "source": "datasus_ftp",
+      "family": "SIA",
+      "file_format": "dbc",
+      "url_templates": [
+        {
+          "status": "current",
+          "valid_from_year": 2008,
+          "path_template": "SIASUS/200801_/Dados/AM{uf}{yy}{month}.dbc"
+        },
+        {
+          "status": "historical",
+          "valid_until_year": 2007,
+          "path_template": "SIASUS/199407_200712/Dados/AM{uf}{yy}{month}.dbc"
+        }
+      ],
+      "geographic_scope": "state",
+      "category": "SIA",
+      "full_name": {
+        "pt": "SIA - Ambulatório de Especialidades",
+        "en": "SIA - Medical Specialties",
+        "es": "SIA - Ambulatorio de Especialidades"
+      },
+      "description": {
+        "pt": "Consultas e procedimentos especializados",
+        "en": "Specialized consultations and procedures",
+        "es": "Consultas y procedimientos especializados"
+      },
+      "temporal_granularity": "monthly",
+      "requires_month": true,
+      "cache_days": 30,
+      "is_national": false,
+      "coverage": "state"
+    },
+    "SIA-AQ": {
+      "source": "datasus_ftp",
+      "family": "SIA",
+      "file_format": "dbc",
+      "url_templates": [
+        {
+          "status": "current",
+          "valid_from_year": 2008,
+          "path_template": "SIASUS/200801_/Dados/AQ{uf}{yy}{month}.dbc"
+        },
+        {
+          "status": "historical",
+          "valid_until_year": 2007,
+          "path_template": "SIASUS/199407_200712/Dados/AQ{uf}{yy}{month}.dbc"
+        }
+      ],
+      "geographic_scope": "state",
+      "category": "SIA",
+      "full_name": {
+        "pt": "SIA - Ações Estratégicas",
+        "en": "SIA - Strategic Actions",
+        "es": "SIA - Acciones Estratégicas"
+      },
+      "description": {
+        "pt": "Ações estratégicas de saúde pública",
+        "en": "Public health strategic actions",
+        "es": "Acciones estratégicas de salud pública"
+      },
+      "temporal_granularity": "monthly",
+      "requires_month": true,
+      "cache_days": 30,
+      "is_national": false,
+      "coverage": "state"
+    },
+    "SIA-AR": {
+      "source": "datasus_ftp",
+      "family": "SIA",
+      "file_format": "dbc",
+      "url_templates": [
+        {
+          "status": "current",
+          "valid_from_year": 2008,
+          "path_template": "SIASUS/200801_/Dados/AR{uf}{yy}{month}.dbc"
+        },
+        {
+          "status": "historical",
+          "valid_until_year": 2007,
+          "path_template": "SIASUS/199407_200712/Dados/AR{uf}{yy}{month}.dbc"
+        }
+      ],
+      "geographic_scope": "state",
+      "category": "SIA",
+      "full_name": {
+        "pt": "SIA - Regulação",
+        "en": "SIA - Regulation",
+        "es": "SIA - Regulación"
+      },
+      "description": {
+        "pt": "Regulação de acesso e filas",
+        "en": "Access regulation and queues",
+        "es": "Regulación de acceso y colas"
+      },
+      "temporal_granularity": "monthly",
+      "requires_month": true,
+      "cache_days": 30,
+      "is_national": false,
+      "coverage": "state"
+    },
+    "SIA-AD": {
+      "source": "datasus_ftp",
+      "family": "SIA",
+      "file_format": "dbc",
+      "url_templates": [
+        {
+          "status": "current",
+          "valid_from_year": 2008,
+          "path_template": "SIASUS/200801_/Dados/AD{uf}{yy}{month}.dbc"
+        },
+        {
+          "status": "historical",
+          "valid_until_year": 2007,
+          "path_template": "SIASUS/199407_200712/Dados/AD{uf}{yy}{month}.dbc"
+        }
+      ],
+      "geographic_scope": "state",
+      "category": "SIA",
+      "full_name": {
+        "pt": "SIA - Alta Complexidade",
+        "en": "SIA - High Complexity",
+        "es": "SIA - Alta Complejidad"
+      },
+      "description": {
+        "pt": "Procedimentos de alta complexidade",
+        "en": "High complexity procedures",
+        "es": "Procedimientos de alta complejidad"
+      },
+      "temporal_granularity": "monthly",
+      "requires_month": true,
+      "cache_days": 30,
+      "is_national": false,
+      "coverage": "state"
+    },
+    "SIA-AB": {
+      "source": "datasus_ftp",
+      "family": "SIA",
+      "file_format": "dbc",
+      "url_templates": [
+        {
+          "status": "current",
+          "valid_from_year": 2008,
+          "path_template": "SIASUS/200801_/Dados/AB{uf}{yy}{month}.dbc"
+        },
+        {
+          "status": "historical",
+          "valid_until_year": 2007,
+          "path_template": "SIASUS/199407_200712/Dados/AB{uf}{yy}{month}.dbc"
+        }
+      ],
+      "geographic_scope": "state",
+      "category": "SIA",
+      "full_name": {
+        "pt": "SIA - Atenção Básica",
+        "en": "SIA - Primary Care",
+        "es": "SIA - Atención Básica"
+      },
+      "description": {
+        "pt": "Procedimentos de atenção básica",
+        "en": "Primary care procedures",
+        "es": "Procedimientos de atención básica"
+      },
+      "temporal_granularity": "monthly",
+      "requires_month": true,
+      "cache_days": 30,
+      "is_national": false,
+      "coverage": "state"
+    },
+    "SIA-ABO": {
+      "source": "datasus_ftp",
+      "family": "SIA",
+      "file_format": "dbc",
+      "url_templates": [
+        {
+          "status": "current",
+          "valid_from_year": 2008,
+          "path_template": "SIASUS/200801_/Dados/ABO{uf}{yy}{month}.dbc"
+        },
+        {
+          "status": "historical",
+          "valid_until_year": 2007,
+          "path_template": "SIASUS/199407_200712/Dados/ABO{uf}{yy}{month}.dbc"
+        }
+      ],
+      "geographic_scope": "state",
+      "category": "SIA",
+      "full_name": {
+        "pt": "SIA - Procedimentos Odontológicos",
+        "en": "SIA - Dental Procedures",
+        "es": "SIA - Procedimientos Odontológicos"
+      },
+      "description": {
+        "pt": "Procedimentos odontológicos ambulatoriais",
+        "en": "Dental ambulatory procedures",
+        "es": "Procedimientos odontológicos ambulatorios"
+      },
+      "temporal_granularity": "monthly",
+      "requires_month": true,
+      "cache_days": 30,
+      "is_national": false,
+      "coverage": "state"
+    },
+    "SIA-ACF": {
+      "source": "datasus_ftp",
+      "family": "SIA",
+      "file_format": "dbc",
+      "url_templates": [
+        {
+          "status": "current",
+          "valid_from_year": 2008,
+          "path_template": "SIASUS/200801_/Dados/ACF{uf}{yy}{month}.dbc"
+        },
+        {
+          "status": "historical",
+          "valid_until_year": 2007,
+          "path_template": "SIASUS/199407_200712/Dados/ACF{uf}{yy}{month}.dbc"
+        }
+      ],
+      "geographic_scope": "state",
+      "category": "SIA",
+      "full_name": {
+        "pt": "SIA - Assistência Farmacêutica",
+        "en": "SIA - Pharmaceutical Assistance",
+        "es": "SIA - Asistencia Farmacéutica"
+      },
+      "description": {
+        "pt": "Dispensação de medicamentos",
+        "en": "Pharmaceutical dispensing",
+        "es": "Dispensación de medicamentos"
+      },
+      "temporal_granularity": "monthly",
+      "requires_month": true,
+      "cache_days": 30,
+      "is_national": false,
+      "coverage": "state"
+    },
+    "SIA-AN": {
+      "source": "datasus_ftp",
+      "family": "SIA",
+      "file_format": "dbc",
+      "url_templates": [
+        {
+          "status": "current",
+          "valid_from_year": 2008,
+          "path_template": "SIASUS/200801_/Dados/AN{uf}{yy}{month}.dbc"
+        },
+        {
+          "status": "historical",
+          "valid_until_year": 2007,
+          "path_template": "SIASUS/199407_200712/Dados/AN{uf}{yy}{month}.dbc"
+        }
+      ],
+      "geographic_scope": "state",
+      "category": "SIA",
+      "full_name": {
+        "pt": "SIA - Atenção Domiciliar",
+        "en": "SIA - Home Care",
+        "es": "SIA - Atención Domiciliaria"
+      },
+      "description": {
+        "pt": "Atendimento domiciliar",
+        "en": "Home care services",
+        "es": "Servicios de atención domiciliaria"
+      },
+      "temporal_granularity": "monthly",
+      "requires_month": true,
+      "cache_days": 30,
+      "is_national": false,
+      "coverage": "state"
+    },
+    "SIA-ATD": {
+      "source": "datasus_ftp",
+      "family": "SIA",
+      "file_format": "dbc",
+      "url_templates": [
+        {
+          "status": "current",
+          "valid_from_year": 2008,
+          "path_template": "SIASUS/200801_/Dados/ATD{uf}{yy}{month}.dbc"
+        },
+        {
+          "status": "historical",
+          "valid_until_year": 2007,
+          "path_template": "SIASUS/199407_200712/Dados/ATD{uf}{yy}{month}.dbc"
+        }
+      ],
+      "geographic_scope": "state",
+      "category": "SIA",
+      "full_name": {
+        "pt": "SIA - Urgência/Emergência",
+        "en": "SIA - Urgency/Emergency",
+        "es": "SIA - Urgencia/Emergencia"
+      },
+      "description": {
+        "pt": "Atendimentos de urgência e emergência",
+        "en": "Urgency and emergency care",
+        "es": "Atención de urgencia y emergencia"
+      },
+      "temporal_granularity": "monthly",
+      "requires_month": true,
+      "cache_days": 30,
+      "is_national": false,
+      "coverage": "state"
+    },
+    "SIA-PS": {
+      "source": "datasus_ftp",
+      "family": "SIA",
+      "file_format": "dbc",
+      "url_templates": [
+        {
+          "status": "current",
+          "valid_from_year": 2008,
+          "path_template": "SIASUS/200801_/Dados/PS{uf}{yy}{month}.dbc"
+        },
+        {
+          "status": "historical",
+          "valid_until_year": 2007,
+          "path_template": "SIASUS/199407_200712/Dados/PS{uf}{yy}{month}.dbc"
+        }
+      ],
+      "geographic_scope": "state",
+      "category": "SIA",
+      "full_name": {
+        "pt": "SIA - Atenção Psicossocial",
+        "en": "SIA - Psychosocial Care",
+        "es": "SIA - Atención Psicosocial"
+      },
+      "description": {
+        "pt": "CAPS e saúde mental",
+        "en": "CAPS and mental health care",
+        "es": "CAPS y salud mental"
+      },
+      "temporal_granularity": "monthly",
+      "requires_month": true,
+      "cache_days": 30,
+      "is_national": false,
+      "coverage": "state"
+    },
+    "SIA-SAD": {
+      "source": "datasus_ftp",
+      "family": "SIA",
+      "file_format": "dbc",
+      "url_templates": [
+        {
+          "status": "current",
+          "valid_from_year": 2008,
+          "path_template": "SIASUS/200801_/Dados/SAD{uf}{yy}{month}.dbc"
+        },
+        {
+          "status": "historical",
+          "valid_until_year": 2007,
+          "path_template": "SIASUS/199407_200712/Dados/SAD{uf}{yy}{month}.dbc"
+        }
+      ],
+      "geographic_scope": "state",
+      "category": "SIA",
+      "full_name": {
+        "pt": "SIA - Atenção Especializada",
+        "en": "SIA - Specialized Care",
+        "es": "SIA - Atención Especializada"
+      },
+      "description": {
+        "pt": "Atenção especializada ambulatorial",
+        "en": "Specialized outpatient care",
+        "es": "Atención especializada ambulatoria"
+      },
+      "temporal_granularity": "monthly",
+      "requires_month": true,
+      "cache_days": 30,
+      "is_national": false,
+      "coverage": "state"
+    },
+    "SINAN-DENGUE": {
+      "source": "datasus_ftp",
+      "family": "SINAN",
+      "file_format": "dbc",
+      "url_templates": [
+        {
+          "status": "final",
+          "path_template": "SINAN/DADOS/FINAIS/DENGBR{yy}.dbc"
+        },
+        {
+          "status": "preliminary",
+          "path_template": "SINAN/DADOS/PRELIM/DENGBR{yy}.dbc"
+        }
+      ],
+      "geographic_scope": "national",
+      "partition_filter": {
+        "state_column": "SG_UF_NOT",
+        "state_code_source": "metadata/uf_codes.json",
+        "state_code_type": "ibge_numeric"
+      },
+      "category": "SINAN",
+      "full_name": {
+        "pt": "SINAN - Dengue",
+        "en": "SINAN - Dengue",
+        "es": "SINAN - Dengue"
+      },
+      "description": {
+        "pt": "Casos notificados de dengue",
+        "en": "Reported dengue cases",
+        "es": "Casos notificados de dengue"
+      },
+      "temporal_granularity": "annual",
+      "requires_month": false,
+      "cache_days": 90,
+      "is_national": true,
+      "coverage": "national",
+      "climate_sensitive": true,
+      "data_characteristics": {
+        "typical_size_mb": 200,
+        "main_columns": [
+          "DT_NOTIFIC",
+          "DT_SIN_PRI",
+          "MUNIC_RES",
+          "CLASSI_FIN"
+        ]
+      }
+    },
+    "SINAN-CHIKUNGUNYA": {
+      "source": "datasus_ftp",
+      "family": "SINAN",
+      "file_format": "dbc",
+      "url_templates": [
+        {
+          "status": "final",
+          "path_template": "SINAN/DADOS/FINAIS/CHIKBR{yy}.dbc"
+        },
+        {
+          "status": "preliminary",
+          "path_template": "SINAN/DADOS/PRELIM/CHIKBR{yy}.dbc"
+        }
+      ],
+      "geographic_scope": "national",
+      "partition_filter": {
+        "state_column": "SG_UF_NOT",
+        "state_code_source": "metadata/uf_codes.json",
+        "state_code_type": "ibge_numeric"
+      },
+      "category": "SINAN",
+      "full_name": {
+        "pt": "SINAN - Chikungunya",
+        "en": "SINAN - Chikungunya",
+        "es": "SINAN - Chikungunya"
+      },
+      "description": {
+        "pt": "Casos notificados de chikungunya",
+        "en": "Reported chikungunya cases",
+        "es": "Casos notificados de chikungunya"
+      },
+      "temporal_granularity": "annual",
+      "requires_month": false,
+      "cache_days": 90,
+      "is_national": true,
+      "coverage": "national",
+      "climate_sensitive": true
+    },
+    "SINAN-ZIKA": {
+      "source": "datasus_ftp",
+      "family": "SINAN",
+      "file_format": "dbc",
+      "url_templates": [
+        {
+          "status": "final",
+          "path_template": "SINAN/DADOS/FINAIS/ZIKABR{yy}.dbc"
+        },
+        {
+          "status": "preliminary",
+          "path_template": "SINAN/DADOS/PRELIM/ZIKABR{yy}.dbc"
+        }
+      ],
+      "geographic_scope": "national",
+      "partition_filter": {
+        "state_column": "SG_UF_NOT",
+        "state_code_source": "metadata/uf_codes.json",
+        "state_code_type": "ibge_numeric"
+      },
+      "category": "SINAN",
+      "full_name": {
+        "pt": "SINAN - Zika",
+        "en": "SINAN - Zika",
+        "es": "SINAN - Zika"
+      },
+      "description": {
+        "pt": "Casos notificados de zika vírus",
+        "en": "Reported zika cases",
+        "es": "Casos notificados de zika"
+      },
+      "temporal_granularity": "annual",
+      "requires_month": false,
+      "cache_days": 90,
+      "is_national": true,
+      "coverage": "national",
+      "climate_sensitive": true
+    },
+    "SINAN-MALARIA": {
+      "source": "datasus_ftp",
+      "family": "SINAN",
+      "file_format": "dbc",
+      "url_templates": [
+        {
+          "status": "final",
+          "path_template": "SINAN/DADOS/FINAIS/MALABR{yy}.dbc"
+        },
+        {
+          "status": "preliminary",
+          "path_template": "SINAN/DADOS/PRELIM/MALABR{yy}.dbc"
+        }
+      ],
+      "geographic_scope": "national",
+      "partition_filter": {
+        "state_column": "SG_UF_NOT",
+        "state_code_source": "metadata/uf_codes.json",
+        "state_code_type": "ibge_numeric"
+      },
+      "category": "SINAN",
+      "full_name": {
+        "pt": "SINAN - Malária",
+        "en": "SINAN - Malaria",
+        "es": "SINAN - Malaria"
+      },
+      "description": {
+        "pt": "Casos notificados de malária",
+        "en": "Reported malaria cases",
+        "es": "Casos notificados de malaria"
+      },
+      "temporal_granularity": "annual",
+      "requires_month": false,
+      "cache_days": 90,
+      "is_national": true,
+      "coverage": "national",
+      "climate_sensitive": true
+    },
+    "SINAN-CHAGAS": {
+      "source": "datasus_ftp",
+      "family": "SINAN",
+      "file_format": "dbc",
+      "url_templates": [
+        {
+          "status": "final",
+          "path_template": "SINAN/DADOS/FINAIS/CHAGBR{yy}.dbc"
+        },
+        {
+          "status": "preliminary",
+          "path_template": "SINAN/DADOS/PRELIM/CHAGBR{yy}.dbc"
+        }
+      ],
+      "geographic_scope": "national",
+      "partition_filter": {
+        "state_column": "SG_UF_NOT",
+        "state_code_source": "metadata/uf_codes.json",
+        "state_code_type": "ibge_numeric"
+      },
+      "category": "SINAN",
+      "full_name": {
+        "pt": "SINAN - Doença de Chagas",
+        "en": "SINAN - Chagas Disease",
+        "es": "SINAN - Enfermedad de Chagas"
+      },
+      "description": {
+        "pt": "Casos notificados de doença de Chagas",
+        "en": "Reported Chagas disease cases",
+        "es": "Casos notificados de enfermedad de Chagas"
+      },
+      "temporal_granularity": "annual",
+      "requires_month": false,
+      "cache_days": 90,
+      "is_national": true,
+      "coverage": "national"
+    },
+    "SINAN-LEISHMANIOSE-VISCERAL": {
+      "source": "datasus_ftp",
+      "family": "SINAN",
+      "file_format": "dbc",
+      "url_templates": [
+        {
+          "status": "final",
+          "path_template": "SINAN/DADOS/FINAIS/LEIVBR{yy}.dbc"
+        },
+        {
+          "status": "preliminary",
+          "path_template": "SINAN/DADOS/PRELIM/LEIVBR{yy}.dbc"
+        }
+      ],
+      "geographic_scope": "national",
+      "partition_filter": {
+        "state_column": "SG_UF_NOT",
+        "state_code_source": "metadata/uf_codes.json",
+        "state_code_type": "ibge_numeric"
+      },
+      "category": "SINAN",
+      "full_name": {
+        "pt": "SINAN - Leishmaniose Visceral",
+        "en": "SINAN - Visceral Leishmaniasis",
+        "es": "SINAN - Leishmaniasis Visceral"
+      },
+      "description": {
+        "pt": "Casos notificados de leishmaniose visceral",
+        "en": "Reported visceral leishmaniasis cases",
+        "es": "Casos notificados de leishmaniasis visceral"
+      },
+      "temporal_granularity": "annual",
+      "requires_month": false,
+      "cache_days": 90,
+      "is_national": true,
+      "coverage": "national",
+      "climate_sensitive": true
+    },
+    "SINAN-LEISHMANIOSE-TEGUMENTAR": {
+      "source": "datasus_ftp",
+      "family": "SINAN",
+      "file_format": "dbc",
+      "url_templates": [
+        {
+          "status": "final",
+          "path_template": "SINAN/DADOS/FINAIS/LTANBR{yy}.dbc"
+        },
+        {
+          "status": "preliminary",
+          "path_template": "SINAN/DADOS/PRELIM/LTANBR{yy}.dbc"
+        }
+      ],
+      "geographic_scope": "national",
+      "partition_filter": {
+        "state_column": "SG_UF_NOT",
+        "state_code_source": "metadata/uf_codes.json",
+        "state_code_type": "ibge_numeric"
+      },
+      "category": "SINAN",
+      "full_name": {
+        "pt": "SINAN - Leishmaniose Tegumentar",
+        "en": "SINAN - Cutaneous Leishmaniasis",
+        "es": "SINAN - Leishmaniasis Cutánea"
+      },
+      "description": {
+        "pt": "Casos notificados de leishmaniose tegumentar",
+        "en": "Reported cutaneous leishmaniasis cases",
+        "es": "Casos notificados de leishmaniasis cutánea"
+      },
+      "temporal_granularity": "annual",
+      "requires_month": false,
+      "cache_days": 90,
+      "is_national": true,
+      "coverage": "national"
+    },
+    "SINAN-LEPTOSPIROSE": {
+      "source": "datasus_ftp",
+      "family": "SINAN",
+      "file_format": "dbc",
+      "url_templates": [
+        {
+          "status": "final",
+          "path_template": "SINAN/DADOS/FINAIS/LEPTBR{yy}.dbc"
+        },
+        {
+          "status": "preliminary",
+          "path_template": "SINAN/DADOS/PRELIM/LEPTBR{yy}.dbc"
+        }
+      ],
+      "geographic_scope": "national",
+      "partition_filter": {
+        "state_column": "SG_UF_NOT",
+        "state_code_source": "metadata/uf_codes.json",
+        "state_code_type": "ibge_numeric"
+      },
+      "category": "SINAN",
+      "full_name": {
+        "pt": "SINAN - Leptospirose",
+        "en": "SINAN - Leptospirosis",
+        "es": "SINAN - Leptospirosis"
+      },
+      "description": {
+        "pt": "Casos notificados de leptospirose",
+        "en": "Reported leptospirosis cases",
+        "es": "Casos notificados de leptospirosis"
+      },
+      "temporal_granularity": "annual",
+      "requires_month": false,
+      "cache_days": 90,
+      "is_national": true,
+      "coverage": "national",
+      "climate_sensitive": true
     }
   },
   "categories": {

@@ -94,47 +94,67 @@ def build() -> None:
     out_dir.mkdir(parents=True, exist_ok=True)
     state_region = _state_region_map()
 
-    municipalities = geobr.read_municipality(simplified=False)
-    municipalities_df = _to_wkt_frame(
-        municipalities,
-        code_col="code_muni",
-        name_col="name_muni",
-        out_code="code_muni",
-        state_region=state_region,
-    )
-    local_municipalities = _local_municipalities(state_region)
-    local_codes = set(local_municipalities["code_muni"])
-    municipalities_df = municipalities_df[municipalities_df["code_muni"].isin(local_codes)]
-    missing = local_municipalities[
-        ~local_municipalities["code_muni"].isin(municipalities_df["code_muni"])
-    ]
-    municipalities_df = pd.concat([municipalities_df, missing], ignore_index=True).sort_values(
-        "code_muni"
-    )
-    municipalities_df.to_parquet(
-        out_dir / "municipalities.parquet", compression="snappy", index=False
-    )
+    # Each layer is written at BOTH resolutions (M9). `simplified=False`
+    # stood here alone until 21/09/2026, while climasus4r asks geobr for
+    # `simplified = TRUE` -- so every geometry this catalog served was
+    # far more detailed than the one the R package works with. Measured:
+    # 1.14M vertices from geobr simplified against ~18M full, which is
+    # what turned a 5,196-row `sus_spatial_join` result into a 331.9 MB
+    # Parquet against R's 2.1 MB. The full-resolution files stay, because
+    # discarding detail nobody can regenerate offline is not this
+    # script's call; the runtime just stops defaulting to them.
+    for simplified in (True, False):
+        suffix = "_simplified" if simplified else ""
 
-    states = geobr.read_state(simplified=False)
-    states_df = _to_wkt_frame(
-        states,
-        code_col="code_state",
-        name_col="name_state",
-        out_code="code_state",
-    )
-    states_df["state"] = states["abbrev_state"].astype(str)
-    states_df["region"] = states_df["state"].map(state_region)
-    states_df.to_parquet(out_dir / "states.parquet", compression="snappy", index=False)
+        municipalities = geobr.read_municipality(simplified=simplified)
+        municipalities_df = _to_wkt_frame(
+            municipalities,
+            code_col="code_muni",
+            name_col="name_muni",
+            out_code="code_muni",
+            state_region=state_region,
+        )
+        # The municipalities geobr's layer lacks are patched in as POINT
+        # geometries from geo/municipios.json. A point has nothing to
+        # simplify, so both files get the identical point -- which is why
+        # the two assets carry the same row set.
+        local_municipalities = _local_municipalities(state_region)
+        local_codes = set(local_municipalities["code_muni"])
+        municipalities_df = municipalities_df[municipalities_df["code_muni"].isin(local_codes)]
+        missing = local_municipalities[
+            ~local_municipalities["code_muni"].isin(municipalities_df["code_muni"])
+        ]
+        municipalities_df = pd.concat([municipalities_df, missing], ignore_index=True).sort_values(
+            "code_muni"
+        )
+        municipalities_df.to_parquet(
+            out_dir / f"municipalities{suffix}.parquet", compression="snappy", index=False
+        )
 
-    regions = geobr.read_region(simplified=False)
-    regions_df = _to_wkt_frame(
-        regions,
-        code_col="code_region",
-        name_col="name_region",
-        out_code="code_region",
-    )
-    regions_df["region"] = regions["name_region"].map(_region_slug)
-    regions_df.to_parquet(out_dir / "regions.parquet", compression="snappy", index=False)
+        states = geobr.read_state(simplified=simplified)
+        states_df = _to_wkt_frame(
+            states,
+            code_col="code_state",
+            name_col="name_state",
+            out_code="code_state",
+        )
+        states_df["state"] = states["abbrev_state"].astype(str)
+        states_df["region"] = states_df["state"].map(state_region)
+        states_df.to_parquet(
+            out_dir / f"states{suffix}.parquet", compression="snappy", index=False
+        )
+
+        regions = geobr.read_region(simplified=simplified)
+        regions_df = _to_wkt_frame(
+            regions,
+            code_col="code_region",
+            name_col="name_region",
+            out_code="code_region",
+        )
+        regions_df["region"] = regions["name_region"].map(_region_slug)
+        regions_df.to_parquet(
+            out_dir / f"regions{suffix}.parquet", compression="snappy", index=False
+        )
 
 
 if __name__ == "__main__":

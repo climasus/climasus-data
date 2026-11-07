@@ -1,0 +1,847 @@
+{
+  "columns": {
+    "V0001": "federal_unit",
+    "V0002": "municipality_code",
+    "V0011": "weighting_area",
+    "V0300": "control",
+    "V0010": "sample_weight",
+    "V1001": "geographic_region",
+    "V1002": "mesoregion_code",
+    "V1003": "microregion_code",
+    "V1004": "metropolitan_region_code",
+    "V1006": "household_situation",
+    "V0502": "relationship_to_household_head",
+    "V0504": "logical_order",
+    "V0601": "sex",
+    "V6033": "calculated_age_years_months",
+    "V6036": "calculated_age_years",
+    "V6037": "calculated_age_months",
+    "V6040": "age_declaration_method",
+    "V0606": "race_color",
+    "V0613": "birth_registration",
+    "V0614": "permanent_seeing_difficulty",
+    "V0615": "permanent_hearing_difficulty",
+    "V0616": "permanent_walking_climbing_difficulty",
+    "V0617": "mental_intellectual_disability",
+    "V0618": "born_in_municipality",
+    "V0619": "born_in_federal_unit",
+    "V0620": "nationality",
+    "V0621": "year_settled_in_brazil",
+    "V0622": "uf_foreign_country_birth",
+    "V6222": "uf_birth_code",
+    "V6224": "country_birth_code",
+    "V0623": "residence_time_uf",
+    "V0624": "residence_time_municipality",
+    "V0625": "previous_residence_type",
+    "V6252": "previous_uf_residence_code",
+    "V6254": "previous_municipality_residence_code",
+    "V6256": "previous_country_residence_code",
+    "V0626": "residence_july_31_2005",
+    "V6262": "uf_residence_2005_code",
+    "V6264": "municipality_residence_2005_code",
+    "V6266": "country_residence_2005_code",
+    "V0627": "can_read_write",
+    "V0628": "attends_school_daycare",
+    "V0629": "course_attending",
+    "V0630": "grade_year_attending",
+    "V0631": "grade_attending",
+    "V0632": "completed_other_higher_education",
+    "V0633": "highest_course_attended",
+    "V0634": "completed_highest_course",
+    "V0635": "type_highest_completed_course",
+    "V6400": "education_level",
+    "V6352": "higher_education_course_code",
+    "V6354": "masters_course_code",
+    "V6356": "doctorate_course_code",
+    "V0636": "school_attendance_location",
+    "V6362": "school_attendance_uf_code",
+    "V6364": "school_attendance_municipality_code",
+    "V6366": "school_attendance_country_code",
+    "V0637": "lives_with_spouse_partner",
+    "V0638": "spouse_partner_order_number",
+    "V0639": "union_type",
+    "V0640": "marital_status",
+    "V0604": "has_living_mother",
+    "V0605": "mother_order_number",
+    "V0641": "worked_reference_week",
+    "V0642": "had_job_temporarily_away",
+    "V0643": "helped_without_payment",
+    "V0644": "worked_agriculture_self_consumption",
+    "V0645": "how_many_jobs",
+    "V6461": "occupation_code",
+    "V6471": "activity_code",
+    "V0648": "employment_status",
+    "V0649": "how_many_people_employed",
+    "V0650": "social_security_contributor",
+    "V0651": "main_job_income_type",
+    "V6511": "main_job_gross_income_value",
+    "V6513": "main_job_income",
+    "V6514": "main_job_income_minimum_wages",
+    "V0652": "other_jobs_income_type",
+    "V6521": "other_jobs_gross_income_value",
+    "V6524": "other_jobs_income_minimum_wages",
+    "V6525": "all_jobs_income",
+    "V6526": "all_jobs_income_minimum_wages",
+    "V6527": "total_monthly_income_july_2010",
+    "V6528": "total_monthly_income_minimum_wages",
+    "V6529": "household_income_july_2010",
+    "V6530": "household_income_minimum_wages",
+    "V6531": "household_income_per_capita",
+    "V6532": "household_income_per_capita_minimum_wages",
+    "V0653": "weekly_work_hours",
+    "V0654": "sought_work_july_2010",
+    "V0655": "available_to_take_job",
+    "V0656": "pension_retirement_income",
+    "V0657": "bolsa_familia_peti_income",
+    "V0658": "other_social_programs_income",
+    "V0659": "other_sources_income",
+    "V6591": "total_other_income_value",
+    "V0660": "work_location",
+    "V6602": "work_uf_code",
+    "V6604": "work_municipality_code",
+    "V6606": "work_country_code",
+    "V0661": "returns_work_home_daily",
+    "V0662": "commute_time_home_work",
+    "V0663": "had_live_births",
+    "V6631": "how_many_sons_born_alive",
+    "V6632": "how_many_daughters_born_alive",
+    "V6633": "total_children_born_alive",
+    "V0664": "children_alive_july_2010",
+    "V6641": "how_many_sons_alive",
+    "V6642": "how_many_daughters_alive",
+    "V6643": "total_children_alive",
+    "V0665": "last_child_sex",
+    "V6660": "last_child_age",
+    "V6664": "child_born_alive_12_months_prior",
+    "V0667": "this_child_was_alive",
+    "V0668": "knows_month_year_child_died",
+    "V6681": "month_child_died",
+    "V6682": "year_child_died",
+    "V0669": "had_stillbirths",
+    "V6691": "how_many_sons_stillborn",
+    "V6692": "how_many_daughters_stillborn",
+    "V6693": "total_children_stillborn",
+    "V6800": "total_children_born_alive_stillborn",
+    "V0670": "who_provided_information",
+    "V0671": "informant_order_number",
+    "V6900": "economic_activity_status_reference_week",
+    "V6910": "employment_status_reference_week",
+    "V6920": "occupation_status_reference_week",
+    "V6930": "occupation_position_employment_category",
+    "V6940": "subgroup_employment_category",
+    "V6121": "religion_code",
+    "V5020": "family_number",
+    "V5060": "number_people_family",
+    "V5070": "family_income_per_capita",
+    "V5080": "family_income_per_capita_minimum_wages",
+    "V5030": "household_unit_type",
+    "V5040": "family_arrangement_indicator",
+    "V5090": "main_family_composition_type",
+    "V5100": "secondary_family_composition_type",
+    "V5130": "logical_order_family",
+    "V5110": "social_security_contribution_main_job",
+    "V5120": "social_security_contribution_any_job",
+    "M0502": "imputation_flag_V0502",
+    "M0601": "imputation_flag_V0601",
+    "M6033": "imputation_flag_V6033",
+    "M0606": "imputation_flag_V0606",
+    "M0613": "imputation_flag_V0613",
+    "M0614": "imputation_flag_V0614",
+    "M0615": "imputation_flag_V0615",
+    "M0616": "imputation_flag_V0616",
+    "M0617": "imputation_flag_V0617",
+    "M0618": "imputation_flag_V0618",
+    "M0619": "imputation_flag_V0619",
+    "M0620": "imputation_flag_V0620",
+    "M0621": "imputation_flag_V0621",
+    "M0622": "imputation_flag_V0622",
+    "M6222": "imputation_flag_V6222",
+    "M6224": "imputation_flag_V6224",
+    "M0623": "imputation_flag_V0623",
+    "M0624": "imputation_flag_V0624",
+    "M0625": "imputation_flag_V0625",
+    "M6252": "imputation_flag_V6252",
+    "M6254": "imputation_flag_V6254",
+    "M6256": "imputation_flag_V6256",
+    "M0626": "imputation_flag_V0626",
+    "M6262": "imputation_flag_V6262",
+    "M6264": "imputation_flag_V6264",
+    "M6266": "imputation_flag_V6266",
+    "M0627": "imputation_flag_V0627",
+    "M0628": "imputation_flag_V0628",
+    "M0629": "imputation_flag_V0629",
+    "M0630": "imputation_flag_V0630",
+    "M0631": "imputation_flag_V0631",
+    "M0632": "imputation_flag_V0632",
+    "M0633": "imputation_flag_V0633",
+    "M0634": "imputation_flag_V0634",
+    "M0635": "imputation_flag_V0635",
+    "M6352": "imputation_flag_V6352",
+    "M6354": "imputation_flag_V6354",
+    "M6356": "imputation_flag_V6356",
+    "M0636": "imputation_flag_V0636",
+    "M6362": "imputation_flag_V6362",
+    "M6364": "imputation_flag_V6364",
+    "M6366": "imputation_flag_V6366",
+    "M0637": "imputation_flag_V0637",
+    "M0638": "imputation_flag_V0638",
+    "M0639": "imputation_flag_V0639",
+    "M0640": "imputation_flag_V0640",
+    "M0641": "imputation_flag_V0641",
+    "M0642": "imputation_flag_V0642",
+    "M0643": "imputation_flag_V0643",
+    "M0644": "imputation_flag_V0644"
+  },
+  "values": {
+    "V0001": {
+      "11": "Rondonia",
+      "12": "Acre",
+      "13": "Amazonas",
+      "14": "Roraima",
+      "15": "Para",
+      "16": "Amapa",
+      "17": "Tocantins",
+      "21": "Maranhao",
+      "22": "Piaui",
+      "23": "Ceara",
+      "24": "Rio Grande do Norte",
+      "25": "Paraiba",
+      "26": "Pernambuco",
+      "27": "Alagoas",
+      "28": "Sergipe",
+      "29": "Bahia",
+      "31": "Minas Gerais",
+      "32": "Espirito Santo",
+      "33": "Rio de Janeiro",
+      "35": "Sao Paulo",
+      "41": "Parana",
+      "42": "Santa Catarina",
+      "43": "Rio Grande do Sul",
+      "50": "Mato Grosso do Sul",
+      "51": "Mato Grosso",
+      "52": "Goias",
+      "53": "Distrito Federal"
+    },
+    "V1001": {
+      "1": "North region (states 11 to 17)",
+      "2": "Northeast region (states 21 to 29)",
+      "3": "Southeast region (states 31 to 33 and 35)",
+      "4": "South region (states 41 to 43)",
+      "5": "Central-West region (states 50 to 53)"
+    },
+    "V1006": {
+      "1": "Urban",
+      "2": "Rural"
+    },
+    "V0502": {
+      "01": "Household head",
+      "02": "Spouse or opposite-sex partner",
+      "03": "Spouse or same-sex partner",
+      "04": "Child of head and spouse",
+      "05": "Child of head only",
+      "06": "Stepchild",
+      "07": "Son-in-law or daughter-in-law",
+      "08": "Father, mother, stepfather or stepmother",
+      "09": "Father-in-law or mother-in-law",
+      "10": "Grandchild",
+      "11": "Great-grandchild",
+      "12": "Brother or sister",
+      "13": "Grandfather or grandmother",
+      "14": "Other relative",
+      "15": "Agregado(a) (lodger)",
+      "16": "Convivente (cohabitant)",
+      "17": "Pensioner",
+      "18": "Domestic employee",
+      "19": "Relative of domestic employee",
+      "20": "Individual in collective household"
+    },
+    "V0601": {
+      "1": "Male",
+      "2": "Female"
+    },
+    "V6040": {
+      "1": "Birth date",
+      "2": "Declared age"
+    },
+    "V0606": {
+      "1": "White",
+      "2": "Black",
+      "3": "Yellow (Asian)",
+      "4": "Brown (Mixed)",
+      "5": "Indigenous",
+      "9": "Unknown"
+    },
+    "V0613": {
+      "1": "From registry office",
+      "2": "Live birth declaration (DNV) from hospital or maternity",
+      "3": "Administrative indigenous birth registration (RANI)",
+      "4": "Does not have",
+      "5": "Does not know",
+      "9": "Unknown"
+    },
+    "V0614": {
+      "1": "Yes, cannot at all",
+      "2": "Yes, great difficulty",
+      "3": "Yes, some difficulty",
+      "4": "No, no difficulty",
+      "9": "Unknown"
+    },
+    "V0615": {
+      "1": "Yes, cannot at all",
+      "2": "Yes, great difficulty",
+      "3": "Yes, some difficulty",
+      "4": "No, no difficulty",
+      "9": "Unknown"
+    },
+    "V0616": {
+      "1": "Yes, cannot at all",
+      "2": "Yes, great difficulty",
+      "3": "Yes, some difficulty",
+      "4": "No, no difficulty",
+      "9": "Unknown"
+    },
+    "V0617": {
+      "1": "Yes",
+      "2": "No",
+      "9": "Unknown"
+    },
+    "V0618": {
+      "1": "Yes and always lived here",
+      "2": "Yes but lived in another municipality or foreign country",
+      "3": "No"
+    },
+    "V0619": {
+      "1": "Yes, and always lived here",
+      "2": "Yes, but lived in another state or foreign country",
+      "3": "No"
+    },
+    "V0620": {
+      "1": "Native Brazilian",
+      "2": "Naturalized Brazilian",
+      "3": "Foreigner"
+    },
+    "V0622": {
+      "1": "State (UF)",
+      "2": "Foreign country"
+    },
+    "V0625": {
+      "1": "State/Municipality",
+      "2": "Foreign country"
+    },
+    "V0626": {
+      "1": "State/Municipality",
+      "2": "Foreign country"
+    },
+    "V0627": {
+      "1": "Yes",
+      "2": "No"
+    },
+    "V0628": {
+      "1": "Yes, public",
+      "2": "Yes, private",
+      "3": "No, previously attended",
+      "4": "No, never attended"
+    },
+    "V0629": {
+      "01": "Daycare",
+      "02": "Preschool (nursery and kindergarten)",
+      "03": "Literacy class - CA",
+      "04": "Youth and adult literacy",
+      "05": "Regular elementary school",
+      "06": "Youth and adult education - EJA - or elementary school equivalency",
+      "07": "Regular high school",
+      "08": "Youth and adult education - EJA - or high school equivalency",
+      "09": "Higher education (undergraduate)",
+      "10": "Higher education specialization (minimum 360 hours)",
+      "11": "Master's degree",
+      "12": "Doctorate degree"
+    },
+    "V0630": {
+      "01": "First year",
+      "02": "First grade / Second year",
+      "03": "Second grade / Third year",
+      "04": "Third grade / Fourth year",
+      "05": "Fourth grade / Fifth year",
+      "06": "Fifth grade / Sixth year",
+      "07": "Sixth grade / Seventh year",
+      "08": "Seventh grade / Eighth year",
+      "09": "Eighth grade / Ninth year",
+      "10": "Ungraded"
+    },
+    "V0631": {
+      "1": "First grade",
+      "2": "Second grade",
+      "3": "Third grade",
+      "4": "Fourth grade",
+      "5": "Ungraded"
+    },
+    "V0632": {
+      "1": "Yes",
+      "2": "No"
+    },
+    "V0633": {
+      "01": "Daycare, preschool (nursery and kindergarten), literacy class - CA",
+      "02": "Youth and adult literacy",
+      "03": "Former primary (elementary)",
+      "04": "Former gymnasium (middle school 1st cycle)",
+      "05": "Elementary school or 1st grade (1st to 3rd grade/1st to 4th year)",
+      "06": "Elementary school or 1st grade (4th grade/5th year)",
+      "07": "Elementary school or 1st grade (5th to 8th grade/6th to 9th year)",
+      "08": "Elementary school equivalency or 1st grade equivalency",
+      "09": "Former scientific, classical, etc. (middle school 2nd cycle)",
+      "10": "Regular or equivalency high school or 2nd grade",
+      "11": "Higher education (undergraduate)",
+      "12": "Higher education specialization (minimum 360 hours)",
+      "13": "Master's degree",
+      "14": "Doctorate degree"
+    },
+    "V0634": {
+      "1": "Yes",
+      "2": "No"
+    },
+    "V0635": {
+      "1": "Higher education (undergraduate)",
+      "2": "Master's degree",
+      "3": "Doctorate degree"
+    },
+    "V6400": {
+      "1": "No schooling and incomplete elementary",
+      "2": "Complete elementary and incomplete high school",
+      "3": "Complete high school and incomplete higher education",
+      "4": "Complete higher education",
+      "5": "Undetermined"
+    },
+    "V0636": {
+      "1": "In this municipality",
+      "2": "In another municipality",
+      "3": "In a foreign country"
+    },
+    "V0637": {
+      "1": "Yes",
+      "2": "No, but previously lived with",
+      "3": "No, never lived with"
+    },
+    "V0639": {
+      "1": "Civil and religious marriage",
+      "2": "Civil marriage only",
+      "3": "Religious marriage only",
+      "4": "Consensual union"
+    },
+    "V0640": {
+      "1": "Married",
+      "2": "Legally separated",
+      "3": "Divorced",
+      "4": "Widowed",
+      "5": "Single"
+    },
+    "V0641": {
+      "1": "Yes",
+      "2": "No"
+    },
+    "V0642": {
+      "1": "Yes",
+      "2": "No"
+    },
+    "V0643": {
+      "1": "Yes",
+      "2": "No"
+    },
+    "V0644": {
+      "1": "Yes",
+      "2": "No"
+    },
+    "V0645": {
+      "1": "One",
+      "2": "Two or more"
+    },
+    "V0648": {
+      "1": "Employee with signed work card",
+      "2": "Military (army, navy, air force, military police or fire department)",
+      "3": "Employee under public servant legal regime",
+      "4": "Employee without signed work card",
+      "5": "Self-employed",
+      "6": "Employer",
+      "7": "Unpaid"
+    },
+    "V0649": {
+      "1": "1 to 5 people",
+      "2": "6 or more people"
+    },
+    "V0650": {
+      "1": "Yes, in main job",
+      "2": "Yes, in another job",
+      "3": "No"
+    },
+    "V0651": {
+      "0": "Does not have",
+      "1": "In money, products or goods",
+      "2": "Only in benefits"
+    },
+    "V0652": {
+      "0": "Does not have",
+      "1": "In money, products or goods",
+      "2": "Only in benefits"
+    },
+    "V0654": {
+      "1": "Yes",
+      "2": "No"
+    },
+    "V0655": {
+      "1": "Yes",
+      "2": "No"
+    },
+    "V0656": {
+      "0": "No",
+      "1": "Yes",
+      "9": "Unknown"
+    },
+    "V0657": {
+      "0": "No",
+      "1": "Yes",
+      "9": "Unknown"
+    },
+    "V0658": {
+      "0": "No",
+      "1": "Yes",
+      "9": "Unknown"
+    },
+    "V0659": {
+      "0": "No",
+      "1": "Yes",
+      "9": "Unknown"
+    },
+    "V0660": {
+      "1": "At own home",
+      "2": "Only in this municipality, but not at own home",
+      "3": "In another municipality",
+      "4": "In a foreign country",
+      "5": "In more than one municipality or country"
+    },
+    "V0661": {
+      "1": "Yes",
+      "2": "No"
+    },
+    "V0662": {
+      "1": "Up to 05 minutes",
+      "2": "06 minutes to half hour",
+      "3": "More than half hour to one hour",
+      "4": "More than one hour to two hours",
+      "5": "More than two hours"
+    },
+    "V0663": {
+      "1": "Had live births",
+      "2": "Had no live births"
+    },
+    "V0664": {
+      "1": "Living children",
+      "2": "Does not know"
+    },
+    "V0665": {
+      "1": "Male",
+      "2": "Female"
+    },
+    "V6664": {
+      "1": "Yes",
+      "0": "No"
+    },
+    "V0667": {
+      "1": "Yes",
+      "2": "No",
+      "9": "Does not know"
+    },
+    "V0668": {
+      "1": "Knows month and year or only year",
+      "2": "Does not know"
+    },
+    "V0669": {
+      "1": "Had stillbirth",
+      "2": "Had no stillbirth",
+      "3": "Does not know"
+    },
+    "V0670": {
+      "1": "The person themselves",
+      "2": "Another resident",
+      "3": "Non-resident",
+      "9": "Unknown"
+    },
+    "V6900": {
+      "1": "Economically active",
+      "2": "Not economically active"
+    },
+    "V6910": {
+      "1": "Employed",
+      "2": "Unemployed"
+    },
+    "V6920": {
+      "1": "Occupied",
+      "2": "Not occupied"
+    },
+    "V6930": {
+      "1": "Employees with signed work card",
+      "2": "Military and statutory public servants",
+      "3": "Employees without signed work card",
+      "4": "Self-employed",
+      "5": "Employers",
+      "6": "Unpaid",
+      "7": "Workers in production for own consumption"
+    },
+    "V6940": {
+      "1": "Domestic workers with signed work card",
+      "2": "Domestic workers without signed work card",
+      "3": "Other employees with signed work card",
+      "4": "Military and statutory public servants",
+      "5": "Other employees without signed work card"
+    },
+    "V0604": {
+      "1": "Yes and lives in this household",
+      "2": "Yes and lives in another household",
+      "3": "No",
+      "4": "Does not know",
+      "9": "Unknown"
+    },
+    "V5020": {
+      "01": "Unique or main cohabiting families",
+      "02": "Second cohabiting family",
+      "03": "Third cohabiting family",
+      "04": "Fourth cohabiting family",
+      "05": "Fifth cohabiting family",
+      "06": "Sixth cohabiting family",
+      "07": "Seventh cohabiting family",
+      "08": "Eighth cohabiting family",
+      "09": "Ninth cohabiting family"
+    },
+    "V5030": {
+      "1": "Single-person",
+      "2": "Two or more people without kinship",
+      "3": "Two or more people with kinship"
+    },
+    "V5040": {
+      "1": "Family arrangement",
+      "0": "Non-family arrangement"
+    },
+    "V5090": {
+      "1": "Couple without children",
+      "2": "Couple without children with relative(s)",
+      "3": "Couple with children",
+      "4": "Couple with children with relative(s)",
+      "5": "Woman without spouse with children",
+      "6": "Woman without spouse with children with relative(s)",
+      "7": "Man without spouse with children",
+      "8": "Man without spouse with children with relative(s)",
+      "9": "Other"
+    },
+    "V5100": {
+      "1": "Couple without children",
+      "2": "Couple with children",
+      "3": "Woman without spouse with children"
+    },
+    "V5110": {
+      "Contribuintes": "Contributors",
+      "Nao contribuintes": "Non-contributors"
+    },
+    "V5120": {
+      "Contribuintes": "Contributors",
+      "Nao contribuintes": "Non-contributors"
+    },
+    "M0502": {
+      "1": "Yes",
+      "2": "No"
+    },
+    "M0601": {
+      "1": "Yes",
+      "2": "No"
+    },
+    "M6033": {
+      "1": "Yes",
+      "2": "No"
+    },
+    "M0606": {
+      "1": "Yes",
+      "2": "No"
+    },
+    "M0613": {
+      "1": "Yes",
+      "2": "No"
+    },
+    "M0614": {
+      "1": "Yes",
+      "2": "No"
+    },
+    "M0615": {
+      "1": "Yes",
+      "2": "No"
+    },
+    "M0616": {
+      "1": "Yes",
+      "2": "No"
+    },
+    "M0617": {
+      "1": "Yes",
+      "2": "No"
+    },
+    "M0618": {
+      "1": "Yes",
+      "2": "No"
+    },
+    "M0619": {
+      "1": "Yes",
+      "2": "No"
+    },
+    "M0620": {
+      "1": "Yes",
+      "2": "No"
+    },
+    "M0621": {
+      "1": "Yes",
+      "2": "No"
+    },
+    "M0622": {
+      "1": "Yes",
+      "2": "No"
+    },
+    "M6222": {
+      "1": "Yes",
+      "2": "No"
+    },
+    "M6224": {
+      "1": "Yes",
+      "2": "No"
+    },
+    "M0623": {
+      "1": "Yes",
+      "2": "No"
+    },
+    "M0624": {
+      "1": "Yes",
+      "2": "No"
+    },
+    "M0625": {
+      "1": "Yes",
+      "2": "No"
+    },
+    "M6252": {
+      "1": "Yes",
+      "2": "No"
+    },
+    "M6254": {
+      "1": "Yes",
+      "2": "No"
+    },
+    "M6256": {
+      "1": "Yes",
+      "2": "No"
+    },
+    "M0626": {
+      "1": "Yes",
+      "2": "No"
+    },
+    "M6262": {
+      "1": "Yes",
+      "2": "No"
+    },
+    "M6264": {
+      "1": "Yes",
+      "2": "No"
+    },
+    "M6266": {
+      "1": "Yes",
+      "2": "No"
+    },
+    "M0627": {
+      "1": "Yes",
+      "2": "No"
+    },
+    "M0628": {
+      "1": "Yes",
+      "2": "No"
+    },
+    "M0629": {
+      "1": "Yes",
+      "2": "No"
+    },
+    "M0630": {
+      "1": "Yes",
+      "2": "No"
+    },
+    "M0631": {
+      "1": "Yes",
+      "2": "No"
+    },
+    "M0632": {
+      "1": "Yes",
+      "2": "No"
+    },
+    "M0633": {
+      "1": "Yes",
+      "2": "No"
+    },
+    "M0634": {
+      "1": "Yes",
+      "2": "No"
+    },
+    "M0635": {
+      "1": "Yes",
+      "2": "No"
+    },
+    "M6352": {
+      "1": "Yes",
+      "2": "No"
+    },
+    "M6354": {
+      "1": "Yes",
+      "2": "No"
+    },
+    "M6356": {
+      "1": "Yes",
+      "2": "No"
+    },
+    "M0636": {
+      "1": "Yes",
+      "2": "No"
+    },
+    "M6362": {
+      "1": "Yes",
+      "2": "No"
+    },
+    "M6364": {
+      "1": "Yes",
+      "2": "No"
+    },
+    "M6366": {
+      "1": "Yes",
+      "2": "No"
+    },
+    "M0637": {
+      "1": "Yes",
+      "2": "No"
+    },
+    "M0638": {
+      "1": "Yes",
+      "2": "No"
+    },
+    "M0639": {
+      "1": "Yes",
+      "2": "No"
+    },
+    "M0640": {
+      "1": "Yes",
+      "2": "No"
+    },
+    "M0641": {
+      "1": "Yes",
+      "2": "No"
+    },
+    "M0642": {
+      "1": "Yes",
+      "2": "No"
+    },
+    "M0643": {
+      "1": "Yes",
+      "2": "No"
+    },
+    "M0644": {
+      "1": "Yes",
+      "2": "No"
+    }
+  }
+}

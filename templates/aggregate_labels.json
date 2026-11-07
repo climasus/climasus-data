@@ -1,0 +1,75 @@
+{
+  "_meta": {
+    "description": "Labels and smart column names for sus_data_aggregate()",
+    "version": "1.0",
+    "last_updated": "2026-07-15"
+  },
+  "time_labels": {
+    "year": {
+      "en": "yearly",
+      "pt": "anuais",
+      "es": "anuales"
+    },
+    "quarter": {
+      "en": "quarterly",
+      "pt": "trimestrais",
+      "es": "trimestrales"
+    },
+    "month": {
+      "en": "monthly",
+      "pt": "mensais",
+      "es": "mensuales"
+    },
+    "week": {
+      "en": "weekly",
+      "pt": "semanais",
+      "es": "semanales"
+    },
+    "day": {
+      "en": "daily",
+      "pt": "diarias",
+      "es": "diarios"
+    },
+    "5 days": {
+      "en": "pentad (5-day)",
+      "pt": "pentadais (5 dias)",
+      "es": "pentadales (5 dias)"
+    },
+    "14 days": {
+      "en": "fortnightly",
+      "pt": "quinzenais",
+      "es": "quincenales"
+    },
+    "season": {
+      "en": "seasonal",
+      "pt": "sazonais",
+      "es": "estacionales"
+    }
+  },
+  "smart_names": {
+    "en": {
+      "SIM": "n_deaths",
+      "SIH": "n_hospitalizations",
+      "SINASC": "n_births",
+      "SINAN": "n_cases",
+      "SIA": "n_procedures",
+      "CNES": "n_establishments"
+    },
+    "pt": {
+      "SIM": "n_obitos",
+      "SIH": "n_internacoes",
+      "SINASC": "n_nascimentos",
+      "SINAN": "n_casos",
+      "SIA": "n_procedimentos",
+      "CNES": "n_estabelecimentos"
+    },
+    "es": {
+      "SIM": "n_muertes",
+      "SIH": "n_hospitalizaciones",
+      "SINASC": "n_nacimientos",
+      "SINAN": "n_casos",
+      "SIA": "n_procedimientos",
+      "CNES": "n_establecimientos"
+    }
+  }
+}

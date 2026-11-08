@@ -1538,7 +1538,7 @@
     },
     "sexo": {
       "M": "Masculino",
-      "F": "Femenino",
+      "F": "Feminino",
       "I": "Ignorado"
     },
     "raca": {

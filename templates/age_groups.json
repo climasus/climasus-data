@@ -116,12 +116,12 @@
     ],
     "pt": [
       "Alto Risco (0-4)",
-      "Risco Padrao (5-64)",
+      "Risco Padrão (5-64)",
       "Alto Risco (65+)"
     ],
     "es": [
       "Alto Riesgo (0-4)",
-      "Riesgo Estandar (5-64)",
+      "Riesgo Estándar (5-64)",
       "Alto Riesgo (65+)"
     ]
   }

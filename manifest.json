@@ -166,7 +166,7 @@
     {
       "path": "dictionaries/pt-pt/categories.json",
       "size_bytes": 58375,
-      "md5": "fcfd735da9f824c4bd30b51f4e6a68a0"
+      "md5": "6fe463a8166a48a632d04817c291e1f8"
     },
     {
       "path": "dictionaries/pt-pt/census_emigration.json",
@@ -250,8 +250,8 @@
     },
     {
       "path": "templates/age_groups.json",
-      "size_bytes": 2410,
-      "md5": "f2c79c3a834a94192839c0f332b3981b"
+      "size_bytes": 2412,
+      "md5": "144ddae5ac093a69a13ed74d64371805"
     },
     {
       "path": "templates/aggregate_config.json",
